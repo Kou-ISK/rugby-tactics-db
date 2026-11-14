@@ -29,7 +29,7 @@ clipboard fallback states exist in code. Automated tests do not check every coac
 Public source inspection is distinct from qualified coaching/safety review.
 
 Review found and fixed: detail-to-About scroll restoration; source-format scope leakage;
-invalid reviewer/date acceptance; static wording that would mislabel future reviewed records.
+invalid reviewer/date acceptance; duplicate hash/popstate renders losing keyboard focus; static wording that would mislabel future reviewed records.
 
 Aliases/relationships/variations currently have notes and concept-level source context rather
 than individual evidence pointers. Finer-grained claim-level review is a planned schema improvement.

@@ -8,6 +8,7 @@ const reviewLabel = c => c.review.status === 'expert-reviewed' ? '専門家レ�
 const tags = c => `<span class="tag ${e(c.side)}">${e(labels.side[c.side])}</span><span class="tag">${e(labels.level[c.level])}</span>${c.formats.map(f => `<span class="tag">${formatLabel(f)}</span>`).join('')}`;
 let dataset;
 let lastDetailId;
+let renderedURL;
 function filtersFromURL() {
   const p = new URLSearchParams(location.search);
   for (const key of ['q','side','level','format']) {
@@ -44,6 +45,10 @@ function conceptView(c) {
   return `<a class="back-link" href="#explorer">← 戦術一覧に戻る</a><div class="detail-header"><div class="tag-row">${tags(c)}</div><h1 id="detail-title" tabindex="-1">${e(c.name.ja)}</h1><p class="en-name" lang="en">${e(c.name.en)}</p><p class="detail-lead">${e(c.summary.ja)}</p><p class="small-note" lang="en">${e(c.summary.en)}</p><p class="detail-id">${e(c.id)} · concept v${e(c.version)} · dataset v${e(dataset.version)}</p></div><div class="review-banner"><strong>資料確認済み / ${reviewLabel(c)} / 自動実行不可</strong>${e(c.review.note)}<br>日本語名・説明は編集上の訳・要約です。公式訳や統一規格ではありません。</div><div class="detail-grid">${block('何を狙うか',list(c.intent))}${block('別名と用語の注意',aliases)}${block('使う条件',list(c.applicability.conditions))}${block('適用できないこと・注意',list(c.applicability.limits))}${block('役割と位置関係',`<p class="small-note">以下は説明用の構造化です。検証済みの実行手順ではありません。固定の背番号・座標を指定しません。</p>${roleHtml}${list(c.mechanics.positioning.map(p=>`${p.subject} ${p.relation} ${p.object}: ${p.note}`))}`,true)}${block('動きの流れ',steps)}${block('見るものと、判断の分岐',decisions)}${block('関連するコンセプト',relations)}${block('バリエーションと不確実性',`${c.variations.length?list(c.variations.map(v=>`${v.name}: ${v.difference}`)):''}${list(c.uncertainties)}`)}${block('出典と根拠の範囲',evidence,true)}${block('データを使う',`<p>このコンセプトは <strong>execution.ready = false</strong> です。${e(c.execution.reason)}</p><div class="json-tools"><a href="${e(jsonPath)}" download>JSON をダウンロード ↗</a><button type="button" id="copy-json">JSON をコピー</button><p id="copy-status" role="status" aria-live="polite"></p></div><details class="json-details"><summary>構造化 JSON を表示</summary><pre tabindex="0" aria-label="コンセプト JSON"><code>${e(JSON.stringify(c,null,2))}</code></pre></details>`,true)}</div>`;
 }
 function route() {
+  // A fragment navigation may emit both popstate and hashchange. Render only once
+  // so the second event does not remove the element that just received focus.
+  if (renderedURL === location.href) return;
+  renderedURL = location.href;
   let id;
   try { id=decodeURIComponent(location.hash.slice(1)); } catch { id='invalid'; }
   const selected = id.startsWith('rtk:') ? dataset.concepts.find(c=>c.id===id) : null;
@@ -63,7 +68,7 @@ function route() {
   } else {
     document.title='Rugby Tactics DB | ラグビー戦術の共通知識';
     filtersFromURL(); renderResults();
-    if(lastDetailId && (!id || id==='explorer')) { const current=document.querySelector(`a.card[href="#${encodeURIComponent(lastDetailId)}"]`); current?.focus({preventScroll:true}); $('explorer').scrollIntoView(); }
+    if(lastDetailId && (!id || id==='explorer')) { const current=document.querySelector(`a.card[href="#${encodeURIComponent(lastDetailId)}"]`); $('explorer').scrollIntoView(); requestAnimationFrame(()=>{ if (current?.isConnected && !$('explorer').hidden) current.focus({preventScroll:true}); }); }
   }
   lastDetailId=isDetail?id:null;
   if (!isDetail && id==='about') $('about').scrollIntoView();
