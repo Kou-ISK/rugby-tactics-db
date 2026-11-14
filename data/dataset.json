@@ -1,0 +1,2534 @@
+{
+  "schemaVersion": "1.0.0",
+  "version": "0.1.0",
+  "updated": "2026-11-14",
+  "license": "CC-BY-4.0",
+  "sources": [
+    {
+      "id": "nz-drift",
+      "url": "https://www.rugbytoolbox.co.nz/training/technique/drift",
+      "title": "Drift",
+      "publisher": "New Zealand Rugby",
+      "accessed": "2026-11-14",
+      "kind": "coaching",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "rights": "出典の本文・画像・動画の転載許諾を意味しない。収録内容は独自要約。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "nz-sevens-defence",
+      "url": "https://www.rugbytoolbox.co.nz/the-game/other-rugby-formats/sevens/defence-principle-two-go-forward",
+      "title": "Defence Principle Two - Go Forward",
+      "publisher": "New Zealand Rugby",
+      "accessed": "2026-11-14",
+      "kind": "coaching",
+      "formats": [
+        "sevens"
+      ],
+      "rights": "出典の本文・画像・動画の転載許諾を意味しない。収録内容は独自要約。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "wr-counter",
+      "url": "https://passport.world.rugby/coaching/key-factor-analysis/unit-skills/counter-attack/",
+      "title": "Counter-attack",
+      "publisher": "World Rugby",
+      "accessed": "2026-11-14",
+      "kind": "coaching",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "rights": "出典の本文・画像・動画の転載許諾を意味しない。収録内容は独自要約。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "wr-back-defence",
+      "url": "https://passport.world.rugby/coaching/key-factor-analysis/unit-skills/back-line-defence/",
+      "title": "Back line defence",
+      "publisher": "World Rugby",
+      "accessed": "2026-11-14",
+      "kind": "coaching",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "rights": "出典の本文・画像・動画の転載許諾を意味しない。収録内容は独自要約。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "nz-switch",
+      "url": "https://www.rugbytoolbox.co.nz/training/technique/switch-scissors-pass",
+      "title": "Switch/Scissor pass",
+      "publisher": "New Zealand Rugby",
+      "accessed": "2026-11-14",
+      "kind": "coaching",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "rights": "出典の本文・画像・動画の転載許諾を意味しない。収録内容は独自要約。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "nz-cutout",
+      "url": "https://www.rugbytoolbox.co.nz/training/technique/cut-out-pass",
+      "title": "Cut-out pass",
+      "publisher": "New Zealand Rugby",
+      "accessed": "2026-11-14",
+      "kind": "coaching",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "rights": "出典の本文・画像・動画の転載許諾を意味しない。収録内容は独自要約。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "nz-dummy",
+      "url": "https://www.rugbytoolbox.co.nz/index.php/training/technique/dummy-pass",
+      "title": "Dummy Pass",
+      "publisher": "New Zealand Rugby",
+      "accessed": "2026-11-14",
+      "kind": "coaching",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "rights": "出典の本文・画像・動画の転載許諾を意味しない。収録内容は独自要約。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "wr-support",
+      "url": "https://passport.world.rugby/coaching/key-factor-analysis/running/running-in-attack-close-support-of-the-ball-carrier/",
+      "title": "Running in attack - close support of the ball carrier",
+      "publisher": "World Rugby",
+      "accessed": "2026-11-14",
+      "kind": "coaching",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "rights": "出典の本文・画像・動画の転載許諾を意味しない。収録内容は独自要約。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "wr-offload",
+      "url": "https://passport.world.rugby/coaching/key-factor-analysis/handling/passing-out-of-the-tackle/",
+      "title": "Passing out of the tackle",
+      "publisher": "World Rugby",
+      "accessed": "2026-11-14",
+      "kind": "coaching",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "rights": "出典の本文・画像・動画の転載許諾を意味しない。収録内容は独自要約。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "wr-screen",
+      "url": "https://passport.world.rugby/coaching/key-factor-analysis/handling/screen-pass/",
+      "title": "Screen pass",
+      "publisher": "World Rugby",
+      "accessed": "2026-11-14",
+      "kind": "coaching",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "rights": "出典の本文・画像・動画の転載許諾を意味しない。収録内容は独自要約。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "wr-maul",
+      "url": "https://passport.world.rugby/coaching/key-factor-analysis/unit-skills/mauling/",
+      "title": "Mauling",
+      "publisher": "World Rugby",
+      "accessed": "2026-11-14",
+      "kind": "coaching",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "rights": "出典の本文・画像・動画の転載許諾を意味しない。収録内容は独自要約。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "wr-restart",
+      "url": "https://passport.world.rugby/coaching/key-factor-analysis/unit-skills/kick-starts-and-restarts-the-kicking-team/",
+      "title": "Kick starts and restarts - the kicking team",
+      "publisher": "World Rugby",
+      "accessed": "2026-11-14",
+      "kind": "coaching",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "rights": "出典の本文・画像・動画の転載許諾を意味しない。収録内容は独自要約。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "wr-breakdown",
+      "url": "https://passport.world.rugby/injury-prevention-and-risk-management/breakdown-ready/defensive-breakdown-roles-and-responsibilities/support-players/",
+      "title": "Support Players: Defensive breakdown",
+      "publisher": "World Rugby",
+      "accessed": "2026-11-14",
+      "kind": "coaching",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "rights": "出典の本文・画像・動画の転載許諾を意味しない。収録内容は独自要約。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "wr-law15",
+      "url": "https://passport.world.rugby/laws-of-the-game/laws-by-number/15-ruck/",
+      "title": "Law 15: Ruck",
+      "publisher": "World Rugby",
+      "accessed": "2026-11-14",
+      "kind": "law",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "rights": "出典の本文・画像・動画の転載許諾を意味しない。収録内容は独自要約。原資料の権利は原権利者に帰属。"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "rtk:drift-defence",
+      "version": "0.1.0",
+      "name": {
+        "ja": "ドリフトディフェンス",
+        "en": "Drift defence"
+      },
+      "aliases": [
+        {
+          "label": "ドリフトディフェンス",
+          "language": "ja",
+          "kind": "translation",
+          "note": "編集上の日本語訳。出典の公式訳ではない。"
+        }
+      ],
+      "side": "defence",
+      "level": "system",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "summary": {
+        "ja": "内側から守備の列を保ち、パスの移動に合わせて次の攻撃者へ対応を移す。",
+        "en": "Defenders preserve their line and shift responsibility with the pass."
+      },
+      "intent": [
+        "内側から守備の列を保ち、パスの移動に合わせて次の攻撃者へ対応を移す。"
+      ],
+      "tags": [
+        "defence",
+        "system",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "相手のパスと守備の連結状態"
+        ],
+        "limits": [
+          "横移動の早さだけを追求しない。攻撃のドリフト走と別概念。",
+          "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "defender",
+            "label": "守備者",
+            "task": "パスに応じて対応を移す",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "neighbour",
+            "label": "隣の守備者",
+            "task": "担当の移動を共有する",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "defender",
+            "relation": "connected-to",
+            "object": "neighbour",
+            "note": "互いの動きを確認できる連結を保つ。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "defender",
+            "action": "scan",
+            "trigger": "相手がパスを準備",
+            "description": "相手と隣の守備者を見る。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "defender",
+            "action": "drift",
+            "trigger": "パスが移動",
+            "description": "連結を維持して外側へ対応を移す。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "decision-1",
+            "cue": "相手のパスと守備の連結状態",
+            "options": [
+              {
+                "action": "外へ対応を移す",
+                "when": "パスが移動し担当を共有できる"
+              },
+              {
+                "action": "連結を整える",
+                "when": "隣との対応にずれがある"
+              }
+            ],
+            "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "contrastsWith",
+          "target": "rtk:rush-defence-sevens",
+          "note": "守備の空間制限という目的は共有するが、比較先の人数・文脈はセブンズ限定。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "内側から守備の列を保ち、パスの移動に合わせて次の攻撃者へ対応を移す。",
+          "evidence": [
+            {
+              "source": "nz-drift",
+              "locator": "KEY FACTORS / COMMON ERRORS",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+          "evidence": [
+            {
+              "source": "nz-drift",
+              "locator": "KEY FACTORS / COMMON ERRORS",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "横移動の早さだけを追求しない。攻撃のドリフト走と別概念。",
+        "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+      }
+    },
+    {
+      "id": "rtk:rush-defence-sevens",
+      "version": "0.1.0",
+      "name": {
+        "ja": "ラッシュディフェンス（セブンズ）",
+        "en": "Rush defence (sevens)"
+      },
+      "aliases": [
+        {
+          "label": "ラッシュディフェンス（セブンズ）",
+          "language": "ja",
+          "kind": "translation",
+          "note": "編集上の日本語訳。出典の公式訳ではない。"
+        },
+        {
+          "label": "Blitz defence",
+          "kind": "contextual",
+          "note": "近接語の検索補助。今回の出典は Blitz を定義せず、完全同義とは扱わない。",
+          "language": "en"
+        }
+      ],
+      "side": "defence",
+      "level": "system",
+      "formats": [
+        "sevens"
+      ],
+      "summary": {
+        "ja": "セブンズで守備の列が一体となって前進し、相手の使える時間と空間を減らす。",
+        "en": "A sevens defensive line advances together to reduce attacking time and space."
+      },
+      "intent": [
+        "セブンズで守備の列が一体となって前進し、相手の使える時間と空間を減らす。"
+      ],
+      "tags": [
+        "defence",
+        "system",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "前線の連結と前進を継続できる状態"
+        ],
+        "limits": [
+          "出典はセブンズ専用。XV の配置や Blitz との完全な同義性を証明しない。",
+          "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "line",
+            "label": "守備の列",
+            "task": "連動して前進する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "cover",
+            "label": "後方カバー",
+            "task": "突破やキックに備える",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "cover",
+            "relation": "behind",
+            "object": "line",
+            "note": "後方の役割を前線と区別する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "line",
+            "action": "press",
+            "trigger": "連動した前進が可能",
+            "description": "列のつながりを保ちながら圧力をかける。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "decision-1",
+            "cue": "前線の連結と前進を継続できる状態",
+            "options": [
+              {
+                "action": "列として前進",
+                "when": "十分な連結がある"
+              },
+              {
+                "action": "再整列",
+                "when": "前線が分断されている"
+              }
+            ],
+            "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "enables",
+          "target": "rtk:sweeper-cover-sevens",
+          "note": "前線の圧力と後方カバーを分けて考える。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "セブンズで守備の列が一体となって前進し、相手の使える時間と空間を減らす。",
+          "evidence": [
+            {
+              "source": "nz-sevens-defence",
+              "locator": "Rush Defence / The Sweeper(s)",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+          "evidence": [
+            {
+              "source": "nz-sevens-defence",
+              "locator": "Rush Defence / The Sweeper(s)",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "出典はセブンズ専用。XV の配置や Blitz との完全な同義性を証明しない。",
+        "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+      }
+    },
+    {
+      "id": "rtk:sweeper-cover-sevens",
+      "version": "0.1.0",
+      "name": {
+        "ja": "スイーパーカバー（セブンズ）",
+        "en": "Sweeper cover (sevens)"
+      },
+      "aliases": [
+        {
+          "label": "スイーパーカバー（セブンズ）",
+          "language": "ja",
+          "kind": "translation",
+          "note": "編集上の日本語訳。出典の公式訳ではない。"
+        }
+      ],
+      "side": "defence",
+      "level": "shape",
+      "formats": [
+        "sevens"
+      ],
+      "summary": {
+        "ja": "守備の前線後方でキックや突破をカバーする役割を用意する。",
+        "en": "Sevens coverage places a supporting defender behind the front line."
+      },
+      "intent": [
+        "守備の前線後方でキックや突破をカバーする役割を用意する。"
+      ],
+      "tags": [
+        "defence",
+        "shape",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "キックまたは前線突破の可能性"
+        ],
+        "limits": [
+          "セブンズの説明。フルバックという固定ポジションと同義ではない。",
+          "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "sweeper",
+            "label": "スイーパー",
+            "task": "後方の脅威を追う",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "line",
+            "label": "守備の列",
+            "task": "前線の担当を保つ",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "sweeper",
+            "relation": "behind",
+            "object": "line",
+            "note": "固定距離や背番号は指定しない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "sweeper",
+            "action": "track",
+            "trigger": "ボールが移動",
+            "description": "後方からカバー可能な位置へ調整する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "decision-1",
+            "cue": "キックまたは前線突破の可能性",
+            "options": [
+              {
+                "action": "後方を維持",
+                "when": "カバーが必要"
+              },
+              {
+                "action": "担当を交代",
+                "when": "前線と交代を共有できる"
+              }
+            ],
+            "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [],
+      "variations": [
+        {
+          "name": "交代型",
+          "difference": "翼の移動に合わせて役割を受け渡す。",
+          "status": "source-described"
+        },
+        {
+          "name": "固定型",
+          "difference": "担当者を固定する方式もある。",
+          "status": "source-described"
+        }
+      ],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "守備の前線後方でキックや突破をカバーする役割を用意する。",
+          "evidence": [
+            {
+              "source": "nz-sevens-defence",
+              "locator": "The Sweeper(s)",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+          "evidence": [
+            {
+              "source": "nz-sevens-defence",
+              "locator": "The Sweeper(s)",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "セブンズの説明。フルバックという固定ポジションと同義ではない。",
+        "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+      }
+    },
+    {
+      "id": "rtk:counter-attack",
+      "version": "0.1.0",
+      "name": {
+        "ja": "カウンターアタック",
+        "en": "Counter-attack"
+      },
+      "aliases": [
+        {
+          "label": "カウンターアタック",
+          "language": "ja",
+          "kind": "translation",
+          "note": "編集上の日本語訳。出典の公式訳ではない。"
+        },
+        {
+          "label": "Counterattack",
+          "kind": "synonym",
+          "note": "Counter-attack の綴り違い。",
+          "language": "en"
+        }
+      ],
+      "side": "attack",
+      "level": "phase",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "summary": {
+        "ja": "獲得したボールから攻める際に、進路の共有、支援、再度失った場合の後方カバーを組み合わせる。",
+        "en": "Counter-attacking combines communication, support and coverage against another turnover."
+      },
+      "intent": [
+        "獲得したボールから攻める際に、進路の共有、支援、再度失った場合の後方カバーを組み合わせる。"
+      ],
+      "tags": [
+        "attack",
+        "phase",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "獲得後の空間と支援の有無"
+        ],
+        "limits": [
+          "ボール獲得時の自動的な即攻命令ではない。",
+          "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "carrier",
+            "label": "ボール保持者",
+            "task": "支援と攻める場所を確認する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "support",
+            "label": "支援者",
+            "task": "選択肢と保護を提供する",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "support",
+            "relation": "near",
+            "object": "carrier",
+            "note": "受球や支援に移れる相対位置を選ぶ。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "carrier",
+            "action": "scan",
+            "trigger": "ボールを獲得",
+            "description": "支援と攻撃方向を確認する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "support",
+            "action": "support",
+            "trigger": "攻撃へ移る",
+            "description": "保持者の選択肢を支える。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "decision-1",
+            "cue": "獲得後の空間と支援の有無",
+            "options": [
+              {
+                "action": "攻撃へ展開",
+                "when": "進路と支援を共有できる"
+              },
+              {
+                "action": "保持を優先",
+                "when": "支援や後方カバーが不十分"
+              }
+            ],
+            "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "enables",
+          "target": "rtk:close-support",
+          "note": "カウンターにも支援が必要。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "獲得したボールから攻める際に、進路の共有、支援、再度失った場合の後方カバーを組み合わせる。",
+          "evidence": [
+            {
+              "source": "wr-counter",
+              "locator": "The counter-attacking team should",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+          "evidence": [
+            {
+              "source": "wr-counter",
+              "locator": "The counter-attacking team should",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "ボール獲得時の自動的な即攻命令ではない。",
+        "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+      }
+    },
+    {
+      "id": "rtk:connected-backline-defence",
+      "version": "0.1.0",
+      "name": {
+        "ja": "バックライン守備の連結",
+        "en": "Connected back-line defence"
+      },
+      "aliases": [
+        {
+          "label": "バックライン守備の連結",
+          "language": "ja",
+          "kind": "translation",
+          "note": "編集上の日本語訳。出典の公式訳ではない。"
+        }
+      ],
+      "side": "defence",
+      "level": "principle",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "summary": {
+        "ja": "相手の配置を観察し、守備のつながりを保ちながら前進して時間と空間を制限する。",
+        "en": "Read the attack and preserve defensive integrity while denying time and space."
+      },
+      "intent": [
+        "相手の配置を観察し、守備のつながりを保ちながら前進して時間と空間を制限する。"
+      ],
+      "tags": [
+        "defence",
+        "principle",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "相手の配置が変化したとき"
+        ],
+        "limits": [
+          "特定の drift や rush の方式そのものではない。",
+          "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "defender",
+            "label": "守備者",
+            "task": "相手の配置を観察する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "neighbour",
+            "label": "隣の守備者",
+            "task": "連結と意思疎通を保つ",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "defender",
+            "relation": "connected-to",
+            "object": "neighbour",
+            "note": "相手の配置に応じて連結する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "defender",
+            "action": "scan",
+            "trigger": "攻撃が整う",
+            "description": "相手の配置を見る。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "defender",
+            "action": "align",
+            "trigger": "配置の変化を認識",
+            "description": "隣と位置・担当を共有する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "decision-1",
+            "cue": "相手の配置が変化したとき",
+            "options": [
+              {
+                "action": "前進",
+                "when": "連結を保って圧力をかけられる"
+              },
+              {
+                "action": "位置を調整",
+                "when": "担当の隙間が生じている"
+              }
+            ],
+            "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "enables",
+          "target": "rtk:drift-defence",
+          "note": "連結はドリフトを支える原則の一つ。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "相手の配置を観察し、守備のつながりを保ちながら前進して時間と空間を制限する。",
+          "evidence": [
+            {
+              "source": "wr-back-defence",
+              "locator": "Back line players should",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+          "evidence": [
+            {
+              "source": "wr-back-defence",
+              "locator": "Back line players should",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "特定の drift や rush の方式そのものではない。",
+        "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+      }
+    },
+    {
+      "id": "rtk:switch-pass",
+      "version": "0.1.0",
+      "name": {
+        "ja": "スイッチパス",
+        "en": "Switch pass"
+      },
+      "aliases": [
+        {
+          "label": "スイッチパス",
+          "language": "ja",
+          "kind": "translation",
+          "note": "編集上の日本語訳。出典の公式訳ではない。"
+        },
+        {
+          "label": "Scissors pass",
+          "kind": "synonym",
+          "note": "出典が Switch と Scissors を併記。",
+          "language": "en"
+        },
+        {
+          "label": "シザース",
+          "kind": "translation",
+          "note": "Scissors の編集上の日本語表記。",
+          "language": "ja"
+        }
+      ],
+      "side": "attack",
+      "level": "move",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "summary": {
+        "ja": "走路と受け渡しを合わせ、ボールを移して攻撃方向を変える。",
+        "en": "Coordinate angled running and a pass to change the direction of attack."
+      },
+      "intent": [
+        "走路と受け渡しを合わせ、ボールを移して攻撃方向を変える。"
+      ],
+      "tags": [
+        "attack",
+        "move",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "受け手の走路とタイミング"
+        ],
+        "limits": [
+          "固定の角度や間隔は資料から一般化しない。",
+          "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "carrier",
+            "label": "ボール保持者",
+            "task": "走る角度と受け渡しを調整する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "receiver",
+            "label": "受け手",
+            "task": "合図と角度を合わせる",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "receiver",
+            "relation": "near",
+            "object": "carrier",
+            "note": "受け渡しに対応できる関係を保つ。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "carrier",
+            "action": "carry",
+            "trigger": "走路変更を共有",
+            "description": "ボールを守りながら角度を変える。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "carrier",
+            "action": "pass",
+            "trigger": "受け手とタイミングが合う",
+            "description": "受け手へボールを移し支援へ回る。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "decision-1",
+            "cue": "受け手の走路とタイミング",
+            "options": [
+              {
+                "action": "受け渡す",
+                "when": "受け手と合図が合う"
+              },
+              {
+                "action": "保持して再判断",
+                "when": "角度やタイミングが合わない"
+              }
+            ],
+            "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "notSameAs",
+          "target": "rtk:screen-pass-contact",
+          "note": "接触後のパス技術とは区別する。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "走路と受け渡しを合わせ、ボールを移して攻撃方向を変える。",
+          "evidence": [
+            {
+              "source": "nz-switch",
+              "locator": "OBJECTIVE / KEY FACTORS / COMMON ERRORS",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+          "evidence": [
+            {
+              "source": "nz-switch",
+              "locator": "OBJECTIVE / KEY FACTORS / COMMON ERRORS",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "固定の角度や間隔は資料から一般化しない。",
+        "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+      }
+    },
+    {
+      "id": "rtk:cut-out-pass",
+      "version": "0.1.0",
+      "name": {
+        "ja": "カットアウトパス",
+        "en": "Cut-out pass"
+      },
+      "aliases": [
+        {
+          "label": "カットアウトパス",
+          "language": "ja",
+          "kind": "translation",
+          "note": "編集上の日本語訳。出典の公式訳ではない。"
+        },
+        {
+          "label": "Miss pass",
+          "kind": "contextual",
+          "note": "関連する呼称。今回の本文は Cut-out を用いるため、検索補助として登録。",
+          "language": "en"
+        }
+      ],
+      "side": "attack",
+      "level": "move",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "summary": {
+        "ja": "間の選手を越して別の味方へ渡し、間の選手も受け手に見える動きを保つ。",
+        "en": "Pass beyond an intervening teammate who remains a credible receiving option."
+      },
+      "intent": [
+        "間の選手を越して別の味方へ渡し、間の選手も受け手に見える動きを保つ。"
+      ],
+      "tags": [
+        "attack",
+        "move",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "受け手までのパス経路"
+        ],
+        "limits": [
+          "単なる長いパスと同義ではない。",
+          "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "passer",
+            "label": "パスする選手",
+            "task": "狙う受け手へ渡す",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "decoy",
+            "label": "間の選手",
+            "task": "受球可能な動きを保つ",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "receiver",
+            "label": "受け手",
+            "task": "パスに対応する",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "receiver",
+            "relation": "outside-of",
+            "object": "decoy",
+            "note": "横の並びを示すだけで固定距離は指定しない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "passer",
+            "action": "scan",
+            "trigger": "パスを検討",
+            "description": "受け手と守備を確認する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "passer",
+            "action": "pass",
+            "trigger": "パス経路を確保",
+            "description": "間の選手を越して味方へ渡す。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "decision-1",
+            "cue": "受け手までのパス経路",
+            "options": [
+              {
+                "action": "外へ渡す",
+                "when": "受け手へ届く経路がある"
+              },
+              {
+                "action": "別の選択肢を選ぶ",
+                "when": "経路が閉じている"
+              }
+            ],
+            "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "similarTo",
+          "target": "rtk:dummy-pass",
+          "note": "相手の予測へ働きかけるが、こちらは実際にボールを渡す。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "間の選手を越して別の味方へ渡し、間の選手も受け手に見える動きを保つ。",
+          "evidence": [
+            {
+              "source": "nz-cutout",
+              "locator": "OBJECTIVE / KEY FACTORS",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+          "evidence": [
+            {
+              "source": "nz-cutout",
+              "locator": "OBJECTIVE / KEY FACTORS",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "単なる長いパスと同義ではない。",
+        "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+      }
+    },
+    {
+      "id": "rtk:dummy-pass",
+      "version": "0.1.0",
+      "name": {
+        "ja": "ダミーパス",
+        "en": "Dummy pass"
+      },
+      "aliases": [
+        {
+          "label": "ダミーパス",
+          "language": "ja",
+          "kind": "translation",
+          "note": "編集上の日本語訳。出典の公式訳ではない。"
+        }
+      ],
+      "side": "attack",
+      "level": "skill",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "summary": {
+        "ja": "パスを出すように見せながらボールを保持し、相手の反応を利用する。",
+        "en": "Suggest a pass without releasing the ball to influence a defender."
+      },
+      "intent": [
+        "パスを出すように見せながらボールを保持し、相手の反応を利用する。"
+      ],
+      "tags": [
+        "attack",
+        "skill",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "守備がパスの動作にどう反応するか"
+        ],
+        "limits": [
+          "ボールを持たない選手の decoy run とは別概念。",
+          "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "carrier",
+            "label": "ボール保持者",
+            "task": "実際には保持したままパスを示す",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "option",
+            "label": "パス先候補",
+            "task": "信じられる選択肢となる",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "option",
+            "relation": "near",
+            "object": "carrier",
+            "note": "実際に渡せそうな関係を保つ。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "carrier",
+            "action": "carry",
+            "trigger": "パスを示せる状況",
+            "description": "受け手を意識した動作を見せ、ボールを保持する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "decision-1",
+            "cue": "守備がパスの動作にどう反応するか",
+            "options": [
+              {
+                "action": "保持して進む",
+                "when": "保持に有利な反応が出る"
+              },
+              {
+                "action": "再判断する",
+                "when": "相手が動作に反応しない"
+              }
+            ],
+            "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "notSameAs",
+          "target": "rtk:cut-out-pass",
+          "note": "ダミーではボールを離さない。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "パスを出すように見せながらボールを保持し、相手の反応を利用する。",
+          "evidence": [
+            {
+              "source": "nz-dummy",
+              "locator": "OBJECTIVE / KEY FACTORS / COMMON ERRORS",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+          "evidence": [
+            {
+              "source": "nz-dummy",
+              "locator": "OBJECTIVE / KEY FACTORS / COMMON ERRORS",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "ボールを持たない選手の decoy run とは別概念。",
+        "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+      }
+    },
+    {
+      "id": "rtk:close-support",
+      "version": "0.1.0",
+      "name": {
+        "ja": "近接サポート",
+        "en": "Close support"
+      },
+      "aliases": [
+        {
+          "label": "近接サポート",
+          "language": "ja",
+          "kind": "translation",
+          "note": "編集上の日本語訳。出典の公式訳ではない。"
+        }
+      ],
+      "side": "attack",
+      "level": "shape",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "summary": {
+        "ja": "保持者の後方から反応可能な距離を取り、受球か接点の支援かを判断する。",
+        "en": "Support from a reactive position, ready for a pass or contact support."
+      },
+      "intent": [
+        "保持者の後方から反応可能な距離を取り、受球か接点の支援かを判断する。"
+      ],
+      "tags": [
+        "attack",
+        "shape",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "保持者がパスできるか、接点支援が必要か"
+        ],
+        "limits": [
+          "必ずラックへ入る指示ではない。",
+          "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "support",
+            "label": "支援者",
+            "task": "次の必要な支援を判断する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "carrier",
+            "label": "ボール保持者",
+            "task": "支援者と意思疎通する",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "support",
+            "relation": "behind",
+            "object": "carrier",
+            "note": "反応して加速できる余地を残す。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "support",
+            "action": "track",
+            "trigger": "保持者が移動",
+            "description": "受球と接点支援に備える。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "decision-1",
+            "cue": "保持者がパスできるか、接点支援が必要か",
+            "options": [
+              {
+                "action": "受球に入る",
+                "when": "パスが可能"
+              },
+              {
+                "action": "接点を支える",
+                "when": "ボールを守る支援が必要"
+              }
+            ],
+            "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "enables",
+          "target": "rtk:offload-continuity",
+          "note": "オフロードの受け手となり得る。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "保持者の後方から反応可能な距離を取り、受球か接点の支援かを判断する。",
+          "evidence": [
+            {
+              "source": "wr-support",
+              "locator": "The supporting player should",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+          "evidence": [
+            {
+              "source": "wr-support",
+              "locator": "The supporting player should",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "必ずラックへ入る指示ではない。",
+        "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+      }
+    },
+    {
+      "id": "rtk:offload-continuity",
+      "version": "0.1.0",
+      "name": {
+        "ja": "オフロードによる継続",
+        "en": "Offload continuity"
+      },
+      "aliases": [
+        {
+          "label": "オフロードによる継続",
+          "language": "ja",
+          "kind": "translation",
+          "note": "編集上の日本語訳。出典の公式訳ではない。"
+        },
+        {
+          "label": "Passing out of the tackle",
+          "kind": "synonym",
+          "note": "出典で扱う範囲に限定した対応名称。",
+          "language": "en"
+        }
+      ],
+      "side": "attack",
+      "level": "move",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "summary": {
+        "ja": "タックル局面で支援者を確認してボールを渡し、支援がなければ提示へ切り替える。",
+        "en": "Find support during a tackle and pass when available; otherwise present the ball."
+      },
+      "intent": [
+        "タックル局面で支援者を確認してボールを渡し、支援がなければ提示へ切り替える。"
+      ],
+      "tags": [
+        "attack",
+        "move",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "支援があり安全・適法に渡せるか"
+        ],
+        "limits": [
+          "片手投げと同義ではない。接触練習の安全指導を代替しない。",
+          "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "carrier",
+            "label": "ボール保持者",
+            "task": "支援を確認して渡すか提示する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "support",
+            "label": "支援者",
+            "task": "受球に備える",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "support",
+            "relation": "near",
+            "object": "carrier",
+            "note": "適法なパスを受けられる位置関係を選ぶ。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "carrier",
+            "action": "scan",
+            "trigger": "タックル局面",
+            "description": "支援者を確認する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "carrier",
+            "action": "pass",
+            "trigger": "支援への受け渡しが可能",
+            "description": "支援者へボールを移す。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "decision-1",
+            "cue": "支援があり安全・適法に渡せるか",
+            "options": [
+              {
+                "action": "パス",
+                "when": "受け手を確認できる"
+              },
+              {
+                "action": "ボールを提示",
+                "when": "渡せる支援がない"
+              }
+            ],
+            "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "similarTo",
+          "target": "rtk:screen-pass-contact",
+          "note": "接触中のボール継続という共通点はあるが技術は同一ではない。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "タックル局面で支援者を確認してボールを渡し、支援がなければ提示へ切り替える。",
+          "evidence": [
+            {
+              "source": "wr-offload",
+              "locator": "The ball carrier should",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+          "evidence": [
+            {
+              "source": "wr-offload",
+              "locator": "The ball carrier should",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "片手投げと同義ではない。接触練習の安全指導を代替しない。",
+        "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+      }
+    },
+    {
+      "id": "rtk:screen-pass-contact",
+      "version": "0.1.0",
+      "name": {
+        "ja": "接触後のスクリーンパス",
+        "en": "Screen pass in contact"
+      },
+      "aliases": [
+        {
+          "label": "接触後のスクリーンパス",
+          "language": "ja",
+          "kind": "translation",
+          "note": "編集上の日本語訳。出典の公式訳ではない。"
+        },
+        {
+          "label": "Screen pass",
+          "kind": "contextual",
+          "note": "World Rugby の本資料では接触後の保護と短いパスを指す。他の用法に注意。",
+          "language": "en"
+        },
+        {
+          "label": "スクリーン",
+          "kind": "contextual",
+          "note": "検索用の曖昧な略称。デコイを背後に通すプレーとは区別する。",
+          "language": "ja"
+        }
+      ],
+      "side": "attack",
+      "level": "skill",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "summary": {
+        "ja": "立った接触状態で相手からボールを守り、近くの味方へ渡す技術。",
+        "en": "Protect the ball while standing in contact and pass to a nearby teammate."
+      },
+      "intent": [
+        "立った接触状態で相手からボールを守り、近くの味方へ渡す技術。"
+      ],
+      "tags": [
+        "attack",
+        "skill",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "立位を維持し、受け手を確認できるか"
+        ],
+        "limits": [
+          "Screen は多義語。back-door / pull-back / decoy screen の完全同義語として扱わない。",
+          "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "carrier",
+            "label": "ボール保持者",
+            "task": "接触中にボールを保護する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "receiver",
+            "label": "受け手",
+            "task": "近いパスへ対応する",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "receiver",
+            "relation": "near",
+            "object": "carrier",
+            "note": "短い受け渡しの関係。固定距離ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "carrier",
+            "action": "carry",
+            "trigger": "立った接触状態",
+            "description": "相手からボールを保護する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "carrier",
+            "action": "pass",
+            "trigger": "近くの味方へ渡せる",
+            "description": "短い受け渡しを行う。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "decision-1",
+            "cue": "立位を維持し、受け手を確認できるか",
+            "options": [
+              {
+                "action": "近くへ渡す",
+                "when": "保護したボールを適法に渡せる"
+              },
+              {
+                "action": "保持と状況確認",
+                "when": "受け渡し条件が整わない"
+              }
+            ],
+            "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "notSameAs",
+          "target": "rtk:switch-pass",
+          "note": "相手との接触を伴う技術と走路変更のムーブを分離する。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "立った接触状態で相手からボールを守り、近くの味方へ渡す技術。",
+          "evidence": [
+            {
+              "source": "wr-screen",
+              "locator": "The ball carrier should",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+          "evidence": [
+            {
+              "source": "wr-screen",
+              "locator": "The ball carrier should",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "Screen は多義語。back-door / pull-back / decoy screen の完全同義語として扱わない。",
+        "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+      }
+    },
+    {
+      "id": "rtk:maul-continuity",
+      "version": "0.1.0",
+      "name": {
+        "ja": "モールでの継続",
+        "en": "Maul continuity"
+      },
+      "aliases": [
+        {
+          "label": "モールでの継続",
+          "language": "ja",
+          "kind": "translation",
+          "note": "編集上の日本語訳。出典の公式訳ではない。"
+        }
+      ],
+      "side": "attack",
+      "level": "shape",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "summary": {
+        "ja": "適法な結合でボールを守り、後方の保持者が前進継続・離脱・パスを選ぶ。",
+        "en": "Secure possession in a legally bound maul and choose how to continue."
+      },
+      "intent": [
+        "適法な結合でボールを守り、後方の保持者が前進継続・離脱・パスを選ぶ。"
+      ],
+      "tags": [
+        "attack",
+        "shape",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "後方でボールが利用できる状態"
+        ],
+        "limits": [
+          "ラインアウトモールは開始局面の一変種で、モール全般と同義ではない。",
+          "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "carrier",
+            "label": "ボール保持者",
+            "task": "ボールを利用可能にする",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "support",
+            "label": "支援者",
+            "task": "適法に結合して支える",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "support",
+            "relation": "connected-to",
+            "object": "carrier",
+            "note": "結合の適法性と安全性を個別に確認する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "support",
+            "action": "support",
+            "trigger": "モールに支援が到着",
+            "description": "ボール保持と前進を支える。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "carrier",
+            "action": "scan",
+            "trigger": "ボールを利用できる",
+            "description": "前進、離脱、パスを比較する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "decision-1",
+            "cue": "後方でボールが利用できる状態",
+            "options": [
+              {
+                "action": "前進を続ける",
+                "when": "適法に前進できる"
+              },
+              {
+                "action": "離脱またはパス",
+                "when": "別の継続が適している"
+              }
+            ],
+            "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "notSameAs",
+          "target": "rtk:offload-continuity",
+          "note": "結合した集団の継続とタックル局面のパスを区別する。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "適法な結合でボールを守り、後方の保持者が前進継続・離脱・パスを選ぶ。",
+          "evidence": [
+            {
+              "source": "wr-maul",
+              "locator": "During the maul / Arriving players / Once the ball is at the rear",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+          "evidence": [
+            {
+              "source": "wr-maul",
+              "locator": "During the maul / Arriving players / Once the ball is at the rear",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "ラインアウトモールは開始局面の一変種で、モール全般と同義ではない。",
+        "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+      }
+    },
+    {
+      "id": "rtk:restart-kick-chase",
+      "version": "0.1.0",
+      "name": {
+        "ja": "リスタートのキックチェイス",
+        "en": "Restart kick chase"
+      },
+      "aliases": [
+        {
+          "label": "リスタートのキックチェイス",
+          "language": "ja",
+          "kind": "translation",
+          "note": "編集上の日本語訳。出典の公式訳ではない。"
+        }
+      ],
+      "side": "both",
+      "level": "shape",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "summary": {
+        "ja": "再開のキックと追走を組み合わせ、短い競り合いか長い陣地獲得と守備形成かを選ぶ。",
+        "en": "Coordinate a restart kick and chase for a contest or territorial pressure."
+      },
+      "intent": [
+        "再開のキックと追走を組み合わせ、短い競り合いか長い陣地獲得と守備形成かを選ぶ。"
+      ],
+      "tags": [
+        "both",
+        "shape",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "再開から競るか、陣地と守備圧力を求めるか"
+        ],
+        "limits": [
+          "オープンプレーのキック全般や全ての再開方式を説明するものではない。",
+          "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "kicker",
+            "label": "キッカー",
+            "task": "目的に合わせたキックを選ぶ",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "chase",
+            "label": "追走者",
+            "task": "キックに合わせて競り合い・守備へ移る",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "chase",
+            "relation": "connected-to",
+            "object": "kicker",
+            "note": "追走開始の適法性と狙いを共有する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "kicker",
+            "action": "kick",
+            "trigger": "再開時",
+            "description": "選んだ狙いへキックする。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "chase",
+            "action": "track",
+            "trigger": "適法に追走できる",
+            "description": "着地点と相手に応じて移動する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "decision-1",
+            "cue": "再開から競るか、陣地と守備圧力を求めるか",
+            "options": [
+              {
+                "action": "短いキックと競り合い",
+                "when": "滞空時間と追走を合わせられる"
+              },
+              {
+                "action": "長いキックと守備形成",
+                "when": "正確な到達位置と追走を優先する"
+              }
+            ],
+            "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "enables",
+          "target": "rtk:connected-backline-defence",
+          "note": "追走後の守備形成に関連する。"
+        }
+      ],
+      "variations": [
+        {
+          "name": "短い再開",
+          "difference": "競り合いに間に合う滞空時間を考える。",
+          "status": "source-described"
+        },
+        {
+          "name": "長い再開",
+          "difference": "到達位置と追走後の守備を考える。",
+          "status": "source-described"
+        }
+      ],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "再開のキックと追走を組み合わせ、短い競り合いか長い陣地獲得と守備形成かを選ぶ。",
+          "evidence": [
+            {
+              "source": "wr-restart",
+              "locator": "The kicking team should",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+          "evidence": [
+            {
+              "source": "wr-restart",
+              "locator": "The kicking team should",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "オープンプレーのキック全般や全ての再開方式を説明するものではない。",
+        "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+      }
+    },
+    {
+      "id": "rtk:breakdown-contest-or-reload",
+      "version": "0.1.0",
+      "name": {
+        "ja": "ブレイクダウンの争奪／再整列判断",
+        "en": "Breakdown contest or reload"
+      },
+      "aliases": [
+        {
+          "label": "ブレイクダウンの争奪／再整列判断",
+          "language": "ja",
+          "kind": "translation",
+          "note": "編集上の日本語訳。出典の公式訳ではない。"
+        }
+      ],
+      "side": "defence",
+      "level": "principle",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "summary": {
+        "ja": "タックル後の支援者が争奪の機会を見て、機会がなければ守備へ戻る。",
+        "en": "After a tackle, supporting defenders assess a contest or return to the defensive line."
+      },
+      "intent": [
+        "タックル後の支援者が争奪の機会を見て、機会がなければ守備へ戻る。"
+      ],
+      "tags": [
+        "defence",
+        "principle",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "争奪の機会と適法性"
+        ],
+        "limits": [
+          "Jackal と Counter-ruck は別行為。ラック成立前後の条件を省略しない。",
+          "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "support",
+            "label": "守備の支援者",
+            "task": "争奪の可否と戻る必要を判断する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "tackler",
+            "label": "タックラー",
+            "task": "タックル後の状況をつくる",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "support",
+            "relation": "near",
+            "object": "tackler",
+            "note": "内側・外側の役割は守備方式によって変わる。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "support",
+            "action": "scan",
+            "trigger": "タックル後",
+            "description": "ボールと支援の状態を確認する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "support",
+            "action": "recover",
+            "trigger": "争奪機会がない",
+            "description": "次の守備へ戻る。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "decision-1",
+            "cue": "争奪の機会と適法性",
+            "options": [
+              {
+                "action": "適法な争奪を選ぶ",
+                "when": "立位・進入・ラック成立状態などを満たす"
+              },
+              {
+                "action": "再整列",
+                "when": "機会や適法な参加条件がない"
+              }
+            ],
+            "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "enables",
+          "target": "rtk:connected-backline-defence",
+          "note": "争奪から戻った選手は守備の連結へ復帰する。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "タックル後の支援者が争奪の機会を見て、機会がなければ守備へ戻る。",
+          "evidence": [
+            {
+              "source": "wr-breakdown",
+              "locator": "Inside Support Player / Outside Support Player",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+          "evidence": [
+            {
+              "source": "wr-breakdown",
+              "locator": "Inside Support Player / Outside Support Player",
+              "support": "interpretation"
+            },
+            {
+              "source": "wr-law15",
+              "locator": "Joining a ruck / During a ruck",
+              "support": "interpretation"
+            }
+          ]
+        },
+        {
+          "id": "law-context",
+          "text": "ラックへの参加・手でのボール操作には条件がある。成立後の手の使用には成立前から保持し立ち続ける場合の例外が規定される。適用ルールと試験的変更は別途確認する。",
+          "evidence": [
+            {
+              "source": "wr-law15",
+              "locator": "15.5–15.11; GLOBAL LAW TRIAL section",
+              "support": "direct"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "Jackal と Counter-ruck は別行為。ラック成立前後の条件を省略しない。",
+        "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。",
+        "Law 15 の参照ページは試験的変更を含む。特定大会での適用を保証しない。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+      }
+    }
+  ]
+}

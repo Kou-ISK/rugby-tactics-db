@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ラグビー戦術を、人と AI の共通言語へ。攻撃・守備の用語、役割、動き、判断条件、出典を検索できるオープンな知識データベース。">
+  <meta name="theme-color" content="#102f30">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'">
+  <title>Rugby Tactics DB | ラグビー戦術の共通知識</title>
+  <link rel="icon" type="image/svg+xml" href="./mark.svg">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#main">本文へスキップ</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Rugby Tactics DB ホーム"><span class="brand-mark" aria-hidden="true">↗</span><span>RUGBY<span class="brand-sub">TACTICS DB</span></span></a>
+    <nav aria-label="メインナビゲーション"><a href="#about">この DB について</a><a href="./data/dataset.json">データ <span aria-hidden="true">↗</span></a><a href="https://github.com/Kou-ISK/rugby-tactics-db">GitHub <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main" tabindex="-1">
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span class="live-dot"></span> OPEN RUGBY KNOWLEDGE · v0.1</p><h1 id="hero-title">戦術を、<br><span>共通言語</span>に。</h1><p class="hero-description">選手、コーチ、観る人、つくる人へ。<br>名前だけでなく、役割・動き・判断と、その根拠まで。</p><div class="hero-meta"><span><strong id="concept-count">—</strong> concepts</span><span><strong id="source-count">—</strong> sources</span><span>人にも、AI にも。</span></div></div>
+      <div class="pitch" aria-hidden="true"><div class="pitch-line half"></div><div class="pitch-line twenty-two"></div><div class="pitch-goal"></div><span class="pitch-node n1">C</span><span class="pitch-node n2">R</span><span class="pitch-node n3">S</span><span class="pitch-node n4"></span><span class="pitch-node n5"></span><div class="route r1"></div><div class="route r2"></div><span class="pitch-label label1">ROLE</span><span class="pitch-label label2">DECISION</span><span class="pitch-caption">RELATIONS, NOT FIXED COORDINATES</span></div>
+    </section>
+    <section id="explorer" class="explorer" aria-label="戦術を探す">
+      <div class="section-heading"><div><p class="eyebrow">EXPLORE THE KNOWLEDGE</p><h2>どんな戦術を探していますか？</h2></div><span class="edition">SOURCE-AWARE · 初期公開版</span></div>
+      <form id="search-form" role="search"><label class="search-label" for="query">戦術名・別名・キーワード</label><div class="search-wrap"><span aria-hidden="true">⌕</span><input id="query" type="search" placeholder="ドリフト、switch、サポート…" autocomplete="off" maxlength="200"><button type="submit">検索</button></div></form>
+      <div class="browse-layout"><aside class="filters" aria-label="絞り込み"><div class="filter-title"><h3>絞り込み</h3><button id="reset" class="text-button" type="button">リセット</button></div><label for="side">攻撃・守備</label><select id="side"><option value="">すべて</option><option value="attack">攻撃</option><option value="defence">守備</option><option value="both">攻守</option></select><label for="level">分類</label><select id="level"><option value="">すべての分類</option><option value="system">システム</option><option value="shape">シェイプ</option><option value="move">ムーブ</option><option value="principle">原則</option><option value="skill">スキル</option><option value="phase">局面</option></select><label for="format">競技形式</label><select id="format"><option value="">すべて</option><option value="XV">15 人制</option><option value="sevens">7 人制</option></select><p class="filter-note">似ている ≠ 同じ。<br>別名は文脈とともに確認してください。</p><a class="api-link" href="./manifest.json">機械利用用マニフェスト ↗</a></aside>
+      <div class="results-region"><div class="results-header"><p id="result-count" role="status" aria-live="polite">データを読み込んでいます…</p><span>日本語・英語名で検索</span></div><div id="results" class="cards"></div><div id="empty" class="empty" hidden><span aria-hidden="true">⌕</span><h3>一致する戦術がありません</h3><p>英語名や短いキーワードで試すか、絞り込みを外してください。</p><button id="empty-reset" class="primary-button" type="button">すべての戦術を見る</button></div></div></div>
+      <p class="publication-note">掲載内容は公開資料を確認した独自要約です。専門家による戦術レビューや実行モデルの検証は未完了。自動実行用の命令ではありません。</p>
+    </section>
+    <section id="detail" class="detail" hidden aria-label="戦術の詳細"></section>
+    <section id="about" class="about" aria-labelledby="about-title"><div><p class="eyebrow">ONE LANGUAGE, MANY USES</p><h2 id="about-title">読むための辞典から、<br>理解するための知識へ。</h2><p>戦術の名前だけを並べるのではなく、何を狙い、誰が何を見て、どう動くのかを構造化します。ただし、検索できることと、正しく実行できることは別です。</p></div><div class="principles"><article><span>01</span><h3>根拠をたどれる</h3><p>出典が直接支える記述と、編集上の構造化を分けて表示。確かでない点を隠しません。</p></article><article><span>02</span><h3>道具から独立する</h3><p>一般知識を座標・背番号・描画実装と分離。Phrase2Play や選手モデルとの接続は、別の adapter で担います。</p></article><article><span>03</span><h3>一緒に育てる</h3><p>公開可能な知識のみ。出典付きの修正提案と専門家レビューを歓迎します。</p></article></div></section>
+  </main>
+  <footer><a class="footer-brand" href="./">Rugby Tactics DB</a><p>Code: MIT · Original data: CC BY 4.0<br>外部資料の権利は各権利者に帰属します。</p><a href="https://github.com/Kou-ISK/rugby-tactics-db/blob/main/CONTRIBUTING.md">知識を育てる ↗</a></footer>
+  <noscript><p class="noscript">検索には JavaScript が必要です。<a href="./data/dataset.json">データを直接読む</a>か、<a href="https://github.com/Kou-ISK/rugby-tactics-db">GitHub</a> をご利用ください。</p></noscript>
+</body>
+</html>
