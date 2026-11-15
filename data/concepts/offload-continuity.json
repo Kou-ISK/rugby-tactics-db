@@ -1,0 +1,170 @@
+{
+  "id": "rtk:offload-continuity",
+  "version": "0.1.0",
+  "name": {
+    "ja": "オフロードによる継続",
+    "en": "Offload continuity"
+  },
+  "aliases": [
+    {
+      "label": "オフロードによる継続",
+      "language": "ja",
+      "kind": "translation",
+      "note": "編集上の日本語訳。出典の公式訳ではない。"
+    },
+    {
+      "label": "Passing out of the tackle",
+      "kind": "synonym",
+      "note": "出典で扱う範囲に限定した対応名称。",
+      "language": "en"
+    }
+  ],
+  "side": "attack",
+  "level": "move",
+  "formats": [
+    "XV",
+    "sevens"
+  ],
+  "summary": {
+    "ja": "タックル局面で支援者を確認してボールを渡し、支援がなければ提示へ切り替える。",
+    "en": "Find support during a tackle and pass when available; otherwise present the ball."
+  },
+  "intent": [
+    "タックル局面で支援者を確認してボールを渡し、支援がなければ提示へ切り替える。"
+  ],
+  "tags": [
+    "attack",
+    "move",
+    "出典確認済み",
+    "実行未検証"
+  ],
+  "applicability": {
+    "conditions": [
+      "支援があり安全・適法に渡せるか"
+    ],
+    "limits": [
+      "片手投げと同義ではない。接触練習の安全指導を代替しない。",
+      "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "carrier",
+        "label": "ボール保持者",
+        "task": "支援を確認して渡すか提示する",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "support",
+        "label": "支援者",
+        "task": "受球に備える",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "support",
+        "relation": "near",
+        "object": "carrier",
+        "note": "適法なパスを受けられる位置関係を選ぶ。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "carrier",
+        "action": "scan",
+        "trigger": "タックル局面",
+        "description": "支援者を確認する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "carrier",
+        "action": "pass",
+        "trigger": "支援への受け渡しが可能",
+        "description": "支援者へボールを移す。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "decision-1",
+        "cue": "支援があり安全・適法に渡せるか",
+        "options": [
+          {
+            "action": "パス",
+            "when": "受け手を確認できる"
+          },
+          {
+            "action": "ボールを提示",
+            "when": "渡せる支援がない"
+          }
+        ],
+        "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "similarTo",
+      "target": "rtk:screen-pass-contact",
+      "note": "接触中のボール継続という共通点はあるが技術は同一ではない。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "タックル局面で支援者を確認してボールを渡し、支援がなければ提示へ切り替える。",
+      "evidence": [
+        {
+          "source": "wr-offload",
+          "locator": "The ball carrier should",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+      "evidence": [
+        {
+          "source": "wr-offload",
+          "locator": "The ball carrier should",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "片手投げと同義ではない。接触練習の安全指導を代替しない。",
+    "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+  }
+}

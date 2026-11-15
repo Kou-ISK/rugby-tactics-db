@@ -1,0 +1,176 @@
+{
+  "id": "rtk:switch-pass",
+  "version": "0.1.0",
+  "name": {
+    "ja": "スイッチパス",
+    "en": "Switch pass"
+  },
+  "aliases": [
+    {
+      "label": "スイッチパス",
+      "language": "ja",
+      "kind": "translation",
+      "note": "編集上の日本語訳。出典の公式訳ではない。"
+    },
+    {
+      "label": "Scissors pass",
+      "kind": "synonym",
+      "note": "出典が Switch と Scissors を併記。",
+      "language": "en"
+    },
+    {
+      "label": "シザース",
+      "kind": "translation",
+      "note": "Scissors の編集上の日本語表記。",
+      "language": "ja"
+    }
+  ],
+  "side": "attack",
+  "level": "move",
+  "formats": [
+    "XV",
+    "sevens"
+  ],
+  "summary": {
+    "ja": "走路と受け渡しを合わせ、ボールを移して攻撃方向を変える。",
+    "en": "Coordinate angled running and a pass to change the direction of attack."
+  },
+  "intent": [
+    "走路と受け渡しを合わせ、ボールを移して攻撃方向を変える。"
+  ],
+  "tags": [
+    "attack",
+    "move",
+    "出典確認済み",
+    "実行未検証"
+  ],
+  "applicability": {
+    "conditions": [
+      "受け手の走路とタイミング"
+    ],
+    "limits": [
+      "固定の角度や間隔は資料から一般化しない。",
+      "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "carrier",
+        "label": "ボール保持者",
+        "task": "走る角度と受け渡しを調整する",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "receiver",
+        "label": "受け手",
+        "task": "合図と角度を合わせる",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "receiver",
+        "relation": "near",
+        "object": "carrier",
+        "note": "受け渡しに対応できる関係を保つ。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "carrier",
+        "action": "carry",
+        "trigger": "走路変更を共有",
+        "description": "ボールを守りながら角度を変える。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "carrier",
+        "action": "pass",
+        "trigger": "受け手とタイミングが合う",
+        "description": "受け手へボールを移し支援へ回る。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "decision-1",
+        "cue": "受け手の走路とタイミング",
+        "options": [
+          {
+            "action": "受け渡す",
+            "when": "受け手と合図が合う"
+          },
+          {
+            "action": "保持して再判断",
+            "when": "角度やタイミングが合わない"
+          }
+        ],
+        "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "notSameAs",
+      "target": "rtk:screen-pass-contact",
+      "note": "接触後のパス技術とは区別する。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "走路と受け渡しを合わせ、ボールを移して攻撃方向を変える。",
+      "evidence": [
+        {
+          "source": "nz-switch",
+          "locator": "OBJECTIVE / KEY FACTORS / COMMON ERRORS",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+      "evidence": [
+        {
+          "source": "nz-switch",
+          "locator": "OBJECTIVE / KEY FACTORS / COMMON ERRORS",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "固定の角度や間隔は資料から一般化しない。",
+    "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+  }
+}

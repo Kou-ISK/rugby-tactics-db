@@ -1,0 +1,181 @@
+{
+  "id": "rtk:breakdown-contest-or-reload",
+  "version": "0.1.0",
+  "name": {
+    "ja": "ブレイクダウンの争奪／再整列判断",
+    "en": "Breakdown contest or reload"
+  },
+  "aliases": [
+    {
+      "label": "ブレイクダウンの争奪／再整列判断",
+      "language": "ja",
+      "kind": "translation",
+      "note": "編集上の日本語訳。出典の公式訳ではない。"
+    }
+  ],
+  "side": "defence",
+  "level": "principle",
+  "formats": [
+    "XV",
+    "sevens"
+  ],
+  "summary": {
+    "ja": "タックル後の支援者が争奪の機会を見て、機会がなければ守備へ戻る。",
+    "en": "After a tackle, supporting defenders assess a contest or return to the defensive line."
+  },
+  "intent": [
+    "タックル後の支援者が争奪の機会を見て、機会がなければ守備へ戻る。"
+  ],
+  "tags": [
+    "defence",
+    "principle",
+    "出典確認済み",
+    "実行未検証"
+  ],
+  "applicability": {
+    "conditions": [
+      "争奪の機会と適法性"
+    ],
+    "limits": [
+      "Jackal と Counter-ruck は別行為。ラック成立前後の条件を省略しない。",
+      "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "support",
+        "label": "守備の支援者",
+        "task": "争奪の可否と戻る必要を判断する",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "tackler",
+        "label": "タックラー",
+        "task": "タックル後の状況をつくる",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "support",
+        "relation": "near",
+        "object": "tackler",
+        "note": "内側・外側の役割は守備方式によって変わる。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "support",
+        "action": "scan",
+        "trigger": "タックル後",
+        "description": "ボールと支援の状態を確認する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "support",
+        "action": "recover",
+        "trigger": "争奪機会がない",
+        "description": "次の守備へ戻る。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "decision-1",
+        "cue": "争奪の機会と適法性",
+        "options": [
+          {
+            "action": "適法な争奪を選ぶ",
+            "when": "立位・進入・ラック成立状態などを満たす"
+          },
+          {
+            "action": "再整列",
+            "when": "機会や適法な参加条件がない"
+          }
+        ],
+        "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "enables",
+      "target": "rtk:connected-backline-defence",
+      "note": "争奪から戻った選手は守備の連結へ復帰する。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "タックル後の支援者が争奪の機会を見て、機会がなければ守備へ戻る。",
+      "evidence": [
+        {
+          "source": "wr-breakdown",
+          "locator": "Inside Support Player / Outside Support Player",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+      "evidence": [
+        {
+          "source": "wr-breakdown",
+          "locator": "Inside Support Player / Outside Support Player",
+          "support": "interpretation"
+        },
+        {
+          "source": "wr-law15",
+          "locator": "Joining a ruck / During a ruck",
+          "support": "interpretation"
+        }
+      ]
+    },
+    {
+      "id": "law-context",
+      "text": "ラックへの参加・手でのボール操作には条件がある。成立後の手の使用には成立前から保持し立ち続ける場合の例外が規定される。適用ルールと試験的変更は別途確認する。",
+      "evidence": [
+        {
+          "source": "wr-law15",
+          "locator": "15.5–15.11; GLOBAL LAW TRIAL section",
+          "support": "direct"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "Jackal と Counter-ruck は別行為。ラック成立前後の条件を省略しない。",
+    "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。",
+    "Law 15 の参照ページは試験的変更を含む。特定大会での適用を保証しない。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+  }
+}

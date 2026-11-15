@@ -1,0 +1,158 @@
+{
+  "id": "rtk:sweeper-cover-sevens",
+  "version": "0.1.0",
+  "name": {
+    "ja": "スイーパーカバー（セブンズ）",
+    "en": "Sweeper cover (sevens)"
+  },
+  "aliases": [
+    {
+      "label": "スイーパーカバー（セブンズ）",
+      "language": "ja",
+      "kind": "translation",
+      "note": "編集上の日本語訳。出典の公式訳ではない。"
+    }
+  ],
+  "side": "defence",
+  "level": "shape",
+  "formats": [
+    "sevens"
+  ],
+  "summary": {
+    "ja": "守備の前線後方でキックや突破をカバーする役割を用意する。",
+    "en": "Sevens coverage places a supporting defender behind the front line."
+  },
+  "intent": [
+    "守備の前線後方でキックや突破をカバーする役割を用意する。"
+  ],
+  "tags": [
+    "defence",
+    "shape",
+    "出典確認済み",
+    "実行未検証"
+  ],
+  "applicability": {
+    "conditions": [
+      "キックまたは前線突破の可能性"
+    ],
+    "limits": [
+      "セブンズの説明。フルバックという固定ポジションと同義ではない。",
+      "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "sweeper",
+        "label": "スイーパー",
+        "task": "後方の脅威を追う",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "line",
+        "label": "守備の列",
+        "task": "前線の担当を保つ",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "sweeper",
+        "relation": "behind",
+        "object": "line",
+        "note": "固定距離や背番号は指定しない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "sweeper",
+        "action": "track",
+        "trigger": "ボールが移動",
+        "description": "後方からカバー可能な位置へ調整する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "decision-1",
+        "cue": "キックまたは前線突破の可能性",
+        "options": [
+          {
+            "action": "後方を維持",
+            "when": "カバーが必要"
+          },
+          {
+            "action": "担当を交代",
+            "when": "前線と交代を共有できる"
+          }
+        ],
+        "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [],
+  "variations": [
+    {
+      "name": "交代型",
+      "difference": "翼の移動に合わせて役割を受け渡す。",
+      "status": "source-described"
+    },
+    {
+      "name": "固定型",
+      "difference": "担当者を固定する方式もある。",
+      "status": "source-described"
+    }
+  ],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "守備の前線後方でキックや突破をカバーする役割を用意する。",
+      "evidence": [
+        {
+          "source": "nz-sevens-defence",
+          "locator": "The Sweeper(s)",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+      "evidence": [
+        {
+          "source": "nz-sevens-defence",
+          "locator": "The Sweeper(s)",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "セブンズの説明。フルバックという固定ポジションと同義ではない。",
+    "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+  }
+}

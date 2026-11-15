@@ -36,8 +36,35 @@ npm run check       # データ契約・参照検証 → テスト → 静的ビ
 npm run serve       # http://localhost:4173
 ```
 
-`npm run build` は `dist/` を再生成します。`src/` と `data/` を編集し、
-`dist/` は編集しないでください。サーバーは閲覧用で、データ書き込み機能はありません。
+`npm run build` は `dist/` を再生成します。データは `data/concepts/`・`data/sources/`・
+`data/catalog.json` を編集し、`npm run assemble` で互換用 `data/dataset.json` を生成します。
+`dist/` と `data/dataset.json` を直接編集しないでください。サーバーは閲覧用で、データ書き込み機能はありません。
+
+## OSS として参加する
+
+コードは MIT、独自データは CC BY 4.0 で公開済みです。小さな訂正も歓迎します。
+[貢献手順](CONTRIBUTING.md) · [データ編集と出典](docs/DATA-AUTHORING.md) ·
+[レビューと運営](GOVERNANCE.md) · [Git 履歴](docs/GIT-HISTORY.md) ·
+[セキュリティ](SECURITY.md) · [リリース](docs/RELEASE.md) · [変更履歴](CHANGELOG.md)
+
+```text
+data/
+  catalog.json       # メタデータ・公開順・登録 ID
+  concepts/*.json    # 1 コンセプト 1 ファイル（編集元）
+  sources/*.json     # 1 出典 1 ファイル（編集元）
+  dataset.json       # 自動生成する既存互換の全件 JSON
+schemas/             # 公開データ契約
+src/                 # 静的サイト・検索・検証
+scripts/             # 組立・検証・ビルド・履歴監査
+scripts/lib/         # 組立と版管理の共通処理
+test/                # 契約・検索・組立・版管理・成果物テスト
+docs/decisions/      # 設計変更の理由と互換性判断
+.github/             # CI・既存 Pages 配備・issue/PR テンプレート
+dist/                # 生成物（Git に含めない）
+```
+
+1 件ずつ編集してレビューでき、編集元と公開 JSON の不一致は CI・build で拒否します。
+公開 URL・ID・既存 0.1.0 のデータは維持。技術テストと専門家レビューは別です。
 
 ## GitHub Pages
 

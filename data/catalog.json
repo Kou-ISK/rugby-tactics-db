@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0.0",
+  "version": "0.1.0",
+  "updated": "2026-11-14",
+  "license": "CC-BY-4.0",
+  "sourceIds": [
+    "nz-drift",
+    "nz-sevens-defence",
+    "wr-counter",
+    "wr-back-defence",
+    "nz-switch",
+    "nz-cutout",
+    "nz-dummy",
+    "wr-support",
+    "wr-offload",
+    "wr-screen",
+    "wr-maul",
+    "wr-restart",
+    "wr-breakdown",
+    "wr-law15"
+  ],
+  "conceptIds": [
+    "rtk:drift-defence",
+    "rtk:rush-defence-sevens",
+    "rtk:sweeper-cover-sevens",
+    "rtk:counter-attack",
+    "rtk:connected-backline-defence",
+    "rtk:switch-pass",
+    "rtk:cut-out-pass",
+    "rtk:dummy-pass",
+    "rtk:close-support",
+    "rtk:offload-continuity",
+    "rtk:screen-pass-contact",
+    "rtk:maul-continuity",
+    "rtk:restart-kick-chase",
+    "rtk:breakdown-contest-or-reload"
+  ]
+}

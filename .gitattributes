@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.json text eol=lf
+*.mjs text eol=lf
+*.md text eol=lf
+# Compatibility export is generated from the individual authoring records.
+data/dataset.json linguist-generated=true

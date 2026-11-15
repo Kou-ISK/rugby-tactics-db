@@ -13,10 +13,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
       - run: npm run check
+      - name: Check version changes before deployment
+        env:
+          PREVIOUS_SHA: ${{ github.event.before }}
+        run: |
+          BASE_SHA="$PREVIOUS_SHA"
+          if [ -z "$BASE_SHA" ] || [ "$BASE_SHA" = "0000000000000000000000000000000000000000" ]; then
+            BASE_SHA="$(git rev-parse HEAD^)"
+          fi
+          npm run check:versions -- --base "$BASE_SHA"
+      - run: npm run audit:history
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist
