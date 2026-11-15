@@ -1,6 +1,6 @@
 export const labels = {
   side: { attack: '攻撃', defence: '守備', both: '攻守' },
-  level: { system: 'システム', shape: 'シェイプ', move: 'ムーブ', principle: '原則', skill: 'スキル', phase: '局面' },
+  level: { system: '戦術体系', shape: '配置', move: '連係', principle: '原則', skill: '技術', phase: '局面' },
   relation: { similarTo: '似ている', contrastsWith: '対比', partOf: '構成要素', enables: '支える', notSameAs: '同一ではない' }
 };
 export function normalize(s) { return String(s).normalize('NFKC').toLowerCase().replace(/[‐‑‒–—−]/g, '-').replace(/[\u30a1-\u30f6]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60)).trim(); }

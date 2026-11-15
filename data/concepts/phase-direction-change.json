@@ -1,0 +1,176 @@
+{
+  "id": "rtk:phase-direction-change",
+  "version": "0.1.0",
+  "name": {
+    "ja": "フェーズ後のリターン攻撃",
+    "en": "Changing direction after a phase"
+  },
+  "aliases": [],
+  "side": "attack",
+  "level": "move",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "接点の後に攻撃方向を反転させ、保持者への支援と次の受け手を新しい側へ組み直す。",
+    "en": "Reverse the attack after a phase and reorganise the next receivers and support."
+  },
+  "intent": [
+    "守備の横移動に合わせて、同じ側への継続以外の選択肢を作る。"
+  ],
+  "tags": [
+    "リターン",
+    "方向転換",
+    "reverse",
+    "return",
+    "phase play",
+    "attack",
+    "move"
+  ],
+  "applicability": {
+    "conditions": [
+      "配球者が方向と必要な受け手を共有できる。"
+    ],
+    "limits": [
+      "特定のチームコールを普遍的な用語にしない。反転とスイッチパスは別の粒度。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "caller",
+        "label": "判断・配球者",
+        "task": "次の方向を共有する",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "receiver",
+        "label": "次の受け手",
+        "task": "反転先の攻撃点になる",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "support",
+        "label": "支援者",
+        "task": "新しい攻撃側に追随する",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "support",
+        "relation": "near",
+        "object": "receiver",
+        "note": "次の保持者を孤立させない位置。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "caller",
+        "action": "scan",
+        "trigger": "接点後のボールが使える",
+        "description": "同方向と反対方向の守備を比べる。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "receiver",
+        "action": "align",
+        "trigger": "反転の合図",
+        "description": "新しい攻撃方向へ受球位置を整える。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-3",
+        "actor": "caller",
+        "action": "pass",
+        "trigger": "受け手が整う",
+        "description": "反転側へボールを送る。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "read-defence",
+        "cue": "次の方向の空間と支援の到着",
+        "options": [
+          {
+            "action": "反対側へ返す",
+            "when": "反転先に使える空間と受け手がある"
+          },
+          {
+            "action": "同じ方向を続ける",
+            "when": "継続側の優位が残る"
+          }
+        ],
+        "uncertainty": "状況判断の編集例であり、計測済みの選択基準や成功保証ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "notSameAs",
+      "target": "rtk:switch-pass",
+      "note": "フェーズ間の方向変更と近接する走者の交差を区別。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "接点の後に攻撃方向を反転させ、保持者への支援と次の受け手を新しい側へ組み直す。",
+      "evidence": [
+        {
+          "source": "nz-phase-on-run",
+          "locator": "starter call: continue same way or return after first ruck; tactical decision maker",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・配置・手順・判断は、資料から意味を説明するために組み直した編集モデル。原資料の固定プレーや実行指示ではない。",
+      "evidence": [
+        {
+          "source": "nz-phase-on-run",
+          "locator": "starter call: continue same way or return after first ruck; tactical decision maker",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開ページの検索側で取得された本文を確認。直接の再取得は404となり、現URLの可読性は未確認。分類・動作分解は編集判断で、専門家レビュー・実技検証は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "特定のチームコールを普遍的な用語にしない。反転とスイッチパスは別の粒度。",
+    "適用する競技規則・年齢区分・チームの共有判断は別途確認する。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用の意味構造。身体動作・安全性・終了条件を検証した実行モデルではない。"
+  }
+}

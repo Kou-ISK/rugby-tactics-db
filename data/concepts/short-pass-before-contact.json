@@ -1,0 +1,184 @@
+{
+  "id": "rtk:short-pass-before-contact",
+  "version": "0.1.0",
+  "name": {
+    "ja": "接点前のショートパス",
+    "en": "Short pass before contact"
+  },
+  "aliases": [
+    {
+      "label": "tip-on",
+      "kind": "contextual",
+      "note": "近い支援者へ短くつなぐ文脈。Cross論文はtipping onに言及するが、全short passを同義にしない。",
+      "language": "en"
+    }
+  ],
+  "side": "attack",
+  "level": "move",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "近い受け手が接触前に支援者へ短く渡し、隣の攻撃経路へ球を移す。",
+    "en": "A midfield forward can pass to a nearby support runner instead of carrying or passing behind to a wider back. The support runner changes angle to receive."
+  },
+  "intent": [
+    "接点を一人に固定せず、近い守備のずれへ攻撃点を移す。"
+  ],
+  "tags": [
+    "attack",
+    "move",
+    "出典確認済み",
+    "実行未検証"
+  ],
+  "applicability": {
+    "conditions": [
+      "接触前に短い配球を選べ、内外の支援者が受球できる角度と間隔を保つ。"
+    ],
+    "limits": [
+      "接触中のoffloadとは分ける。ラベルだけでパスの即時性や距離を固定しない。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "receiver",
+        "label": "受け手",
+        "task": "近い守備を見て配球する",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "close-support",
+        "label": "近い支援者",
+        "task": "角度を変えて球を受ける",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "deep-link",
+        "label": "後方の接続役",
+        "task": "外側へ出す別案を用意する",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "close-support",
+        "relation": "near",
+        "object": "receiver",
+        "note": "内外の近い受球位置。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "subject": "deep-link",
+        "relation": "behind",
+        "object": "receiver",
+        "note": "外へ展開する場合の後方接続。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "close-support",
+        "action": "align",
+        "trigger": "受け手へ守備が寄る",
+        "description": "近い受球角度を作る。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "receiver",
+        "action": "pass",
+        "trigger": "短い経路が開く",
+        "description": "支援者へ球を渡す。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "choice",
+        "cue": "近い支援者の経路と外側の余地",
+        "options": [
+          {
+            "action": "近い支援者へ短く渡す",
+            "when": "近い受け手の経路が開く"
+          },
+          {
+            "action": "外が空けば後方linkへつなぐ",
+            "when": "近い経路が閉じ後方linkへ届く"
+          }
+        ],
+        "uncertainty": "守備と支援の状況を整理した分岐例。実行判断の十分条件ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "notSameAs",
+      "target": "rtk:offload-continuity",
+      "note": "接触前の短い配球と、接触中・後のoffloadを区別する。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "近い受け手が接触前に支援者へ短く渡し、隣の攻撃経路へ球を移す。",
+      "evidence": [
+        {
+          "source": "rcw-cottrell-forward-options",
+          "locator": "HOW TO DO IT; TECHNIQUE",
+          "support": "direct"
+        },
+        {
+          "source": "cross-structure-development",
+          "locator": "Forwards in POD Shapes: discussion of tipping on",
+          "support": "interpretation"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・位置・手順・分岐は資料の要点を抽象化した編集モデル。固定の実行手順ではない。",
+      "evidence": [
+        {
+          "source": "rcw-cottrell-forward-options",
+          "locator": "HOW TO DO IT; TECHNIQUE",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開の指導資料本文を確認。名称・分類・日本語は編集上の整理で、専門家による戦術・安全性審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "接触中のoffloadとは分ける。ラベルだけでパスの即時性や距離を固定しない。",
+    "選手・年代・競技条件による違いと、具体的な成功条件は未検証。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用モデルのみ。座標・時間・合法性・安全性・観測条件・終了条件を備えた実行検証は未実施。"
+  }
+}

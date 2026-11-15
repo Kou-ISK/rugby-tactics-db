@@ -1,0 +1,170 @@
+{
+  "id": "rtk:attacking-mismatches",
+  "version": "0.1.0",
+  "name": {
+    "ja": "ミスマッチを見つけて攻める",
+    "en": "Attacking mismatches"
+  },
+  "aliases": [
+    {
+      "label": "ミスマッチ",
+      "language": "ja",
+      "kind": "contextual",
+      "note": "ここでは攻撃で利用する対応差。体格差だけを意味しない。"
+    }
+  ],
+  "side": "attack",
+  "level": "principle",
+  "formats": [
+    "XV",
+    "sevens"
+  ],
+  "summary": {
+    "ja": "守備の隙間や相手同士の対応差を観察し、味方に伝えて支援とともに攻撃先を選ぶ。",
+    "en": "Read gaps and potential mismatches, communicate them and attack with support."
+  },
+  "intent": [
+    "同じ配置を繰り返すだけでなく、その場で生じる優位を使う。"
+  ],
+  "tags": [
+    "mismatch",
+    "空間",
+    "スキャン",
+    "gap",
+    "attack",
+    "principle"
+  ],
+  "applicability": {
+    "conditions": [
+      "相手の位置・向き・対応の変化を観察できる。"
+    ],
+    "limits": [
+      "ポジション名だけで能力差を決めつけない。見えない情報を選手の観測として扱わない。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "reader",
+        "label": "観察する選手",
+        "task": "相手の空間と対応を読む",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "support",
+        "label": "支援する味方",
+        "task": "観察内容を共有して攻撃に加わる",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "support",
+        "relation": "near",
+        "object": "reader",
+        "note": "攻撃の選択を助ける支援位置。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "reader",
+        "action": "scan",
+        "trigger": "守備が見える",
+        "description": "隙間・身体の向き・対応差を観察する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "reader",
+        "action": "carry",
+        "trigger": "使える空間を確認",
+        "description": "支援とともにその空間を脅かす。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "read-defence",
+        "cue": "前方の隙間と守備の反応",
+        "options": [
+          {
+            "action": "確認できた優位を攻める",
+            "when": "空間や対応差があり支援も届く"
+          },
+          {
+            "action": "別の選択を探す",
+            "when": "守備が修正し優位が消える"
+          }
+        ],
+        "uncertainty": "状況判断の編集例であり、計測済みの選択基準や成功保証ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "enables",
+      "target": "rtk:short-side-attack",
+      "note": "狭い側の優位の判断にも使う。"
+    },
+    {
+      "type": "enables",
+      "target": "rtk:counter-attack",
+      "note": "整っていない守備の観察を支える。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "守備の隙間や相手同士の対応差を観察し、味方に伝えて支援とともに攻撃先を選ぶ。",
+      "evidence": [
+        {
+          "source": "wr-attack-space",
+          "locator": "Players should: gaps, potential mismatches, defensive body position and communication",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・配置・手順・判断は、資料から意味を説明するために組み直した編集モデル。原資料の固定プレーや実行指示ではない。",
+      "evidence": [
+        {
+          "source": "wr-attack-space",
+          "locator": "Players should: gaps, potential mismatches, defensive body position and communication",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開資料の該当本文を確認。分類と日本語は編集判断。専門家レビュー・実技検証は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "ポジション名だけで能力差を決めつけない。見えない情報を選手の観測として扱わない。",
+    "適用する競技規則・年齢区分・チームの共有判断は別途確認する。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用の意味構造。身体動作・安全性・終了条件を検証した実行モデルではない。"
+  }
+}

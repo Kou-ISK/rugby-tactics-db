@@ -1,0 +1,158 @@
+{
+  "id": "rtk:unders-line",
+  "version": "0.1.0",
+  "name": {
+    "ja": "アンダーズライン",
+    "en": "Unders line"
+  },
+  "aliases": [],
+  "side": "attack",
+  "level": "skill",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "受け手がパス元へ寄る角度で走り、内側の守備のずれを使う、またはその守備を引きつける。",
+    "en": "The runner changes angle toward the origin of the pass, potentially holding an inside defender or attacking a shoulder."
+  },
+  "intent": [
+    "守備の横移動を止める、または内側のずれを使う。"
+  ],
+  "tags": [
+    "attack",
+    "skill",
+    "出典確認済み",
+    "実行未検証",
+    "running-line",
+    "用語",
+    "戦術要素"
+  ],
+  "applicability": {
+    "conditions": [
+      "受け手が内側へ向かう走路をパス元と共有し、ほかの走者の進路と衝突しない余地がある。"
+    ],
+    "limits": [
+      "角度の用語であり、独立したチーム戦術ではない。固定45度やswitchの同義としない。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "passer",
+        "label": "パス役",
+        "task": "走路と守備の関係を判断する",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "angled-runner",
+        "label": "内向きの走者",
+        "task": "パス元へ寄る角度を示す",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "angled-runner",
+        "relation": "outside-of",
+        "object": "passer",
+        "note": "外側からパス元へ寄る走路を選べる位置。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "angled-runner",
+        "action": "align",
+        "trigger": "受球機会を準備",
+        "description": "パス元へ寄る角度を示す。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "passer",
+        "action": "pass",
+        "trigger": "守備が走者へ反応",
+        "description": "走者へ渡すか別の受け手を使う。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "choice",
+        "cue": "内側の経路が開くか",
+        "options": [
+          {
+            "action": "内向きの走路で受ける",
+            "when": "内側に受球経路がある"
+          },
+          {
+            "action": "閉じていれば他の受け手へ配球する",
+            "when": "内側を守備が閉じている"
+          }
+        ],
+        "uncertainty": "守備と支援の状況を整理した分岐例。実行判断の十分条件ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "contrastsWith",
+      "target": "rtk:overs-line",
+      "note": "パス元に対する走路の方向が異なる。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "受け手がパス元へ寄る角度で走り、内側の守備のずれを使う、またはその守備を引きつける。",
+      "evidence": [
+        {
+          "source": "rcw-cottrell-unders-overs",
+          "locator": "drag defenders off square",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・位置・手順・分岐は資料の要点を抽象化した編集モデル。固定の実行手順ではない。",
+      "evidence": [
+        {
+          "source": "rcw-cottrell-unders-overs",
+          "locator": "drag defenders off square",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開の指導資料本文を確認。名称・分類・日本語は編集上の整理で、専門家による戦術・安全性審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "角度の用語であり、独立したチーム戦術ではない。固定45度やswitchの同義としない。",
+    "選手・年代・競技条件による違いと、具体的な成功条件は未検証。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用モデルのみ。座標・時間・合法性・安全性・観測条件・終了条件を備えた実行検証は未実施。"
+  }
+}

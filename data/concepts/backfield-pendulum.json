@@ -1,0 +1,194 @@
+{
+  "id": "rtk:backfield-pendulum",
+  "version": "0.1.0",
+  "name": {
+    "ja": "バックフィールド・ペンデュラム",
+    "en": "Backfield pendulum"
+  },
+  "aliases": [
+    {
+      "label": "Pendulum",
+      "language": "en",
+      "kind": "contextual",
+      "note": "出典ではbackfieldの役割交替を指す。別文脈の同名動作と自動で同一視しない。"
+    }
+  ],
+  "side": "defence",
+  "level": "system",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "後方の三人がボール位置に応じて役割を交換し、前線参加とキックカバーを分担する。",
+    "en": "Three backfield defenders rotate responsibilities between the front line and kick coverage."
+  },
+  "intent": [
+    "ランへの対応を残しつつ、攻撃側が使いたい後方空間を覆う。"
+  ],
+  "tags": [
+    "defence",
+    "system",
+    "kicking",
+    "出典確認済み"
+  ],
+  "applicability": {
+    "conditions": [
+      "前線と後方の担当を三人で共有できる。"
+    ],
+    "limits": [
+      "常に同じ二人を後方へ置く固定配置ではない。守備方式と地域、相手の脅威によって調整する。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "near-wing",
+        "label": "ボール側の外側守備者",
+        "task": "必要に応じて前線へ入る",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "central-cover",
+        "label": "中央の後方役",
+        "task": "前線へ入った選手の背後を覆う",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "far-wing",
+        "label": "逆側の外側守備者",
+        "task": "中央後方のカバーを補う",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "central-cover",
+        "relation": "behind",
+        "object": "near-wing",
+        "note": "前線へ出た選手の後ろを担当する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "subject": "far-wing",
+        "relation": "inside-of",
+        "object": "central-cover",
+        "note": "ボールの移動に合わせ中央寄りの後方へ調整する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "near-wing",
+        "action": "align",
+        "trigger": "攻撃が自分の側へ来る",
+        "description": "前線への関与を判断する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "central-cover",
+        "action": "track",
+        "trigger": "外側役が前へ出る",
+        "description": "その背後へカバーを移す。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-3",
+        "actor": "far-wing",
+        "action": "align",
+        "trigger": "後方の担当が移動",
+        "description": "中央後方を補い声で共有する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "choice",
+        "cue": "ランの前進とキックの脅威",
+        "options": [
+          {
+            "action": "前線を補強する",
+            "when": "ボール側のランへ人数が必要"
+          },
+          {
+            "action": "後方カバーを優先する",
+            "when": "背後へのキックが強い選択肢"
+          }
+        ],
+        "uncertainty": "守備の人数配分と深さは相手と地域次第。資料の一例を唯一の配置にしない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "enables",
+      "target": "rtk:counter-attack",
+      "note": "編集上の関係。後方で確保できた場合に反撃への準備となる。"
+    },
+    {
+      "type": "notSameAs",
+      "target": "rtk:sweeper-cover-sevens",
+      "note": "XVの三人の連携例であり、既存のセブンズのスイーパーとは人数・文脈が異なる。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "後方の三人がボール位置に応じて役割を交換し、前線参加とキックカバーを分担する。",
+      "evidence": [
+        {
+          "source": "rcw-backfield-pendulum",
+          "locator": "Three defensive areas / pendulum explanation / three concluding rules",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+      "evidence": [
+        {
+          "source": "rcw-backfield-pendulum",
+          "locator": "Three defensive areas / pendulum explanation / three concluding rules",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "守備の人数配分と深さは相手と地域次第。資料の一例を唯一の配置にしない。",
+    "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
+  }
+}

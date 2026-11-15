@@ -1,6 +1,6 @@
 {
   "id": "rtk:dummy-pass",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
     "ja": "ダミーパス",
     "en": "Dummy pass"
@@ -110,6 +110,11 @@
       "type": "notSameAs",
       "target": "rtk:cut-out-pass",
       "note": "ダミーではボールを離さない。"
+    },
+    {
+      "type": "enables",
+      "target": "rtk:split-midfield-scrum",
+      "note": "編集上の関係。外側への配球を見せる技術が、この出典固有の連係を支える。"
     }
   ],
   "variations": [],

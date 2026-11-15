@@ -1,0 +1,193 @@
+{
+  "id": "rtk:counter-ruck",
+  "version": "0.1.0",
+  "name": {
+    "ja": "カウンターラック",
+    "en": "Counter-ruck"
+  },
+  "aliases": [],
+  "side": "defence",
+  "level": "move",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "守備側が合法的にボールを争い、攻撃側をボールの向こうへ押し戻して保持を変えようとする。",
+    "en": "Defenders contest legally by driving attacking support back over the ball."
+  },
+  "intent": [
+    "相手の支援とボールの位置関係を変え、再獲得の機会を作る。"
+  ],
+  "tags": [
+    "defence",
+    "move",
+    "defence",
+    "出典確認済み"
+  ],
+  "applicability": {
+    "conditions": [
+      "合法な参加条件を満たし、押し返す体勢と支援がある。"
+    ],
+    "limits": [
+      "手で直接ボールを奪うジャッカルと同一ではない。参加経路や体勢は現行法と局面ごとに確認する。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "first-defender",
+        "label": "第一守備者",
+        "task": "合法な位置から相手の支援へ働きかける",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "support-defender",
+        "label": "支援守備者",
+        "task": "押し返しと次の保持を支える",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "line-defender",
+        "label": "残る守備者",
+        "task": "接点の外側の対応を維持する",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "support-defender",
+        "relation": "behind",
+        "object": "first-defender",
+        "note": "第一守備者を支援できる位置を取る。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "subject": "line-defender",
+        "relation": "outside-of",
+        "object": "first-defender",
+        "note": "争点への投入で外側を放置しない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "first-defender",
+        "action": "scan",
+        "trigger": "ラックの争点が見える",
+        "description": "参加条件と支援を確認する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "support-defender",
+        "action": "press",
+        "trigger": "合法に争える",
+        "description": "第一守備者と攻撃側を押し戻す。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-3",
+        "actor": "line-defender",
+        "action": "support",
+        "trigger": "争いの結果が出る",
+        "description": "回収または相手の次の攻撃に備える。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "choice",
+        "cue": "合法に争える体勢と支援があるか",
+        "options": [
+          {
+            "action": "押し返して争う",
+            "when": "参加条件と支援を確保できる"
+          },
+          {
+            "action": "再守備へ戻る",
+            "when": "無理な参加になり外側も不足する"
+          }
+        ],
+        "uncertainty": "人数を投入しても奪取は保証されず、外側の守備を弱める可能性がある。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "partOf",
+      "target": "rtk:breakdown-contest-or-reload",
+      "note": "編集上の関係。ブレイクダウンで争うと決めた際の選択肢の一つ。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "守備側が合法的にボールを争い、攻撃側をボールの向こうへ押し戻して保持を変えようとする。",
+      "evidence": [
+        {
+          "source": "wr-contact-functional-roles",
+          "locator": "Ruck / Defending player(s): responsibilities",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+      "evidence": [
+        {
+          "source": "wr-contact-functional-roles",
+          "locator": "Ruck / Defending player(s): responsibilities",
+          "support": "interpretation"
+        }
+      ]
+    },
+    {
+      "id": "term-counter-ruck",
+      "text": "NZRの教材は守備で保持を奪い返す選択としてcounter-ruckを挙げる。",
+      "evidence": [
+        {
+          "source": "nz-foundation-manual",
+          "locator": "Printed p.94, DEFENCE / Key Factors",
+          "support": "direct"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "人数を投入しても奪取は保証されず、外側の守備を弱める可能性がある。",
+    "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
+  }
+}

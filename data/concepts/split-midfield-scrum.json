@@ -1,0 +1,199 @@
+{
+  "id": "rtk:split-midfield-scrum",
+  "version": "0.1.0",
+  "name": {
+    "ja": "スクラム後のスプリット攻撃（Snook例）",
+    "en": "Split midfield strike from scrum (Snook example)"
+  },
+  "aliases": [
+    {
+      "label": "Split",
+      "kind": "contextual",
+      "note": "この記事の例示play名。一般標準名でも全split formationの同義語でもない。",
+      "language": "en"
+    }
+  ],
+  "side": "attack",
+  "level": "move",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "スクラム後に外へのパスを見せ、異なる走路の近い受け手へ短く渡して守備間を狙う例示プレー。",
+    "en": "A first receiver threatens forward, shows a wider pass and supplies a closer runner attacking a partial gap. The article also offers a pass behind that runner or a wider delivery."
+  },
+  "intent": [
+    "外への配球を見せつつ、守備間へ短い受け手を入れる。"
+  ],
+  "tags": [
+    "attack",
+    "move",
+    "出典確認済み",
+    "実行未検証",
+    "source-specific",
+    "指導者の例示"
+  ],
+  "applicability": {
+    "conditions": [
+      "スクラムから利用可能な球が出て、出典例の受け手と支援者が異なる走路を共有できる。"
+    ],
+    "limits": [
+      "記事自体がplay名は各自で決めるとしている。チーム共通語に昇格させない。スクラムcallとjersey番号はDB実行命令にコピーしない。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "first-receiver",
+        "label": "第一受け手",
+        "task": "前進しながら近外の選択を示す",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "close-strike-runner",
+        "label": "近い切り込み役",
+        "task": "守備間を狙う",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "wide-option",
+        "label": "外側の受け手",
+        "task": "外への配球を可能にする",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "rear-option",
+        "label": "後方の受け手",
+        "task": "近い走者の後ろの経路を用意する",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "wide-option",
+        "relation": "outside-of",
+        "object": "close-strike-runner",
+        "note": "近い走者と別の幅を示す。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "subject": "rear-option",
+        "relation": "behind",
+        "object": "close-strike-runner",
+        "note": "短い経路が閉じた場合の後方選択。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "first-receiver",
+        "action": "carry",
+        "trigger": "スクラムから配球",
+        "description": "守備へ前進して外のパスを見せる。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "close-strike-runner",
+        "action": "align",
+        "trigger": "守備の間が開く",
+        "description": "短い球を受けられる経路へ入る。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-3",
+        "actor": "first-receiver",
+        "action": "pass",
+        "trigger": "近外の反応を確認",
+        "description": "近い走者か後方・外側へ渡す。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "choice",
+        "cue": "近い隙間と外側の守備反応",
+        "options": [
+          {
+            "action": "近いrunnerへ短く渡す",
+            "when": "近い走者が守備間で受けられる"
+          },
+          {
+            "action": "近い経路が閉じれば後方・外側へ渡す",
+            "when": "近い経路が閉じ後方・外側が使える"
+          }
+        ],
+        "uncertainty": "守備と支援の状況を整理した分岐例。実行判断の十分条件ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "notSameAs",
+      "target": "rtk:switch-pass",
+      "note": "記事のSplitを一般のswitchと同一視しない。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "スクラム後に外へのパスを見せ、異なる走路の近い受け手へ短く渡して守備間を狙う例示プレー。",
+      "evidence": [
+        {
+          "source": "nz-snook-midfield-scrum",
+          "locator": "PLAYS: Split; Variations",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・位置・手順・分岐は資料の要点を抽象化した編集モデル。固定の実行手順ではない。",
+      "evidence": [
+        {
+          "source": "nz-snook-midfield-scrum",
+          "locator": "PLAYS: Split; Variations",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開ページの検索側で取得された本文を確認。直接の再取得は404となり、現URLの可読性は未確認。分類・動作分解は編集判断で、専門家レビュー・実技検証は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "記事自体がplay名は各自で決めるとしている。チーム共通語に昇格させない。スクラムcallとjersey番号はDB実行命令にコピーしない。",
+    "選手・年代・競技条件による違いと、具体的な成功条件は未検証。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用モデルのみ。座標・時間・合法性・安全性・観測条件・終了条件を備えた実行検証は未実施。"
+  }
+}

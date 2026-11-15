@@ -1,6 +1,6 @@
 {
   "id": "rtk:offload-continuity",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
     "ja": "オフロードによる継続",
     "en": "Offload continuity"
@@ -20,7 +20,7 @@
     }
   ],
   "side": "attack",
-  "level": "move",
+  "level": "skill",
   "formats": [
     "XV",
     "sevens"
@@ -34,7 +34,7 @@
   ],
   "tags": [
     "attack",
-    "move",
+    "skill",
     "出典確認済み",
     "実行未検証"
   ],

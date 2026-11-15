@@ -1,6 +1,6 @@
 {
   "id": "rtk:restart-kick-chase",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
     "ja": "リスタートのキックチェイス",
     "en": "Restart kick chase"
@@ -14,7 +14,7 @@
     }
   ],
   "side": "both",
-  "level": "shape",
+  "level": "move",
   "formats": [
     "XV",
     "sevens"
@@ -28,7 +28,7 @@
   ],
   "tags": [
     "both",
-    "shape",
+    "move",
     "出典確認済み",
     "実行未検証"
   ],

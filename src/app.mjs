@@ -42,7 +42,7 @@ function conceptView(c) {
   const relations = c.relationships.length ? `<ul class="relation-list">${c.relationships.map(r=>{const target=dataset.concepts.find(x=>x.id===r.target);return `<li><a href="#${encodeURIComponent(r.target)}"><span>${e(target.name.ja)}<br><small>${e(r.note)}</small></span><span class="tag">${e(labels.relation[r.type])} ↗</span></a></li>`;}).join('')}</ul>` : '<p class="small-note">関係はまだ登録されていません。関係がないことを意味しません。</p>';
   const evidence = c.claims.map(claim=>`<article class="source"><p class="claim"><strong>${e(claim.text)}</strong></p>${claim.evidence.map(v=>{const s=sources.get(v.source);return `<p>${v.support==='direct'?'資料の記述を確認':'資料をもとにした編集上の構造化'}</p><a href="${e(s.url)}" target="_blank" rel="noopener noreferrer">${e(s.title)} ↗</a><p>${e(s.publisher)} · ${e(s.accessed)} 確認 · ${e(v.locator)}</p>`;}).join('')}</article>`).join('');
   const jsonPath = `./data/concepts/${c.id.slice(4)}.json`;
-  return `<a class="back-link" href="#explorer">← 戦術一覧に戻る</a><div class="detail-header"><div class="tag-row">${tags(c)}</div><h1 id="detail-title" tabindex="-1">${e(c.name.ja)}</h1><p class="en-name" lang="en">${e(c.name.en)}</p><p class="detail-lead">${e(c.summary.ja)}</p><p class="small-note" lang="en">${e(c.summary.en)}</p><p class="detail-id">${e(c.id)} · concept v${e(c.version)} · dataset v${e(dataset.version)}</p></div><div class="review-banner"><strong>資料確認済み / ${reviewLabel(c)} / 自動実行不可</strong>${e(c.review.note)}<br>日本語名・説明は編集上の訳・要約です。公式訳や統一規格ではありません。</div><div class="detail-grid">${block('何を狙うか',list(c.intent))}${block('別名と用語の注意',aliases)}${block('使う条件',list(c.applicability.conditions))}${block('適用できないこと・注意',list(c.applicability.limits))}${block('役割と位置関係',`<p class="small-note">以下は説明用の構造化です。検証済みの実行手順ではありません。固定の背番号・座標を指定しません。</p>${roleHtml}${list(c.mechanics.positioning.map(p=>`${p.subject} ${p.relation} ${p.object}: ${p.note}`))}`,true)}${block('動きの流れ',steps)}${block('見るものと、判断の分岐',decisions)}${block('関連するコンセプト',relations)}${block('バリエーションと不確実性',`${c.variations.length?list(c.variations.map(v=>`${v.name}: ${v.difference}`)):''}${list(c.uncertainties)}`)}${block('出典と根拠の範囲',evidence,true)}${block('データを使う',`<p>このコンセプトは <strong>execution.ready = false</strong> です。${e(c.execution.reason)}</p><div class="json-tools"><a href="${e(jsonPath)}" download>JSON をダウンロード ↗</a><button type="button" id="copy-json">JSON をコピー</button><p id="copy-status" role="status" aria-live="polite"></p></div><details class="json-details"><summary>構造化 JSON を表示</summary><pre tabindex="0" aria-label="コンセプト JSON"><code>${e(JSON.stringify(c,null,2))}</code></pre></details>`,true)}</div>`;
+  return `<a class="back-link" href="#explorer">← 一覧に戻る</a><div class="detail-header"><div class="tag-row">${tags(c)}</div><h1 id="detail-title" tabindex="-1">${e(c.name.ja)}</h1><p class="en-name" lang="en">${e(c.name.en)}</p><p class="detail-lead">${e(c.summary.ja)}</p><p class="small-note" lang="en">${e(c.summary.en)}</p><p class="detail-id">${e(c.id)} · concept v${e(c.version)} · dataset v${e(dataset.version)}</p></div><div class="review-banner"><strong>資料確認済み / ${reviewLabel(c)} / 自動実行不可</strong>${e(c.review.note)}<br>日本語名・説明は編集上の訳・要約です。公式訳や統一規格ではありません。</div><div class="detail-grid">${block('何を狙うか',list(c.intent))}${block('別名と用語の注意',aliases)}${block('使う条件',list(c.applicability.conditions))}${block('適用できないこと・注意',list(c.applicability.limits))}${block('役割と位置関係',`<p class="small-note">以下は説明用の構造化です。検証済みの実行手順ではありません。固定の背番号・座標を指定しません。</p>${roleHtml}${list(c.mechanics.positioning.map(p=>`${p.subject} ${p.relation} ${p.object}: ${p.note}`))}`,true)}${block('動きの流れ',steps)}${block('見るものと、判断の分岐',decisions)}${block('関連するコンセプト',relations)}${block('バリエーションと不確実性',`${c.variations.length?list(c.variations.map(v=>`${v.name}: ${v.difference}`)):''}${list(c.uncertainties)}`)}${block('出典と根拠の範囲',evidence,true)}${block('データを使う',`<p>このコンセプトは <strong>execution.ready = false</strong> です。${e(c.execution.reason)}</p><div class="json-tools"><a href="${e(jsonPath)}" download>JSON をダウンロード ↗</a><button type="button" id="copy-json">JSON をコピー</button><p id="copy-status" role="status" aria-live="polite"></p></div><details class="json-details"><summary>構造化 JSON を表示</summary><pre tabindex="0" aria-label="コンセプト JSON"><code>${e(JSON.stringify(c,null,2))}</code></pre></details>`,true)}</div>`;
 }
 function route() {
   // A fragment navigation may emit both popstate and hashchange. Render only once
@@ -63,7 +63,7 @@ function route() {
     });
     if (lastDetailId!==id) { $('detail-title').focus({preventScroll:true}); window.scrollTo(0,0); }
   } else if (isDetail) {
-    $('detail').innerHTML='<a class="back-link" href="#explorer">← 戦術一覧に戻る</a><div class="error-panel"><h1 id="detail-title" tabindex="-1">コンセプトが見つかりません</h1><p>リンクの ID を確認するか、一覧から検索してください。削除された ID を別の戦術に自動変換することはありません。</p></div>';
+    $('detail').innerHTML='<a class="back-link" href="#explorer">← 一覧に戻る</a><div class="error-panel"><h1 id="detail-title" tabindex="-1">コンセプトが見つかりません</h1><p>リンクの ID を確認するか、一覧から検索してください。削除された ID を別の戦術に自動変換することはありません。</p></div>';
     document.title='コンセプトが見つかりません | Rugby Tactics DB'; $('detail-title').focus();
   } else {
     document.title='Rugby Tactics DB | ラグビー戦術の共通知識';
@@ -80,6 +80,7 @@ async function init() {
     if(!response.ok) throw new Error(`HTTP ${response.status}`);
     dataset=await response.json();
     if(!Array.isArray(dataset.concepts)||!dataset.concepts.length) throw new Error('Invalid dataset');
+    $('dataset-version').textContent=`dataset v${dataset.version}`;
     $('concept-count').textContent=dataset.concepts.length; $('source-count').textContent=dataset.sources.length;
     filtersFromURL();renderResults();route();
     document.querySelector('.skip').addEventListener('click',event=>{event.preventDefault();$('main').focus();});
@@ -90,6 +91,7 @@ async function init() {
     window.addEventListener('hashchange',route);
     window.addEventListener('popstate',()=>{filtersFromURL();route();});
   } catch(error) {
+    $('dataset-version').textContent='読み込み失敗';
     $('result-count').textContent='データを読み込めませんでした';
     $('results').innerHTML='<div class="error-panel"><h3>読み込みに失敗しました</h3><p>接続を確認して再読み込みしてください。</p><button type="button" id="retry">再読み込み</button> <a href="https://github.com/Kou-ISK/rugby-tactics-db">GitHub で確認する</a></div>';
     $('retry').addEventListener('click',()=>location.reload());

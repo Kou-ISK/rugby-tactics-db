@@ -1,0 +1,182 @@
+{
+  "id": "rtk:man-on-man-defence",
+  "version": "0.1.0",
+  "name": {
+    "ja": "マン・オン・マン守備",
+    "en": "Man-on-man defence"
+  },
+  "aliases": [],
+  "side": "defence",
+  "level": "system",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "セットプレーからの攻撃に対し、守備者が対応する相手を分担して前進を止める基本方式。",
+    "en": "A set-piece defensive pattern allocates attackers to individual defenders."
+  },
+  "intent": [
+    "対応相手を明確にし、受け手への守備を連続させる。"
+  ],
+  "tags": [
+    "defence",
+    "system",
+    "defence",
+    "出典確認済み"
+  ],
+  "applicability": {
+    "conditions": [
+      "攻撃側が追加参加者を入れず、人数の対応を作れる状況。"
+    ],
+    "limits": [
+      "資料の背番号対応を全チームへ固定適用しない。追加参加者で人数対応が崩れる。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "defender",
+        "label": "担当守備者",
+        "task": "対応相手を共有して前進を止める",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "neighbour",
+        "label": "隣の守備者",
+        "task": "隣接する攻撃者へ対応する",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "cover",
+        "label": "カバー役",
+        "task": "突破や追加参加へ備える",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "defender",
+        "relation": "connected-to",
+        "object": "neighbour",
+        "note": "個別担当を持っても隣との連結を保つ。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "subject": "cover",
+        "relation": "behind",
+        "object": "defender",
+        "note": "第一の対応の後方をカバーする。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "defender",
+        "action": "scan",
+        "trigger": "セットプレーから攻撃開始",
+        "description": "対応相手を共有する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "neighbour",
+        "action": "press",
+        "trigger": "ボールが展開",
+        "description": "隣と連結して担当へ前進する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-3",
+        "actor": "cover",
+        "action": "align",
+        "trigger": "追加参加や突破",
+        "description": "後方の対応を調整する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "choice",
+        "cue": "追加参加者によって人数対応が変わったか",
+        "options": [
+          {
+            "action": "担当を維持する",
+            "when": "人数の対応が保たれる"
+          },
+          {
+            "action": "受渡しや再配置を確認する",
+            "when": "追加参加者で余りが生まれる"
+          }
+        ],
+        "uncertainty": "攻撃の入り方によって担当の受渡しが必要になる。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "contrastsWith",
+      "target": "rtk:drift-defence",
+      "note": "編集上の比較。担当相手の対応を軸にする説明と、パスに合わせて責任を移す説明を区別する。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "セットプレーからの攻撃に対し、守備者が対応する相手を分担して前進を止める基本方式。",
+      "evidence": [
+        {
+          "source": "nz-foundation-manual",
+          "locator": "Printed p.96 (PDF page index 95), BASIC DEFENSIVE PATTERNS – SET PIECE / BASIC MAN-ON-MAN DEFENCE",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+      "evidence": [
+        {
+          "source": "nz-foundation-manual",
+          "locator": "Printed p.96 (PDF page index 95), BASIC DEFENSIVE PATTERNS – SET PIECE / BASIC MAN-ON-MAN DEFENCE",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "攻撃の入り方によって担当の受渡しが必要になる。",
+    "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
+  }
+}

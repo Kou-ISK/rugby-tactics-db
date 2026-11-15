@@ -1,6 +1,6 @@
 {
   "id": "rtk:counter-attack",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
     "ja": "カウンターアタック",
     "en": "Counter-attack"
@@ -121,13 +121,7 @@
       }
     ]
   },
-  "relationships": [
-    {
-      "type": "enables",
-      "target": "rtk:close-support",
-      "note": "カウンターにも支援が必要。"
-    }
-  ],
+  "relationships": [],
   "variations": [],
   "claims": [
     {

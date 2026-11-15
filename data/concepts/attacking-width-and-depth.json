@@ -1,0 +1,174 @@
+{
+  "id": "rtk:attacking-width-and-depth",
+  "version": "0.1.0",
+  "name": {
+    "ja": "攻撃の幅と深さ",
+    "en": "Attacking width and depth"
+  },
+  "aliases": [],
+  "side": "attack",
+  "level": "shape",
+  "formats": [
+    "XV",
+    "sevens"
+  ],
+  "summary": {
+    "ja": "横方向の広がりとボールに対する深さを、外を攻めるか近くを攻めるかに合わせて整える。",
+    "en": "Arrange attacking width and depth to suit the intended point of attack."
+  },
+  "intent": [
+    "受け手が判断・配球する時間と、使う横幅の両方を確保する。"
+  ],
+  "tags": [
+    "幅",
+    "深さ",
+    "alignment",
+    "width",
+    "depth",
+    "フラット",
+    "attack",
+    "shape"
+  ],
+  "applicability": {
+    "conditions": [
+      "守備の配置を見て攻撃意図を共有できる。"
+    ],
+    "limits": [
+      "深ければ常によいわけではなく、固定の距離や公式フォーメーションを意味しない。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "distributor",
+        "label": "配球者",
+        "task": "狙う範囲を共有する",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "receiver",
+        "label": "受け手群",
+        "task": "意図に合わせて位置を調節する",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "receiver",
+        "relation": "across-width",
+        "object": "distributor",
+        "note": "使う横幅を分担する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "subject": "receiver",
+        "relation": "behind",
+        "object": "distributor",
+        "note": "配球に必要な深さを調節する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "distributor",
+        "action": "scan",
+        "trigger": "攻撃の準備",
+        "description": "守備の位置を確認する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "receiver",
+        "action": "align",
+        "trigger": "狙う範囲が決まる",
+        "description": "外側か近場かに合わせて幅と深さを作る。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "read-defence",
+        "cue": "攻める場所と配球時間",
+        "options": [
+          {
+            "action": "深さを使って外へ運ぶ",
+            "when": "広い範囲への展開を狙う"
+          },
+          {
+            "action": "比較的フラットに近くを脅かす",
+            "when": "近い位置へ速く働きかける"
+          }
+        ],
+        "uncertainty": "状況判断の編集例であり、計測済みの選択基準や成功保証ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "enables",
+      "target": "rtk:cut-out-pass",
+      "note": "外への配球ができる位置関係を作る。"
+    },
+    {
+      "type": "notSameAs",
+      "target": "rtk:close-support",
+      "note": "攻撃全体の間隔と保持者直近の支援は粒度が違う。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "横方向の広がりとボールに対する深さを、外を攻めるか近くを攻めるかに合わせて整える。",
+      "evidence": [
+        {
+          "source": "wr-back-attack",
+          "locator": "Back line players should: width and alignment relative to attacking intentions",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・配置・手順・判断は、資料から意味を説明するために組み直した編集モデル。原資料の固定プレーや実行指示ではない。",
+      "evidence": [
+        {
+          "source": "wr-back-attack",
+          "locator": "Back line players should: width and alignment relative to attacking intentions",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開資料の該当本文を確認。分類と日本語は編集判断。専門家レビュー・実技検証は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "深ければ常によいわけではなく、固定の距離や公式フォーメーションを意味しない。",
+    "適用する競技規則・年齢区分・チームの共有判断は別途確認する。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用の意味構造。身体動作・安全性・終了条件を検証した実行モデルではない。"
+  }
+}

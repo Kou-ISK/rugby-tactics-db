@@ -1,0 +1,190 @@
+{
+  "id": "rtk:three-player-pod",
+  "version": "0.1.0",
+  "name": {
+    "ja": "三人ポッド",
+    "en": "Three-player forward pod"
+  },
+  "aliases": [
+    {
+      "label": "spear head",
+      "kind": "contextual",
+      "note": "Cross論文の先頭＋内外支援の形。全podの同義語ではない。",
+      "language": "en"
+    },
+    {
+      "label": "arrow",
+      "kind": "contextual",
+      "note": "同論文における形の呼び名。",
+      "language": "en"
+    }
+  ],
+  "side": "attack",
+  "level": "shape",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "先頭の受け手に内外の支援者を添え、短いパスと保持後の継続を用意する三人の攻撃配置。",
+    "en": "The paper describes a lead receiver with support on both sides, intended to offer passing/support options and improve continuity. It warns that rigid roles can reduce young players' decisions and opportunities."
+  },
+  "intent": [
+    "保持者を孤立させず、近いパスと継続支援を同時に用意する。"
+  ],
+  "tags": [
+    "attack",
+    "shape",
+    "出典確認済み",
+    "実行未検証"
+  ],
+  "applicability": {
+    "conditions": [
+      "主な受け手と内外の支援者が、接触前の短いパスまたは保持後の継続へ参加できる。"
+    ],
+    "limits": [
+      "podは人数固定の普遍語ではない。lifter群とも区別。各人の役割固定や幼年層への一律推奨をしない。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "lead-receiver",
+        "label": "先頭の受け手",
+        "task": "保持と短いパスを選ぶ",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "inside-support",
+        "label": "内側の支援",
+        "task": "内側で受球または継続を支える",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "outside-support",
+        "label": "外側の支援",
+        "task": "外側で受球または継続を支える",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "inside-support",
+        "relation": "inside-of",
+        "object": "lead-receiver",
+        "note": "先頭の内側に接続。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "subject": "outside-support",
+        "relation": "outside-of",
+        "object": "lead-receiver",
+        "note": "先頭の外側に接続。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "lead-receiver",
+        "action": "scan",
+        "trigger": "球を受ける",
+        "description": "近い守備と支援者を確認する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "outside-support",
+        "action": "support",
+        "trigger": "保持者が選択する",
+        "description": "受球できる角度か継続支援へ移る。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "choice",
+        "cue": "隣の受け手に機会があるか",
+        "options": [
+          {
+            "action": "短いパスで攻撃点を変える",
+            "when": "隣の受け手に前進経路がある"
+          },
+          {
+            "action": "保持して到着する支援と継続する",
+            "when": "短い経路が閉じても近い支援がある"
+          }
+        ],
+        "uncertainty": "守備と支援の状況を整理した分岐例。実行判断の十分条件ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "partOf",
+      "target": "rtk:one-three-three-one",
+      "note": "中央の三人組として使えるが、pod一般の用途はこれに限らない。"
+    },
+    {
+      "type": "enables",
+      "target": "rtk:short-pass-before-contact",
+      "note": "内外の近い受け手を用意する。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "先頭の受け手に内外の支援者を添え、短いパスと保持後の継続を用意する三人の攻撃配置。",
+      "evidence": [
+        {
+          "source": "cross-structure-development",
+          "locator": "Forwards in POD Shapes",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・位置・手順・分岐は資料の要点を抽象化した編集モデル。固定の実行手順ではない。",
+      "evidence": [
+        {
+          "source": "cross-structure-development",
+          "locator": "Forwards in POD Shapes",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開の指導資料本文を確認。名称・分類・日本語は編集上の整理で、専門家による戦術・安全性審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "podは人数固定の普遍語ではない。lifter群とも区別。各人の役割固定や幼年層への一律推奨をしない。",
+    "選手・年代・競技条件による違いと、具体的な成功条件は未検証。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用モデルのみ。座標・時間・合法性・安全性・観測条件・終了条件を備えた実行検証は未実施。"
+  }
+}

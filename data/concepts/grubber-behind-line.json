@@ -1,0 +1,172 @@
+{
+  "id": "rtk:grubber-behind-line",
+  "version": "0.1.0",
+  "name": {
+    "ja": "グラバーで守備の背後を狙う",
+    "en": "Grubber kick behind the defensive line"
+  },
+  "aliases": [
+    {
+      "label": "Grubber kick",
+      "language": "en",
+      "kind": "contextual",
+      "note": "資料の技術名。ここでは背後を狙う戦術的使用だけを扱う。"
+    }
+  ],
+  "side": "attack",
+  "level": "move",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "低く転がすキックで守備線直後の空間へボールを送り、圧力や再獲得を狙う。",
+    "en": "A low bouncing kick targets space immediately behind the defensive line."
+  },
+  "intent": [
+    "前方へ出た守備者をボールの軌道で越え、背後で次の争点を作る。"
+  ],
+  "tags": [
+    "attack",
+    "move",
+    "defence",
+    "出典確認済み"
+  ],
+  "applicability": {
+    "conditions": [
+      "守備線の背後に利用できる空間と追走者がいる。"
+    ],
+    "limits": [
+      "脚に当てる、蹴りすぎる、予想外に跳ねる危険がある。技術としてのグラバーの全用途を表すわけではない。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "kicker",
+        "label": "キッカー",
+        "task": "地面を使って守備線の背後へ送る",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "chaser",
+        "label": "追走者",
+        "task": "合法な位置から落下・転がり先へ進む",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "chaser",
+        "relation": "behind",
+        "object": "kicker",
+        "note": "キック時のオンサイドを確認できる関係から追う。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "kicker",
+        "action": "scan",
+        "trigger": "守備線に近づく",
+        "description": "守備者間と背後の空間を読む。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "kicker",
+        "action": "kick",
+        "trigger": "低い経路が使える",
+        "description": "守備線の後ろを狙って転がす。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-3",
+        "actor": "chaser",
+        "action": "recover",
+        "trigger": "ボールが守備線を越える",
+        "description": "バウンドに合わせて回収を試みる。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "choice",
+        "cue": "低い経路と追走先が空いているか",
+        "options": [
+          {
+            "action": "グラバーを使う",
+            "when": "低い経路が通り、味方が追える"
+          },
+          {
+            "action": "保持・パスへ変える",
+            "when": "相手の脚や後方カバーが経路を塞ぐ"
+          }
+        ],
+        "uncertainty": "バウンドと後方守備の到着は確定できない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "contrastsWith",
+      "target": "rtk:chip-and-chase",
+      "note": "編集上の比較。低い軌道と守備者の頭上を越す軌道を区別する。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "低く転がすキックで守備線直後の空間へボールを送り、圧力や再獲得を狙う。",
+      "evidence": [
+        {
+          "source": "nz-grubber-kick",
+          "locator": "OBJECTIVE / COMMON ERRORS",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+      "evidence": [
+        {
+          "source": "nz-grubber-kick",
+          "locator": "OBJECTIVE / COMMON ERRORS",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "バウンドと後方守備の到着は確定できない。",
+    "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
+  }
+}

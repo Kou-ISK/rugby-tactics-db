@@ -1,0 +1,189 @@
+{
+  "id": "rtk:contestable-box-kick",
+  "version": "0.1.0",
+  "name": {
+    "ja": "再獲得を狙うボックスキック",
+    "en": "Contestable box kick"
+  },
+  "aliases": [
+    {
+      "label": "Box kick",
+      "language": "en",
+      "kind": "contextual",
+      "note": "出典で確認した名称だが、ここでは再獲得を競う使用を限定して扱う。"
+    }
+  ],
+  "side": "attack",
+  "level": "move",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "ラックなどの後方から、追走者が競れるキックで相手に圧力を掛ける。",
+    "en": "A kick from behind the breakdown or set piece creates a contest for chasers."
+  },
+  "intent": [
+    "次の保持を競いながら地域を進める。"
+  ],
+  "tags": [
+    "attack",
+    "move",
+    "kicking",
+    "出典確認済み"
+  ],
+  "applicability": {
+    "conditions": [
+      "供給点後方のキッカーと追走者がタイミングを共有できる。"
+    ],
+    "limits": [
+      "教材の距離・滞空秒数は練習設定であり、全状況に固定しない。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "kicker",
+        "label": "供給点後方のキッカー",
+        "task": "追走者が到達できる落下点を選ぶ",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "chaser",
+        "label": "チェイサー",
+        "task": "オンサイドから追って競る",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "support",
+        "label": "追走支援",
+        "task": "競り合い後のボールや守備へ備える",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "chaser",
+        "relation": "behind",
+        "object": "kicker",
+        "note": "蹴る瞬間に合法な位置から追う。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "subject": "support",
+        "relation": "behind",
+        "object": "chaser",
+        "note": "第一の競り合いの結果に対応する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "kicker",
+        "action": "scan",
+        "trigger": "供給点でボールを得る",
+        "description": "落下点と追走の開始を共有する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "kicker",
+        "action": "kick",
+        "trigger": "追走が準備できる",
+        "description": "追走者が競れる軌道で送る。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-3",
+        "actor": "chaser",
+        "action": "recover",
+        "trigger": "落下点へ到達",
+        "description": "ボールを争い、取れなければ守備へ移る。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "choice",
+        "cue": "チェイスの準備と受け手の配置",
+        "options": [
+          {
+            "action": "コンテスタブルに蹴る",
+            "when": "追走者が競れる状況"
+          },
+          {
+            "action": "保持または別の出口を選ぶ",
+            "when": "追走が間に合わず相手に容易な保持を渡す状況"
+          }
+        ],
+        "uncertainty": "ボックスキックのすべてが再獲得目的ではなく、地域獲得との重み付けが変わる。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "similarTo",
+      "target": "rtk:up-and-under-contest",
+      "note": "落下点で争う目的を共有する。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "ラックなどの後方から、追走者が競れるキックで相手に圧力を掛ける。",
+      "evidence": [
+        {
+          "source": "rcw-box-kick",
+          "locator": "WHY USE IT / HOW TO DO IT",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+      "evidence": [
+        {
+          "source": "rcw-box-kick",
+          "locator": "WHY USE IT / HOW TO DO IT",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "ボックスキックのすべてが再獲得目的ではなく、地域獲得との重み付けが変わる。",
+    "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
+  }
+}

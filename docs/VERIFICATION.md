@@ -61,3 +61,29 @@ No UI source, data claim, expert-review state, public schema or existing license
 changed. Existing UI assets are byte-identical, so this change does not claim a new
 browser accessibility audit. No P2P/RPM integration or history rewrite was performed.
 See [Git history](GIT-HISTORY.md) for the bounded full-history inspection and limitations.
+
+# Tactical knowledge expansion: dataset 0.2.0 / site 0.3.0
+
+Date: 2026-11-15. The corpus grows to 41 concepts / 39 references: 7 systems,
+4 arrangements, 17 coordinated moves, 5 principles, 7 techniques and 1 game situation.
+These counts are not a claim of 41 distinct complete tactical systems.
+
+- `npm run check`: 38 unit/integration tests; deterministic assembly, schema/graph,
+  search/aliases, versions, history tripwires, exports and corpus regression checks.
+- Dataset/concept version checks against `b02bedd6b85d9b3e4b9464cae4f01976ea9dee82`.
+- Independent Draft 2020-12 validation; all 14 original IDs retained; public schema bytes unchanged.
+- All 27 new records contain original definitions, roles, relative positions, action/decision
+  models, uncertainty and provenance. Direct source support is separate from interpretation.
+- Independent content/technical review found and corrected relationship-direction errors
+  and condition fields that repeated decision cues. Important source definitions were
+  cross-checked; this is not a second exhaustive reading of all 39 references or expert approval.
+- Browser execution in the local shell was blocked by the environment's socket restriction;
+  the cloud browser could not connect to this workspace's localhost. No local visual pass is
+  claimed. Public-site browser verification, hosted CI and exact-commit deployment results
+  are recorded in the associated PR after publication.
+- Source access methods and direct-retrieval limits are recorded in TAXONOMY.md and in
+  affected review notes. Search-provided full page text is distinguished from a fresh direct
+  publisher response. No video-viewing or screenshot/source-media rights are implied.
+
+All execution flags remain false and all reviewer identities remain null. No live P2P/RPM
+adapter, new license, repository permission change or history rewrite is included.

@@ -1,0 +1,192 @@
+{
+  "id": "rtk:two-four-two",
+  "version": "0.1.0",
+  "name": {
+    "ja": "2-4-2アタック",
+    "en": "2-4-2 attacking system"
+  },
+  "aliases": [
+    {
+      "label": "2-4-2",
+      "kind": "contextual",
+      "note": "攻撃FW配置の文脈に限定。",
+      "language": "en"
+    }
+  ],
+  "side": "attack",
+  "level": "system",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "左右外側にFW二人ずつ、中央に四人を置き、BKの接続役を通じて幅と近い支援を両立させる。",
+    "en": "The example distributes two forwards to each edge and four centrally, with backs linking the groups. A central receiver can connect back to a link player rather than always carrying."
+  },
+  "intent": [
+    "広い配置を保ちつつ、ボール周辺の支援と外側への接続を用意する。"
+  ],
+  "tags": [
+    "attack",
+    "system",
+    "出典確認済み",
+    "実行未検証"
+  ],
+  "applicability": {
+    "conditions": [
+      "左右の組と中央の組が接続役を共有し、横幅を保ちながらボール近くへ支援できる。"
+    ],
+    "limits": [
+      "著者のRed/White/Blueは例示のチームコールで一般同義語ではない。セットプレーからの遷移や守備への戻りは別途設計。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "central-group",
+        "label": "中央の組",
+        "task": "中央で保持と配球の選択を示す",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "edge-pair",
+        "label": "外側の二人組",
+        "task": "幅と近い支援を用意する",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "distributor",
+        "label": "配球役",
+        "task": "組かlinkへ配る",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "back-link",
+        "label": "接続役",
+        "task": "組の間で展開をつなぐ",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "edge-pair",
+        "relation": "outside-of",
+        "object": "central-group",
+        "note": "両端に二人ずつ、中央に四人のFWを配分。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "subject": "back-link",
+        "relation": "connected-to",
+        "object": "central-group",
+        "note": "BKが組同士をつなぐ。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "edge-pair",
+        "action": "align",
+        "trigger": "フェーズを準備",
+        "description": "外側の組が幅を保つ。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "distributor",
+        "action": "pass",
+        "trigger": "守備の反応が見える",
+        "description": "組の保持かlinkへの接続を選ぶ。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "choice",
+        "cue": "守備が中央へ寄るか外側を保つか",
+        "options": [
+          {
+            "action": "組の前進と近い支援を使う",
+            "when": "組の前進に支援が間に合う"
+          },
+          {
+            "action": "linkへ戻して外側へ展開する",
+            "when": "守備が中央へ寄り外側へ接続できる"
+          }
+        ],
+        "uncertainty": "守備と支援の状況を整理した分岐例。実行判断の十分条件ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "contrastsWith",
+      "target": "rtk:one-three-three-one",
+      "note": "FW配置の別案。"
+    },
+    {
+      "type": "enables",
+      "target": "rtk:pull-back-pass",
+      "note": "後方のlink配置が、中央の保持者から戻すパスの受け手を用意する。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "左右外側にFW二人ずつ、中央に四人を置き、BKの接続役を通じて幅と近い支援を両立させる。",
+      "evidence": [
+        {
+          "source": "rcw-barlow-242",
+          "locator": "The basic shape; midfield options",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・位置・手順・分岐は資料の要点を抽象化した編集モデル。固定の実行手順ではない。",
+      "evidence": [
+        {
+          "source": "rcw-barlow-242",
+          "locator": "The basic shape; midfield options",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開の指導資料本文を確認。名称・分類・日本語は編集上の整理で、専門家による戦術・安全性審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "著者のRed/White/Blueは例示のチームコールで一般同義語ではない。セットプレーからの遷移や守備への戻りは別途設計。",
+    "選手・年代・競技条件による違いと、具体的な成功条件は未検証。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用モデルのみ。座標・時間・合法性・安全性・観測条件・終了条件を備えた実行検証は未実施。"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "id": "rtk:short-side-attack",
+  "version": "0.1.0",
+  "name": {
+    "ja": "ショートサイドアタック",
+    "en": "Short-side attack"
+  },
+  "aliases": [
+    {
+      "label": "Blindside attack",
+      "language": "en",
+      "kind": "synonym",
+      "note": "著者がshortsideと同じ側への攻撃として説明。"
+    },
+    {
+      "label": "ブラインドサイドアタック",
+      "language": "ja",
+      "kind": "translation",
+      "note": "編集訳。フランカーのポジション名とは区別。"
+    }
+  ],
+  "side": "attack",
+  "level": "move",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "ラックなどと近いタッチラインの間の狭い側を、守備人数の偏りを見て攻める。",
+    "en": "Attack the narrower side of a breakdown or set piece when defenders are unbalanced."
+  },
+  "intent": [
+    "少ないパスで局所的な優位を使い、守備が広い側へ移る習慣を利用する。"
+  ],
+  "tags": [
+    "shortside",
+    "blindside",
+    "狭い側",
+    "attack",
+    "move"
+  ],
+  "applicability": {
+    "conditions": [
+      "狭い側にも前進・受球・継続に必要な余地がある。"
+    ],
+    "limits": [
+      "狭い側なら常に有利ではない。タッチラインは追加の制約になる。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "distributor",
+        "label": "配球者",
+        "task": "両側の配置を比べる",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "receiver",
+        "label": "狭い側の受け手",
+        "task": "短い距離で守備を脅かす",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "support",
+        "label": "サポート",
+        "task": "受け手の継続を助ける",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "receiver",
+        "relation": "near",
+        "object": "distributor",
+        "note": "狭い側へ少ないパスで到達する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "subject": "support",
+        "relation": "behind",
+        "object": "receiver",
+        "note": "前進に追随できる深さ。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "distributor",
+        "action": "scan",
+        "trigger": "ボールが利用可能になる",
+        "description": "両側の守備人数と幅を確認する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "distributor",
+        "action": "pass",
+        "trigger": "狭い側に優位がある",
+        "description": "狭い側の受け手へ展開する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-3",
+        "actor": "support",
+        "action": "support",
+        "trigger": "受け手が前進する",
+        "description": "残された幅で継続する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "read-defence",
+        "cue": "両側の守備配分",
+        "options": [
+          {
+            "action": "狭い側へ展開する",
+            "when": "守備が広い側に偏る"
+          },
+          {
+            "action": "別方向を使う",
+            "when": "狭い側が十分に守られている"
+          }
+        ],
+        "uncertainty": "状況判断の編集例であり、計測済みの選択基準や成功保証ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "ラックなどと近いタッチラインの間の狭い側を、守備人数の偏りを見て攻める。",
+      "evidence": [
+        {
+          "source": "rcw-blindside",
+          "locator": "blindside definition / defensive imbalance / recycling and realignment",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・配置・手順・判断は、資料から意味を説明するために組み直した編集モデル。原資料の固定プレーや実行指示ではない。",
+      "evidence": [
+        {
+          "source": "rcw-blindside",
+          "locator": "blindside definition / defensive imbalance / recycling and realignment",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開資料の該当本文を確認。分類と日本語は編集判断。専門家レビュー・実技検証は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "狭い側なら常に有利ではない。タッチラインは追加の制約になる。",
+    "適用する競技規則・年齢区分・チームの共有判断は別途確認する。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用の意味構造。身体動作・安全性・終了条件を検証した実行モデルではない。"
+  }
+}

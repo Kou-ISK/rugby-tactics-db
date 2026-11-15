@@ -1,0 +1,184 @@
+{
+  "id": "rtk:draw-and-pass",
+  "version": "0.1.0",
+  "name": {
+    "ja": "ドロー＆パス",
+    "en": "Draw and pass"
+  },
+  "aliases": [
+    {
+      "label": "Draw & Pass",
+      "language": "en",
+      "kind": "synonym",
+      "note": "出典見出しの表記。"
+    },
+    {
+      "label": "ドローアンドパス",
+      "language": "ja",
+      "kind": "translation",
+      "note": "編集上のカナ表記。"
+    }
+  ],
+  "side": "attack",
+  "level": "skill",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "保持者が守備者へ真っすぐ脅威を示し、自分よりよい位置の味方へ渡して支援に回る技術。",
+    "en": "Threaten a defender directly, release to a better-placed teammate and support."
+  },
+  "intent": [
+    "守備者の対応を保持者に向け、受け手の使える空間を残す。"
+  ],
+  "tags": [
+    "2対1",
+    "2v1",
+    "引きつける",
+    "attack",
+    "skill"
+  ],
+  "applicability": {
+    "conditions": [
+      "受け手との間隔とパス可能な時間がある。"
+    ],
+    "limits": [
+      "2対1は利用場面の一例であり、この技術名の同義語ではない。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "carrier",
+        "label": "保持者",
+        "task": "守備を引きつけて選択する",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "receiver",
+        "label": "受け手",
+        "task": "前進できる受球位置を保つ",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "receiver",
+        "relation": "outside-of",
+        "object": "carrier",
+        "note": "守備者と保持者の進路から離れた受球先。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "carrier",
+        "action": "carry",
+        "trigger": "守備へ近づく",
+        "description": "パス方向へ流れず前進の脅威を保つ。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "carrier",
+        "action": "pass",
+        "trigger": "受け手がよい位置にいる",
+        "description": "受け手の前進を妨げないパスを送る。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-3",
+        "actor": "carrier",
+        "action": "support",
+        "trigger": "パスを終える",
+        "description": "次の支援へ移る。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "read-defence",
+        "cue": "守備者が保持者と受け手のどちらを止めるか",
+        "options": [
+          {
+            "action": "パスする",
+            "when": "守備が保持者に対応し受け手が空く"
+          },
+          {
+            "action": "走る選択を残す",
+            "when": "守備が外へ残り前方が開く"
+          }
+        ],
+        "uncertainty": "状況判断の編集例であり、計測済みの選択基準や成功保証ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "enables",
+      "target": "rtk:short-side-attack",
+      "note": "狭い側の局所的な数的優位を利用する技術。"
+    },
+    {
+      "type": "notSameAs",
+      "target": "rtk:dummy-pass",
+      "note": "実際に渡す技術と、渡すと見せる技術を分ける。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "保持者が守備者へ真っすぐ脅威を示し、自分よりよい位置の味方へ渡して支援に回る技術。",
+      "evidence": [
+        {
+          "source": "nz-draw-pass",
+          "locator": "OBJECTIVE / KEY FACTORS",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・配置・手順・判断は、資料から意味を説明するために組み直した編集モデル。原資料の固定プレーや実行指示ではない。",
+      "evidence": [
+        {
+          "source": "nz-draw-pass",
+          "locator": "OBJECTIVE / KEY FACTORS",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開資料の該当本文を確認。分類と日本語は編集判断。専門家レビュー・実技検証は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "2対1は利用場面の一例であり、この技術名の同義語ではない。",
+    "適用する競技規則・年齢区分・チームの共有判断は別途確認する。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用の意味構造。身体動作・安全性・終了条件を検証した実行モデルではない。"
+  }
+}
