@@ -82,7 +82,7 @@ Any meaning or model change bumps concept version and dataset version. Breaking 
 bump schema major version. Editorial spelling fixes still require a dataset version update.
 Consumers pin a commit plus content hash. Do not overwrite a released meaning under the same ID/version.
 
-Next: expert domain review, claim-level reviews, evidence-backed attacking systems, additional
+Next: expert domain review, claim-level reviews, broader lineout/defensive coverage, additional
 language variants, explicit alias namespaces, an immutable release archive, and adapter conformance
 fixtures. Implement adapters only after their target consumers' regression suites are available.
 
@@ -92,3 +92,6 @@ fixtures. Implement adapters only after their target consumers' regression suite
 [release/version policy](RELEASE.md), and [Git history policy](GIT-HISTORY.md) define
 review and publication boundaries. `npm run check` validates authoring/export parity;
 PR/main CI additionally checks version changes and reachable-history tripwires.
+
+[Taxonomy](TAXONOMY.md) distinguishes tactics from their component skills and game situations.
+Dataset 0.2.0 expands the corpus; it does not make all records executable or expert-reviewed.

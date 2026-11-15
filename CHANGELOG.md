@@ -3,6 +3,25 @@
 Site/tooling and dataset versions are independent. No tag or release archive is implied
 by an entry here; use exact commits and the manifest hash until one is published.
 
+## Dataset 0.2.0 / site 0.3.0 — 2026-11-15
+
+- Grow from 14 to 41 concepts and from 14 to 39 references. These are not 41 interchangeable tactics.
+- Add attacking systems (1-3-3-1, 2-4-2, a named Ruck & Run model), a three-player pod,
+  pull-back/short-pass/loop combinations, unders/overs lines and a sourced scrum example.
+- Add quick-tap, short-side, pick-and-go and direction-change attacks; width/depth and mismatch concepts.
+- Add grubber/chip/high-ball/box/cross-field applications, backfield pendulum, man-on-man
+  defence, defensive realignment, restart reception and counter-ruck.
+- Reclassify cut-out/offload as skills, maul continuation as a principle, restart chase as
+  a move. Those four concept versions become 0.1.1; their IDs are unchanged.
+- Correct the direction of support relationships; counter-attack, close-support and dummy-pass
+  also increase to 0.1.1 for relation edits.
+- Explicitly distinguish tactics, techniques and situations in the site; show dataset version dynamically.
+- Keep schema 1.0.0, existing URLs/IDs and all execution gates. No P2P/RPM connection.
+- New evidence was read from public federation/coach-authored material; diagrams/videos and
+  source prose are not redistributed. Expert rugby review and executable-model validation remain undone.
+- Record direct-fetch limitations separately from inspected search-provided source text; the original
+  sevens source keeps its earlier access date. See the evidence access record in TAXONOMY.md.
+
 ## Tooling 0.2.0 — 2026-11-15
 
 - Split data authoring into per-concept/per-source files and an ordered catalog.

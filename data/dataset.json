@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
-  "version": "0.1.0",
-  "updated": "2026-11-14",
+  "version": "0.2.0",
+  "updated": "2026-11-15",
   "license": "CC-BY-4.0",
   "sources": [
     {
@@ -184,6 +184,308 @@
         "sevens"
       ],
       "rights": "出典の本文・画像・動画の転載許諾を意味しない。収録内容は独自要約。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "nz-after-tackle",
+      "url": "https://www.rugbytoolbox.co.nz/resources-education/learn-more/articles/snook-on-coaching/decisions-after-the-tackle",
+      "title": "Decisions After the Tackle",
+      "publisher": "New Zealand Rugby / Snook on Coaching",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "本レコードは独自要約。参照先の本文・図・写真・動画の再配布許諾を含まない。原資料の権利は各権利者に帰属。"
+    },
+    {
+      "id": "nz-draw-pass",
+      "url": "https://www.rugbytoolbox.co.nz/training/technique/draw-pass-2",
+      "title": "Draw & Pass — Seniors Skills",
+      "publisher": "New Zealand Rugby",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "本レコードは独自要約。参照先の本文・図・写真・動画の再配布許諾を含まない。原資料の権利は各権利者に帰属。"
+    },
+    {
+      "id": "nz-phase-on-run",
+      "url": "https://www.rugbytoolbox.co.nz/resources-education/learn-more/articles/snook-on-coaching/structuring-phase-play-on-the-run",
+      "title": "Structuring Phase Play on the Run",
+      "publisher": "New Zealand Rugby / Snook on Coaching",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "本レコードは独自要約。参照先の本文・図・写真・動画の再配布許諾を含まない。原資料の権利は各権利者に帰属。"
+    },
+    {
+      "id": "nz-quick-tap",
+      "url": "https://www.rugbytoolbox.co.nz/resources-education/learn-more/articles/snook-on-coaching/plays-from-a-tap-penalty",
+      "title": "Plays from a Tap Penalty",
+      "publisher": "New Zealand Rugby / Snook on Coaching",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "本レコードは独自要約。参照先の本文・図・写真・動画の再配布許諾を含まない。原資料の権利は各権利者に帰属。"
+    },
+    {
+      "id": "rcw-blindside",
+      "url": "https://www.rugbycoachweekly.net/tactics/attack-tactics/attacking-the-blindside",
+      "title": "Attacking the blindside",
+      "publisher": "Rugby Coach Weekly / Dan Cottrell",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "本レコードは独自要約。参照先の本文・図・写真・動画の再配布許諾を含まない。原資料の権利は各権利者に帰属。"
+    },
+    {
+      "id": "wr-attack-space",
+      "url": "https://passport.world.rugby/coaching/key-factor-analysis/running/running-in-attack-recognising-and-attacking-space/",
+      "title": "Running in attack — recognising and attacking space",
+      "publisher": "World Rugby",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "rights": "本レコードは独自要約。参照先の本文・図・写真・動画の再配布許諾を含まない。原資料の権利は各権利者に帰属。"
+    },
+    {
+      "id": "wr-back-attack",
+      "url": "https://passport.world.rugby/coaching/key-factor-analysis/unit-skills/back-line-attack/",
+      "title": "Back line attack",
+      "publisher": "World Rugby",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "rights": "本レコードは独自要約。参照先の本文・図・写真・動画の再配布許諾を含まない。原資料の権利は各権利者に帰属。"
+    },
+    {
+      "id": "cross-structure-development",
+      "url": "https://d26phqdbpt0w91.cloudfront.net/NonVideo/2e8f6ab6-45b2-46c8-0465-08da6854cc4b.pdf",
+      "title": "Is Overcoaching Structure in Young Players Detrimental to Their Creativity and Long-Term Player Development?",
+      "publisher": "Mike Cross / Rugby Australia Performance Coach (Level 4) paper",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "出典は参照先。独自要約・編集モデルのみを収録し、本文・図・写真・動画を再配布しない。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "nz-snook-midfield-scrum",
+      "url": "https://www.rugbytoolbox.co.nz/resources-education/learn-more/articles/snook-on-coaching/midfield-attack-at-the-scrum",
+      "title": "Midfield Attack at the Scrum",
+      "publisher": "New Zealand Rugby / Rugby Toolbox / Snook on Coaching",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "出典は参照先。独自要約・編集モデルのみを収録し、本文・図・写真・動画を再配布しない。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "nz-snook-ruck-run",
+      "url": "https://www.rugbytoolbox.co.nz/resources-education/learn-more/articles/snook-on-coaching/playing-philosophy-ruck-run",
+      "title": "Playing Philosophy – Ruck & Run",
+      "publisher": "New Zealand Rugby / Rugby Toolbox / Snook on Coaching",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "出典は参照先。独自要約・編集モデルのみを収録し、本文・図・写真・動画を再配布しない。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "rcw-barlow-242",
+      "url": "https://www.rugbycoachweekly.net/rugby-coaching/using-a-2-4-2-system",
+      "title": "Using a 2-4-2 system",
+      "publisher": "Rugby Coach Weekly / Josh Barlow",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "出典は参照先。独自要約・編集モデルのみを収録し、本文・図・写真・動画を再配布しない。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "rcw-cottrell-forward-options",
+      "url": "https://www.rugbycoachweekly.net/rugby-drills-and-skills/attack/long-short-contact-options-forwards-attack",
+      "title": "Long, short or contact: Options for forwards in attack",
+      "publisher": "Rugby Coach Weekly / Dan Cottrell",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "出典は参照先。独自要約・編集モデルのみを収録し、本文・図・写真・動画を再配布しない。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "rcw-cottrell-loop",
+      "url": "https://www.rugbycoachweekly.net/practice-plans/following-the-pass",
+      "title": "Following the pass",
+      "publisher": "Rugby Coach Weekly / Dan Cottrell",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "出典は参照先。独自要約・編集モデルのみを収録し、本文・図・写真・動画を再配布しない。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "rcw-cottrell-unders-overs",
+      "url": "https://www.rugbycoachweekly.net/tactics/unders-and-overs-decoy-play",
+      "title": "Unders and overs decoy play",
+      "publisher": "Rugby Coach Weekly / Dan Cottrell",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "出典は参照先。独自要約・編集モデルのみを収録し、本文・図・写真・動画を再配布しない。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "rcw-whiffin-1331",
+      "url": "https://www.rugbycoachweekly.net/tactics/attack-tactics/the-1-3-3-1-attacking-framework",
+      "title": "The 1-3-3-1 attacking framework",
+      "publisher": "Rugby Coach Weekly / Richard Whiffin",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "出典は参照先。独自要約・編集モデルのみを収録し、本文・図・写真・動画を再配布しない。原資料の権利は原権利者に帰属。"
+    },
+    {
+      "id": "nz-chip-kick",
+      "url": "https://www.rugbytoolbox.co.nz/training/technique/chip-kick-1",
+      "title": "Chip Kick",
+      "publisher": "New Zealand Rugby",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "公開資料の説明を独自に要約した。原資料の本文・図・写真・動画の転載許諾は含まれず、それらの権利は原権利者に帰属する。"
+    },
+    {
+      "id": "nz-foundation-manual",
+      "url": "https://www.rugbytoolbox.co.nz/uploads/media/default/66/42/427444aa62bb75d6351bdd85f808e3cbf45cb301.pdf",
+      "title": "Foundation Rugby Coaches",
+      "publisher": "New Zealand Rugby",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "公開資料の説明を独自に要約した。原資料の本文・図・写真・動画の転載許諾は含まれず、それらの権利は原権利者に帰属する。"
+    },
+    {
+      "id": "nz-grubber-kick",
+      "url": "https://www.rugbytoolbox.co.nz/training/technique/grubber-kick-1",
+      "title": "Grubber Kick",
+      "publisher": "New Zealand Rugby",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "公開資料の説明を独自に要約した。原資料の本文・図・写真・動画の転載許諾は含まれず、それらの権利は原権利者に帰属する。"
+    },
+    {
+      "id": "nz-up-and-under",
+      "url": "https://www.rugbytoolbox.co.nz/training/technique/up-and-under-1",
+      "title": "Up and Under",
+      "publisher": "New Zealand Rugby",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "公開資料の説明を独自に要約した。原資料の本文・図・写真・動画の転載許諾は含まれず、それらの権利は原権利者に帰属する。"
+    },
+    {
+      "id": "rcw-backfield-pendulum",
+      "url": "https://www.rugbycoachweekly.net/rugby-drills-and-skills/kicking-catching/better-backfield-kick-cover",
+      "title": "Better backfield kick cover — Dan Cottrell",
+      "publisher": "Rugby Coach Weekly",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "公開資料の説明を独自に要約した。原資料の本文・図・写真・動画の転載許諾は含まれず、それらの権利は原権利者に帰属する。"
+    },
+    {
+      "id": "rcw-box-kick",
+      "url": "https://www.rugbycoachweekly.net/rugby-drills-and-skills/kicking-catching/the-box-kick",
+      "title": "The box kick — Mark Calverley",
+      "publisher": "Rugby Coach Weekly",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "公開資料の説明を独自に要約した。原資料の本文・図・写真・動画の転載許諾は含まれず、それらの権利は原権利者に帰属する。"
+    },
+    {
+      "id": "wr-contact-functional-roles",
+      "url": "https://passport.world.rugby/coaching/functional-role-analysis/functional-roles-in-open-play/functional-roles-during-contact-situations-ruck-and-maul/",
+      "title": "Functional roles during contact situations - ruck and maul",
+      "publisher": "World Rugby",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "公開資料の説明を独自に要約した。原資料の本文・図・写真・動画の転載許諾は含まれず、それらの権利は原権利者に帰属する。"
+    },
+    {
+      "id": "wr-kicking-guide",
+      "url": "https://www.world.rugby/the-game/beginners-guide/kicking?lang=en",
+      "title": "Beginner’s Guide – Kicking",
+      "publisher": "World Rugby",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "公開資料の説明を独自に要約した。原資料の本文・図・写真・動画の転載許諾は含まれず、それらの権利は原権利者に帰属する。"
+    },
+    {
+      "id": "wr-restart-receiving",
+      "url": "https://passport.world.rugby/coaching/key-factor-analysis/unit-skills/kick-starts-and-restarts-the-receiving-team/",
+      "title": "Kick starts and restarts - the receiving team",
+      "publisher": "World Rugby",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "公開資料の説明を独自に要約した。原資料の本文・図・写真・動画の転載許諾は含まれず、それらの権利は原権利者に帰属する。"
+    },
+    {
+      "id": "wr-running-defence",
+      "url": "https://passport.world.rugby/coaching/key-factor-analysis/running/running-in-defence/",
+      "title": "Running in defence",
+      "publisher": "World Rugby",
+      "accessed": "2026-11-15",
+      "kind": "coaching",
+      "formats": [
+        "XV"
+      ],
+      "rights": "公開資料の説明を独自に要約した。原資料の本文・図・写真・動画の転載許諾は含まれず、それらの権利は原権利者に帰属する。"
     }
   ],
   "concepts": [
@@ -670,7 +972,7 @@
     },
     {
       "id": "rtk:counter-attack",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
         "ja": "カウンターアタック",
         "en": "Counter-attack"
@@ -791,13 +1093,7 @@
           }
         ]
       },
-      "relationships": [
-        {
-          "type": "enables",
-          "target": "rtk:close-support",
-          "note": "カウンターにも支援が必要。"
-        }
-      ],
+      "relationships": [],
       "variations": [],
       "claims": [
         {
@@ -1180,7 +1476,7 @@
     },
     {
       "id": "rtk:cut-out-pass",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
         "ja": "カットアウトパス",
         "en": "Cut-out pass"
@@ -1200,7 +1496,7 @@
         }
       ],
       "side": "attack",
-      "level": "move",
+      "level": "skill",
       "formats": [
         "XV",
         "sevens"
@@ -1214,7 +1510,7 @@
       ],
       "tags": [
         "attack",
-        "move",
+        "skill",
         "出典確認済み",
         "実行未検証"
       ],
@@ -1358,7 +1654,7 @@
     },
     {
       "id": "rtk:dummy-pass",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
         "ja": "ダミーパス",
         "en": "Dummy pass"
@@ -1468,6 +1764,11 @@
           "type": "notSameAs",
           "target": "rtk:cut-out-pass",
           "note": "ダミーではボールを離さない。"
+        },
+        {
+          "type": "enables",
+          "target": "rtk:split-midfield-scrum",
+          "note": "編集上の関係。外側への配球を見せる技術が、この出典固有の連係を支える。"
         }
       ],
       "variations": [],
@@ -1512,7 +1813,7 @@
     },
     {
       "id": "rtk:close-support",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
         "ja": "近接サポート",
         "en": "Close support"
@@ -1622,6 +1923,21 @@
           "type": "enables",
           "target": "rtk:offload-continuity",
           "note": "オフロードの受け手となり得る。"
+        },
+        {
+          "type": "enables",
+          "target": "rtk:quick-tap-attack",
+          "note": "編集上の関係。近い受け手が素早い再開後の孤立を防ぐ。"
+        },
+        {
+          "type": "enables",
+          "target": "rtk:ruck-and-run-snook",
+          "note": "編集上の関係。このモデルの近い継続を支援位置が支える。"
+        },
+        {
+          "type": "enables",
+          "target": "rtk:counter-attack",
+          "note": "編集上の関係。奪取・受球後の反撃で保持者の継続を支える。"
         }
       ],
       "variations": [],
@@ -1666,7 +1982,7 @@
     },
     {
       "id": "rtk:offload-continuity",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
         "ja": "オフロードによる継続",
         "en": "Offload continuity"
@@ -1686,7 +2002,7 @@
         }
       ],
       "side": "attack",
-      "level": "move",
+      "level": "skill",
       "formats": [
         "XV",
         "sevens"
@@ -1700,7 +2016,7 @@
       ],
       "tags": [
         "attack",
-        "move",
+        "skill",
         "出典確認済み",
         "実行未検証"
       ],
@@ -2012,7 +2328,7 @@
     },
     {
       "id": "rtk:maul-continuity",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
         "ja": "モールでの継続",
         "en": "Maul continuity"
@@ -2026,7 +2342,7 @@
         }
       ],
       "side": "attack",
-      "level": "shape",
+      "level": "principle",
       "formats": [
         "XV",
         "sevens"
@@ -2040,7 +2356,7 @@
       ],
       "tags": [
         "attack",
-        "shape",
+        "principle",
         "出典確認済み",
         "実行未検証"
       ],
@@ -2176,7 +2492,7 @@
     },
     {
       "id": "rtk:restart-kick-chase",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
         "ja": "リスタートのキックチェイス",
         "en": "Restart kick chase"
@@ -2190,7 +2506,7 @@
         }
       ],
       "side": "both",
-      "level": "shape",
+      "level": "move",
       "formats": [
         "XV",
         "sevens"
@@ -2204,7 +2520,7 @@
       ],
       "tags": [
         "both",
-        "shape",
+        "move",
         "出典確認済み",
         "実行未検証"
       ],
@@ -2528,6 +2844,4931 @@
       "execution": {
         "ready": false,
         "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+      }
+    },
+    {
+      "id": "rtk:attacking-mismatches",
+      "version": "0.1.0",
+      "name": {
+        "ja": "ミスマッチを見つけて攻める",
+        "en": "Attacking mismatches"
+      },
+      "aliases": [
+        {
+          "label": "ミスマッチ",
+          "language": "ja",
+          "kind": "contextual",
+          "note": "ここでは攻撃で利用する対応差。体格差だけを意味しない。"
+        }
+      ],
+      "side": "attack",
+      "level": "principle",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "summary": {
+        "ja": "守備の隙間や相手同士の対応差を観察し、味方に伝えて支援とともに攻撃先を選ぶ。",
+        "en": "Read gaps and potential mismatches, communicate them and attack with support."
+      },
+      "intent": [
+        "同じ配置を繰り返すだけでなく、その場で生じる優位を使う。"
+      ],
+      "tags": [
+        "mismatch",
+        "空間",
+        "スキャン",
+        "gap",
+        "attack",
+        "principle"
+      ],
+      "applicability": {
+        "conditions": [
+          "相手の位置・向き・対応の変化を観察できる。"
+        ],
+        "limits": [
+          "ポジション名だけで能力差を決めつけない。見えない情報を選手の観測として扱わない。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "reader",
+            "label": "観察する選手",
+            "task": "相手の空間と対応を読む",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "support",
+            "label": "支援する味方",
+            "task": "観察内容を共有して攻撃に加わる",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "support",
+            "relation": "near",
+            "object": "reader",
+            "note": "攻撃の選択を助ける支援位置。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "reader",
+            "action": "scan",
+            "trigger": "守備が見える",
+            "description": "隙間・身体の向き・対応差を観察する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "reader",
+            "action": "carry",
+            "trigger": "使える空間を確認",
+            "description": "支援とともにその空間を脅かす。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "read-defence",
+            "cue": "前方の隙間と守備の反応",
+            "options": [
+              {
+                "action": "確認できた優位を攻める",
+                "when": "空間や対応差があり支援も届く"
+              },
+              {
+                "action": "別の選択を探す",
+                "when": "守備が修正し優位が消える"
+              }
+            ],
+            "uncertainty": "状況判断の編集例であり、計測済みの選択基準や成功保証ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "enables",
+          "target": "rtk:short-side-attack",
+          "note": "狭い側の優位の判断にも使う。"
+        },
+        {
+          "type": "enables",
+          "target": "rtk:counter-attack",
+          "note": "整っていない守備の観察を支える。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "守備の隙間や相手同士の対応差を観察し、味方に伝えて支援とともに攻撃先を選ぶ。",
+          "evidence": [
+            {
+              "source": "wr-attack-space",
+              "locator": "Players should: gaps, potential mismatches, defensive body position and communication",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・配置・手順・判断は、資料から意味を説明するために組み直した編集モデル。原資料の固定プレーや実行指示ではない。",
+          "evidence": [
+            {
+              "source": "wr-attack-space",
+              "locator": "Players should: gaps, potential mismatches, defensive body position and communication",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開資料の該当本文を確認。分類と日本語は編集判断。専門家レビュー・実技検証は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "ポジション名だけで能力差を決めつけない。見えない情報を選手の観測として扱わない。",
+        "適用する競技規則・年齢区分・チームの共有判断は別途確認する。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用の意味構造。身体動作・安全性・終了条件を検証した実行モデルではない。"
+      }
+    },
+    {
+      "id": "rtk:attacking-width-and-depth",
+      "version": "0.1.0",
+      "name": {
+        "ja": "攻撃の幅と深さ",
+        "en": "Attacking width and depth"
+      },
+      "aliases": [],
+      "side": "attack",
+      "level": "shape",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "summary": {
+        "ja": "横方向の広がりとボールに対する深さを、外を攻めるか近くを攻めるかに合わせて整える。",
+        "en": "Arrange attacking width and depth to suit the intended point of attack."
+      },
+      "intent": [
+        "受け手が判断・配球する時間と、使う横幅の両方を確保する。"
+      ],
+      "tags": [
+        "幅",
+        "深さ",
+        "alignment",
+        "width",
+        "depth",
+        "フラット",
+        "attack",
+        "shape"
+      ],
+      "applicability": {
+        "conditions": [
+          "守備の配置を見て攻撃意図を共有できる。"
+        ],
+        "limits": [
+          "深ければ常によいわけではなく、固定の距離や公式フォーメーションを意味しない。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "distributor",
+            "label": "配球者",
+            "task": "狙う範囲を共有する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "receiver",
+            "label": "受け手群",
+            "task": "意図に合わせて位置を調節する",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "receiver",
+            "relation": "across-width",
+            "object": "distributor",
+            "note": "使う横幅を分担する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "subject": "receiver",
+            "relation": "behind",
+            "object": "distributor",
+            "note": "配球に必要な深さを調節する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "distributor",
+            "action": "scan",
+            "trigger": "攻撃の準備",
+            "description": "守備の位置を確認する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "receiver",
+            "action": "align",
+            "trigger": "狙う範囲が決まる",
+            "description": "外側か近場かに合わせて幅と深さを作る。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "read-defence",
+            "cue": "攻める場所と配球時間",
+            "options": [
+              {
+                "action": "深さを使って外へ運ぶ",
+                "when": "広い範囲への展開を狙う"
+              },
+              {
+                "action": "比較的フラットに近くを脅かす",
+                "when": "近い位置へ速く働きかける"
+              }
+            ],
+            "uncertainty": "状況判断の編集例であり、計測済みの選択基準や成功保証ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "enables",
+          "target": "rtk:cut-out-pass",
+          "note": "外への配球ができる位置関係を作る。"
+        },
+        {
+          "type": "notSameAs",
+          "target": "rtk:close-support",
+          "note": "攻撃全体の間隔と保持者直近の支援は粒度が違う。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "横方向の広がりとボールに対する深さを、外を攻めるか近くを攻めるかに合わせて整える。",
+          "evidence": [
+            {
+              "source": "wr-back-attack",
+              "locator": "Back line players should: width and alignment relative to attacking intentions",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・配置・手順・判断は、資料から意味を説明するために組み直した編集モデル。原資料の固定プレーや実行指示ではない。",
+          "evidence": [
+            {
+              "source": "wr-back-attack",
+              "locator": "Back line players should: width and alignment relative to attacking intentions",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開資料の該当本文を確認。分類と日本語は編集判断。専門家レビュー・実技検証は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "深ければ常によいわけではなく、固定の距離や公式フォーメーションを意味しない。",
+        "適用する競技規則・年齢区分・チームの共有判断は別途確認する。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用の意味構造。身体動作・安全性・終了条件を検証した実行モデルではない。"
+      }
+    },
+    {
+      "id": "rtk:draw-and-pass",
+      "version": "0.1.0",
+      "name": {
+        "ja": "ドロー＆パス",
+        "en": "Draw and pass"
+      },
+      "aliases": [
+        {
+          "label": "Draw & Pass",
+          "language": "en",
+          "kind": "synonym",
+          "note": "出典見出しの表記。"
+        },
+        {
+          "label": "ドローアンドパス",
+          "language": "ja",
+          "kind": "translation",
+          "note": "編集上のカナ表記。"
+        }
+      ],
+      "side": "attack",
+      "level": "skill",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "保持者が守備者へ真っすぐ脅威を示し、自分よりよい位置の味方へ渡して支援に回る技術。",
+        "en": "Threaten a defender directly, release to a better-placed teammate and support."
+      },
+      "intent": [
+        "守備者の対応を保持者に向け、受け手の使える空間を残す。"
+      ],
+      "tags": [
+        "2対1",
+        "2v1",
+        "引きつける",
+        "attack",
+        "skill"
+      ],
+      "applicability": {
+        "conditions": [
+          "受け手との間隔とパス可能な時間がある。"
+        ],
+        "limits": [
+          "2対1は利用場面の一例であり、この技術名の同義語ではない。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "carrier",
+            "label": "保持者",
+            "task": "守備を引きつけて選択する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "receiver",
+            "label": "受け手",
+            "task": "前進できる受球位置を保つ",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "receiver",
+            "relation": "outside-of",
+            "object": "carrier",
+            "note": "守備者と保持者の進路から離れた受球先。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "carrier",
+            "action": "carry",
+            "trigger": "守備へ近づく",
+            "description": "パス方向へ流れず前進の脅威を保つ。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "carrier",
+            "action": "pass",
+            "trigger": "受け手がよい位置にいる",
+            "description": "受け手の前進を妨げないパスを送る。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-3",
+            "actor": "carrier",
+            "action": "support",
+            "trigger": "パスを終える",
+            "description": "次の支援へ移る。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "read-defence",
+            "cue": "守備者が保持者と受け手のどちらを止めるか",
+            "options": [
+              {
+                "action": "パスする",
+                "when": "守備が保持者に対応し受け手が空く"
+              },
+              {
+                "action": "走る選択を残す",
+                "when": "守備が外へ残り前方が開く"
+              }
+            ],
+            "uncertainty": "状況判断の編集例であり、計測済みの選択基準や成功保証ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "enables",
+          "target": "rtk:short-side-attack",
+          "note": "狭い側の局所的な数的優位を利用する技術。"
+        },
+        {
+          "type": "notSameAs",
+          "target": "rtk:dummy-pass",
+          "note": "実際に渡す技術と、渡すと見せる技術を分ける。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "保持者が守備者へ真っすぐ脅威を示し、自分よりよい位置の味方へ渡して支援に回る技術。",
+          "evidence": [
+            {
+              "source": "nz-draw-pass",
+              "locator": "OBJECTIVE / KEY FACTORS",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・配置・手順・判断は、資料から意味を説明するために組み直した編集モデル。原資料の固定プレーや実行指示ではない。",
+          "evidence": [
+            {
+              "source": "nz-draw-pass",
+              "locator": "OBJECTIVE / KEY FACTORS",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開資料の該当本文を確認。分類と日本語は編集判断。専門家レビュー・実技検証は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "2対1は利用場面の一例であり、この技術名の同義語ではない。",
+        "適用する競技規則・年齢区分・チームの共有判断は別途確認する。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用の意味構造。身体動作・安全性・終了条件を検証した実行モデルではない。"
+      }
+    },
+    {
+      "id": "rtk:phase-direction-change",
+      "version": "0.1.0",
+      "name": {
+        "ja": "フェーズ後のリターン攻撃",
+        "en": "Changing direction after a phase"
+      },
+      "aliases": [],
+      "side": "attack",
+      "level": "move",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "接点の後に攻撃方向を反転させ、保持者への支援と次の受け手を新しい側へ組み直す。",
+        "en": "Reverse the attack after a phase and reorganise the next receivers and support."
+      },
+      "intent": [
+        "守備の横移動に合わせて、同じ側への継続以外の選択肢を作る。"
+      ],
+      "tags": [
+        "リターン",
+        "方向転換",
+        "reverse",
+        "return",
+        "phase play",
+        "attack",
+        "move"
+      ],
+      "applicability": {
+        "conditions": [
+          "配球者が方向と必要な受け手を共有できる。"
+        ],
+        "limits": [
+          "特定のチームコールを普遍的な用語にしない。反転とスイッチパスは別の粒度。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "caller",
+            "label": "判断・配球者",
+            "task": "次の方向を共有する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "receiver",
+            "label": "次の受け手",
+            "task": "反転先の攻撃点になる",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "support",
+            "label": "支援者",
+            "task": "新しい攻撃側に追随する",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "support",
+            "relation": "near",
+            "object": "receiver",
+            "note": "次の保持者を孤立させない位置。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "caller",
+            "action": "scan",
+            "trigger": "接点後のボールが使える",
+            "description": "同方向と反対方向の守備を比べる。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "receiver",
+            "action": "align",
+            "trigger": "反転の合図",
+            "description": "新しい攻撃方向へ受球位置を整える。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-3",
+            "actor": "caller",
+            "action": "pass",
+            "trigger": "受け手が整う",
+            "description": "反転側へボールを送る。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "read-defence",
+            "cue": "次の方向の空間と支援の到着",
+            "options": [
+              {
+                "action": "反対側へ返す",
+                "when": "反転先に使える空間と受け手がある"
+              },
+              {
+                "action": "同じ方向を続ける",
+                "when": "継続側の優位が残る"
+              }
+            ],
+            "uncertainty": "状況判断の編集例であり、計測済みの選択基準や成功保証ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "notSameAs",
+          "target": "rtk:switch-pass",
+          "note": "フェーズ間の方向変更と近接する走者の交差を区別。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "接点の後に攻撃方向を反転させ、保持者への支援と次の受け手を新しい側へ組み直す。",
+          "evidence": [
+            {
+              "source": "nz-phase-on-run",
+              "locator": "starter call: continue same way or return after first ruck; tactical decision maker",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・配置・手順・判断は、資料から意味を説明するために組み直した編集モデル。原資料の固定プレーや実行指示ではない。",
+          "evidence": [
+            {
+              "source": "nz-phase-on-run",
+              "locator": "starter call: continue same way or return after first ruck; tactical decision maker",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開ページの検索側で取得された本文を確認。直接の再取得は404となり、現URLの可読性は未確認。分類・動作分解は編集判断で、専門家レビュー・実技検証は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "特定のチームコールを普遍的な用語にしない。反転とスイッチパスは別の粒度。",
+        "適用する競技規則・年齢区分・チームの共有判断は別途確認する。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用の意味構造。身体動作・安全性・終了条件を検証した実行モデルではない。"
+      }
+    },
+    {
+      "id": "rtk:pick-and-go",
+      "version": "0.1.0",
+      "name": {
+        "ja": "ピック＆ゴー",
+        "en": "Pick and go"
+      },
+      "aliases": [
+        {
+          "label": "ピックアンドゴー",
+          "language": "ja",
+          "kind": "translation",
+          "note": "編集上のカナ表記。"
+        }
+      ],
+      "side": "attack",
+      "level": "move",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "利用可能なボールを拾い、直前の接点の近くを支援とともに前進して、守備をその周囲へ引き戻す。",
+        "en": "Pick up available ball and carry close to the previous contact with support."
+      },
+      "intent": [
+        "接点付近の前進で守備配置を変え、次に攻める空間を作る。"
+      ],
+      "tags": [
+        "pick-and-go",
+        "ラック",
+        "近場",
+        "attack",
+        "move"
+      ],
+      "applicability": {
+        "conditions": [
+          "ボールを適法に取り出せ、近くの味方が継続を支えられる。"
+        ],
+        "limits": [
+          "接触を繰り返すことが目的ではない。必ず前進できる、何人いれば成功するとは断定しない。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "picker",
+            "label": "拾って運ぶ選手",
+            "task": "近い空間へ前進する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "support",
+            "label": "支援者",
+            "task": "孤立を防ぎ次のボールを助ける",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "distributor",
+            "label": "次の配球者",
+            "task": "守備の変化を読む",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "support",
+            "relation": "near",
+            "object": "picker",
+            "note": "次の継続に間に合う距離。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "picker",
+            "action": "carry",
+            "trigger": "ボールが利用可能",
+            "description": "近い守備の間へ前進する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "support",
+            "action": "support",
+            "trigger": "保持者へ守備が集まる",
+            "description": "次のプレーを支える。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-3",
+            "actor": "distributor",
+            "action": "scan",
+            "trigger": "ボールを再び使える",
+            "description": "外側の守備が減ったかを確認する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "read-defence",
+            "cue": "直近の前進と守備の集中",
+            "options": [
+              {
+                "action": "近くを継続する",
+                "when": "接点付近の空間を使える"
+              },
+              {
+                "action": "外へ移す",
+                "when": "守備が近くへ集まり別の空間ができる"
+              }
+            ],
+            "uncertainty": "状況判断の編集例であり、計測済みの選択基準や成功保証ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "enables",
+          "target": "rtk:phase-direction-change",
+          "note": "接点後の配球判断につなぐ。"
+        },
+        {
+          "type": "notSameAs",
+          "target": "rtk:offload-continuity",
+          "note": "地面側の利用可能な球からの再出発と接触中のパスは別。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "利用可能なボールを拾い、直前の接点の近くを支援とともに前進して、守備をその周囲へ引き戻す。",
+          "evidence": [
+            {
+              "source": "nz-after-tackle",
+              "locator": "Question 1–3: pick the ball and carry forward close to the tackle",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・配置・手順・判断は、資料から意味を説明するために組み直した編集モデル。原資料の固定プレーや実行指示ではない。",
+          "evidence": [
+            {
+              "source": "nz-after-tackle",
+              "locator": "Question 1–3: pick the ball and carry forward close to the tackle",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開ページの検索側で取得された本文を確認。直接の再取得は404となり、現URLの可読性は未確認。分類・動作分解は編集判断で、専門家レビュー・実技検証は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "接触を繰り返すことが目的ではない。必ず前進できる、何人いれば成功するとは断定しない。",
+        "適用する競技規則・年齢区分・チームの共有判断は別途確認する。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用の意味構造。身体動作・安全性・終了条件を検証した実行モデルではない。"
+      }
+    },
+    {
+      "id": "rtk:quick-tap-attack",
+      "version": "0.1.0",
+      "name": {
+        "ja": "クイックタップ攻撃",
+        "en": "Quick tap attack"
+      },
+      "aliases": [
+        {
+          "label": "クイックタップ",
+          "language": "ja",
+          "kind": "translation",
+          "note": "Quick tap の編集訳。ここでは攻撃への利用を扱う。"
+        }
+      ],
+      "side": "attack",
+      "level": "move",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "タップから素早く前進し、近いサポートと外側の再配置を連動させ、整う前の守備を攻める。",
+        "en": "Use a quick tap with close support and subsequent width against an unsettled defence."
+      },
+      "intent": [
+        "セットプレーを待たず、守備の再配置より先に次の攻撃点を作る。"
+      ],
+      "tags": [
+        "ペナルティ",
+        "再開",
+        "quick tap",
+        "attack",
+        "move"
+      ],
+      "applicability": {
+        "conditions": [
+          "タップを適法に開始でき、味方が合図に反応できる。"
+        ],
+        "limits": [
+          "速く再開すること自体が目的ではない。合法な再開位置・方法とサポートの有無が前提。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "tapper",
+            "label": "再開者",
+            "task": "合図して攻撃を始める",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "support",
+            "label": "近接サポート",
+            "task": "短い受け手になる",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "wide",
+            "label": "外側の味方",
+            "task": "次の幅を確保する",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "support",
+            "relation": "near",
+            "object": "tapper",
+            "note": "近いパスを受けられる位置。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "subject": "wide",
+            "relation": "outside-of",
+            "object": "support",
+            "note": "内側の密集とは別の選択肢。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "tapper",
+            "action": "carry",
+            "trigger": "再開が許される",
+            "description": "適法なタップ後に前方を攻める。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "support",
+            "action": "support",
+            "trigger": "守備が保持者に寄る",
+            "description": "短い受け手として追随する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-3",
+            "actor": "wide",
+            "action": "align",
+            "trigger": "次の攻撃へ移る",
+            "description": "空いた外側へ再配置する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "read-defence",
+            "cue": "直前の守備と味方の準備",
+            "options": [
+              {
+                "action": "近くを速く攻める",
+                "when": "支援があり守備が未整理"
+              },
+              {
+                "action": "攻撃を整え直す",
+                "when": "味方が孤立し継続できない"
+              }
+            ],
+            "uncertainty": "状況判断の編集例であり、計測済みの選択基準や成功保証ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "タップから素早く前進し、近いサポートと外側の再配置を連動させ、整う前の守備を攻める。",
+          "evidence": [
+            {
+              "source": "nz-quick-tap",
+              "locator": "2 — QUICK: Aim / Explanation",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・配置・手順・判断は、資料から意味を説明するために組み直した編集モデル。原資料の固定プレーや実行指示ではない。",
+          "evidence": [
+            {
+              "source": "nz-quick-tap",
+              "locator": "2 — QUICK: Aim / Explanation",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開ページの検索側で取得された本文を確認。直接の再取得は404となり、現URLの可読性は未確認。分類・動作分解は編集判断で、専門家レビュー・実技検証は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "速く再開すること自体が目的ではない。合法な再開位置・方法とサポートの有無が前提。",
+        "適用する競技規則・年齢区分・チームの共有判断は別途確認する。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用の意味構造。身体動作・安全性・終了条件を検証した実行モデルではない。"
+      }
+    },
+    {
+      "id": "rtk:short-side-attack",
+      "version": "0.1.0",
+      "name": {
+        "ja": "ショートサイドアタック",
+        "en": "Short-side attack"
+      },
+      "aliases": [
+        {
+          "label": "Blindside attack",
+          "language": "en",
+          "kind": "synonym",
+          "note": "著者がshortsideと同じ側への攻撃として説明。"
+        },
+        {
+          "label": "ブラインドサイドアタック",
+          "language": "ja",
+          "kind": "translation",
+          "note": "編集訳。フランカーのポジション名とは区別。"
+        }
+      ],
+      "side": "attack",
+      "level": "move",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "ラックなどと近いタッチラインの間の狭い側を、守備人数の偏りを見て攻める。",
+        "en": "Attack the narrower side of a breakdown or set piece when defenders are unbalanced."
+      },
+      "intent": [
+        "少ないパスで局所的な優位を使い、守備が広い側へ移る習慣を利用する。"
+      ],
+      "tags": [
+        "shortside",
+        "blindside",
+        "狭い側",
+        "attack",
+        "move"
+      ],
+      "applicability": {
+        "conditions": [
+          "狭い側にも前進・受球・継続に必要な余地がある。"
+        ],
+        "limits": [
+          "狭い側なら常に有利ではない。タッチラインは追加の制約になる。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "distributor",
+            "label": "配球者",
+            "task": "両側の配置を比べる",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "receiver",
+            "label": "狭い側の受け手",
+            "task": "短い距離で守備を脅かす",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "support",
+            "label": "サポート",
+            "task": "受け手の継続を助ける",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "receiver",
+            "relation": "near",
+            "object": "distributor",
+            "note": "狭い側へ少ないパスで到達する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "subject": "support",
+            "relation": "behind",
+            "object": "receiver",
+            "note": "前進に追随できる深さ。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "distributor",
+            "action": "scan",
+            "trigger": "ボールが利用可能になる",
+            "description": "両側の守備人数と幅を確認する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "distributor",
+            "action": "pass",
+            "trigger": "狭い側に優位がある",
+            "description": "狭い側の受け手へ展開する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-3",
+            "actor": "support",
+            "action": "support",
+            "trigger": "受け手が前進する",
+            "description": "残された幅で継続する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "read-defence",
+            "cue": "両側の守備配分",
+            "options": [
+              {
+                "action": "狭い側へ展開する",
+                "when": "守備が広い側に偏る"
+              },
+              {
+                "action": "別方向を使う",
+                "when": "狭い側が十分に守られている"
+              }
+            ],
+            "uncertainty": "状況判断の編集例であり、計測済みの選択基準や成功保証ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "ラックなどと近いタッチラインの間の狭い側を、守備人数の偏りを見て攻める。",
+          "evidence": [
+            {
+              "source": "rcw-blindside",
+              "locator": "blindside definition / defensive imbalance / recycling and realignment",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・配置・手順・判断は、資料から意味を説明するために組み直した編集モデル。原資料の固定プレーや実行指示ではない。",
+          "evidence": [
+            {
+              "source": "rcw-blindside",
+              "locator": "blindside definition / defensive imbalance / recycling and realignment",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開資料の該当本文を確認。分類と日本語は編集判断。専門家レビュー・実技検証は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "狭い側なら常に有利ではない。タッチラインは追加の制約になる。",
+        "適用する競技規則・年齢区分・チームの共有判断は別途確認する。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用の意味構造。身体動作・安全性・終了条件を検証した実行モデルではない。"
+      }
+    },
+    {
+      "id": "rtk:loop-move",
+      "version": "0.1.0",
+      "name": {
+        "ja": "ループ",
+        "en": "Loop move"
+      },
+      "aliases": [],
+      "side": "attack",
+      "level": "move",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "パスした選手が受け手の後方を回り、外側でもう一度受けられる位置へ参加する。",
+        "en": "After passing, the passer runs behind the receiver and reappears outside as another receiving option; otherwise the movement can provide contact support."
+      },
+      "intent": [
+        "同じ選手が再参加し、外側の選択肢を増やす。"
+      ],
+      "tags": [
+        "attack",
+        "move",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "パス後に受け手の後方を回る時間と空間があり、再参加の意図を共有できる。"
+        ],
+        "limits": [
+          "wrapという語は資料未確認なので完全同義のaliasを自動付与しない。横流れで外の空間を消さない。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "initial-passer",
+            "label": "最初のパス役",
+            "task": "パス後に回り込んで再参加する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "receiver",
+            "label": "最初の受け手",
+            "task": "前進と戻しのパスを選ぶ",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "outside-option",
+            "label": "外側の選択肢",
+            "task": "次の展開先を用意する",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "initial-passer",
+            "relation": "behind",
+            "object": "receiver",
+            "note": "パス後に後方を回り外側へ移る。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "subject": "outside-option",
+            "relation": "outside-of",
+            "object": "receiver",
+            "note": "外側の展開先を残す。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "initial-passer",
+            "action": "pass",
+            "trigger": "受け手が前進できる",
+            "description": "最初の受け手へ渡す。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "initial-passer",
+            "action": "support",
+            "trigger": "球が受け手へ移る",
+            "description": "後方を回り外側に再参加する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-3",
+            "actor": "receiver",
+            "action": "pass",
+            "trigger": "回り込んだ選手を確認",
+            "description": "戻すか自分の継続を選ぶ。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "回り込む時間と外側の空間",
+            "options": [
+              {
+                "action": "外側で戻しを受ける",
+                "when": "外側へ回る時間と受球経路がある"
+              },
+              {
+                "action": "回れなければreceiverの継続支援へ移る",
+                "when": "回り込む余裕がなくreceiverが接触へ進む"
+              }
+            ],
+            "uncertainty": "守備と支援の状況を整理した分岐例。実行判断の十分条件ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "notSameAs",
+          "target": "rtk:switch-pass",
+          "note": "外側へ再参加する動きと交差の走路を区別する。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "パスした選手が受け手の後方を回り、外側でもう一度受けられる位置へ参加する。",
+          "evidence": [
+            {
+              "source": "rcw-cottrell-loop",
+              "locator": "Opening explanation; What to think about; set-up",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・位置・手順・分岐は資料の要点を抽象化した編集モデル。固定の実行手順ではない。",
+          "evidence": [
+            {
+              "source": "rcw-cottrell-loop",
+              "locator": "Opening explanation; What to think about; set-up",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開の指導資料本文を確認。名称・分類・日本語は編集上の整理で、専門家による戦術・安全性審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "wrapという語は資料未確認なので完全同義のaliasを自動付与しない。横流れで外の空間を消さない。",
+        "選手・年代・競技条件による違いと、具体的な成功条件は未検証。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用モデルのみ。座標・時間・合法性・安全性・観測条件・終了条件を備えた実行検証は未実施。"
+      }
+    },
+    {
+      "id": "rtk:one-three-three-one",
+      "version": "0.1.0",
+      "name": {
+        "ja": "1-3-3-1アタック",
+        "en": "1-3-3-1 attacking framework"
+      },
+      "aliases": [
+        {
+          "label": "1-3-3-1",
+          "kind": "contextual",
+          "note": "攻撃FW配置の文脈に限定。数列だけから競技・実行形を決めない。",
+          "language": "en"
+        }
+      ],
+      "side": "attack",
+      "level": "system",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "FWを左右外側の一人ずつと中央の三人組二つへ分け、BKと接続して中央と外の選択肢を保つ。",
+        "en": "Eight forwards are distributed as one on each wide edge and two central groups of three. Backs connect with those groups to preserve direct and wide attacking choices."
+      },
+      "intent": [
+        "中央への圧力と横幅を両立し、守備の偏りに応じて攻める場所を変える。"
+      ],
+      "tags": [
+        "attack",
+        "system",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "8人のFWの中央・外側の分担とBKの接続役を共有し、次の配球までに必要な支援を用意できる。"
+        ],
+        "limits": [
+          "選手の背番号や各フェーズの固定位置を表すものではない。単に形へ戻ることを、目の前の機会より優先しない。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "distributor",
+            "label": "配球役",
+            "task": "中央と外側の機会を比較する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "central-pod",
+            "label": "中央の三人組",
+            "task": "近い支援を伴って前進を狙う",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "wide-forward",
+            "label": "外側のFW",
+            "task": "左右で攻撃の幅を保つ",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "back-link",
+            "label": "接続役",
+            "task": "組と外側の受け手をつなぐ",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "wide-forward",
+            "relation": "outside-of",
+            "object": "central-pod",
+            "note": "外側一人ずつ、中央は三人組二つという役割配置。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "subject": "back-link",
+            "relation": "connected-to",
+            "object": "central-pod",
+            "note": "BKとFWの選択を切り離さない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "wide-forward",
+            "action": "align",
+            "trigger": "次の攻撃を準備",
+            "description": "左右外側の選択肢を保つ。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "distributor",
+            "action": "pass",
+            "trigger": "配球できる球が出る",
+            "description": "中央か外側の機会へ接続する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "中央と外側の守備密度・支援の到着",
+            "options": [
+              {
+                "action": "中央の前進機会に近い支援を添える",
+                "when": "中央に前進余地があり支援が近い"
+              },
+              {
+                "action": "外側が空けばlinkを通じて幅を使う",
+                "when": "外側に空間がありlinkで届く"
+              }
+            ],
+            "uncertainty": "守備と支援の状況を整理した分岐例。実行判断の十分条件ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "contrastsWith",
+          "target": "rtk:two-four-two",
+          "note": "FWの配分が異なる。優劣の固定ではない。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "FWを左右外側の一人ずつと中央の三人組二つへ分け、BKと接続して中央と外の選択肢を保つ。",
+          "evidence": [
+            {
+              "source": "rcw-whiffin-1331",
+              "locator": "Macro shape",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・位置・手順・分岐は資料の要点を抽象化した編集モデル。固定の実行手順ではない。",
+          "evidence": [
+            {
+              "source": "rcw-whiffin-1331",
+              "locator": "Macro shape",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開の指導資料本文を確認。名称・分類・日本語は編集上の整理で、専門家による戦術・安全性審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "選手の背番号や各フェーズの固定位置を表すものではない。単に形へ戻ることを、目の前の機会より優先しない。",
+        "選手・年代・競技条件による違いと、具体的な成功条件は未検証。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用モデルのみ。座標・時間・合法性・安全性・観測条件・終了条件を備えた実行検証は未実施。"
+      }
+    },
+    {
+      "id": "rtk:overs-line",
+      "version": "0.1.0",
+      "name": {
+        "ja": "オーバーズライン",
+        "en": "Overs line"
+      },
+      "aliases": [],
+      "side": "attack",
+      "level": "skill",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "受け手がパス元から離れる角度で走り、外側の空間や守備の切れ目へ入る。",
+        "en": "The runner angles away from the origin of the pass. The article combines that run with inside decoys to exploit a disconnected defence."
+      },
+      "intent": [
+        "外向きの走路で守備の外肩や開いた間を使う。"
+      ],
+      "tags": [
+        "attack",
+        "skill",
+        "出典確認済み",
+        "実行未検証",
+        "running-line",
+        "用語",
+        "戦術要素"
+      ],
+      "applicability": {
+        "conditions": [
+          "受け手が外側へ離れる走路をパス元と共有し、外の受球先と支援が用意されている。"
+        ],
+        "limits": [
+          "常に外へ流れる命令ではない。undersとの二択だけで守備判断を完結させない。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "passer",
+            "label": "パス役",
+            "task": "外向きの走者へ配球を判断する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "angled-runner",
+            "label": "外向きの走者",
+            "task": "パス元から離れる走路を示す",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "inside-option",
+            "label": "内側の選択肢",
+            "task": "内側の守備にも判断を求める",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "angled-runner",
+            "relation": "outside-of",
+            "object": "passer",
+            "note": "パス元から離れる角度を使う。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "subject": "inside-option",
+            "relation": "inside-of",
+            "object": "angled-runner",
+            "note": "内側にも攻撃の脅威を残す。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "inside-option",
+            "action": "support",
+            "trigger": "攻撃が始まる",
+            "description": "内側の脅威を保つ。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "angled-runner",
+            "action": "align",
+            "trigger": "守備間に空間が見える",
+            "description": "外向きの走路で受球を狙う。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "外側の余地が残るか",
+            "options": [
+              {
+                "action": "外向きの走路へ配球する",
+                "when": "外側の経路が残る"
+              },
+              {
+                "action": "守備が追従すれば他の選択を使う",
+                "when": "守備が外向きの走者へ追従する"
+              }
+            ],
+            "uncertainty": "守備と支援の状況を整理した分岐例。実行判断の十分条件ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "contrastsWith",
+          "target": "rtk:unders-line",
+          "note": "パス元に対する走路の方向が異なる。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "受け手がパス元から離れる角度で走り、外側の空間や守備の切れ目へ入る。",
+          "evidence": [
+            {
+              "source": "rcw-cottrell-unders-overs",
+              "locator": "The overs attacking line; drag defenders off square",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・位置・手順・分岐は資料の要点を抽象化した編集モデル。固定の実行手順ではない。",
+          "evidence": [
+            {
+              "source": "rcw-cottrell-unders-overs",
+              "locator": "The overs attacking line; drag defenders off square",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開の指導資料本文を確認。名称・分類・日本語は編集上の整理で、専門家による戦術・安全性審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "常に外へ流れる命令ではない。undersとの二択だけで守備判断を完結させない。",
+        "選手・年代・競技条件による違いと、具体的な成功条件は未検証。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用モデルのみ。座標・時間・合法性・安全性・観測条件・終了条件を備えた実行検証は未実施。"
+      }
+    },
+    {
+      "id": "rtk:pull-back-pass",
+      "version": "0.1.0",
+      "name": {
+        "ja": "プルバックパス",
+        "en": "Pull-back pass"
+      },
+      "aliases": [],
+      "side": "attack",
+      "level": "move",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "近い受け手から後方の接続役へ渡し、前進の脅威を残しながら外側へ攻撃を移す。",
+        "en": "A forward receives, then passes back to a linking back to hold nearby defenders while allowing the attack to use width."
+      },
+      "intent": [
+        "近い前進の脅威を残しながら、守備の外へボールを届ける。"
+      ],
+      "tags": [
+        "attack",
+        "move",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "前方の保持・走行を脅威として示す選手の後方に、合法なパスを受ける接続役がいる。"
+        ],
+        "limits": [
+          "正確な深さ・タイミングはチームごとに異なる。デコイの妨害行為を許可しない。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "forward-receiver",
+            "label": "近い受け手",
+            "task": "守備を引きつけて配球する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "back-link",
+            "label": "後方の接続役",
+            "task": "戻された球を外側へつなぐ",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "wide-option",
+            "label": "外側の受け手",
+            "task": "外の空間を使う",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "back-link",
+            "relation": "behind",
+            "object": "forward-receiver",
+            "note": "近い受け手の後方に接続。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "subject": "wide-option",
+            "relation": "outside-of",
+            "object": "back-link",
+            "note": "外側に次の選択肢を置く。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "forward-receiver",
+            "action": "carry",
+            "trigger": "近い配球を受ける",
+            "description": "前進の脅威を示す。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "forward-receiver",
+            "action": "pass",
+            "trigger": "後方の経路が開く",
+            "description": "linkへ渡して外側へ接続する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "近い守備の反応と後方のパス経路",
+            "options": [
+              {
+                "action": "後方link経由で幅を使う",
+                "when": "後方linkまでの経路と外側の空間がある"
+              },
+              {
+                "action": "経路が閉じれば近い継続へ切り替える",
+                "when": "戻す経路を守備が閉じている"
+              }
+            ],
+            "uncertainty": "守備と支援の状況を整理した分岐例。実行判断の十分条件ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "notSameAs",
+          "target": "rtk:screen-pass-contact",
+          "note": "接触局面のscreen passと名前だけで同一視しない。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "近い受け手から後方の接続役へ渡し、前進の脅威を残しながら外側へ攻撃を移す。",
+          "evidence": [
+            {
+              "source": "rcw-barlow-242",
+              "locator": "The options of the midfield four: Red-White",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・位置・手順・分岐は資料の要点を抽象化した編集モデル。固定の実行手順ではない。",
+          "evidence": [
+            {
+              "source": "rcw-barlow-242",
+              "locator": "The options of the midfield four: Red-White",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開の指導資料本文を確認。名称・分類・日本語は編集上の整理で、専門家による戦術・安全性審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "正確な深さ・タイミングはチームごとに異なる。デコイの妨害行為を許可しない。",
+        "選手・年代・競技条件による違いと、具体的な成功条件は未検証。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用モデルのみ。座標・時間・合法性・安全性・観測条件・終了条件を備えた実行検証は未実施。"
+      }
+    },
+    {
+      "id": "rtk:ruck-and-run-snook",
+      "version": "0.1.0",
+      "name": {
+        "ja": "ラック＆ラン（Snookモデル）",
+        "en": "Ruck and run (Snook model)"
+      },
+      "aliases": [
+        {
+          "label": "R & R",
+          "kind": "contextual",
+          "note": "この記事におけるモデルの略称。普遍的callではない。",
+          "language": "en"
+        }
+      ],
+      "side": "attack",
+      "level": "system",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "圧力のある場所から球を空間へ移し、近い選手の継続支援と遠い選手の幅を組み合わせる攻撃モデル。",
+        "en": "This playing philosophy moves possession out of pressure, combines nearby continuity with players retaining width, and restarts the wider attack when a ruck slows play."
+      },
+      "intent": [
+        "ラック自体を目的にせず、空間への配球と支援で攻撃を継続する。"
+      ],
+      "tags": [
+        "attack",
+        "system",
+        "出典確認済み",
+        "実行未検証",
+        "source-specific",
+        "指導者の例示"
+      ],
+      "applicability": {
+        "conditions": [
+          "近い継続役と遠い受け手の分担を共有し、ボールの速さに応じて配球を組み直せる。"
+        ],
+        "limits": [
+          "著者の一モデル。全チームの標準や万能策として扱わない。固定人数・固定フェーズは実行規則にしない。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "carrier",
+            "label": "保持者",
+            "task": "空間へ前進して継続する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "near-support",
+            "label": "近い支援者",
+            "task": "近くで受球・継続を支える",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "wide-support",
+            "label": "遠い受け手",
+            "task": "幅と深さを保ち次の攻撃に備える",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "near-support",
+            "relation": "near",
+            "object": "carrier",
+            "note": "球の近くで継続を支える。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "subject": "wide-support",
+            "relation": "across-width",
+            "object": "carrier",
+            "note": "球へ全員が集まらず幅を保つ。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "carrier",
+            "action": "pass",
+            "trigger": "攻撃を開始",
+            "description": "圧力域から空間へ球を移す。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "near-support",
+            "action": "support",
+            "trigger": "前進が生じる",
+            "description": "近い継続を支える。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-3",
+            "actor": "wide-support",
+            "action": "align",
+            "trigger": "ラックで球が遅くなる",
+            "description": "幅と深さから展開を再開できる状態を作る。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "球が速く近くに機会があるか",
+            "options": [
+              {
+                "action": "近い空間を速く攻める",
+                "when": "速い球と近くの前進機会がある"
+              },
+              {
+                "action": "遅ければ幅のある展開を組み直す",
+                "when": "球が遅く守備が近くを整えた"
+              }
+            ],
+            "uncertainty": "守備と支援の状況を整理した分岐例。実行判断の十分条件ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "圧力のある場所から球を空間へ移し、近い選手の継続支援と遠い選手の幅を組み合わせる攻撃モデル。",
+          "evidence": [
+            {
+              "source": "nz-snook-ruck-run",
+              "locator": "Main explanation; SUMMARY",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・位置・手順・分岐は資料の要点を抽象化した編集モデル。固定の実行手順ではない。",
+          "evidence": [
+            {
+              "source": "nz-snook-ruck-run",
+              "locator": "Main explanation; SUMMARY",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開ページの検索側で取得された本文を確認。直接の再取得は404となり、現URLの可読性は未確認。分類・動作分解は編集判断で、専門家レビュー・実技検証は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "著者の一モデル。全チームの標準や万能策として扱わない。固定人数・固定フェーズは実行規則にしない。",
+        "選手・年代・競技条件による違いと、具体的な成功条件は未検証。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用モデルのみ。座標・時間・合法性・安全性・観測条件・終了条件を備えた実行検証は未実施。"
+      }
+    },
+    {
+      "id": "rtk:short-pass-before-contact",
+      "version": "0.1.0",
+      "name": {
+        "ja": "接点前のショートパス",
+        "en": "Short pass before contact"
+      },
+      "aliases": [
+        {
+          "label": "tip-on",
+          "kind": "contextual",
+          "note": "近い支援者へ短くつなぐ文脈。Cross論文はtipping onに言及するが、全short passを同義にしない。",
+          "language": "en"
+        }
+      ],
+      "side": "attack",
+      "level": "move",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "近い受け手が接触前に支援者へ短く渡し、隣の攻撃経路へ球を移す。",
+        "en": "A midfield forward can pass to a nearby support runner instead of carrying or passing behind to a wider back. The support runner changes angle to receive."
+      },
+      "intent": [
+        "接点を一人に固定せず、近い守備のずれへ攻撃点を移す。"
+      ],
+      "tags": [
+        "attack",
+        "move",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "接触前に短い配球を選べ、内外の支援者が受球できる角度と間隔を保つ。"
+        ],
+        "limits": [
+          "接触中のoffloadとは分ける。ラベルだけでパスの即時性や距離を固定しない。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "receiver",
+            "label": "受け手",
+            "task": "近い守備を見て配球する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "close-support",
+            "label": "近い支援者",
+            "task": "角度を変えて球を受ける",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "deep-link",
+            "label": "後方の接続役",
+            "task": "外側へ出す別案を用意する",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "close-support",
+            "relation": "near",
+            "object": "receiver",
+            "note": "内外の近い受球位置。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "subject": "deep-link",
+            "relation": "behind",
+            "object": "receiver",
+            "note": "外へ展開する場合の後方接続。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "close-support",
+            "action": "align",
+            "trigger": "受け手へ守備が寄る",
+            "description": "近い受球角度を作る。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "receiver",
+            "action": "pass",
+            "trigger": "短い経路が開く",
+            "description": "支援者へ球を渡す。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "近い支援者の経路と外側の余地",
+            "options": [
+              {
+                "action": "近い支援者へ短く渡す",
+                "when": "近い受け手の経路が開く"
+              },
+              {
+                "action": "外が空けば後方linkへつなぐ",
+                "when": "近い経路が閉じ後方linkへ届く"
+              }
+            ],
+            "uncertainty": "守備と支援の状況を整理した分岐例。実行判断の十分条件ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "notSameAs",
+          "target": "rtk:offload-continuity",
+          "note": "接触前の短い配球と、接触中・後のoffloadを区別する。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "近い受け手が接触前に支援者へ短く渡し、隣の攻撃経路へ球を移す。",
+          "evidence": [
+            {
+              "source": "rcw-cottrell-forward-options",
+              "locator": "HOW TO DO IT; TECHNIQUE",
+              "support": "direct"
+            },
+            {
+              "source": "cross-structure-development",
+              "locator": "Forwards in POD Shapes: discussion of tipping on",
+              "support": "interpretation"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・位置・手順・分岐は資料の要点を抽象化した編集モデル。固定の実行手順ではない。",
+          "evidence": [
+            {
+              "source": "rcw-cottrell-forward-options",
+              "locator": "HOW TO DO IT; TECHNIQUE",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開の指導資料本文を確認。名称・分類・日本語は編集上の整理で、専門家による戦術・安全性審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "接触中のoffloadとは分ける。ラベルだけでパスの即時性や距離を固定しない。",
+        "選手・年代・競技条件による違いと、具体的な成功条件は未検証。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用モデルのみ。座標・時間・合法性・安全性・観測条件・終了条件を備えた実行検証は未実施。"
+      }
+    },
+    {
+      "id": "rtk:split-midfield-scrum",
+      "version": "0.1.0",
+      "name": {
+        "ja": "スクラム後のスプリット攻撃（Snook例）",
+        "en": "Split midfield strike from scrum (Snook example)"
+      },
+      "aliases": [
+        {
+          "label": "Split",
+          "kind": "contextual",
+          "note": "この記事の例示play名。一般標準名でも全split formationの同義語でもない。",
+          "language": "en"
+        }
+      ],
+      "side": "attack",
+      "level": "move",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "スクラム後に外へのパスを見せ、異なる走路の近い受け手へ短く渡して守備間を狙う例示プレー。",
+        "en": "A first receiver threatens forward, shows a wider pass and supplies a closer runner attacking a partial gap. The article also offers a pass behind that runner or a wider delivery."
+      },
+      "intent": [
+        "外への配球を見せつつ、守備間へ短い受け手を入れる。"
+      ],
+      "tags": [
+        "attack",
+        "move",
+        "出典確認済み",
+        "実行未検証",
+        "source-specific",
+        "指導者の例示"
+      ],
+      "applicability": {
+        "conditions": [
+          "スクラムから利用可能な球が出て、出典例の受け手と支援者が異なる走路を共有できる。"
+        ],
+        "limits": [
+          "記事自体がplay名は各自で決めるとしている。チーム共通語に昇格させない。スクラムcallとjersey番号はDB実行命令にコピーしない。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "first-receiver",
+            "label": "第一受け手",
+            "task": "前進しながら近外の選択を示す",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "close-strike-runner",
+            "label": "近い切り込み役",
+            "task": "守備間を狙う",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "wide-option",
+            "label": "外側の受け手",
+            "task": "外への配球を可能にする",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "rear-option",
+            "label": "後方の受け手",
+            "task": "近い走者の後ろの経路を用意する",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "wide-option",
+            "relation": "outside-of",
+            "object": "close-strike-runner",
+            "note": "近い走者と別の幅を示す。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "subject": "rear-option",
+            "relation": "behind",
+            "object": "close-strike-runner",
+            "note": "短い経路が閉じた場合の後方選択。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "first-receiver",
+            "action": "carry",
+            "trigger": "スクラムから配球",
+            "description": "守備へ前進して外のパスを見せる。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "close-strike-runner",
+            "action": "align",
+            "trigger": "守備の間が開く",
+            "description": "短い球を受けられる経路へ入る。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-3",
+            "actor": "first-receiver",
+            "action": "pass",
+            "trigger": "近外の反応を確認",
+            "description": "近い走者か後方・外側へ渡す。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "近い隙間と外側の守備反応",
+            "options": [
+              {
+                "action": "近いrunnerへ短く渡す",
+                "when": "近い走者が守備間で受けられる"
+              },
+              {
+                "action": "近い経路が閉じれば後方・外側へ渡す",
+                "when": "近い経路が閉じ後方・外側が使える"
+              }
+            ],
+            "uncertainty": "守備と支援の状況を整理した分岐例。実行判断の十分条件ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "notSameAs",
+          "target": "rtk:switch-pass",
+          "note": "記事のSplitを一般のswitchと同一視しない。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "スクラム後に外へのパスを見せ、異なる走路の近い受け手へ短く渡して守備間を狙う例示プレー。",
+          "evidence": [
+            {
+              "source": "nz-snook-midfield-scrum",
+              "locator": "PLAYS: Split; Variations",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・位置・手順・分岐は資料の要点を抽象化した編集モデル。固定の実行手順ではない。",
+          "evidence": [
+            {
+              "source": "nz-snook-midfield-scrum",
+              "locator": "PLAYS: Split; Variations",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開ページの検索側で取得された本文を確認。直接の再取得は404となり、現URLの可読性は未確認。分類・動作分解は編集判断で、専門家レビュー・実技検証は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "記事自体がplay名は各自で決めるとしている。チーム共通語に昇格させない。スクラムcallとjersey番号はDB実行命令にコピーしない。",
+        "選手・年代・競技条件による違いと、具体的な成功条件は未検証。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用モデルのみ。座標・時間・合法性・安全性・観測条件・終了条件を備えた実行検証は未実施。"
+      }
+    },
+    {
+      "id": "rtk:three-player-pod",
+      "version": "0.1.0",
+      "name": {
+        "ja": "三人ポッド",
+        "en": "Three-player forward pod"
+      },
+      "aliases": [
+        {
+          "label": "spear head",
+          "kind": "contextual",
+          "note": "Cross論文の先頭＋内外支援の形。全podの同義語ではない。",
+          "language": "en"
+        },
+        {
+          "label": "arrow",
+          "kind": "contextual",
+          "note": "同論文における形の呼び名。",
+          "language": "en"
+        }
+      ],
+      "side": "attack",
+      "level": "shape",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "先頭の受け手に内外の支援者を添え、短いパスと保持後の継続を用意する三人の攻撃配置。",
+        "en": "The paper describes a lead receiver with support on both sides, intended to offer passing/support options and improve continuity. It warns that rigid roles can reduce young players' decisions and opportunities."
+      },
+      "intent": [
+        "保持者を孤立させず、近いパスと継続支援を同時に用意する。"
+      ],
+      "tags": [
+        "attack",
+        "shape",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "主な受け手と内外の支援者が、接触前の短いパスまたは保持後の継続へ参加できる。"
+        ],
+        "limits": [
+          "podは人数固定の普遍語ではない。lifter群とも区別。各人の役割固定や幼年層への一律推奨をしない。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "lead-receiver",
+            "label": "先頭の受け手",
+            "task": "保持と短いパスを選ぶ",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "inside-support",
+            "label": "内側の支援",
+            "task": "内側で受球または継続を支える",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "outside-support",
+            "label": "外側の支援",
+            "task": "外側で受球または継続を支える",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "inside-support",
+            "relation": "inside-of",
+            "object": "lead-receiver",
+            "note": "先頭の内側に接続。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "subject": "outside-support",
+            "relation": "outside-of",
+            "object": "lead-receiver",
+            "note": "先頭の外側に接続。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "lead-receiver",
+            "action": "scan",
+            "trigger": "球を受ける",
+            "description": "近い守備と支援者を確認する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "outside-support",
+            "action": "support",
+            "trigger": "保持者が選択する",
+            "description": "受球できる角度か継続支援へ移る。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "隣の受け手に機会があるか",
+            "options": [
+              {
+                "action": "短いパスで攻撃点を変える",
+                "when": "隣の受け手に前進経路がある"
+              },
+              {
+                "action": "保持して到着する支援と継続する",
+                "when": "短い経路が閉じても近い支援がある"
+              }
+            ],
+            "uncertainty": "守備と支援の状況を整理した分岐例。実行判断の十分条件ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "partOf",
+          "target": "rtk:one-three-three-one",
+          "note": "中央の三人組として使えるが、pod一般の用途はこれに限らない。"
+        },
+        {
+          "type": "enables",
+          "target": "rtk:short-pass-before-contact",
+          "note": "内外の近い受け手を用意する。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "先頭の受け手に内外の支援者を添え、短いパスと保持後の継続を用意する三人の攻撃配置。",
+          "evidence": [
+            {
+              "source": "cross-structure-development",
+              "locator": "Forwards in POD Shapes",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・位置・手順・分岐は資料の要点を抽象化した編集モデル。固定の実行手順ではない。",
+          "evidence": [
+            {
+              "source": "cross-structure-development",
+              "locator": "Forwards in POD Shapes",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開の指導資料本文を確認。名称・分類・日本語は編集上の整理で、専門家による戦術・安全性審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "podは人数固定の普遍語ではない。lifter群とも区別。各人の役割固定や幼年層への一律推奨をしない。",
+        "選手・年代・競技条件による違いと、具体的な成功条件は未検証。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用モデルのみ。座標・時間・合法性・安全性・観測条件・終了条件を備えた実行検証は未実施。"
+      }
+    },
+    {
+      "id": "rtk:two-four-two",
+      "version": "0.1.0",
+      "name": {
+        "ja": "2-4-2アタック",
+        "en": "2-4-2 attacking system"
+      },
+      "aliases": [
+        {
+          "label": "2-4-2",
+          "kind": "contextual",
+          "note": "攻撃FW配置の文脈に限定。",
+          "language": "en"
+        }
+      ],
+      "side": "attack",
+      "level": "system",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "左右外側にFW二人ずつ、中央に四人を置き、BKの接続役を通じて幅と近い支援を両立させる。",
+        "en": "The example distributes two forwards to each edge and four centrally, with backs linking the groups. A central receiver can connect back to a link player rather than always carrying."
+      },
+      "intent": [
+        "広い配置を保ちつつ、ボール周辺の支援と外側への接続を用意する。"
+      ],
+      "tags": [
+        "attack",
+        "system",
+        "出典確認済み",
+        "実行未検証"
+      ],
+      "applicability": {
+        "conditions": [
+          "左右の組と中央の組が接続役を共有し、横幅を保ちながらボール近くへ支援できる。"
+        ],
+        "limits": [
+          "著者のRed/White/Blueは例示のチームコールで一般同義語ではない。セットプレーからの遷移や守備への戻りは別途設計。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "central-group",
+            "label": "中央の組",
+            "task": "中央で保持と配球の選択を示す",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "edge-pair",
+            "label": "外側の二人組",
+            "task": "幅と近い支援を用意する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "distributor",
+            "label": "配球役",
+            "task": "組かlinkへ配る",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "back-link",
+            "label": "接続役",
+            "task": "組の間で展開をつなぐ",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "edge-pair",
+            "relation": "outside-of",
+            "object": "central-group",
+            "note": "両端に二人ずつ、中央に四人のFWを配分。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "subject": "back-link",
+            "relation": "connected-to",
+            "object": "central-group",
+            "note": "BKが組同士をつなぐ。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "edge-pair",
+            "action": "align",
+            "trigger": "フェーズを準備",
+            "description": "外側の組が幅を保つ。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "distributor",
+            "action": "pass",
+            "trigger": "守備の反応が見える",
+            "description": "組の保持かlinkへの接続を選ぶ。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "守備が中央へ寄るか外側を保つか",
+            "options": [
+              {
+                "action": "組の前進と近い支援を使う",
+                "when": "組の前進に支援が間に合う"
+              },
+              {
+                "action": "linkへ戻して外側へ展開する",
+                "when": "守備が中央へ寄り外側へ接続できる"
+              }
+            ],
+            "uncertainty": "守備と支援の状況を整理した分岐例。実行判断の十分条件ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "contrastsWith",
+          "target": "rtk:one-three-three-one",
+          "note": "FW配置の別案。"
+        },
+        {
+          "type": "enables",
+          "target": "rtk:pull-back-pass",
+          "note": "後方のlink配置が、中央の保持者から戻すパスの受け手を用意する。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "左右外側にFW二人ずつ、中央に四人を置き、BKの接続役を通じて幅と近い支援を両立させる。",
+          "evidence": [
+            {
+              "source": "rcw-barlow-242",
+              "locator": "The basic shape; midfield options",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・位置・手順・分岐は資料の要点を抽象化した編集モデル。固定の実行手順ではない。",
+          "evidence": [
+            {
+              "source": "rcw-barlow-242",
+              "locator": "The basic shape; midfield options",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開の指導資料本文を確認。名称・分類・日本語は編集上の整理で、専門家による戦術・安全性審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "著者のRed/White/Blueは例示のチームコールで一般同義語ではない。セットプレーからの遷移や守備への戻りは別途設計。",
+        "選手・年代・競技条件による違いと、具体的な成功条件は未検証。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用モデルのみ。座標・時間・合法性・安全性・観測条件・終了条件を備えた実行検証は未実施。"
+      }
+    },
+    {
+      "id": "rtk:unders-line",
+      "version": "0.1.0",
+      "name": {
+        "ja": "アンダーズライン",
+        "en": "Unders line"
+      },
+      "aliases": [],
+      "side": "attack",
+      "level": "skill",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "受け手がパス元へ寄る角度で走り、内側の守備のずれを使う、またはその守備を引きつける。",
+        "en": "The runner changes angle toward the origin of the pass, potentially holding an inside defender or attacking a shoulder."
+      },
+      "intent": [
+        "守備の横移動を止める、または内側のずれを使う。"
+      ],
+      "tags": [
+        "attack",
+        "skill",
+        "出典確認済み",
+        "実行未検証",
+        "running-line",
+        "用語",
+        "戦術要素"
+      ],
+      "applicability": {
+        "conditions": [
+          "受け手が内側へ向かう走路をパス元と共有し、ほかの走者の進路と衝突しない余地がある。"
+        ],
+        "limits": [
+          "角度の用語であり、独立したチーム戦術ではない。固定45度やswitchの同義としない。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "passer",
+            "label": "パス役",
+            "task": "走路と守備の関係を判断する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "angled-runner",
+            "label": "内向きの走者",
+            "task": "パス元へ寄る角度を示す",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "angled-runner",
+            "relation": "outside-of",
+            "object": "passer",
+            "note": "外側からパス元へ寄る走路を選べる位置。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "angled-runner",
+            "action": "align",
+            "trigger": "受球機会を準備",
+            "description": "パス元へ寄る角度を示す。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "passer",
+            "action": "pass",
+            "trigger": "守備が走者へ反応",
+            "description": "走者へ渡すか別の受け手を使う。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "内側の経路が開くか",
+            "options": [
+              {
+                "action": "内向きの走路で受ける",
+                "when": "内側に受球経路がある"
+              },
+              {
+                "action": "閉じていれば他の受け手へ配球する",
+                "when": "内側を守備が閉じている"
+              }
+            ],
+            "uncertainty": "守備と支援の状況を整理した分岐例。実行判断の十分条件ではない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "contrastsWith",
+          "target": "rtk:overs-line",
+          "note": "パス元に対する走路の方向が異なる。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "受け手がパス元へ寄る角度で走り、内側の守備のずれを使う、またはその守備を引きつける。",
+          "evidence": [
+            {
+              "source": "rcw-cottrell-unders-overs",
+              "locator": "drag defenders off square",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割・位置・手順・分岐は資料の要点を抽象化した編集モデル。固定の実行手順ではない。",
+          "evidence": [
+            {
+              "source": "rcw-cottrell-unders-overs",
+              "locator": "drag defenders off square",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開の指導資料本文を確認。名称・分類・日本語は編集上の整理で、専門家による戦術・安全性審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "角度の用語であり、独立したチーム戦術ではない。固定45度やswitchの同義としない。",
+        "選手・年代・競技条件による違いと、具体的な成功条件は未検証。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用モデルのみ。座標・時間・合法性・安全性・観測条件・終了条件を備えた実行検証は未実施。"
+      }
+    },
+    {
+      "id": "rtk:backfield-pendulum",
+      "version": "0.1.0",
+      "name": {
+        "ja": "バックフィールド・ペンデュラム",
+        "en": "Backfield pendulum"
+      },
+      "aliases": [
+        {
+          "label": "Pendulum",
+          "language": "en",
+          "kind": "contextual",
+          "note": "出典ではbackfieldの役割交替を指す。別文脈の同名動作と自動で同一視しない。"
+        }
+      ],
+      "side": "defence",
+      "level": "system",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "後方の三人がボール位置に応じて役割を交換し、前線参加とキックカバーを分担する。",
+        "en": "Three backfield defenders rotate responsibilities between the front line and kick coverage."
+      },
+      "intent": [
+        "ランへの対応を残しつつ、攻撃側が使いたい後方空間を覆う。"
+      ],
+      "tags": [
+        "defence",
+        "system",
+        "kicking",
+        "出典確認済み"
+      ],
+      "applicability": {
+        "conditions": [
+          "前線と後方の担当を三人で共有できる。"
+        ],
+        "limits": [
+          "常に同じ二人を後方へ置く固定配置ではない。守備方式と地域、相手の脅威によって調整する。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "near-wing",
+            "label": "ボール側の外側守備者",
+            "task": "必要に応じて前線へ入る",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "central-cover",
+            "label": "中央の後方役",
+            "task": "前線へ入った選手の背後を覆う",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "far-wing",
+            "label": "逆側の外側守備者",
+            "task": "中央後方のカバーを補う",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "central-cover",
+            "relation": "behind",
+            "object": "near-wing",
+            "note": "前線へ出た選手の後ろを担当する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "subject": "far-wing",
+            "relation": "inside-of",
+            "object": "central-cover",
+            "note": "ボールの移動に合わせ中央寄りの後方へ調整する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "near-wing",
+            "action": "align",
+            "trigger": "攻撃が自分の側へ来る",
+            "description": "前線への関与を判断する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "central-cover",
+            "action": "track",
+            "trigger": "外側役が前へ出る",
+            "description": "その背後へカバーを移す。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-3",
+            "actor": "far-wing",
+            "action": "align",
+            "trigger": "後方の担当が移動",
+            "description": "中央後方を補い声で共有する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "ランの前進とキックの脅威",
+            "options": [
+              {
+                "action": "前線を補強する",
+                "when": "ボール側のランへ人数が必要"
+              },
+              {
+                "action": "後方カバーを優先する",
+                "when": "背後へのキックが強い選択肢"
+              }
+            ],
+            "uncertainty": "守備の人数配分と深さは相手と地域次第。資料の一例を唯一の配置にしない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "enables",
+          "target": "rtk:counter-attack",
+          "note": "編集上の関係。後方で確保できた場合に反撃への準備となる。"
+        },
+        {
+          "type": "notSameAs",
+          "target": "rtk:sweeper-cover-sevens",
+          "note": "XVの三人の連携例であり、既存のセブンズのスイーパーとは人数・文脈が異なる。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "後方の三人がボール位置に応じて役割を交換し、前線参加とキックカバーを分担する。",
+          "evidence": [
+            {
+              "source": "rcw-backfield-pendulum",
+              "locator": "Three defensive areas / pendulum explanation / three concluding rules",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+          "evidence": [
+            {
+              "source": "rcw-backfield-pendulum",
+              "locator": "Three defensive areas / pendulum explanation / three concluding rules",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "守備の人数配分と深さは相手と地域次第。資料の一例を唯一の配置にしない。",
+        "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
+      }
+    },
+    {
+      "id": "rtk:chip-and-chase",
+      "version": "0.1.0",
+      "name": {
+        "ja": "チップ・アンド・チェイス",
+        "en": "Chip and chase"
+      },
+      "aliases": [
+        {
+          "label": "Chip kick",
+          "language": "en",
+          "kind": "contextual",
+          "note": "資料で確認できる技術名。チップ単体と追走を含む戦術の範囲は同一でない。"
+        }
+      ],
+      "side": "attack",
+      "level": "move",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "守備線を少し越えるキックと追走を組み合わせ、ボールの再獲得や圧力を狙う。",
+        "en": "A short kick over the defensive line is followed by a chase to regain possession or apply pressure."
+      },
+      "intent": [
+        "守備線の手前で接触する代わりに、その直後へ争点を移す。"
+      ],
+      "tags": [
+        "attack",
+        "move",
+        "kicking",
+        "出典確認済み"
+      ],
+      "applicability": {
+        "conditions": [
+          "守備線の直後に空間があり、キッカーまたは味方が追える。"
+        ],
+        "limits": [
+          "チャージ、蹴りすぎ、後方守備への直接供給に注意する。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "kicker",
+            "label": "キッカー",
+            "task": "守備線の頭上へ短く送る",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "chaser",
+            "label": "追走者",
+            "task": "ボールを追い回収を狙う",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "chaser",
+            "relation": "behind",
+            "object": "kicker",
+            "note": "味方が追う場合はキック時の位置を確認する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "kicker",
+            "action": "scan",
+            "trigger": "守備者が接近",
+            "description": "背後とチャージされる距離を見る。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "kicker",
+            "action": "kick",
+            "trigger": "短い頭上経路が使える",
+            "description": "守備線の少し後ろへ蹴る。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-3",
+            "actor": "chaser",
+            "action": "track",
+            "trigger": "キックが上がる",
+            "description": "回収可能な位置へ追う。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "背後の空間と相手の到達",
+            "options": [
+              {
+                "action": "チップして追う",
+                "when": "短い背後が空き、追走できる"
+              },
+              {
+                "action": "ボールを保持する",
+                "when": "後方守備が先着するかチャージされそう"
+              }
+            ],
+            "uncertainty": "チップの落下点はキックの精度と相手の反応で変わる。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "contrastsWith",
+          "target": "rtk:grubber-behind-line",
+          "note": "背後を狙う点は共通だが、軌道とバウンドの利用が異なる。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "守備線を少し越えるキックと追走を組み合わせ、ボールの再獲得や圧力を狙う。",
+          "evidence": [
+            {
+              "source": "nz-chip-kick",
+              "locator": "OBJECTIVE / KEY FACTORS / COMMON ERRORS",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+          "evidence": [
+            {
+              "source": "nz-chip-kick",
+              "locator": "OBJECTIVE / KEY FACTORS / COMMON ERRORS",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "チップの落下点はキックの精度と相手の反応で変わる。",
+        "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
+      }
+    },
+    {
+      "id": "rtk:contestable-box-kick",
+      "version": "0.1.0",
+      "name": {
+        "ja": "再獲得を狙うボックスキック",
+        "en": "Contestable box kick"
+      },
+      "aliases": [
+        {
+          "label": "Box kick",
+          "language": "en",
+          "kind": "contextual",
+          "note": "出典で確認した名称だが、ここでは再獲得を競う使用を限定して扱う。"
+        }
+      ],
+      "side": "attack",
+      "level": "move",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "ラックなどの後方から、追走者が競れるキックで相手に圧力を掛ける。",
+        "en": "A kick from behind the breakdown or set piece creates a contest for chasers."
+      },
+      "intent": [
+        "次の保持を競いながら地域を進める。"
+      ],
+      "tags": [
+        "attack",
+        "move",
+        "kicking",
+        "出典確認済み"
+      ],
+      "applicability": {
+        "conditions": [
+          "供給点後方のキッカーと追走者がタイミングを共有できる。"
+        ],
+        "limits": [
+          "教材の距離・滞空秒数は練習設定であり、全状況に固定しない。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "kicker",
+            "label": "供給点後方のキッカー",
+            "task": "追走者が到達できる落下点を選ぶ",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "chaser",
+            "label": "チェイサー",
+            "task": "オンサイドから追って競る",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "support",
+            "label": "追走支援",
+            "task": "競り合い後のボールや守備へ備える",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "chaser",
+            "relation": "behind",
+            "object": "kicker",
+            "note": "蹴る瞬間に合法な位置から追う。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "subject": "support",
+            "relation": "behind",
+            "object": "chaser",
+            "note": "第一の競り合いの結果に対応する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "kicker",
+            "action": "scan",
+            "trigger": "供給点でボールを得る",
+            "description": "落下点と追走の開始を共有する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "kicker",
+            "action": "kick",
+            "trigger": "追走が準備できる",
+            "description": "追走者が競れる軌道で送る。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-3",
+            "actor": "chaser",
+            "action": "recover",
+            "trigger": "落下点へ到達",
+            "description": "ボールを争い、取れなければ守備へ移る。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "チェイスの準備と受け手の配置",
+            "options": [
+              {
+                "action": "コンテスタブルに蹴る",
+                "when": "追走者が競れる状況"
+              },
+              {
+                "action": "保持または別の出口を選ぶ",
+                "when": "追走が間に合わず相手に容易な保持を渡す状況"
+              }
+            ],
+            "uncertainty": "ボックスキックのすべてが再獲得目的ではなく、地域獲得との重み付けが変わる。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "similarTo",
+          "target": "rtk:up-and-under-contest",
+          "note": "落下点で争う目的を共有する。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "ラックなどの後方から、追走者が競れるキックで相手に圧力を掛ける。",
+          "evidence": [
+            {
+              "source": "rcw-box-kick",
+              "locator": "WHY USE IT / HOW TO DO IT",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+          "evidence": [
+            {
+              "source": "rcw-box-kick",
+              "locator": "WHY USE IT / HOW TO DO IT",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "ボックスキックのすべてが再獲得目的ではなく、地域獲得との重み付けが変わる。",
+        "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
+      }
+    },
+    {
+      "id": "rtk:counter-ruck",
+      "version": "0.1.0",
+      "name": {
+        "ja": "カウンターラック",
+        "en": "Counter-ruck"
+      },
+      "aliases": [],
+      "side": "defence",
+      "level": "move",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "守備側が合法的にボールを争い、攻撃側をボールの向こうへ押し戻して保持を変えようとする。",
+        "en": "Defenders contest legally by driving attacking support back over the ball."
+      },
+      "intent": [
+        "相手の支援とボールの位置関係を変え、再獲得の機会を作る。"
+      ],
+      "tags": [
+        "defence",
+        "move",
+        "defence",
+        "出典確認済み"
+      ],
+      "applicability": {
+        "conditions": [
+          "合法な参加条件を満たし、押し返す体勢と支援がある。"
+        ],
+        "limits": [
+          "手で直接ボールを奪うジャッカルと同一ではない。参加経路や体勢は現行法と局面ごとに確認する。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "first-defender",
+            "label": "第一守備者",
+            "task": "合法な位置から相手の支援へ働きかける",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "support-defender",
+            "label": "支援守備者",
+            "task": "押し返しと次の保持を支える",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "line-defender",
+            "label": "残る守備者",
+            "task": "接点の外側の対応を維持する",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "support-defender",
+            "relation": "behind",
+            "object": "first-defender",
+            "note": "第一守備者を支援できる位置を取る。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "subject": "line-defender",
+            "relation": "outside-of",
+            "object": "first-defender",
+            "note": "争点への投入で外側を放置しない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "first-defender",
+            "action": "scan",
+            "trigger": "ラックの争点が見える",
+            "description": "参加条件と支援を確認する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "support-defender",
+            "action": "press",
+            "trigger": "合法に争える",
+            "description": "第一守備者と攻撃側を押し戻す。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-3",
+            "actor": "line-defender",
+            "action": "support",
+            "trigger": "争いの結果が出る",
+            "description": "回収または相手の次の攻撃に備える。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "合法に争える体勢と支援があるか",
+            "options": [
+              {
+                "action": "押し返して争う",
+                "when": "参加条件と支援を確保できる"
+              },
+              {
+                "action": "再守備へ戻る",
+                "when": "無理な参加になり外側も不足する"
+              }
+            ],
+            "uncertainty": "人数を投入しても奪取は保証されず、外側の守備を弱める可能性がある。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "partOf",
+          "target": "rtk:breakdown-contest-or-reload",
+          "note": "編集上の関係。ブレイクダウンで争うと決めた際の選択肢の一つ。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "守備側が合法的にボールを争い、攻撃側をボールの向こうへ押し戻して保持を変えようとする。",
+          "evidence": [
+            {
+              "source": "wr-contact-functional-roles",
+              "locator": "Ruck / Defending player(s): responsibilities",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+          "evidence": [
+            {
+              "source": "wr-contact-functional-roles",
+              "locator": "Ruck / Defending player(s): responsibilities",
+              "support": "interpretation"
+            }
+          ]
+        },
+        {
+          "id": "term-counter-ruck",
+          "text": "NZRの教材は守備で保持を奪い返す選択としてcounter-ruckを挙げる。",
+          "evidence": [
+            {
+              "source": "nz-foundation-manual",
+              "locator": "Printed p.94, DEFENCE / Key Factors",
+              "support": "direct"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "人数を投入しても奪取は保証されず、外側の守備を弱める可能性がある。",
+        "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
+      }
+    },
+    {
+      "id": "rtk:cross-field-kick",
+      "version": "0.1.0",
+      "name": {
+        "ja": "クロスフィールドキック",
+        "en": "Cross-field kick"
+      },
+      "aliases": [],
+      "side": "attack",
+      "level": "move",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "外側の味方が受けられるよう、幅方向へ斜めにキックしてボールを送る。",
+        "en": "An angled kick transfers the ball towards an outside teammate across the field."
+      },
+      "intent": [
+        "守備線を横断するパス以外の経路で外の受け手へ届かせる。"
+      ],
+      "tags": [
+        "attack",
+        "move",
+        "kicking",
+        "出典確認済み"
+      ],
+      "applicability": {
+        "conditions": [
+          "外側の受け手と、そこへ届く軌道を確認できる。"
+        ],
+        "limits": [
+          "受け手のオンサイド、天候、捕球能力、守備の移動に依存する。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "kicker",
+            "label": "キッカー",
+            "task": "外の受け手へ斜めに送る",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "receiver",
+            "label": "外側の受け手",
+            "task": "落下点へ動き捕球を狙う",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "receiver",
+            "relation": "across-width",
+            "object": "kicker",
+            "note": "幅を取るが、キック時のオンサイド条件を満たす。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "kicker",
+            "action": "scan",
+            "trigger": "外側を使う機会",
+            "description": "受け手と相手カバーを読む。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "kicker",
+            "action": "kick",
+            "trigger": "受け手へ届けられる",
+            "description": "幅方向へボールを送る。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-3",
+            "actor": "receiver",
+            "action": "recover",
+            "trigger": "ボールが落下",
+            "description": "捕球と次のプレーを準備する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "外側の受け手と守備カバーの関係",
+            "options": [
+              {
+                "action": "クロスキックを選ぶ",
+                "when": "外の味方が受球を争える"
+              },
+              {
+                "action": "保持・パスを選ぶ",
+                "when": "相手が落下点を容易に覆える"
+              }
+            ],
+            "uncertainty": "外側へ蹴るだけでは優位を保証しない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "notSameAs",
+          "target": "rtk:cut-out-pass",
+          "note": "遠い受け手へ届かせる点は似るが、パスとキックで前進・オンサイド条件が異なる。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "外側の味方が受けられるよう、幅方向へ斜めにキックしてボールを送る。",
+          "evidence": [
+            {
+              "source": "wr-kicking-guide",
+              "locator": "Kicking strategies include / kicking out wide at an oblique angle",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+          "evidence": [
+            {
+              "source": "wr-kicking-guide",
+              "locator": "Kicking strategies include / kicking out wide at an oblique angle",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "外側へ蹴るだけでは優位を保証しない。",
+        "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
+      }
+    },
+    {
+      "id": "rtk:defensive-realignment",
+      "version": "0.1.0",
+      "name": {
+        "ja": "守備の再配置",
+        "en": "Defensive realignment"
+      },
+      "aliases": [],
+      "side": "defence",
+      "level": "principle",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "攻撃の人数・幅・深さやミスマッチを読み、守備の配置を素早く整える。",
+        "en": "Defenders read attacking numbers and alignment, then reorganise to reduce mismatches."
+      },
+      "intent": [
+        "攻撃側が使える数的・位置的な優位を減らす。"
+      ],
+      "tags": [
+        "defence",
+        "principle",
+        "defence",
+        "出典確認済み"
+      ],
+      "applicability": {
+        "conditions": [
+          "相手の配置と味方の不足を観察できる。"
+        ],
+        "limits": [
+          "外へ走るだけの動作や、単一の守備システム名ではない。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "scanner",
+            "label": "観察する守備者",
+            "task": "人数不足やミスマッチを伝える",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "inside-defender",
+            "label": "内側の守備者",
+            "task": "接点付近の担当を整える",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "edge-defender",
+            "label": "外側の守備者",
+            "task": "攻撃の幅に合わせる",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "inside-defender",
+            "relation": "connected-to",
+            "object": "edge-defender",
+            "note": "内外の担当が分断されない関係を作る。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "subject": "scanner",
+            "relation": "connected-to",
+            "object": "edge-defender",
+            "note": "相手の配置の変化を共有する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "scanner",
+            "action": "scan",
+            "trigger": "次の攻撃配置が見える",
+            "description": "人数・幅・深さ・ミスマッチを確認する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "scanner",
+            "action": "support",
+            "trigger": "不足を見つける",
+            "description": "不足する位置と担当を伝える。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-3",
+            "actor": "edge-defender",
+            "action": "align",
+            "trigger": "共有した不足に対応",
+            "description": "幅と担当を整えて再観察する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "守備の不足が外側か接点付近か",
+            "options": [
+              {
+                "action": "外側の幅を補う",
+                "when": "攻撃の幅に対して人数が不足"
+              },
+              {
+                "action": "内側の担当を整える",
+                "when": "接点付近に対応不足やミスマッチがある"
+              }
+            ],
+            "uncertainty": "観察から移動までに攻撃の形が変わる。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "enables",
+          "target": "rtk:connected-backline-defence",
+          "note": "編集上の関係。再配置は連結した守備列を作り直す準備となる。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "攻撃の人数・幅・深さやミスマッチを読み、守備の配置を素早く整える。",
+          "evidence": [
+            {
+              "source": "wr-running-defence",
+              "locator": "The supporting player should / identify attacking setup / reorganise defensive formation",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+          "evidence": [
+            {
+              "source": "wr-running-defence",
+              "locator": "The supporting player should / identify attacking setup / reorganise defensive formation",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "観察から移動までに攻撃の形が変わる。",
+        "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
+      }
+    },
+    {
+      "id": "rtk:grubber-behind-line",
+      "version": "0.1.0",
+      "name": {
+        "ja": "グラバーで守備の背後を狙う",
+        "en": "Grubber kick behind the defensive line"
+      },
+      "aliases": [
+        {
+          "label": "Grubber kick",
+          "language": "en",
+          "kind": "contextual",
+          "note": "資料の技術名。ここでは背後を狙う戦術的使用だけを扱う。"
+        }
+      ],
+      "side": "attack",
+      "level": "move",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "低く転がすキックで守備線直後の空間へボールを送り、圧力や再獲得を狙う。",
+        "en": "A low bouncing kick targets space immediately behind the defensive line."
+      },
+      "intent": [
+        "前方へ出た守備者をボールの軌道で越え、背後で次の争点を作る。"
+      ],
+      "tags": [
+        "attack",
+        "move",
+        "defence",
+        "出典確認済み"
+      ],
+      "applicability": {
+        "conditions": [
+          "守備線の背後に利用できる空間と追走者がいる。"
+        ],
+        "limits": [
+          "脚に当てる、蹴りすぎる、予想外に跳ねる危険がある。技術としてのグラバーの全用途を表すわけではない。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "kicker",
+            "label": "キッカー",
+            "task": "地面を使って守備線の背後へ送る",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "chaser",
+            "label": "追走者",
+            "task": "合法な位置から落下・転がり先へ進む",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "chaser",
+            "relation": "behind",
+            "object": "kicker",
+            "note": "キック時のオンサイドを確認できる関係から追う。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "kicker",
+            "action": "scan",
+            "trigger": "守備線に近づく",
+            "description": "守備者間と背後の空間を読む。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "kicker",
+            "action": "kick",
+            "trigger": "低い経路が使える",
+            "description": "守備線の後ろを狙って転がす。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-3",
+            "actor": "chaser",
+            "action": "recover",
+            "trigger": "ボールが守備線を越える",
+            "description": "バウンドに合わせて回収を試みる。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "低い経路と追走先が空いているか",
+            "options": [
+              {
+                "action": "グラバーを使う",
+                "when": "低い経路が通り、味方が追える"
+              },
+              {
+                "action": "保持・パスへ変える",
+                "when": "相手の脚や後方カバーが経路を塞ぐ"
+              }
+            ],
+            "uncertainty": "バウンドと後方守備の到着は確定できない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "contrastsWith",
+          "target": "rtk:chip-and-chase",
+          "note": "編集上の比較。低い軌道と守備者の頭上を越す軌道を区別する。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "低く転がすキックで守備線直後の空間へボールを送り、圧力や再獲得を狙う。",
+          "evidence": [
+            {
+              "source": "nz-grubber-kick",
+              "locator": "OBJECTIVE / COMMON ERRORS",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+          "evidence": [
+            {
+              "source": "nz-grubber-kick",
+              "locator": "OBJECTIVE / COMMON ERRORS",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "バウンドと後方守備の到着は確定できない。",
+        "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
+      }
+    },
+    {
+      "id": "rtk:man-on-man-defence",
+      "version": "0.1.0",
+      "name": {
+        "ja": "マン・オン・マン守備",
+        "en": "Man-on-man defence"
+      },
+      "aliases": [],
+      "side": "defence",
+      "level": "system",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "セットプレーからの攻撃に対し、守備者が対応する相手を分担して前進を止める基本方式。",
+        "en": "A set-piece defensive pattern allocates attackers to individual defenders."
+      },
+      "intent": [
+        "対応相手を明確にし、受け手への守備を連続させる。"
+      ],
+      "tags": [
+        "defence",
+        "system",
+        "defence",
+        "出典確認済み"
+      ],
+      "applicability": {
+        "conditions": [
+          "攻撃側が追加参加者を入れず、人数の対応を作れる状況。"
+        ],
+        "limits": [
+          "資料の背番号対応を全チームへ固定適用しない。追加参加者で人数対応が崩れる。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "defender",
+            "label": "担当守備者",
+            "task": "対応相手を共有して前進を止める",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "neighbour",
+            "label": "隣の守備者",
+            "task": "隣接する攻撃者へ対応する",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "cover",
+            "label": "カバー役",
+            "task": "突破や追加参加へ備える",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "defender",
+            "relation": "connected-to",
+            "object": "neighbour",
+            "note": "個別担当を持っても隣との連結を保つ。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "subject": "cover",
+            "relation": "behind",
+            "object": "defender",
+            "note": "第一の対応の後方をカバーする。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "defender",
+            "action": "scan",
+            "trigger": "セットプレーから攻撃開始",
+            "description": "対応相手を共有する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "neighbour",
+            "action": "press",
+            "trigger": "ボールが展開",
+            "description": "隣と連結して担当へ前進する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-3",
+            "actor": "cover",
+            "action": "align",
+            "trigger": "追加参加や突破",
+            "description": "後方の対応を調整する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "追加参加者によって人数対応が変わったか",
+            "options": [
+              {
+                "action": "担当を維持する",
+                "when": "人数の対応が保たれる"
+              },
+              {
+                "action": "受渡しや再配置を確認する",
+                "when": "追加参加者で余りが生まれる"
+              }
+            ],
+            "uncertainty": "攻撃の入り方によって担当の受渡しが必要になる。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "contrastsWith",
+          "target": "rtk:drift-defence",
+          "note": "編集上の比較。担当相手の対応を軸にする説明と、パスに合わせて責任を移す説明を区別する。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "セットプレーからの攻撃に対し、守備者が対応する相手を分担して前進を止める基本方式。",
+          "evidence": [
+            {
+              "source": "nz-foundation-manual",
+              "locator": "Printed p.96 (PDF page index 95), BASIC DEFENSIVE PATTERNS – SET PIECE / BASIC MAN-ON-MAN DEFENCE",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+          "evidence": [
+            {
+              "source": "nz-foundation-manual",
+              "locator": "Printed p.96 (PDF page index 95), BASIC DEFENSIVE PATTERNS – SET PIECE / BASIC MAN-ON-MAN DEFENCE",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "攻撃の入り方によって担当の受渡しが必要になる。",
+        "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
+      }
+    },
+    {
+      "id": "rtk:restart-reception",
+      "version": "0.1.0",
+      "name": {
+        "ja": "リスタート受球の連携",
+        "en": "Restart reception"
+      },
+      "aliases": [],
+      "side": "both",
+      "level": "move",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "捕球者と支援者が連携し、直接捕球または味方方向へのタップから次の保持へつなぐ。",
+        "en": "Receivers coordinate a catch or tap towards teammates and prepare the next possession."
+      },
+      "intent": [
+        "再開のキックを確保し、安全な着地・回収後にプレーを続ける。"
+      ],
+      "tags": [
+        "both",
+        "move",
+        "kicking",
+        "出典確認済み"
+      ],
+      "applicability": {
+        "conditions": [
+          "落下地点で捕球者と支援者が役割を共有している。"
+        ],
+        "limits": [
+          "空中支援には安全な着地が必須。競技区分ごとの許容動作を確認する。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "catcher",
+            "label": "捕球者",
+            "task": "捕球または味方方向へのタップを選ぶ",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "supporter",
+            "label": "支援者",
+            "task": "必要な支援と安全な着地を助ける",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "collector",
+            "label": "回収者",
+            "task": "タップされたボールや着地後のプレーへ備える",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "supporter",
+            "relation": "near",
+            "object": "catcher",
+            "note": "捕球者を支えられる位置を取る。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "subject": "collector",
+            "relation": "behind",
+            "object": "catcher",
+            "note": "味方側へのタップを回収できる関係を作る。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "catcher",
+            "action": "scan",
+            "trigger": "落下地点が定まる",
+            "description": "誰が対応するか共有する。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "catcher",
+            "action": "recover",
+            "trigger": "ボールへ届く",
+            "description": "確保できれば捕球し、必要なら味方方向へタップする。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-3",
+            "actor": "collector",
+            "action": "recover",
+            "trigger": "タップまたは着地後",
+            "description": "相手のチェイスを見て次の保持を確保する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "直接の保持と味方への回収可能性",
+            "options": [
+              {
+                "action": "捕球して保持する",
+                "when": "安全に確保できる"
+              },
+              {
+                "action": "味方方向へタップする",
+                "when": "直接確保が難しく、味方が回収できる"
+              }
+            ],
+            "uncertainty": "タップ後の回収や相手チェイスとの接触結果は確定できない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "contrastsWith",
+          "target": "rtk:restart-kick-chase",
+          "note": "同じ再開局面を、蹴る側でなく受ける側から扱う。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "捕球者と支援者が連携し、直接捕球または味方方向へのタップから次の保持へつなぐ。",
+          "evidence": [
+            {
+              "source": "wr-restart-receiving",
+              "locator": "The receiving team should",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+          "evidence": [
+            {
+              "source": "wr-restart-receiving",
+              "locator": "The receiving team should",
+              "support": "interpretation"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "タップ後の回収や相手チェイスとの接触結果は確定できない。",
+        "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
+      }
+    },
+    {
+      "id": "rtk:up-and-under-contest",
+      "version": "0.1.0",
+      "name": {
+        "ja": "ハイキックで再獲得を争う",
+        "en": "Up-and-under contest"
+      },
+      "aliases": [
+        {
+          "label": "Up-and-under",
+          "language": "en",
+          "kind": "contextual",
+          "note": "資料の技術名。ここでは追走と競りを含む使用。"
+        },
+        {
+          "label": "Bomb",
+          "language": "en",
+          "kind": "contextual",
+          "note": "NZR Foundation Rugby Coaches p.93の名称。文脈によって高いキック全般を指す。"
+        }
+      ],
+      "side": "attack",
+      "level": "move",
+      "formats": [
+        "XV"
+      ],
+      "summary": {
+        "ja": "高く蹴り上げて、味方が落下地点でボールを争う時間を作る。",
+        "en": "A high kick gives attackers time to contest the ball near its landing point."
+      },
+      "intent": [
+        "距離だけでなく、追走者が競れる次の争点を作る。"
+      ],
+      "tags": [
+        "attack",
+        "move",
+        "kicking",
+        "出典確認済み"
+      ],
+      "applicability": {
+        "conditions": [
+          "キックに合わせて合法的に追走できる選手がいる。"
+        ],
+        "limits": [
+          "高いだけで成功するわけではない。蹴りすぎや短すぎで争点に届かなくなる。"
+        ]
+      },
+      "mechanics": {
+        "status": "editorial-model",
+        "roles": [
+          {
+            "id": "kicker",
+            "label": "キッカー",
+            "task": "追走可能な落下点へ高く蹴る",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "contestant",
+            "label": "競り手",
+            "task": "落下点で安全・合法に争う",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "support",
+            "label": "支援者",
+            "task": "こぼれ球と相手確保後に備える",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "positioning": [
+          {
+            "subject": "contestant",
+            "relation": "behind",
+            "object": "kicker",
+            "note": "キック時のオンサイドを守る。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "subject": "support",
+            "relation": "near",
+            "object": "contestant",
+            "note": "競り合いの後に関与できる位置を取る。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "id": "step-1",
+            "actor": "kicker",
+            "action": "kick",
+            "trigger": "追走が準備できる",
+            "description": "高い軌道で次の争点へ送る。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-2",
+            "actor": "contestant",
+            "action": "recover",
+            "trigger": "落下点へ到着",
+            "description": "安全・合法にボールを争う。",
+            "claimRefs": [
+              "model"
+            ]
+          },
+          {
+            "id": "step-3",
+            "actor": "support",
+            "action": "support",
+            "trigger": "競り合いの結果が出る",
+            "description": "こぼれ球または相手の保持へ対応する。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ],
+        "decisions": [
+          {
+            "id": "choice",
+            "cue": "ボールへ安全・合法に到達できるか",
+            "options": [
+              {
+                "action": "競りに参加する",
+                "when": "落下点で無理なくボールを争える"
+              },
+              {
+                "action": "着地後の守備へ備える",
+                "when": "相手が先に確保し、空中で競れない"
+              }
+            ],
+            "uncertainty": "滞空時間・距離・空中の競争結果を固定値として扱わない。",
+            "claimRefs": [
+              "model"
+            ]
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "similarTo",
+          "target": "rtk:contestable-box-kick",
+          "note": "再獲得を競う目的は近いが、ボックスキックは供給位置と蹴り方の文脈を含む。"
+        }
+      ],
+      "variations": [],
+      "claims": [
+        {
+          "id": "definition",
+          "text": "高く蹴り上げて、味方が落下地点でボールを争う時間を作る。",
+          "evidence": [
+            {
+              "source": "nz-up-and-under",
+              "locator": "OBJECTIVE / COMMON ERRORS",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "model",
+          "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+          "evidence": [
+            {
+              "source": "nz-up-and-under",
+              "locator": "OBJECTIVE / COMMON ERRORS",
+              "support": "interpretation"
+            }
+          ]
+        },
+        {
+          "id": "term-bomb",
+          "text": "NZRの教材はUp-and-underにBombという呼称を併記する。",
+          "evidence": [
+            {
+              "source": "nz-foundation-manual",
+              "locator": "Printed p.93, TACTICAL KICKING / Types of Kick",
+              "support": "direct"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "status": "source-backed",
+        "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+        "reviewedBy": null,
+        "reviewedAt": null
+      },
+      "uncertainties": [
+        "滞空時間・距離・空中の競争結果を固定値として扱わない。",
+        "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+      ],
+      "execution": {
+        "ready": false,
+        "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
       }
     }
   ]

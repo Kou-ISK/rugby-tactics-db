@@ -1,0 +1,182 @@
+{
+  "id": "rtk:restart-reception",
+  "version": "0.1.0",
+  "name": {
+    "ja": "リスタート受球の連携",
+    "en": "Restart reception"
+  },
+  "aliases": [],
+  "side": "both",
+  "level": "move",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "捕球者と支援者が連携し、直接捕球または味方方向へのタップから次の保持へつなぐ。",
+    "en": "Receivers coordinate a catch or tap towards teammates and prepare the next possession."
+  },
+  "intent": [
+    "再開のキックを確保し、安全な着地・回収後にプレーを続ける。"
+  ],
+  "tags": [
+    "both",
+    "move",
+    "kicking",
+    "出典確認済み"
+  ],
+  "applicability": {
+    "conditions": [
+      "落下地点で捕球者と支援者が役割を共有している。"
+    ],
+    "limits": [
+      "空中支援には安全な着地が必須。競技区分ごとの許容動作を確認する。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "catcher",
+        "label": "捕球者",
+        "task": "捕球または味方方向へのタップを選ぶ",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "supporter",
+        "label": "支援者",
+        "task": "必要な支援と安全な着地を助ける",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "collector",
+        "label": "回収者",
+        "task": "タップされたボールや着地後のプレーへ備える",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "supporter",
+        "relation": "near",
+        "object": "catcher",
+        "note": "捕球者を支えられる位置を取る。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "subject": "collector",
+        "relation": "behind",
+        "object": "catcher",
+        "note": "味方側へのタップを回収できる関係を作る。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "catcher",
+        "action": "scan",
+        "trigger": "落下地点が定まる",
+        "description": "誰が対応するか共有する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "catcher",
+        "action": "recover",
+        "trigger": "ボールへ届く",
+        "description": "確保できれば捕球し、必要なら味方方向へタップする。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-3",
+        "actor": "collector",
+        "action": "recover",
+        "trigger": "タップまたは着地後",
+        "description": "相手のチェイスを見て次の保持を確保する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "choice",
+        "cue": "直接の保持と味方への回収可能性",
+        "options": [
+          {
+            "action": "捕球して保持する",
+            "when": "安全に確保できる"
+          },
+          {
+            "action": "味方方向へタップする",
+            "when": "直接確保が難しく、味方が回収できる"
+          }
+        ],
+        "uncertainty": "タップ後の回収や相手チェイスとの接触結果は確定できない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "contrastsWith",
+      "target": "rtk:restart-kick-chase",
+      "note": "同じ再開局面を、蹴る側でなく受ける側から扱う。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "捕球者と支援者が連携し、直接捕球または味方方向へのタップから次の保持へつなぐ。",
+      "evidence": [
+        {
+          "source": "wr-restart-receiving",
+          "locator": "The receiving team should",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+      "evidence": [
+        {
+          "source": "wr-restart-receiving",
+          "locator": "The receiving team should",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "タップ後の回収や相手チェイスとの接触結果は確定できない。",
+    "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
+  }
+}

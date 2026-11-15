@@ -1,6 +1,6 @@
 {
   "id": "rtk:close-support",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
     "ja": "近接サポート",
     "en": "Close support"
@@ -110,6 +110,21 @@
       "type": "enables",
       "target": "rtk:offload-continuity",
       "note": "オフロードの受け手となり得る。"
+    },
+    {
+      "type": "enables",
+      "target": "rtk:quick-tap-attack",
+      "note": "編集上の関係。近い受け手が素早い再開後の孤立を防ぐ。"
+    },
+    {
+      "type": "enables",
+      "target": "rtk:ruck-and-run-snook",
+      "note": "編集上の関係。このモデルの近い継続を支援位置が支える。"
+    },
+    {
+      "type": "enables",
+      "target": "rtk:counter-attack",
+      "note": "編集上の関係。奪取・受球後の反撃で保持者の継続を支える。"
     }
   ],
   "variations": [],

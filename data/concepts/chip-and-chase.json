@@ -1,0 +1,172 @@
+{
+  "id": "rtk:chip-and-chase",
+  "version": "0.1.0",
+  "name": {
+    "ja": "チップ・アンド・チェイス",
+    "en": "Chip and chase"
+  },
+  "aliases": [
+    {
+      "label": "Chip kick",
+      "language": "en",
+      "kind": "contextual",
+      "note": "資料で確認できる技術名。チップ単体と追走を含む戦術の範囲は同一でない。"
+    }
+  ],
+  "side": "attack",
+  "level": "move",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "守備線を少し越えるキックと追走を組み合わせ、ボールの再獲得や圧力を狙う。",
+    "en": "A short kick over the defensive line is followed by a chase to regain possession or apply pressure."
+  },
+  "intent": [
+    "守備線の手前で接触する代わりに、その直後へ争点を移す。"
+  ],
+  "tags": [
+    "attack",
+    "move",
+    "kicking",
+    "出典確認済み"
+  ],
+  "applicability": {
+    "conditions": [
+      "守備線の直後に空間があり、キッカーまたは味方が追える。"
+    ],
+    "limits": [
+      "チャージ、蹴りすぎ、後方守備への直接供給に注意する。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "kicker",
+        "label": "キッカー",
+        "task": "守備線の頭上へ短く送る",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "chaser",
+        "label": "追走者",
+        "task": "ボールを追い回収を狙う",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "chaser",
+        "relation": "behind",
+        "object": "kicker",
+        "note": "味方が追う場合はキック時の位置を確認する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "kicker",
+        "action": "scan",
+        "trigger": "守備者が接近",
+        "description": "背後とチャージされる距離を見る。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "kicker",
+        "action": "kick",
+        "trigger": "短い頭上経路が使える",
+        "description": "守備線の少し後ろへ蹴る。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-3",
+        "actor": "chaser",
+        "action": "track",
+        "trigger": "キックが上がる",
+        "description": "回収可能な位置へ追う。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "choice",
+        "cue": "背後の空間と相手の到達",
+        "options": [
+          {
+            "action": "チップして追う",
+            "when": "短い背後が空き、追走できる"
+          },
+          {
+            "action": "ボールを保持する",
+            "when": "後方守備が先着するかチャージされそう"
+          }
+        ],
+        "uncertainty": "チップの落下点はキックの精度と相手の反応で変わる。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "contrastsWith",
+      "target": "rtk:grubber-behind-line",
+      "note": "背後を狙う点は共通だが、軌道とバウンドの利用が異なる。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "守備線を少し越えるキックと追走を組み合わせ、ボールの再獲得や圧力を狙う。",
+      "evidence": [
+        {
+          "source": "nz-chip-kick",
+          "locator": "OBJECTIVE / KEY FACTORS / COMMON ERRORS",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+      "evidence": [
+        {
+          "source": "nz-chip-kick",
+          "locator": "OBJECTIVE / KEY FACTORS / COMMON ERRORS",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "チップの落下点はキックの精度と相手の反応で変わる。",
+    "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "id": "rtk:defensive-realignment",
+  "version": "0.1.0",
+  "name": {
+    "ja": "守備の再配置",
+    "en": "Defensive realignment"
+  },
+  "aliases": [],
+  "side": "defence",
+  "level": "principle",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "攻撃の人数・幅・深さやミスマッチを読み、守備の配置を素早く整える。",
+    "en": "Defenders read attacking numbers and alignment, then reorganise to reduce mismatches."
+  },
+  "intent": [
+    "攻撃側が使える数的・位置的な優位を減らす。"
+  ],
+  "tags": [
+    "defence",
+    "principle",
+    "defence",
+    "出典確認済み"
+  ],
+  "applicability": {
+    "conditions": [
+      "相手の配置と味方の不足を観察できる。"
+    ],
+    "limits": [
+      "外へ走るだけの動作や、単一の守備システム名ではない。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "scanner",
+        "label": "観察する守備者",
+        "task": "人数不足やミスマッチを伝える",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "inside-defender",
+        "label": "内側の守備者",
+        "task": "接点付近の担当を整える",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "edge-defender",
+        "label": "外側の守備者",
+        "task": "攻撃の幅に合わせる",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "inside-defender",
+        "relation": "connected-to",
+        "object": "edge-defender",
+        "note": "内外の担当が分断されない関係を作る。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "subject": "scanner",
+        "relation": "connected-to",
+        "object": "edge-defender",
+        "note": "相手の配置の変化を共有する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "scanner",
+        "action": "scan",
+        "trigger": "次の攻撃配置が見える",
+        "description": "人数・幅・深さ・ミスマッチを確認する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "scanner",
+        "action": "support",
+        "trigger": "不足を見つける",
+        "description": "不足する位置と担当を伝える。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-3",
+        "actor": "edge-defender",
+        "action": "align",
+        "trigger": "共有した不足に対応",
+        "description": "幅と担当を整えて再観察する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "choice",
+        "cue": "守備の不足が外側か接点付近か",
+        "options": [
+          {
+            "action": "外側の幅を補う",
+            "when": "攻撃の幅に対して人数が不足"
+          },
+          {
+            "action": "内側の担当を整える",
+            "when": "接点付近に対応不足やミスマッチがある"
+          }
+        ],
+        "uncertainty": "観察から移動までに攻撃の形が変わる。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "enables",
+      "target": "rtk:connected-backline-defence",
+      "note": "編集上の関係。再配置は連結した守備列を作り直す準備となる。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "攻撃の人数・幅・深さやミスマッチを読み、守備の配置を素早く整える。",
+      "evidence": [
+        {
+          "source": "wr-running-defence",
+          "locator": "The supporting player should / identify attacking setup / reorganise defensive formation",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+      "evidence": [
+        {
+          "source": "wr-running-defence",
+          "locator": "The supporting player should / identify attacking setup / reorganise defensive formation",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "観察から移動までに攻撃の形が変わる。",
+    "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
+  }
+}

@@ -24,6 +24,9 @@ test('build exports exactly the manifest bytes and valid relative assets',async(
   }
   assert.ok(!/src="https?:/.test(html));
   assert.ok(html.includes('Content-Security-Policy'));
+  assert.ok(html.includes('id="dataset-version"'));
+  assert.ok(!html.includes('OPEN RUGBY KNOWLEDGE · v0.1'));
+  assert.ok(html.includes('すべてを「戦術」とは数えません'));
   for (const file of ['LICENSE', 'DATA-LICENSE.md']) {
     assert.deepEqual(await readFile(new URL('dist/' + file, root)), await readFile(new URL(file, root)));
   }

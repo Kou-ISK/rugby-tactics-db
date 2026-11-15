@@ -1,0 +1,175 @@
+{
+  "id": "rtk:overs-line",
+  "version": "0.1.0",
+  "name": {
+    "ja": "オーバーズライン",
+    "en": "Overs line"
+  },
+  "aliases": [],
+  "side": "attack",
+  "level": "skill",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "受け手がパス元から離れる角度で走り、外側の空間や守備の切れ目へ入る。",
+    "en": "The runner angles away from the origin of the pass. The article combines that run with inside decoys to exploit a disconnected defence."
+  },
+  "intent": [
+    "外向きの走路で守備の外肩や開いた間を使う。"
+  ],
+  "tags": [
+    "attack",
+    "skill",
+    "出典確認済み",
+    "実行未検証",
+    "running-line",
+    "用語",
+    "戦術要素"
+  ],
+  "applicability": {
+    "conditions": [
+      "受け手が外側へ離れる走路をパス元と共有し、外の受球先と支援が用意されている。"
+    ],
+    "limits": [
+      "常に外へ流れる命令ではない。undersとの二択だけで守備判断を完結させない。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "passer",
+        "label": "パス役",
+        "task": "外向きの走者へ配球を判断する",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "angled-runner",
+        "label": "外向きの走者",
+        "task": "パス元から離れる走路を示す",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "inside-option",
+        "label": "内側の選択肢",
+        "task": "内側の守備にも判断を求める",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "angled-runner",
+        "relation": "outside-of",
+        "object": "passer",
+        "note": "パス元から離れる角度を使う。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "subject": "inside-option",
+        "relation": "inside-of",
+        "object": "angled-runner",
+        "note": "内側にも攻撃の脅威を残す。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "inside-option",
+        "action": "support",
+        "trigger": "攻撃が始まる",
+        "description": "内側の脅威を保つ。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "angled-runner",
+        "action": "align",
+        "trigger": "守備間に空間が見える",
+        "description": "外向きの走路で受球を狙う。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "choice",
+        "cue": "外側の余地が残るか",
+        "options": [
+          {
+            "action": "外向きの走路へ配球する",
+            "when": "外側の経路が残る"
+          },
+          {
+            "action": "守備が追従すれば他の選択を使う",
+            "when": "守備が外向きの走者へ追従する"
+          }
+        ],
+        "uncertainty": "守備と支援の状況を整理した分岐例。実行判断の十分条件ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "contrastsWith",
+      "target": "rtk:unders-line",
+      "note": "パス元に対する走路の方向が異なる。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "受け手がパス元から離れる角度で走り、外側の空間や守備の切れ目へ入る。",
+      "evidence": [
+        {
+          "source": "rcw-cottrell-unders-overs",
+          "locator": "The overs attacking line; drag defenders off square",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・位置・手順・分岐は資料の要点を抽象化した編集モデル。固定の実行手順ではない。",
+      "evidence": [
+        {
+          "source": "rcw-cottrell-unders-overs",
+          "locator": "The overs attacking line; drag defenders off square",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開の指導資料本文を確認。名称・分類・日本語は編集上の整理で、専門家による戦術・安全性審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "常に外へ流れる命令ではない。undersとの二択だけで守備判断を完結させない。",
+    "選手・年代・競技条件による違いと、具体的な成功条件は未検証。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用モデルのみ。座標・時間・合法性・安全性・観測条件・終了条件を備えた実行検証は未実施。"
+  }
+}

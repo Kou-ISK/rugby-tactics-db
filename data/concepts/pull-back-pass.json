@@ -1,0 +1,172 @@
+{
+  "id": "rtk:pull-back-pass",
+  "version": "0.1.0",
+  "name": {
+    "ja": "プルバックパス",
+    "en": "Pull-back pass"
+  },
+  "aliases": [],
+  "side": "attack",
+  "level": "move",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "近い受け手から後方の接続役へ渡し、前進の脅威を残しながら外側へ攻撃を移す。",
+    "en": "A forward receives, then passes back to a linking back to hold nearby defenders while allowing the attack to use width."
+  },
+  "intent": [
+    "近い前進の脅威を残しながら、守備の外へボールを届ける。"
+  ],
+  "tags": [
+    "attack",
+    "move",
+    "出典確認済み",
+    "実行未検証"
+  ],
+  "applicability": {
+    "conditions": [
+      "前方の保持・走行を脅威として示す選手の後方に、合法なパスを受ける接続役がいる。"
+    ],
+    "limits": [
+      "正確な深さ・タイミングはチームごとに異なる。デコイの妨害行為を許可しない。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "forward-receiver",
+        "label": "近い受け手",
+        "task": "守備を引きつけて配球する",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "back-link",
+        "label": "後方の接続役",
+        "task": "戻された球を外側へつなぐ",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "wide-option",
+        "label": "外側の受け手",
+        "task": "外の空間を使う",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "back-link",
+        "relation": "behind",
+        "object": "forward-receiver",
+        "note": "近い受け手の後方に接続。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "subject": "wide-option",
+        "relation": "outside-of",
+        "object": "back-link",
+        "note": "外側に次の選択肢を置く。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "forward-receiver",
+        "action": "carry",
+        "trigger": "近い配球を受ける",
+        "description": "前進の脅威を示す。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "forward-receiver",
+        "action": "pass",
+        "trigger": "後方の経路が開く",
+        "description": "linkへ渡して外側へ接続する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "choice",
+        "cue": "近い守備の反応と後方のパス経路",
+        "options": [
+          {
+            "action": "後方link経由で幅を使う",
+            "when": "後方linkまでの経路と外側の空間がある"
+          },
+          {
+            "action": "経路が閉じれば近い継続へ切り替える",
+            "when": "戻す経路を守備が閉じている"
+          }
+        ],
+        "uncertainty": "守備と支援の状況を整理した分岐例。実行判断の十分条件ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "notSameAs",
+      "target": "rtk:screen-pass-contact",
+      "note": "接触局面のscreen passと名前だけで同一視しない。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "近い受け手から後方の接続役へ渡し、前進の脅威を残しながら外側へ攻撃を移す。",
+      "evidence": [
+        {
+          "source": "rcw-barlow-242",
+          "locator": "The options of the midfield four: Red-White",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・位置・手順・分岐は資料の要点を抽象化した編集モデル。固定の実行手順ではない。",
+      "evidence": [
+        {
+          "source": "rcw-barlow-242",
+          "locator": "The options of the midfield four: Red-White",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開の指導資料本文を確認。名称・分類・日本語は編集上の整理で、専門家による戦術・安全性審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "正確な深さ・タイミングはチームごとに異なる。デコイの妨害行為を許可しない。",
+    "選手・年代・競技条件による違いと、具体的な成功条件は未検証。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用モデルのみ。座標・時間・合法性・安全性・観測条件・終了条件を備えた実行検証は未実施。"
+  }
+}

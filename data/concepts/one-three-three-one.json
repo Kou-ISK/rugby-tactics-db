@@ -1,0 +1,187 @@
+{
+  "id": "rtk:one-three-three-one",
+  "version": "0.1.0",
+  "name": {
+    "ja": "1-3-3-1アタック",
+    "en": "1-3-3-1 attacking framework"
+  },
+  "aliases": [
+    {
+      "label": "1-3-3-1",
+      "kind": "contextual",
+      "note": "攻撃FW配置の文脈に限定。数列だけから競技・実行形を決めない。",
+      "language": "en"
+    }
+  ],
+  "side": "attack",
+  "level": "system",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "FWを左右外側の一人ずつと中央の三人組二つへ分け、BKと接続して中央と外の選択肢を保つ。",
+    "en": "Eight forwards are distributed as one on each wide edge and two central groups of three. Backs connect with those groups to preserve direct and wide attacking choices."
+  },
+  "intent": [
+    "中央への圧力と横幅を両立し、守備の偏りに応じて攻める場所を変える。"
+  ],
+  "tags": [
+    "attack",
+    "system",
+    "出典確認済み",
+    "実行未検証"
+  ],
+  "applicability": {
+    "conditions": [
+      "8人のFWの中央・外側の分担とBKの接続役を共有し、次の配球までに必要な支援を用意できる。"
+    ],
+    "limits": [
+      "選手の背番号や各フェーズの固定位置を表すものではない。単に形へ戻ることを、目の前の機会より優先しない。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "distributor",
+        "label": "配球役",
+        "task": "中央と外側の機会を比較する",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "central-pod",
+        "label": "中央の三人組",
+        "task": "近い支援を伴って前進を狙う",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "wide-forward",
+        "label": "外側のFW",
+        "task": "左右で攻撃の幅を保つ",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "back-link",
+        "label": "接続役",
+        "task": "組と外側の受け手をつなぐ",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "wide-forward",
+        "relation": "outside-of",
+        "object": "central-pod",
+        "note": "外側一人ずつ、中央は三人組二つという役割配置。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "subject": "back-link",
+        "relation": "connected-to",
+        "object": "central-pod",
+        "note": "BKとFWの選択を切り離さない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "wide-forward",
+        "action": "align",
+        "trigger": "次の攻撃を準備",
+        "description": "左右外側の選択肢を保つ。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "distributor",
+        "action": "pass",
+        "trigger": "配球できる球が出る",
+        "description": "中央か外側の機会へ接続する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "choice",
+        "cue": "中央と外側の守備密度・支援の到着",
+        "options": [
+          {
+            "action": "中央の前進機会に近い支援を添える",
+            "when": "中央に前進余地があり支援が近い"
+          },
+          {
+            "action": "外側が空けばlinkを通じて幅を使う",
+            "when": "外側に空間がありlinkで届く"
+          }
+        ],
+        "uncertainty": "守備と支援の状況を整理した分岐例。実行判断の十分条件ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "contrastsWith",
+      "target": "rtk:two-four-two",
+      "note": "FWの配分が異なる。優劣の固定ではない。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "FWを左右外側の一人ずつと中央の三人組二つへ分け、BKと接続して中央と外の選択肢を保つ。",
+      "evidence": [
+        {
+          "source": "rcw-whiffin-1331",
+          "locator": "Macro shape",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・位置・手順・分岐は資料の要点を抽象化した編集モデル。固定の実行手順ではない。",
+      "evidence": [
+        {
+          "source": "rcw-whiffin-1331",
+          "locator": "Macro shape",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開の指導資料本文を確認。名称・分類・日本語は編集上の整理で、専門家による戦術・安全性審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "選手の背番号や各フェーズの固定位置を表すものではない。単に形へ戻ることを、目の前の機会より優先しない。",
+    "選手・年代・競技条件による違いと、具体的な成功条件は未検証。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用モデルのみ。座標・時間・合法性・安全性・観測条件・終了条件を備えた実行検証は未実施。"
+  }
+}

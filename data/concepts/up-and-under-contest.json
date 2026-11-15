@@ -1,0 +1,206 @@
+{
+  "id": "rtk:up-and-under-contest",
+  "version": "0.1.0",
+  "name": {
+    "ja": "ハイキックで再獲得を争う",
+    "en": "Up-and-under contest"
+  },
+  "aliases": [
+    {
+      "label": "Up-and-under",
+      "language": "en",
+      "kind": "contextual",
+      "note": "資料の技術名。ここでは追走と競りを含む使用。"
+    },
+    {
+      "label": "Bomb",
+      "language": "en",
+      "kind": "contextual",
+      "note": "NZR Foundation Rugby Coaches p.93の名称。文脈によって高いキック全般を指す。"
+    }
+  ],
+  "side": "attack",
+  "level": "move",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "高く蹴り上げて、味方が落下地点でボールを争う時間を作る。",
+    "en": "A high kick gives attackers time to contest the ball near its landing point."
+  },
+  "intent": [
+    "距離だけでなく、追走者が競れる次の争点を作る。"
+  ],
+  "tags": [
+    "attack",
+    "move",
+    "kicking",
+    "出典確認済み"
+  ],
+  "applicability": {
+    "conditions": [
+      "キックに合わせて合法的に追走できる選手がいる。"
+    ],
+    "limits": [
+      "高いだけで成功するわけではない。蹴りすぎや短すぎで争点に届かなくなる。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "kicker",
+        "label": "キッカー",
+        "task": "追走可能な落下点へ高く蹴る",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "contestant",
+        "label": "競り手",
+        "task": "落下点で安全・合法に争う",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "support",
+        "label": "支援者",
+        "task": "こぼれ球と相手確保後に備える",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "contestant",
+        "relation": "behind",
+        "object": "kicker",
+        "note": "キック時のオンサイドを守る。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "subject": "support",
+        "relation": "near",
+        "object": "contestant",
+        "note": "競り合いの後に関与できる位置を取る。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "kicker",
+        "action": "kick",
+        "trigger": "追走が準備できる",
+        "description": "高い軌道で次の争点へ送る。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "contestant",
+        "action": "recover",
+        "trigger": "落下点へ到着",
+        "description": "安全・合法にボールを争う。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-3",
+        "actor": "support",
+        "action": "support",
+        "trigger": "競り合いの結果が出る",
+        "description": "こぼれ球または相手の保持へ対応する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "choice",
+        "cue": "ボールへ安全・合法に到達できるか",
+        "options": [
+          {
+            "action": "競りに参加する",
+            "when": "落下点で無理なくボールを争える"
+          },
+          {
+            "action": "着地後の守備へ備える",
+            "when": "相手が先に確保し、空中で競れない"
+          }
+        ],
+        "uncertainty": "滞空時間・距離・空中の競争結果を固定値として扱わない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "similarTo",
+      "target": "rtk:contestable-box-kick",
+      "note": "再獲得を競う目的は近いが、ボックスキックは供給位置と蹴り方の文脈を含む。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "高く蹴り上げて、味方が落下地点でボールを争う時間を作る。",
+      "evidence": [
+        {
+          "source": "nz-up-and-under",
+          "locator": "OBJECTIVE / COMMON ERRORS",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+      "evidence": [
+        {
+          "source": "nz-up-and-under",
+          "locator": "OBJECTIVE / COMMON ERRORS",
+          "support": "interpretation"
+        }
+      ]
+    },
+    {
+      "id": "term-bomb",
+      "text": "NZRの教材はUp-and-underにBombという呼称を併記する。",
+      "evidence": [
+        {
+          "source": "nz-foundation-manual",
+          "locator": "Printed p.93, TACTICAL KICKING / Types of Kick",
+          "support": "direct"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "滞空時間・距離・空中の競争結果を固定値として扱わない。",
+    "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
+  }
+}

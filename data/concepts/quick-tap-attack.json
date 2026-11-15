@@ -1,0 +1,184 @@
+{
+  "id": "rtk:quick-tap-attack",
+  "version": "0.1.0",
+  "name": {
+    "ja": "クイックタップ攻撃",
+    "en": "Quick tap attack"
+  },
+  "aliases": [
+    {
+      "label": "クイックタップ",
+      "language": "ja",
+      "kind": "translation",
+      "note": "Quick tap の編集訳。ここでは攻撃への利用を扱う。"
+    }
+  ],
+  "side": "attack",
+  "level": "move",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "タップから素早く前進し、近いサポートと外側の再配置を連動させ、整う前の守備を攻める。",
+    "en": "Use a quick tap with close support and subsequent width against an unsettled defence."
+  },
+  "intent": [
+    "セットプレーを待たず、守備の再配置より先に次の攻撃点を作る。"
+  ],
+  "tags": [
+    "ペナルティ",
+    "再開",
+    "quick tap",
+    "attack",
+    "move"
+  ],
+  "applicability": {
+    "conditions": [
+      "タップを適法に開始でき、味方が合図に反応できる。"
+    ],
+    "limits": [
+      "速く再開すること自体が目的ではない。合法な再開位置・方法とサポートの有無が前提。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "tapper",
+        "label": "再開者",
+        "task": "合図して攻撃を始める",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "support",
+        "label": "近接サポート",
+        "task": "短い受け手になる",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "wide",
+        "label": "外側の味方",
+        "task": "次の幅を確保する",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "support",
+        "relation": "near",
+        "object": "tapper",
+        "note": "近いパスを受けられる位置。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "subject": "wide",
+        "relation": "outside-of",
+        "object": "support",
+        "note": "内側の密集とは別の選択肢。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "tapper",
+        "action": "carry",
+        "trigger": "再開が許される",
+        "description": "適法なタップ後に前方を攻める。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "support",
+        "action": "support",
+        "trigger": "守備が保持者に寄る",
+        "description": "短い受け手として追随する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-3",
+        "actor": "wide",
+        "action": "align",
+        "trigger": "次の攻撃へ移る",
+        "description": "空いた外側へ再配置する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "read-defence",
+        "cue": "直前の守備と味方の準備",
+        "options": [
+          {
+            "action": "近くを速く攻める",
+            "when": "支援があり守備が未整理"
+          },
+          {
+            "action": "攻撃を整え直す",
+            "when": "味方が孤立し継続できない"
+          }
+        ],
+        "uncertainty": "状況判断の編集例であり、計測済みの選択基準や成功保証ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "タップから素早く前進し、近いサポートと外側の再配置を連動させ、整う前の守備を攻める。",
+      "evidence": [
+        {
+          "source": "nz-quick-tap",
+          "locator": "2 — QUICK: Aim / Explanation",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・配置・手順・判断は、資料から意味を説明するために組み直した編集モデル。原資料の固定プレーや実行指示ではない。",
+      "evidence": [
+        {
+          "source": "nz-quick-tap",
+          "locator": "2 — QUICK: Aim / Explanation",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開ページの検索側で取得された本文を確認。直接の再取得は404となり、現URLの可読性は未確認。分類・動作分解は編集判断で、専門家レビュー・実技検証は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "速く再開すること自体が目的ではない。合法な再開位置・方法とサポートの有無が前提。",
+    "適用する競技規則・年齢区分・チームの共有判断は別途確認する。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用の意味構造。身体動作・安全性・終了条件を検証した実行モデルではない。"
+  }
+}

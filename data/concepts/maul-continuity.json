@@ -1,6 +1,6 @@
 {
   "id": "rtk:maul-continuity",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
     "ja": "モールでの継続",
     "en": "Maul continuity"
@@ -14,7 +14,7 @@
     }
   ],
   "side": "attack",
-  "level": "shape",
+  "level": "principle",
   "formats": [
     "XV",
     "sevens"
@@ -28,7 +28,7 @@
   ],
   "tags": [
     "attack",
-    "shape",
+    "principle",
     "出典確認済み",
     "実行未検証"
   ],

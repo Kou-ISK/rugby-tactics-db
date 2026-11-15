@@ -1,0 +1,185 @@
+{
+  "id": "rtk:ruck-and-run-snook",
+  "version": "0.1.0",
+  "name": {
+    "ja": "ラック＆ラン（Snookモデル）",
+    "en": "Ruck and run (Snook model)"
+  },
+  "aliases": [
+    {
+      "label": "R & R",
+      "kind": "contextual",
+      "note": "この記事におけるモデルの略称。普遍的callではない。",
+      "language": "en"
+    }
+  ],
+  "side": "attack",
+  "level": "system",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "圧力のある場所から球を空間へ移し、近い選手の継続支援と遠い選手の幅を組み合わせる攻撃モデル。",
+    "en": "This playing philosophy moves possession out of pressure, combines nearby continuity with players retaining width, and restarts the wider attack when a ruck slows play."
+  },
+  "intent": [
+    "ラック自体を目的にせず、空間への配球と支援で攻撃を継続する。"
+  ],
+  "tags": [
+    "attack",
+    "system",
+    "出典確認済み",
+    "実行未検証",
+    "source-specific",
+    "指導者の例示"
+  ],
+  "applicability": {
+    "conditions": [
+      "近い継続役と遠い受け手の分担を共有し、ボールの速さに応じて配球を組み直せる。"
+    ],
+    "limits": [
+      "著者の一モデル。全チームの標準や万能策として扱わない。固定人数・固定フェーズは実行規則にしない。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "carrier",
+        "label": "保持者",
+        "task": "空間へ前進して継続する",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "near-support",
+        "label": "近い支援者",
+        "task": "近くで受球・継続を支える",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "wide-support",
+        "label": "遠い受け手",
+        "task": "幅と深さを保ち次の攻撃に備える",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "near-support",
+        "relation": "near",
+        "object": "carrier",
+        "note": "球の近くで継続を支える。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "subject": "wide-support",
+        "relation": "across-width",
+        "object": "carrier",
+        "note": "球へ全員が集まらず幅を保つ。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "carrier",
+        "action": "pass",
+        "trigger": "攻撃を開始",
+        "description": "圧力域から空間へ球を移す。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "near-support",
+        "action": "support",
+        "trigger": "前進が生じる",
+        "description": "近い継続を支える。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-3",
+        "actor": "wide-support",
+        "action": "align",
+        "trigger": "ラックで球が遅くなる",
+        "description": "幅と深さから展開を再開できる状態を作る。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "choice",
+        "cue": "球が速く近くに機会があるか",
+        "options": [
+          {
+            "action": "近い空間を速く攻める",
+            "when": "速い球と近くの前進機会がある"
+          },
+          {
+            "action": "遅ければ幅のある展開を組み直す",
+            "when": "球が遅く守備が近くを整えた"
+          }
+        ],
+        "uncertainty": "守備と支援の状況を整理した分岐例。実行判断の十分条件ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "圧力のある場所から球を空間へ移し、近い選手の継続支援と遠い選手の幅を組み合わせる攻撃モデル。",
+      "evidence": [
+        {
+          "source": "nz-snook-ruck-run",
+          "locator": "Main explanation; SUMMARY",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・位置・手順・分岐は資料の要点を抽象化した編集モデル。固定の実行手順ではない。",
+      "evidence": [
+        {
+          "source": "nz-snook-ruck-run",
+          "locator": "Main explanation; SUMMARY",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開ページの検索側で取得された本文を確認。直接の再取得は404となり、現URLの可読性は未確認。分類・動作分解は編集判断で、専門家レビュー・実技検証は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "著者の一モデル。全チームの標準や万能策として扱わない。固定人数・固定フェーズは実行規則にしない。",
+    "選手・年代・競技条件による違いと、具体的な成功条件は未検証。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用モデルのみ。座標・時間・合法性・安全性・観測条件・終了条件を備えた実行検証は未実施。"
+  }
+}

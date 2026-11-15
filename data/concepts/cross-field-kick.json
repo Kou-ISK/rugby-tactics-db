@@ -1,0 +1,165 @@
+{
+  "id": "rtk:cross-field-kick",
+  "version": "0.1.0",
+  "name": {
+    "ja": "クロスフィールドキック",
+    "en": "Cross-field kick"
+  },
+  "aliases": [],
+  "side": "attack",
+  "level": "move",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "外側の味方が受けられるよう、幅方向へ斜めにキックしてボールを送る。",
+    "en": "An angled kick transfers the ball towards an outside teammate across the field."
+  },
+  "intent": [
+    "守備線を横断するパス以外の経路で外の受け手へ届かせる。"
+  ],
+  "tags": [
+    "attack",
+    "move",
+    "kicking",
+    "出典確認済み"
+  ],
+  "applicability": {
+    "conditions": [
+      "外側の受け手と、そこへ届く軌道を確認できる。"
+    ],
+    "limits": [
+      "受け手のオンサイド、天候、捕球能力、守備の移動に依存する。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "kicker",
+        "label": "キッカー",
+        "task": "外の受け手へ斜めに送る",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "receiver",
+        "label": "外側の受け手",
+        "task": "落下点へ動き捕球を狙う",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "receiver",
+        "relation": "across-width",
+        "object": "kicker",
+        "note": "幅を取るが、キック時のオンサイド条件を満たす。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "kicker",
+        "action": "scan",
+        "trigger": "外側を使う機会",
+        "description": "受け手と相手カバーを読む。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "kicker",
+        "action": "kick",
+        "trigger": "受け手へ届けられる",
+        "description": "幅方向へボールを送る。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-3",
+        "actor": "receiver",
+        "action": "recover",
+        "trigger": "ボールが落下",
+        "description": "捕球と次のプレーを準備する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "choice",
+        "cue": "外側の受け手と守備カバーの関係",
+        "options": [
+          {
+            "action": "クロスキックを選ぶ",
+            "when": "外の味方が受球を争える"
+          },
+          {
+            "action": "保持・パスを選ぶ",
+            "when": "相手が落下点を容易に覆える"
+          }
+        ],
+        "uncertainty": "外側へ蹴るだけでは優位を保証しない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "notSameAs",
+      "target": "rtk:cut-out-pass",
+      "note": "遠い受け手へ届かせる点は似るが、パスとキックで前進・オンサイド条件が異なる。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "外側の味方が受けられるよう、幅方向へ斜めにキックしてボールを送る。",
+      "evidence": [
+        {
+          "source": "wr-kicking-guide",
+          "locator": "Kicking strategies include / kicking out wide at an oblique angle",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割と分岐は資料の要点を整理した編集モデル。距離・時間・背番号や自動実行手順を規定しない。",
+      "evidence": [
+        {
+          "source": "wr-kicking-guide",
+          "locator": "Kicking strategies include / kicking out wide at an oblique angle",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開本文を確認し、独自表現で整理。戦術・安全性・実行モデルの専門家審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "外側へ蹴るだけでは優位を保証しない。",
+    "日本語名は編集訳。適用競技規則とチームの用語を別途確認する。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用の編集モデルであり、適用規則・安全性・観測条件を含む実行検証はしていない。"
+  }
+}

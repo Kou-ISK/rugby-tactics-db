@@ -1,0 +1,186 @@
+{
+  "id": "rtk:pick-and-go",
+  "version": "0.1.0",
+  "name": {
+    "ja": "ピック＆ゴー",
+    "en": "Pick and go"
+  },
+  "aliases": [
+    {
+      "label": "ピックアンドゴー",
+      "language": "ja",
+      "kind": "translation",
+      "note": "編集上のカナ表記。"
+    }
+  ],
+  "side": "attack",
+  "level": "move",
+  "formats": [
+    "XV"
+  ],
+  "summary": {
+    "ja": "利用可能なボールを拾い、直前の接点の近くを支援とともに前進して、守備をその周囲へ引き戻す。",
+    "en": "Pick up available ball and carry close to the previous contact with support."
+  },
+  "intent": [
+    "接点付近の前進で守備配置を変え、次に攻める空間を作る。"
+  ],
+  "tags": [
+    "pick-and-go",
+    "ラック",
+    "近場",
+    "attack",
+    "move"
+  ],
+  "applicability": {
+    "conditions": [
+      "ボールを適法に取り出せ、近くの味方が継続を支えられる。"
+    ],
+    "limits": [
+      "接触を繰り返すことが目的ではない。必ず前進できる、何人いれば成功するとは断定しない。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "picker",
+        "label": "拾って運ぶ選手",
+        "task": "近い空間へ前進する",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "support",
+        "label": "支援者",
+        "task": "孤立を防ぎ次のボールを助ける",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "distributor",
+        "label": "次の配球者",
+        "task": "守備の変化を読む",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "support",
+        "relation": "near",
+        "object": "picker",
+        "note": "次の継続に間に合う距離。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "picker",
+        "action": "carry",
+        "trigger": "ボールが利用可能",
+        "description": "近い守備の間へ前進する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "support",
+        "action": "support",
+        "trigger": "保持者へ守備が集まる",
+        "description": "次のプレーを支える。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-3",
+        "actor": "distributor",
+        "action": "scan",
+        "trigger": "ボールを再び使える",
+        "description": "外側の守備が減ったかを確認する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "read-defence",
+        "cue": "直近の前進と守備の集中",
+        "options": [
+          {
+            "action": "近くを継続する",
+            "when": "接点付近の空間を使える"
+          },
+          {
+            "action": "外へ移す",
+            "when": "守備が近くへ集まり別の空間ができる"
+          }
+        ],
+        "uncertainty": "状況判断の編集例であり、計測済みの選択基準や成功保証ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "enables",
+      "target": "rtk:phase-direction-change",
+      "note": "接点後の配球判断につなぐ。"
+    },
+    {
+      "type": "notSameAs",
+      "target": "rtk:offload-continuity",
+      "note": "地面側の利用可能な球からの再出発と接触中のパスは別。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "利用可能なボールを拾い、直前の接点の近くを支援とともに前進して、守備をその周囲へ引き戻す。",
+      "evidence": [
+        {
+          "source": "nz-after-tackle",
+          "locator": "Question 1–3: pick the ball and carry forward close to the tackle",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・配置・手順・判断は、資料から意味を説明するために組み直した編集モデル。原資料の固定プレーや実行指示ではない。",
+      "evidence": [
+        {
+          "source": "nz-after-tackle",
+          "locator": "Question 1–3: pick the ball and carry forward close to the tackle",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開ページの検索側で取得された本文を確認。直接の再取得は404となり、現URLの可読性は未確認。分類・動作分解は編集判断で、専門家レビュー・実技検証は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "接触を繰り返すことが目的ではない。必ず前進できる、何人いれば成功するとは断定しない。",
+    "適用する競技規則・年齢区分・チームの共有判断は別途確認する。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "説明用の意味構造。身体動作・安全性・終了条件を検証した実行モデルではない。"
+  }
+}
