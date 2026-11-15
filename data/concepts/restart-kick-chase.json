@@ -1,0 +1,175 @@
+{
+  "id": "rtk:restart-kick-chase",
+  "version": "0.1.0",
+  "name": {
+    "ja": "リスタートのキックチェイス",
+    "en": "Restart kick chase"
+  },
+  "aliases": [
+    {
+      "label": "リスタートのキックチェイス",
+      "language": "ja",
+      "kind": "translation",
+      "note": "編集上の日本語訳。出典の公式訳ではない。"
+    }
+  ],
+  "side": "both",
+  "level": "shape",
+  "formats": [
+    "XV",
+    "sevens"
+  ],
+  "summary": {
+    "ja": "再開のキックと追走を組み合わせ、短い競り合いか長い陣地獲得と守備形成かを選ぶ。",
+    "en": "Coordinate a restart kick and chase for a contest or territorial pressure."
+  },
+  "intent": [
+    "再開のキックと追走を組み合わせ、短い競り合いか長い陣地獲得と守備形成かを選ぶ。"
+  ],
+  "tags": [
+    "both",
+    "shape",
+    "出典確認済み",
+    "実行未検証"
+  ],
+  "applicability": {
+    "conditions": [
+      "再開から競るか、陣地と守備圧力を求めるか"
+    ],
+    "limits": [
+      "オープンプレーのキック全般や全ての再開方式を説明するものではない。",
+      "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "kicker",
+        "label": "キッカー",
+        "task": "目的に合わせたキックを選ぶ",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "chase",
+        "label": "追走者",
+        "task": "キックに合わせて競り合い・守備へ移る",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "chase",
+        "relation": "connected-to",
+        "object": "kicker",
+        "note": "追走開始の適法性と狙いを共有する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "kicker",
+        "action": "kick",
+        "trigger": "再開時",
+        "description": "選んだ狙いへキックする。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "chase",
+        "action": "track",
+        "trigger": "適法に追走できる",
+        "description": "着地点と相手に応じて移動する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "decision-1",
+        "cue": "再開から競るか、陣地と守備圧力を求めるか",
+        "options": [
+          {
+            "action": "短いキックと競り合い",
+            "when": "滞空時間と追走を合わせられる"
+          },
+          {
+            "action": "長いキックと守備形成",
+            "when": "正確な到達位置と追走を優先する"
+          }
+        ],
+        "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "enables",
+      "target": "rtk:connected-backline-defence",
+      "note": "追走後の守備形成に関連する。"
+    }
+  ],
+  "variations": [
+    {
+      "name": "短い再開",
+      "difference": "競り合いに間に合う滞空時間を考える。",
+      "status": "source-described"
+    },
+    {
+      "name": "長い再開",
+      "difference": "到達位置と追走後の守備を考える。",
+      "status": "source-described"
+    }
+  ],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "再開のキックと追走を組み合わせ、短い競り合いか長い陣地獲得と守備形成かを選ぶ。",
+      "evidence": [
+        {
+          "source": "wr-restart",
+          "locator": "The kicking team should",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+      "evidence": [
+        {
+          "source": "wr-restart",
+          "locator": "The kicking team should",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "オープンプレーのキック全般や全ての再開方式を説明するものではない。",
+    "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "id": "rtk:screen-pass-contact",
+  "version": "0.1.0",
+  "name": {
+    "ja": "接触後のスクリーンパス",
+    "en": "Screen pass in contact"
+  },
+  "aliases": [
+    {
+      "label": "接触後のスクリーンパス",
+      "language": "ja",
+      "kind": "translation",
+      "note": "編集上の日本語訳。出典の公式訳ではない。"
+    },
+    {
+      "label": "Screen pass",
+      "kind": "contextual",
+      "note": "World Rugby の本資料では接触後の保護と短いパスを指す。他の用法に注意。",
+      "language": "en"
+    },
+    {
+      "label": "スクリーン",
+      "kind": "contextual",
+      "note": "検索用の曖昧な略称。デコイを背後に通すプレーとは区別する。",
+      "language": "ja"
+    }
+  ],
+  "side": "attack",
+  "level": "skill",
+  "formats": [
+    "XV",
+    "sevens"
+  ],
+  "summary": {
+    "ja": "立った接触状態で相手からボールを守り、近くの味方へ渡す技術。",
+    "en": "Protect the ball while standing in contact and pass to a nearby teammate."
+  },
+  "intent": [
+    "立った接触状態で相手からボールを守り、近くの味方へ渡す技術。"
+  ],
+  "tags": [
+    "attack",
+    "skill",
+    "出典確認済み",
+    "実行未検証"
+  ],
+  "applicability": {
+    "conditions": [
+      "立位を維持し、受け手を確認できるか"
+    ],
+    "limits": [
+      "Screen は多義語。back-door / pull-back / decoy screen の完全同義語として扱わない。",
+      "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "carrier",
+        "label": "ボール保持者",
+        "task": "接触中にボールを保護する",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "receiver",
+        "label": "受け手",
+        "task": "近いパスへ対応する",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "receiver",
+        "relation": "near",
+        "object": "carrier",
+        "note": "短い受け渡しの関係。固定距離ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "carrier",
+        "action": "carry",
+        "trigger": "立った接触状態",
+        "description": "相手からボールを保護する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "carrier",
+        "action": "pass",
+        "trigger": "近くの味方へ渡せる",
+        "description": "短い受け渡しを行う。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "decision-1",
+        "cue": "立位を維持し、受け手を確認できるか",
+        "options": [
+          {
+            "action": "近くへ渡す",
+            "when": "保護したボールを適法に渡せる"
+          },
+          {
+            "action": "保持と状況確認",
+            "when": "受け渡し条件が整わない"
+          }
+        ],
+        "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "notSameAs",
+      "target": "rtk:switch-pass",
+      "note": "相手との接触を伴う技術と走路変更のムーブを分離する。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "立った接触状態で相手からボールを守り、近くの味方へ渡す技術。",
+      "evidence": [
+        {
+          "source": "wr-screen",
+          "locator": "The ball carrier should",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+      "evidence": [
+        {
+          "source": "wr-screen",
+          "locator": "The ball carrier should",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "Screen は多義語。back-door / pull-back / decoy screen の完全同義語として扱わない。",
+    "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+  }
+}

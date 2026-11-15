@@ -24,4 +24,7 @@ test('build exports exactly the manifest bytes and valid relative assets',async(
   }
   assert.ok(!/src="https?:/.test(html));
   assert.ok(html.includes('Content-Security-Policy'));
+  for (const file of ['LICENSE', 'DATA-LICENSE.md']) {
+    assert.deepEqual(await readFile(new URL('dist/' + file, root)), await readFile(new URL(file, root)));
+  }
 });

@@ -1,0 +1,170 @@
+{
+  "id": "rtk:counter-attack",
+  "version": "0.1.0",
+  "name": {
+    "ja": "カウンターアタック",
+    "en": "Counter-attack"
+  },
+  "aliases": [
+    {
+      "label": "カウンターアタック",
+      "language": "ja",
+      "kind": "translation",
+      "note": "編集上の日本語訳。出典の公式訳ではない。"
+    },
+    {
+      "label": "Counterattack",
+      "kind": "synonym",
+      "note": "Counter-attack の綴り違い。",
+      "language": "en"
+    }
+  ],
+  "side": "attack",
+  "level": "phase",
+  "formats": [
+    "XV",
+    "sevens"
+  ],
+  "summary": {
+    "ja": "獲得したボールから攻める際に、進路の共有、支援、再度失った場合の後方カバーを組み合わせる。",
+    "en": "Counter-attacking combines communication, support and coverage against another turnover."
+  },
+  "intent": [
+    "獲得したボールから攻める際に、進路の共有、支援、再度失った場合の後方カバーを組み合わせる。"
+  ],
+  "tags": [
+    "attack",
+    "phase",
+    "出典確認済み",
+    "実行未検証"
+  ],
+  "applicability": {
+    "conditions": [
+      "獲得後の空間と支援の有無"
+    ],
+    "limits": [
+      "ボール獲得時の自動的な即攻命令ではない。",
+      "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "carrier",
+        "label": "ボール保持者",
+        "task": "支援と攻める場所を確認する",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "support",
+        "label": "支援者",
+        "task": "選択肢と保護を提供する",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "support",
+        "relation": "near",
+        "object": "carrier",
+        "note": "受球や支援に移れる相対位置を選ぶ。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "carrier",
+        "action": "scan",
+        "trigger": "ボールを獲得",
+        "description": "支援と攻撃方向を確認する。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "support",
+        "action": "support",
+        "trigger": "攻撃へ移る",
+        "description": "保持者の選択肢を支える。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "decision-1",
+        "cue": "獲得後の空間と支援の有無",
+        "options": [
+          {
+            "action": "攻撃へ展開",
+            "when": "進路と支援を共有できる"
+          },
+          {
+            "action": "保持を優先",
+            "when": "支援や後方カバーが不十分"
+          }
+        ],
+        "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "enables",
+      "target": "rtk:close-support",
+      "note": "カウンターにも支援が必要。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "獲得したボールから攻める際に、進路の共有、支援、再度失った場合の後方カバーを組み合わせる。",
+      "evidence": [
+        {
+          "source": "wr-counter",
+          "locator": "The counter-attacking team should",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+      "evidence": [
+        {
+          "source": "wr-counter",
+          "locator": "The counter-attacking team should",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "ボール獲得時の自動的な即攻命令ではない。",
+    "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+  }
+}

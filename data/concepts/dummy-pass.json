@@ -1,0 +1,154 @@
+{
+  "id": "rtk:dummy-pass",
+  "version": "0.1.0",
+  "name": {
+    "ja": "ダミーパス",
+    "en": "Dummy pass"
+  },
+  "aliases": [
+    {
+      "label": "ダミーパス",
+      "language": "ja",
+      "kind": "translation",
+      "note": "編集上の日本語訳。出典の公式訳ではない。"
+    }
+  ],
+  "side": "attack",
+  "level": "skill",
+  "formats": [
+    "XV",
+    "sevens"
+  ],
+  "summary": {
+    "ja": "パスを出すように見せながらボールを保持し、相手の反応を利用する。",
+    "en": "Suggest a pass without releasing the ball to influence a defender."
+  },
+  "intent": [
+    "パスを出すように見せながらボールを保持し、相手の反応を利用する。"
+  ],
+  "tags": [
+    "attack",
+    "skill",
+    "出典確認済み",
+    "実行未検証"
+  ],
+  "applicability": {
+    "conditions": [
+      "守備がパスの動作にどう反応するか"
+    ],
+    "limits": [
+      "ボールを持たない選手の decoy run とは別概念。",
+      "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "carrier",
+        "label": "ボール保持者",
+        "task": "実際には保持したままパスを示す",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "option",
+        "label": "パス先候補",
+        "task": "信じられる選択肢となる",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "option",
+        "relation": "near",
+        "object": "carrier",
+        "note": "実際に渡せそうな関係を保つ。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "carrier",
+        "action": "carry",
+        "trigger": "パスを示せる状況",
+        "description": "受け手を意識した動作を見せ、ボールを保持する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "decision-1",
+        "cue": "守備がパスの動作にどう反応するか",
+        "options": [
+          {
+            "action": "保持して進む",
+            "when": "保持に有利な反応が出る"
+          },
+          {
+            "action": "再判断する",
+            "when": "相手が動作に反応しない"
+          }
+        ],
+        "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "notSameAs",
+      "target": "rtk:cut-out-pass",
+      "note": "ダミーではボールを離さない。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "パスを出すように見せながらボールを保持し、相手の反応を利用する。",
+      "evidence": [
+        {
+          "source": "nz-dummy",
+          "locator": "OBJECTIVE / KEY FACTORS / COMMON ERRORS",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+      "evidence": [
+        {
+          "source": "nz-dummy",
+          "locator": "OBJECTIVE / KEY FACTORS / COMMON ERRORS",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "ボールを持たない選手の decoy run とは別概念。",
+    "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "rugby-tactics-db",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "description": "Source-aware rugby tactics knowledge for people and machines",
@@ -11,8 +11,12 @@
     "validate": "node scripts/validate.mjs",
     "test": "node --test",
     "build": "node scripts/build.mjs",
-    "check": "npm run validate && npm test && npm run build",
+    "check": "npm run check:data && npm run validate && npm test && npm run build",
     "serve": "node scripts/serve.mjs",
-    "dev": "node scripts/serve.mjs"
+    "dev": "node scripts/serve.mjs",
+    "assemble": "node scripts/assemble.mjs",
+    "check:data": "node scripts/assemble.mjs --check",
+    "check:versions": "node scripts/check-versions.mjs",
+    "audit:history": "node scripts/audit-history.mjs"
   }
 }

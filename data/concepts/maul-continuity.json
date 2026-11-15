@@ -1,0 +1,164 @@
+{
+  "id": "rtk:maul-continuity",
+  "version": "0.1.0",
+  "name": {
+    "ja": "モールでの継続",
+    "en": "Maul continuity"
+  },
+  "aliases": [
+    {
+      "label": "モールでの継続",
+      "language": "ja",
+      "kind": "translation",
+      "note": "編集上の日本語訳。出典の公式訳ではない。"
+    }
+  ],
+  "side": "attack",
+  "level": "shape",
+  "formats": [
+    "XV",
+    "sevens"
+  ],
+  "summary": {
+    "ja": "適法な結合でボールを守り、後方の保持者が前進継続・離脱・パスを選ぶ。",
+    "en": "Secure possession in a legally bound maul and choose how to continue."
+  },
+  "intent": [
+    "適法な結合でボールを守り、後方の保持者が前進継続・離脱・パスを選ぶ。"
+  ],
+  "tags": [
+    "attack",
+    "shape",
+    "出典確認済み",
+    "実行未検証"
+  ],
+  "applicability": {
+    "conditions": [
+      "後方でボールが利用できる状態"
+    ],
+    "limits": [
+      "ラインアウトモールは開始局面の一変種で、モール全般と同義ではない。",
+      "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "carrier",
+        "label": "ボール保持者",
+        "task": "ボールを利用可能にする",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "support",
+        "label": "支援者",
+        "task": "適法に結合して支える",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "support",
+        "relation": "connected-to",
+        "object": "carrier",
+        "note": "結合の適法性と安全性を個別に確認する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "support",
+        "action": "support",
+        "trigger": "モールに支援が到着",
+        "description": "ボール保持と前進を支える。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "carrier",
+        "action": "scan",
+        "trigger": "ボールを利用できる",
+        "description": "前進、離脱、パスを比較する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "decision-1",
+        "cue": "後方でボールが利用できる状態",
+        "options": [
+          {
+            "action": "前進を続ける",
+            "when": "適法に前進できる"
+          },
+          {
+            "action": "離脱またはパス",
+            "when": "別の継続が適している"
+          }
+        ],
+        "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "notSameAs",
+      "target": "rtk:offload-continuity",
+      "note": "結合した集団の継続とタックル局面のパスを区別する。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "適法な結合でボールを守り、後方の保持者が前進継続・離脱・パスを選ぶ。",
+      "evidence": [
+        {
+          "source": "wr-maul",
+          "locator": "During the maul / Arriving players / Once the ball is at the rear",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+      "evidence": [
+        {
+          "source": "wr-maul",
+          "locator": "During the maul / Arriving players / Once the ball is at the rear",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "ラインアウトモールは開始局面の一変種で、モール全般と同義ではない。",
+    "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+  }
+}

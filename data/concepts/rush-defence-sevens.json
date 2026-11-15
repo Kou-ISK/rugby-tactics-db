@@ -1,0 +1,159 @@
+{
+  "id": "rtk:rush-defence-sevens",
+  "version": "0.1.0",
+  "name": {
+    "ja": "ラッシュディフェンス（セブンズ）",
+    "en": "Rush defence (sevens)"
+  },
+  "aliases": [
+    {
+      "label": "ラッシュディフェンス（セブンズ）",
+      "language": "ja",
+      "kind": "translation",
+      "note": "編集上の日本語訳。出典の公式訳ではない。"
+    },
+    {
+      "label": "Blitz defence",
+      "kind": "contextual",
+      "note": "近接語の検索補助。今回の出典は Blitz を定義せず、完全同義とは扱わない。",
+      "language": "en"
+    }
+  ],
+  "side": "defence",
+  "level": "system",
+  "formats": [
+    "sevens"
+  ],
+  "summary": {
+    "ja": "セブンズで守備の列が一体となって前進し、相手の使える時間と空間を減らす。",
+    "en": "A sevens defensive line advances together to reduce attacking time and space."
+  },
+  "intent": [
+    "セブンズで守備の列が一体となって前進し、相手の使える時間と空間を減らす。"
+  ],
+  "tags": [
+    "defence",
+    "system",
+    "出典確認済み",
+    "実行未検証"
+  ],
+  "applicability": {
+    "conditions": [
+      "前線の連結と前進を継続できる状態"
+    ],
+    "limits": [
+      "出典はセブンズ専用。XV の配置や Blitz との完全な同義性を証明しない。",
+      "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "line",
+        "label": "守備の列",
+        "task": "連動して前進する",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "cover",
+        "label": "後方カバー",
+        "task": "突破やキックに備える",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "cover",
+        "relation": "behind",
+        "object": "line",
+        "note": "後方の役割を前線と区別する。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "line",
+        "action": "press",
+        "trigger": "連動した前進が可能",
+        "description": "列のつながりを保ちながら圧力をかける。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "decision-1",
+        "cue": "前線の連結と前進を継続できる状態",
+        "options": [
+          {
+            "action": "列として前進",
+            "when": "十分な連結がある"
+          },
+          {
+            "action": "再整列",
+            "when": "前線が分断されている"
+          }
+        ],
+        "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "enables",
+      "target": "rtk:sweeper-cover-sevens",
+      "note": "前線の圧力と後方カバーを分けて考える。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "セブンズで守備の列が一体となって前進し、相手の使える時間と空間を減らす。",
+      "evidence": [
+        {
+          "source": "nz-sevens-defence",
+          "locator": "Rush Defence / The Sweeper(s)",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+      "evidence": [
+        {
+          "source": "nz-sevens-defence",
+          "locator": "Rush Defence / The Sweeper(s)",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "出典はセブンズ専用。XV の配置や Blitz との完全な同義性を証明しない。",
+    "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+  }
+}

@@ -34,3 +34,30 @@ invalid reviewer/date acceptance; duplicate hash/popstate renders losing keyboar
 Aliases/relationships/variations currently have notes and concept-level source context rather
 than individual evidence pointers. Finer-grained claim-level review is a planned schema improvement.
 No autonomous execution or live P2P/RPM adapter is enabled.
+
+# Contribution foundation: tooling 0.2.0
+
+Date: 2026-11-15. Dataset stays 0.1.0 and schema stays 1.0.0.
+
+- Local Node 24.22.1: `npm run check`, all 32 tests passed; no dependencies installed.
+- `check:versions` passed against `1e1ae1dcb4301f085270d00615b1ae74a7ff710d`.
+- Independent Python JSON Schema Draft 2020-12 schema/data validation passed.
+- Rebuilt the initial commit's site separately and compared all **24 existing deployed
+  files byte for byte**. No differences, including UI, manifest, concept exports and
+  dataset; only the two existing license documents are added to the new build.
+- Dataset SHA-256 remains
+  `bc9faec251165d47ad029913f90b6947179472365582df3b0326a4376bc60448`.
+- Tests cover orphan/duplicate/missing IDs, unsafe paths, file/directory/output symlinks,
+  stale aggregate exports, version/date regressions, removed concept IDs, historical
+  duplicate/removed paths, secret-like redaction and shallow audit refusal.
+- CI and Pages build both run version/history gates; PR code has no deployment access.
+  Hosted Node 22 check/deployment results are recorded on the associated GitHub PR/run,
+  not inferred from these local results.
+- Independent technical review identified and corrected the deployment-gate gap,
+  live-version-coupled test fixture, duplicate-blob path blind spot and output-symlink
+  overwrite risk before publication.
+
+No UI source, data claim, expert-review state, public schema or existing license text
+changed. Existing UI assets are byte-identical, so this change does not claim a new
+browser accessibility audit. No P2P/RPM integration or history rewrite was performed.
+See [Git history](GIT-HISTORY.md) for the bounded full-history inspection and limitations.

@@ -1,0 +1,164 @@
+{
+  "id": "rtk:drift-defence",
+  "version": "0.1.0",
+  "name": {
+    "ja": "ドリフトディフェンス",
+    "en": "Drift defence"
+  },
+  "aliases": [
+    {
+      "label": "ドリフトディフェンス",
+      "language": "ja",
+      "kind": "translation",
+      "note": "編集上の日本語訳。出典の公式訳ではない。"
+    }
+  ],
+  "side": "defence",
+  "level": "system",
+  "formats": [
+    "XV",
+    "sevens"
+  ],
+  "summary": {
+    "ja": "内側から守備の列を保ち、パスの移動に合わせて次の攻撃者へ対応を移す。",
+    "en": "Defenders preserve their line and shift responsibility with the pass."
+  },
+  "intent": [
+    "内側から守備の列を保ち、パスの移動に合わせて次の攻撃者へ対応を移す。"
+  ],
+  "tags": [
+    "defence",
+    "system",
+    "出典確認済み",
+    "実行未検証"
+  ],
+  "applicability": {
+    "conditions": [
+      "相手のパスと守備の連結状態"
+    ],
+    "limits": [
+      "横移動の早さだけを追求しない。攻撃のドリフト走と別概念。",
+      "競技形式、年齢区分、選手の習熟度、適用競技規則を個別に確認する。"
+    ]
+  },
+  "mechanics": {
+    "status": "editorial-model",
+    "roles": [
+      {
+        "id": "defender",
+        "label": "守備者",
+        "task": "パスに応じて対応を移す",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "neighbour",
+        "label": "隣の守備者",
+        "task": "担当の移動を共有する",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "positioning": [
+      {
+        "subject": "defender",
+        "relation": "connected-to",
+        "object": "neighbour",
+        "note": "互いの動きを確認できる連結を保つ。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "sequence": [
+      {
+        "id": "step-1",
+        "actor": "defender",
+        "action": "scan",
+        "trigger": "相手がパスを準備",
+        "description": "相手と隣の守備者を見る。",
+        "claimRefs": [
+          "model"
+        ]
+      },
+      {
+        "id": "step-2",
+        "actor": "defender",
+        "action": "drift",
+        "trigger": "パスが移動",
+        "description": "連結を維持して外側へ対応を移す。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "decision-1",
+        "cue": "相手のパスと守備の連結状態",
+        "options": [
+          {
+            "action": "外へ対応を移す",
+            "when": "パスが移動し担当を共有できる"
+          },
+          {
+            "action": "連結を整える",
+            "when": "隣との対応にずれがある"
+          }
+        ],
+        "uncertainty": "以下は資料を基にした編集上の分岐例であり、成功保証や検証済み実行方策ではない。",
+        "claimRefs": [
+          "model"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "contrastsWith",
+      "target": "rtk:rush-defence-sevens",
+      "note": "守備の空間制限という目的は共有するが、比較先の人数・文脈はセブンズ限定。"
+    }
+  ],
+  "variations": [],
+  "claims": [
+    {
+      "id": "definition",
+      "text": "内側から守備の列を保ち、パスの移動に合わせて次の攻撃者へ対応を移す。",
+      "evidence": [
+        {
+          "source": "nz-drift",
+          "locator": "KEY FACTORS / COMMON ERRORS",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "text": "役割・相対配置・手順・判断分岐は、出典の要点を整理した編集上のモデル。原資料がこのデータ構造や自動実行を認定しているわけではない。",
+      "evidence": [
+        {
+          "source": "nz-drift",
+          "locator": "KEY FACTORS / COMMON ERRORS",
+          "support": "interpretation"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "source-backed",
+    "note": "公開一次資料の本文を確認。人間の専門家による戦術・安全性・実行モデルの審査は未実施。",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "uncertainties": [
+    "横移動の早さだけを追求しない。攻撃のドリフト走と別概念。",
+    "日本語名は編集訳。名称や役割の呼び方は指導環境で変わり得る。"
+  ],
+  "execution": {
+    "ready": false,
+    "reason": "出典に基づく説明と編集モデルのみ。適用規則、安全条件、動作制約、観測・終了条件を含む実行検証が未完了。"
+  }
+}

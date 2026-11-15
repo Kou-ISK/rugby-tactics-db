@@ -22,7 +22,10 @@ or dependency switch are performed in other repositories.
 
 ## Data model
 
-`data/dataset.json` is the source of truth for this repository. `dist/` is derived.
+`data/catalog.json` plus `data/concepts/*.json` and `data/sources/*.json` are the
+authoring source of truth. `data/dataset.json` is the deterministic, checked-in compatibility
+export; `dist/` is derived and untracked. Builds reject divergence rather than choosing one
+authority silently. See [ADR 0001](decisions/0001-split-authoring-stable-export.md).
 The published JSON Schema defines exact required fields and rejects undeclared fields.
 
 - `id`: stable, globally namespaced `rtk:<slug>`. Never recycle an ID for another concept.
@@ -82,3 +85,10 @@ Consumers pin a commit plus content hash. Do not overwrite a released meaning un
 Next: expert domain review, claim-level reviews, evidence-backed attacking systems, additional
 language variants, explicit alias namespaces, an immutable release archive, and adapter conformance
 fixtures. Implement adapters only after their target consumers' regression suites are available.
+
+## Contribution operations
+
+[Data authoring](DATA-AUTHORING.md), [governance](../GOVERNANCE.md),
+[release/version policy](RELEASE.md), and [Git history policy](GIT-HISTORY.md) define
+review and publication boundaries. `npm run check` validates authoring/export parity;
+PR/main CI additionally checks version changes and reachable-history tripwires.
