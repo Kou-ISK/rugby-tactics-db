@@ -1,9 +1,9 @@
 {
   "id": "rtk:maul-continuity",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": {
-    "ja": "モールでの継続",
-    "en": "Maul continuity"
+    "ja": "モールの保持・継続技術",
+    "en": "Mauling: retention and continuation"
   },
   "aliases": [
     {
@@ -11,10 +11,16 @@
       "language": "ja",
       "kind": "translation",
       "note": "編集上の日本語訳。出典の公式訳ではない。"
+    },
+    {
+      "label": "Maul continuity",
+      "language": "en",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
     }
   ],
   "side": "attack",
-  "level": "principle",
+  "level": "skill",
   "formats": [
     "XV",
     "sevens"

@@ -1,8 +1,8 @@
 {
   "id": "rtk:screen-pass-contact",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "接触後のスクリーンパス",
+    "ja": "スクリーンパス（接触中・World Rugby用法）",
     "en": "Screen pass in contact"
   },
   "aliases": [

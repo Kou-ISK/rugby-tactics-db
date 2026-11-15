@@ -3,6 +3,19 @@
 Site/tooling and dataset versions are independent. No tag or release archive is implied
 by an entry here; use exact commits and the manifest hash until one is published.
 
+## Dataset 0.3.0 / site 0.4.0 / classification 0.1.0 — 2026-11-15
+
+- Audit all 41 records; split the main 13 named systems/combinations/options from 25 supporting
+  items and 3 source-specific examples. No overarching strategy is claimed.
+- Correct technique/principle/role classifications and editor-created headings; distinguish
+  source-attested names from author-local proposals and editorial descriptions.
+- Gather actual synonymous names under existing IDs: Switch/Scissors, Cut-out/Miss pass,
+  Loop/Run around, Up-and-under/Bomb. Japanese ミスパス remains ambiguous.
+- Correct man-on-man/drift's misleading fixed-assignment contrast and rush/sweeper relation.
+- Add separately validated, versioned classification/identity metadata bound to dataset SHA.
+  Keep all existing IDs, JSON paths and dataset schema 1.0.0; no speculative record deletion.
+- Add browser response-byte pairing verification, strict-category filters and evidence displays.
+
 ## Dataset 0.2.0 / site 0.3.0 — 2026-11-15
 
 - Grow from 14 to 41 concepts and from 14 to 39 references. These are not 41 interchangeable tactics.

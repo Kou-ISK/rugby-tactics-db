@@ -10,9 +10,10 @@
 [設計](docs/ARCHITECTURE.md) · [接続契約](docs/INTEGRATION.md) ·
 [貢献方法](CONTRIBUTING.md)
 
-## 収録範囲（dataset 0.2.0）
+## 収録範囲（dataset 0.3.0）
 
-- **41 コンセプト / 39 出典**。戦術体系・配置・連係・原則・技術・局面を分けて収録。
+- **41 知識項目**。主表示はシステム6・定型連係2・戦術的選択5の**13件**。
+  関連する技術・原則・役割・局面など25件、著者固有の提案例3件は別枠です。戦略は0件。
   協会の指導資料と、コーチ自身による公開解説を根拠にしています。
 - 日本語・英語名、文脈付き別名、類似・対比・非同一などの関係。
 - 抽象的な役割、相対配置、動きの順序、条件、判断の分岐、限界、出典。
@@ -25,12 +26,14 @@
 専門家によるレビューは未実施。全件 `execution.ready = false` です。
 編集上のモデルは、出典が保証する実行手順と分けています。
 
-1-3-3-1 / 2-4-2、三人ポッド、プルバック、unders / overs、ループ、
-ショートサイド、クイックタップ、キックの連係、ペンデュラムなどを追加しました。
+1-3-3-1 / 2-4-2 / ペンデュラムはシステム、ループ / スイッチは連係、
+ポッドは配置、プルバックやunders / oversは技術として区別します。
+Switch / Scissors、Cut-out / Miss pass、Loop / Run around、Up-and-under / Bombは
+同じ概念ID内の別名として統合。曖昧な「ミスパス」「Screen」等は自動で同一視しません。
 単なるリンク集ではなく、意味・目的・役割・動き・判断・他概念との違いを独自表現で保持します。
 
 **41 件すべてが「完成した戦術」ではありません。** 技術や局面も理解の部品として含みます。
-[分類の定義と元14件の見直し](docs/TAXONOMY.md)を参照してください。
+[分類と同義判定](docs/TAXONOMY.md)・[全41件の精査表](docs/CLASSIFICATION-REVIEW.md)を参照してください。
 チーム固有の非公開コール、私的会話・プレーブックは含みません。
 
 ## ローカル実行
@@ -44,7 +47,8 @@ npm run serve       # http://localhost:4173
 
 `npm run build` は `dist/` を再生成します。データは `data/concepts/`・`data/sources/`・
 `data/catalog.json` を編集し、`npm run assemble` で互換用 `data/dataset.json` を生成します。
-`dist/` と `data/dataset.json` を直接編集しないでください。サーバーは閲覧用で、データ書き込み機能はありません。
+`dist/` と `data/dataset.json` を直接編集しないでください。
+意味の編集後は `classification.json` の分類・根拠・datasetVersion/SHAも更新し、厳密分類との不一致を検証してください。サーバーは閲覧用で、データ書き込み機能はありません。
 
 ## OSS として参加する
 
@@ -59,6 +63,7 @@ data/
   concepts/*.json    # 1 コンセプト 1 ファイル（編集元）
   sources/*.json     # 1 出典 1 ファイル（編集元）
   dataset.json       # 自動生成する既存互換の全件 JSON
+  classification.json # 厳密分類・名称典拠・同義根拠（dataset SHAで結合）
 schemas/             # 公開データ契約
 src/                 # 静的サイト・検索・検証
 scripts/             # 組立・検証・ビルド・履歴監査
@@ -91,8 +96,10 @@ GitHub の Settings → Pages → Source を **GitHub Actions** にします。
 | `manifest.json` | dataset/concept バージョン、SHA-256、ファイル一覧 |
 | `data/dataset.json` | 現在の全データ |
 | `data/concepts/drift-defence.json` | 単一コンセプト |
-| `exports/rugby-tactics-db-0.2.0.json` | 配備版のスナップショット |
-| `schemas/dataset.schema.json` | JSON Schema 2020-12 |
+| `exports/rugby-tactics-db-0.3.0.json` | 配備版のスナップショット |
+| `schemas/dataset.schema.json` | 既存互換の JSON Schema 2020-12 |
+| `data/classification.json` | 厳密な種類・名称典拠・同義根拠・canonical ID |
+| `schemas/classification.schema.json` | 分類companionの別契約 |
 
 再現性が必要な consumer は **Git commit SHA と manifest のハッシュを固定**してください。
 Pages の URL は最新配備で置き換わり、過去版の永続アーカイブではありません。

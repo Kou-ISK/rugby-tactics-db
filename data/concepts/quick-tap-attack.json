@@ -1,16 +1,28 @@
 {
   "id": "rtk:quick-tap-attack",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "クイックタップ攻撃",
-    "en": "Quick tap attack"
+    "ja": "クイックタップからの攻撃（Snookの例）",
+    "en": "Quick-tap attack (Snook example)"
   },
   "aliases": [
     {
       "label": "クイックタップ",
       "language": "ja",
+      "kind": "contextual",
+      "note": "再開方法一般は、このSnook固有の攻撃運用例と同義ではない。短い技術名だけでこの例へ一意解決しない。"
+    },
+    {
+      "label": "クイックタップ攻撃",
+      "language": "ja",
       "kind": "translation",
-      "note": "Quick tap の編集訳。ここでは攻撃への利用を扱う。"
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+    },
+    {
+      "label": "Quick tap attack",
+      "language": "en",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。現レコードの役割モデルはSnookの運用例で、すべてのquick tapの同義ではない。"
     }
   ],
   "side": "attack",

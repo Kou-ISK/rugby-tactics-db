@@ -1,10 +1,11 @@
+import { collectionFor } from './classification.mjs';
 export const labels = {
   side: { attack: '攻撃', defence: '守備', both: '攻守' },
   level: { system: '戦術体系', shape: '配置', move: '連係', principle: '原則', skill: '技術', phase: '局面' },
   relation: { similarTo: '似ている', contrastsWith: '対比', partOf: '構成要素', enables: '支える', notSameAs: '同一ではない' }
 };
 export function normalize(s) { return String(s).normalize('NFKC').toLowerCase().replace(/[‐‑‒–—−]/g, '-').replace(/[\u30a1-\u30f6]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60)).trim(); }
-export function searchConcepts(concepts, { q = '', side = '', level = '', format = '' } = {}) {
+export function searchConcepts(concepts, { q = '', side = '', level = '', format = '', collection = 'all', kind = '' } = {}, classifications = null) {
   const terms = normalize(q).split(/\s+/).filter(Boolean);
   return concepts.map((c, i) => {
     const names = [c.name.ja, c.name.en, c.id, ...c.aliases.map(a => a.label)].map(normalize);
@@ -12,7 +13,7 @@ export function searchConcepts(concepts, { q = '', side = '', level = '', format
     const matches = terms.every(t => names.some(n => n.includes(t)) || body.includes(t));
     const score = terms.reduce((n, t) => n + (names.includes(t) ? 12 : names.some(v => v.startsWith(t)) ? 6 : names.some(v => v.includes(t)) ? 3 : 1), 0);
     return { c, i, matches, score };
-  }).filter(({ c, matches }) => matches && (!side || c.side === side || c.side === 'both') && (!level || c.level === level) && (!format || c.formats.includes(format)))
+  }).filter(({ c, matches }) => matches && (!side || c.side === side || c.side === 'both') && (!level || c.level === level) && (!format || c.formats.includes(format)) && (!kind || classifications?.get(c.id)?.kind === kind) && (collection === 'all' || (classifications?.has(c.id) && collectionFor(classifications.get(c.id)) === collection)))
     .sort((a, b) => b.score - a.score || a.i - b.i).map(v => v.c);
 }
 /** Alias matching preserves ambiguity. Contextual aliases are never automatic equivalence. */

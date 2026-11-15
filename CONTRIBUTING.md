@@ -11,6 +11,7 @@ Read the [community expectations](CODE_OF_CONDUCT.md) and [review policy](GOVERN
 | Concept, alias, relationship or correction | `data/concepts/` and [data authoring](docs/DATA-AUTHORING.md) |
 | Source or citation | `data/sources/`; evidence references in affected concepts |
 | Dataset metadata / order / registering IDs | `data/catalog.json` |
+| Strict classification / name origin / true synonym evidence | `data/classification.json`; [taxonomy](docs/TAXONOMY.md) |
 | Site / search / validation | `src/`, `scripts/`, `test/` |
 | Public schema or consumer contract | `schemas/`, design issue and `docs/decisions/` |
 | Build output | Do not edit or commit `dist/` |
@@ -43,7 +44,9 @@ No global tools, automatic Git hooks or new account permissions are installed.
    or copyrighted long passages/media. See [data rights](DATA-LICENSE.md).
 4. Keep abstract roles and `execution.ready: false`. New data remain `source-backed` with
    null reviewer fields. Do not fabricate expert review, reviewer consent or access dates.
-5. Bump dataset/concept versions when exported content changes and update `CHANGELOG.md`.
+5. Review strict kind and name origin separately. Update classification coverage, evidence and
+   its dataset version/SHA after assembly. Bump dataset/concept/classification versions as
+   applicable when exported content changes and update `CHANGELOG.md`.
    Never recycle IDs. Do not upgrade `contextual` to `synonym` merely because search is similar.
 6. Run the checks above. For UI changes, verify desktop/mobile layout, keyboard use, empty/error
    states, detail → related detail → Back/Forward, query restoration and deep links.

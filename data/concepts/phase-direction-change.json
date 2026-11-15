@@ -1,11 +1,18 @@
 {
   "id": "rtk:phase-direction-change",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "フェーズ後のリターン攻撃",
+    "ja": "フェーズ後の攻撃方向転換",
     "en": "Changing direction after a phase"
   },
-  "aliases": [],
+  "aliases": [
+    {
+      "label": "フェーズ後のリターン攻撃",
+      "language": "ja",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+    }
+  ],
   "side": "attack",
   "level": "move",
   "formats": [

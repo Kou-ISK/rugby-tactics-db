@@ -3,14 +3,14 @@ import assert from 'node:assert/strict';
 import { prepareBrowserAssets } from '../scripts/lib/browser-assets.mjs';
 const fixture = () => ({
   html: '<link href="./mark.svg"><link href="./style.css"><script src="./app.mjs"></script>',
-  app: "import './search.mjs'; fetch('./data/dataset.json');",
-  search: 'search', style: 'style', icon: 'icon', dataset: 'dataset',
+  app: "import './search.mjs'; import './classification.mjs'; fetch('./data/dataset.json'); fetch('./data/classification.json');",
+  search: "import './classification.mjs';", classificationModule: 'module', classificationData: 'classification', style: 'style', icon: 'icon', dataset: 'dataset',
 });
 test('browser dependency hashes are deterministic and change transitively', () => {
   const source = fixture();
   const initial = prepareBrowserAssets(source);
   assert.deepEqual(prepareBrowserAssets(source), initial);
-  for (const key of ['search', 'dataset', 'app']) {
+  for (const key of ['search', 'dataset', 'app', 'classificationModule', 'classificationData']) {
     const changed = prepareBrowserAssets({ ...source, [key]: source[key] + ' changed' });
     assert.notEqual(changed.app, initial.app);
     assert.notEqual(changed.html, initial.html);

@@ -1,8 +1,8 @@
 {
   "id": "rtk:attacking-mismatches",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "ミスマッチを見つけて攻める",
+    "ja": "ミスマッチの認知・利用",
     "en": "Attacking mismatches"
   },
   "aliases": [
@@ -11,6 +11,12 @@
       "language": "ja",
       "kind": "contextual",
       "note": "ここでは攻撃で利用する対応差。体格差だけを意味しない。"
+    },
+    {
+      "label": "ミスマッチを見つけて攻める",
+      "language": "ja",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
     }
   ],
   "side": "attack",

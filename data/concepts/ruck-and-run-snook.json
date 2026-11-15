@@ -1,8 +1,8 @@
 {
   "id": "rtk:ruck-and-run-snook",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "ラック＆ラン（Snookモデル）",
+    "ja": "Ruck & Run（Snookの提案モデル）",
     "en": "Ruck and run (Snook model)"
   },
   "aliases": [
@@ -11,6 +11,12 @@
       "kind": "contextual",
       "note": "この記事におけるモデルの略称。普遍的callではない。",
       "language": "en"
+    },
+    {
+      "label": "ラック＆ラン（Snookモデル）",
+      "language": "ja",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
     }
   ],
   "side": "attack",

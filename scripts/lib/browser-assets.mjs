@@ -10,11 +10,14 @@ function replaceOnce(text, from, to) {
 // Stable paths remain available to existing consumers. Content-addressed query
 // strings avoid stale dependency reuse in normal URL-keyed browser/CDN caches.
 // They are cache identifiers, not immutable URLs or runtime integrity checks.
-export function prepareBrowserAssets({ html, app, search, style, icon, dataset }) {
+export function prepareBrowserAssets({ html, app, search, style, icon, dataset, classificationModule, classificationData }) {
+  search = replaceOnce(search, "'./classification.mjs'", `'${versioned('./classification.mjs', classificationModule)}'`);
+  app = replaceOnce(app, "'./classification.mjs'", `'${versioned('./classification.mjs', classificationModule)}'`);
+  app = replaceOnce(app, "'./data/classification.json'", `'${versioned('./data/classification.json', classificationData)}'`);
   app = replaceOnce(app, "'./search.mjs'", `'${versioned('./search.mjs', search)}'`);
   app = replaceOnce(app, "'./data/dataset.json'", `'${versioned('./data/dataset.json', dataset)}'`);
   html = replaceOnce(html, 'src="./app.mjs"', `src="${versioned('./app.mjs', app)}"`);
   html = replaceOnce(html, 'href="./style.css"', `href="${versioned('./style.css', style)}"`);
   html = replaceOnce(html, 'href="./mark.svg"', `href="${versioned('./mark.svg', icon)}"`);
-  return { html, app };
+  return { html, app, search };
 }

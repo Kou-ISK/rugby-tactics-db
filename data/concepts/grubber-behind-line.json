@@ -1,9 +1,9 @@
 {
   "id": "rtk:grubber-behind-line",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "グラバーで守備の背後を狙う",
-    "en": "Grubber kick behind the defensive line"
+    "ja": "グラバーキック（守備背後への用法）",
+    "en": "Grubber kick (behind-line use)"
   },
   "aliases": [
     {
@@ -11,10 +11,22 @@
       "language": "en",
       "kind": "contextual",
       "note": "資料の技術名。ここでは背後を狙う戦術的使用だけを扱う。"
+    },
+    {
+      "label": "グラバーで守備の背後を狙う",
+      "language": "ja",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+    },
+    {
+      "label": "Grubber kick behind the defensive line",
+      "language": "en",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
     }
   ],
   "side": "attack",
-  "level": "move",
+  "level": "skill",
   "formats": [
     "XV"
   ],

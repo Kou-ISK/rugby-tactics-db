@@ -1,13 +1,26 @@
 {
   "id": "rtk:attacking-width-and-depth",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "攻撃の幅と深さ",
-    "en": "Attacking width and depth"
+    "ja": "攻撃の幅・深さの調整",
+    "en": "Adjusting attacking width and depth"
   },
-  "aliases": [],
+  "aliases": [
+    {
+      "label": "攻撃の幅と深さ",
+      "language": "ja",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+    },
+    {
+      "label": "Attacking width and depth",
+      "language": "en",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+    }
+  ],
   "side": "attack",
-  "level": "shape",
+  "level": "principle",
   "formats": [
     "XV",
     "sevens"

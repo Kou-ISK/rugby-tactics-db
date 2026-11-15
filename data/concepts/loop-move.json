@@ -1,11 +1,24 @@
 {
   "id": "rtk:loop-move",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
     "ja": "ループ",
     "en": "Loop move"
   },
-  "aliases": [],
+  "aliases": [
+    {
+      "label": "Run around",
+      "language": "en",
+      "kind": "synonym",
+      "note": "Whiffinはパス後に外側へ回り込む同じ連係をloop / run aroundと併記する。"
+    },
+    {
+      "label": "ランアラウンド",
+      "language": "ja",
+      "kind": "translation",
+      "note": "同義英語名の編集上の日本語表記。"
+    }
+  ],
   "side": "attack",
   "level": "move",
   "formats": [
@@ -163,11 +176,22 @@
           "support": "interpretation"
         }
       ]
+    },
+    {
+      "id": "equivalence-rcw-second-touches",
+      "text": "Whiffinはパス後に外側へ回り込む同じ連係をloop / run aroundと併記する。",
+      "evidence": [
+        {
+          "source": "rcw-second-touches",
+          "locator": "opening definition paragraphs",
+          "support": "direct"
+        }
+      ]
     }
   ],
   "review": {
     "status": "source-backed",
-    "note": "公開の指導資料本文を確認。名称・分類・日本語は編集上の整理で、専門家による戦術・安全性審査は未実施。",
+    "note": "公開の指導資料本文を確認。名称・分類・日本語は編集上の整理で、専門家による戦術・安全性審査は未実施。 追加のloop/run around同義根拠は検索取得の本文で確認。直接URL再取得はタイムアウトし、現在の直接可読性は未確認。",
     "reviewedBy": null,
     "reviewedAt": null
   },

@@ -1,18 +1,11 @@
 {
   "id": "rtk:dummy-pass",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": {
     "ja": "ダミーパス",
     "en": "Dummy pass"
   },
-  "aliases": [
-    {
-      "label": "ダミーパス",
-      "language": "ja",
-      "kind": "translation",
-      "note": "編集上の日本語訳。出典の公式訳ではない。"
-    }
-  ],
+  "aliases": [],
   "side": "attack",
   "level": "skill",
   "formats": [

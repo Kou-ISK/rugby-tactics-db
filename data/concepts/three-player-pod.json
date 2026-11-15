@@ -1,8 +1,8 @@
 {
   "id": "rtk:three-player-pod",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "三人ポッド",
+    "ja": "三人FWポッド",
     "en": "Three-player forward pod"
   },
   "aliases": [
@@ -17,6 +17,12 @@
       "kind": "contextual",
       "note": "同論文における形の呼び名。",
       "language": "en"
+    },
+    {
+      "label": "三人ポッド",
+      "language": "ja",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
     }
   ],
   "side": "attack",

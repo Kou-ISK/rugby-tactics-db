@@ -1,0 +1,697 @@
+{
+  "schemaVersion": "1.0.0",
+  "version": "0.1.0",
+  "datasetVersion": "0.3.0",
+  "datasetSha256": "84aa4ce31468c4d8228f54d0e1f6d95f37dc46352ab930443b7c70fecc4c6aae",
+  "updated": "2026-11-15",
+  "records": [
+    {
+      "conceptId": "rtk:drift-defence",
+      "canonicalId": "rtk:drift-defence",
+      "kind": "system",
+      "naming": "source-attested",
+      "rationale": "複数守備者の配置とパス後の担当移動を定める守備方式。単なる横移動という現象ではない。",
+      "evidence": [
+        {
+          "source": "nz-drift",
+          "locator": "KEY FACTORS / COMMON ERRORS"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:rush-defence-sevens",
+      "canonicalId": "rtk:rush-defence-sevens",
+      "kind": "system",
+      "naming": "source-attested",
+      "rationale": "資料は前線の集団前進と配置維持を説明する。sevens限定の守備方式として妥当。",
+      "evidence": [
+        {
+          "source": "nz-sevens-defence",
+          "locator": "Rush Defence / The Sweeper(s)"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:sweeper-cover-sevens",
+      "canonicalId": "rtk:sweeper-cover-sevens",
+      "kind": "role",
+      "naming": "editorial",
+      "rationale": "資料はThe Sweeper(s)として役割と配置の選択肢を説明。役割名を独立した戦術体系として数えない。",
+      "evidence": [
+        {
+          "source": "nz-sevens-defence",
+          "locator": "The Sweeper(s)"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:counter-attack",
+      "canonicalId": "rtk:counter-attack",
+      "kind": "situation",
+      "naming": "source-attested",
+      "rationale": "反撃という局面/攻撃類型で、特定の反復配置や定型連係を一意に表さない。ただし単なるボール奪取現象とも違い、意図した反撃である。",
+      "evidence": [
+        {
+          "source": "wr-counter",
+          "locator": "The counter-attacking team should"
+        }
+      ],
+      "equivalences": [
+        {
+          "labels": [
+            "Counterattack"
+          ],
+          "scope": "Counter-attack の綴り違い。",
+          "rationale": "既存資料が支える同じ動作の呼称または表記差。名称だけで別概念を増やさない。",
+          "evidence": [
+            {
+              "source": "wr-counter",
+              "locator": "The counter-attacking team should"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "rtk:connected-backline-defence",
+      "canonicalId": "rtk:connected-backline-defence",
+      "kind": "principle",
+      "naming": "editorial",
+      "rationale": "資料のBack line defenceから一体性維持を抽出した原則。Connected back-line defenceという固有方式を資料が名付けたわけではない。",
+      "evidence": [
+        {
+          "source": "wr-back-defence",
+          "locator": "Back line players should"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:switch-pass",
+      "canonicalId": "rtk:switch-pass",
+      "kind": "pattern",
+      "naming": "source-attested",
+      "rationale": "NZRがSwitch/Scissorsを一つのhandling項目として併記。走路交差と受け渡しという基本連係。チーム全体のシステムでも特定スクラムプレーでもない。",
+      "evidence": [
+        {
+          "source": "nz-switch",
+          "locator": "OBJECTIVE / KEY FACTORS / COMMON ERRORS"
+        }
+      ],
+      "equivalences": [
+        {
+          "labels": [
+            "Scissors pass"
+          ],
+          "scope": "出典が Switch と Scissors を併記。",
+          "rationale": "既存資料が支える同じ動作の呼称または表記差。名称だけで別概念を増やさない。",
+          "evidence": [
+            {
+              "source": "nz-switch",
+              "locator": "OBJECTIVE / KEY FACTORS / COMMON ERRORS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "rtk:cut-out-pass",
+      "canonicalId": "rtk:cut-out-pass",
+      "kind": "technique",
+      "naming": "source-attested",
+      "rationale": "NZRの技術名。間の受け手を越して渡す技術で、これだけでは戦術体系でない。",
+      "evidence": [
+        {
+          "source": "nz-cutout",
+          "locator": "OBJECTIVE / KEY FACTORS"
+        }
+      ],
+      "equivalences": [
+        {
+          "labels": [
+            "Miss pass"
+          ],
+          "scope": "NZRのMiss Pass Drillは同じ技術をcut-outとも記述する。このパス技術の意味に限定した同義名。",
+          "rationale": "原資料が同じ動作を指す別名として記述。別レコードを作らず同一IDへ集約。",
+          "evidence": [
+            {
+              "source": "nz-miss-pass-drill",
+              "locator": "OBJECTIVE / DRILL EXPLANATION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "rtk:dummy-pass",
+      "canonicalId": "rtk:dummy-pass",
+      "kind": "technique",
+      "naming": "source-attested",
+      "rationale": "実際には渡さないフェイント技術。具体的戦術の構成要素。",
+      "evidence": [
+        {
+          "source": "nz-dummy",
+          "locator": "OBJECTIVE / KEY FACTORS / COMMON ERRORS"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:close-support",
+      "canonicalId": "rtk:close-support",
+      "kind": "role",
+      "naming": "source-attested",
+      "rationale": "出典はsupporting playerの役割・反応を説明しており、固定人数や配置形を定義していない。shapeより役割／支援行動。",
+      "evidence": [
+        {
+          "source": "wr-support",
+          "locator": "The supporting player should"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:offload-continuity",
+      "canonicalId": "rtk:offload-continuity",
+      "kind": "technique",
+      "naming": "source-attested",
+      "rationale": "出典の見出しPassing out of the tackleを正規英名に採用。タックル中のパス技術であって戦術体系ではない。旧見出しOffload continuityは編集が作った呼称として同じID内に保持する。",
+      "evidence": [
+        {
+          "source": "wr-offload",
+          "locator": "The ball carrier should"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:screen-pass-contact",
+      "canonicalId": "rtk:screen-pass-contact",
+      "kind": "technique",
+      "naming": "source-attested",
+      "rationale": "World Rugbyは接触で立ったまま保護して短く渡す技術として説明。他の文献の背面パスの用法を同じ意味として扱わない。",
+      "evidence": [
+        {
+          "source": "wr-screen",
+          "locator": "The ball carrier should"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:maul-continuity",
+      "canonicalId": "rtk:maul-continuity",
+      "kind": "technique",
+      "naming": "editorial",
+      "rationale": "出典はMaulingのunit skills。現レコードは保持者と到着者の基本動作を要約したもので特定モール戦術・モール形成法ではない。原則というよりユニット技術。",
+      "evidence": [
+        {
+          "source": "wr-maul",
+          "locator": "During the maul / Arriving players / Once the ball is at the rear"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:restart-kick-chase",
+      "canonicalId": "rtk:restart-kick-chase",
+      "kind": "principle",
+      "naming": "editorial",
+      "rationale": "資料は短い再開と長い再開を選ぶ一般指導。特定の追走配置・定型プレー名を定義していない。",
+      "evidence": [
+        {
+          "source": "wr-restart",
+          "locator": "The kicking team should"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:breakdown-contest-or-reload",
+      "canonicalId": "rtk:breakdown-contest-or-reload",
+      "kind": "principle",
+      "naming": "editorial",
+      "rationale": "Inside/Outside supportの責務から抽出した判断原則であり、固有名のシステムではない。",
+      "evidence": [
+        {
+          "source": "wr-breakdown",
+          "locator": "Inside Support Player / Outside Support Player"
+        },
+        {
+          "source": "wr-law15",
+          "locator": "Joining a ruck / During a ruck"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:attacking-mismatches",
+      "canonicalId": "rtk:attacking-mismatches",
+      "kind": "principle",
+      "naming": "editorial",
+      "rationale": "ミスマッチ自体は状況／対応差。この項目が記述するのは認知して攻撃先を選ぶ一般原則であり、固有戦術名ではない。",
+      "evidence": [
+        {
+          "source": "wr-attack-space",
+          "locator": "Players should: gaps, potential mismatches, defensive body position and communication"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:attacking-width-and-depth",
+      "canonicalId": "rtk:attacking-width-and-depth",
+      "kind": "principle",
+      "naming": "editorial",
+      "rationale": "World Rugbyは攻撃意図に応じたwidth/alignmentを教える。具体的な人数配分を持つformationではなく配置調整の一般原則。",
+      "evidence": [
+        {
+          "source": "wr-back-attack",
+          "locator": "Back line players should: width and alignment relative to attacking intentions"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:draw-and-pass",
+      "canonicalId": "rtk:draw-and-pass",
+      "kind": "technique",
+      "naming": "source-attested",
+      "rationale": "NZRがhandling skillとして定義。守備者へ脅威を示して有利な味方へ渡す技術。",
+      "evidence": [
+        {
+          "source": "nz-draw-pass",
+          "locator": "OBJECTIVE / KEY FACTORS"
+        }
+      ],
+      "equivalences": [
+        {
+          "labels": [
+            "Draw & Pass"
+          ],
+          "scope": "出典見出しの表記。",
+          "rationale": "既存資料が支える同じ動作の呼称または表記差。名称だけで別概念を増やさない。",
+          "evidence": [
+            {
+              "source": "nz-draw-pass",
+              "locator": "OBJECTIVE / KEY FACTORS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "rtk:phase-direction-change",
+      "canonicalId": "rtk:phase-direction-change",
+      "kind": "tactic",
+      "naming": "editorial",
+      "rationale": "Snookのコールシステムの一つの選択肢を抜き出した編集見出し。方向転換という戦術的選択ではあるが独立した固有名付きプレーではない。",
+      "evidence": [
+        {
+          "source": "nz-phase-on-run",
+          "locator": "starter call: continue same way or return after first ruck; tactical decision maker"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:pick-and-go",
+      "canonicalId": "rtk:pick-and-go",
+      "kind": "tactic",
+      "naming": "source-attested",
+      "rationale": "確立したプレー名だが、この資料は近距離継続の選択を例示。反復回数や全員の役割まで固定したチームシステムではない。",
+      "evidence": [
+        {
+          "source": "nz-after-tackle",
+          "locator": "Question 1–3: pick the ball and carry forward close to the tackle"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:quick-tap-attack",
+      "canonicalId": "rtk:quick-tap-attack",
+      "kind": "tactic",
+      "naming": "source-specific",
+      "rationale": "クイックタップ自体は再開方法。このレコードはSnookのQUICKの役割・支援を一般化しているため、技術名と著者の運用例を分離して示す。 このレコードの役割モデルはSnookの運用例として区別する。",
+      "evidence": [
+        {
+          "source": "nz-quick-tap",
+          "locator": "2 — QUICK: Aim / Explanation"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:short-side-attack",
+      "canonicalId": "rtk:short-side-attack",
+      "kind": "tactic",
+      "naming": "source-attested",
+      "rationale": "狭い側を攻めるという実在する戦術的選択。特定の走路・配球を固定した一つの連係名とは区別。",
+      "evidence": [
+        {
+          "source": "rcw-blindside",
+          "locator": "blindside definition / defensive imbalance / recycling and realignment"
+        }
+      ],
+      "equivalences": [
+        {
+          "labels": [
+            "Blindside attack"
+          ],
+          "scope": "著者がshortsideと同じ側への攻撃として説明。",
+          "rationale": "既存資料が支える同じ動作の呼称または表記差。名称だけで別概念を増やさない。",
+          "evidence": [
+            {
+              "source": "rcw-blindside",
+              "locator": "blindside definition / defensive imbalance / recycling and realignment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "rtk:loop-move",
+      "canonicalId": "rtk:loop-move",
+      "kind": "pattern",
+      "naming": "source-attested",
+      "rationale": "パス後に回り込んで再参加する基本連係。RCW著者がloop/run aroundを同じ動きとして説明。",
+      "evidence": [
+        {
+          "source": "rcw-cottrell-loop",
+          "locator": "Opening explanation; What to think about; set-up"
+        }
+      ],
+      "equivalences": [
+        {
+          "labels": [
+            "Run around"
+          ],
+          "scope": "Whiffinはパス後に外側へ回り込む同じ連係をloop / run aroundと併記する。",
+          "rationale": "原資料が同じ動作を指す別名として記述。別レコードを作らず同一IDへ集約。",
+          "evidence": [
+            {
+              "source": "rcw-second-touches",
+              "locator": "opening definition paragraphs"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "rtk:one-three-three-one",
+      "canonicalId": "rtk:one-three-three-one",
+      "kind": "system",
+      "naming": "source-attested",
+      "rationale": "著者がframework/systemと明示。FW配分だけでなくmicro-shapeの接続・複数選択を持つ攻撃枠組み。数列単体はformation表示だが現レコードはsystemとして扱える。",
+      "evidence": [
+        {
+          "source": "rcw-whiffin-1331",
+          "locator": "Macro shape"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:overs-line",
+      "canonicalId": "rtk:overs-line",
+      "kind": "technique",
+      "naming": "source-attested",
+      "rationale": "パス元から離れる走路方向という動作／走路技術。これ単体を独立した戦術と数えない。",
+      "evidence": [
+        {
+          "source": "rcw-cottrell-unders-overs",
+          "locator": "The overs attacking line; drag defenders off square"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:pull-back-pass",
+      "canonicalId": "rtk:pull-back-pass",
+      "kind": "technique",
+      "naming": "source-attested",
+      "rationale": "後方の接続役へ戻すパスという構成技術。2-4-2の運用例に現れるが、そのシステム全体と同義でない。",
+      "evidence": [
+        {
+          "source": "rcw-barlow-242",
+          "locator": "The options of the midfield four: Red-White"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:ruck-and-run-snook",
+      "canonicalId": "rtk:ruck-and-run-snook",
+      "kind": "coaching-model",
+      "naming": "source-specific",
+      "rationale": "原著者自身が命名したplaying philosophy／phase attack提案。一般標準システムとしてではなく出典固有の方針・組織モデル。",
+      "evidence": [
+        {
+          "source": "nz-snook-ruck-run",
+          "locator": "Main explanation; SUMMARY"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:short-pass-before-contact",
+      "canonicalId": "rtk:short-pass-before-contact",
+      "kind": "technique",
+      "naming": "editorial",
+      "rationale": "資料のshort passという選択を切り出した編集見出し。パス距離・時点の記述だけでは独立した戦術ではない。",
+      "evidence": [
+        {
+          "source": "rcw-cottrell-forward-options",
+          "locator": "HOW TO DO IT; TECHNIQUE"
+        },
+        {
+          "source": "cross-structure-development",
+          "locator": "Forwards in POD Shapes: discussion of tipping on"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:split-midfield-scrum",
+      "canonicalId": "rtk:split-midfield-scrum",
+      "kind": "pattern",
+      "naming": "source-specific",
+      "rationale": "原文はPLAYS (Make up your own names)と明示。具体的な定型連係例として有効だが一般標準戦術名ではない。",
+      "evidence": [
+        {
+          "source": "nz-snook-midfield-scrum",
+          "locator": "PLAYS: Split; Variations"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:three-player-pod",
+      "canonicalId": "rtk:three-player-pod",
+      "kind": "formation",
+      "naming": "source-attested",
+      "rationale": "三人の役割配置を示す構成単位。これだけで全体攻撃システムを決めない。Crossのspear-head/arrowは具体的な並びの表現。",
+      "evidence": [
+        {
+          "source": "cross-structure-development",
+          "locator": "Forwards in POD Shapes"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:two-four-two",
+      "canonicalId": "rtk:two-four-two",
+      "kind": "system",
+      "naming": "source-attested",
+      "rationale": "著者がsystemと明示し、FW配分・BK接続・scrum/kickoff遷移を示す。特定チームに合わせる枠組み。",
+      "evidence": [
+        {
+          "source": "rcw-barlow-242",
+          "locator": "The basic shape; midfield options"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:unders-line",
+      "canonicalId": "rtk:unders-line",
+      "kind": "technique",
+      "naming": "source-attested",
+      "rationale": "パス元に寄る走路方向という動作／走路技術。これを使うデコイ連係全体と同義ではない。",
+      "evidence": [
+        {
+          "source": "rcw-cottrell-unders-overs",
+          "locator": "drag defenders off square"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:backfield-pendulum",
+      "canonicalId": "rtk:backfield-pendulum",
+      "kind": "system",
+      "naming": "source-attested",
+      "rationale": "後方三人の役割交替を明示する守備サブシステム。単なる左右動という現象でない。",
+      "evidence": [
+        {
+          "source": "rcw-backfield-pendulum",
+          "locator": "Three defensive areas / pendulum explanation / three concluding rules"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:chip-and-chase",
+      "canonicalId": "rtk:chip-and-chase",
+      "kind": "technique",
+      "naming": "editorial",
+      "rationale": "参照資料の名称はChip-kickで、追走もそのキーファクターに含む。別の完成戦術を発見したように数えない。 技術の名称と、この項目で説明する戦術的用法を同一の粒度としない。",
+      "evidence": [
+        {
+          "source": "nz-chip-kick",
+          "locator": "OBJECTIVE / KEY FACTORS / COMMON ERRORS"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:contestable-box-kick",
+      "canonicalId": "rtk:contestable-box-kick",
+      "kind": "tactic",
+      "naming": "source-attested",
+      "rationale": "コーチ本人の資料が攻撃の戦術的使用として説明する。一方、特定のチーム全体システムではない。",
+      "evidence": [
+        {
+          "source": "rcw-box-kick",
+          "locator": "WHY USE IT / HOW TO DO IT"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:counter-ruck",
+      "canonicalId": "rtk:counter-ruck",
+      "kind": "tactic",
+      "naming": "source-attested",
+      "rationale": "守備側がラックで攻撃支援者を押し越して争奪する、意図的な手段。単なるturnoverという結果ではない。",
+      "evidence": [
+        {
+          "source": "wr-contact-functional-roles",
+          "locator": "Ruck / Defending player(s): responsibilities"
+        },
+        {
+          "source": "nz-foundation-manual",
+          "locator": "Printed p.94, DEFENCE / Key Factors"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:cross-field-kick",
+      "canonicalId": "rtk:cross-field-kick",
+      "kind": "tactic",
+      "naming": "source-attested",
+      "rationale": "World Rugbyページに用語見出しがあり、外側の味方へ斜めに届ける使用を説明。配球手段の戦術的選択である。",
+      "evidence": [
+        {
+          "source": "wr-kicking-guide",
+          "locator": "Kicking strategies include / kicking out wide at an oblique angle"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:defensive-realignment",
+      "canonicalId": "rtk:defensive-realignment",
+      "kind": "principle",
+      "naming": "editorial",
+      "rationale": "資料Running in defence内の再組織化指導を抽出。どの配置へ戻るかを決める固有システム名ではない。",
+      "evidence": [
+        {
+          "source": "wr-running-defence",
+          "locator": "The supporting player should / identify attacking setup / reorganise defensive formation"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:grubber-behind-line",
+      "canonicalId": "rtk:grubber-behind-line",
+      "kind": "technique",
+      "naming": "editorial",
+      "rationale": "原資料はGrubber-kickという技術名。現行はその目的の一つを戦術風の新名称にしている。 技術の名称と、この項目で説明する戦術的用法を同一の粒度としない。",
+      "evidence": [
+        {
+          "source": "nz-grubber-kick",
+          "locator": "OBJECTIVE / COMMON ERRORS"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:man-on-man-defence",
+      "canonicalId": "rtk:man-on-man-defence",
+      "kind": "system",
+      "naming": "source-attested",
+      "rationale": "NZR教材のBasic Defensive Patterns – Set Pieceに明示的な方式名として収録。",
+      "evidence": [
+        {
+          "source": "nz-foundation-manual",
+          "locator": "Printed p.96 (PDF page index 95), BASIC DEFENSIVE PATTERNS – SET PIECE / BASIC MAN-ON-MAN DEFENCE"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:restart-reception",
+      "canonicalId": "rtk:restart-reception",
+      "kind": "technique",
+      "naming": "editorial",
+      "rationale": "受球・タップ・支援という一般的な集団技術。資料は固有の受球配置や特定の作戦名を定義しない。",
+      "evidence": [
+        {
+          "source": "wr-restart-receiving",
+          "locator": "The receiving team should"
+        }
+      ],
+      "equivalences": []
+    },
+    {
+      "conceptId": "rtk:up-and-under-contest",
+      "canonicalId": "rtk:up-and-under-contest",
+      "kind": "technique",
+      "naming": "source-attested",
+      "rationale": "NZR教材はUp-and-underとBombを同義併記。原資料の技術自体が高く蹴って競る目的を含み、contestを付けた別概念を作る必要はない。 技術の名称と、この項目で説明する戦術的用法を同一の粒度としない。",
+      "evidence": [
+        {
+          "source": "nz-up-and-under",
+          "locator": "OBJECTIVE / COMMON ERRORS"
+        },
+        {
+          "source": "nz-foundation-manual",
+          "locator": "Printed p.93, TACTICAL KICKING / Types of Kick"
+        }
+      ],
+      "equivalences": [
+        {
+          "labels": [
+            "Bomb"
+          ],
+          "scope": "NZR教材がUp-and-under (Bomb)と併記。このラグビーの高い再獲得キックの意味に限定。",
+          "rationale": "原資料が同じ動作を指す別名として記述。別レコードを作らず同一IDへ集約。",
+          "evidence": [
+            {
+              "source": "nz-foundation-manual",
+              "locator": "Printed p.93, TACTICAL KICKING / Types of Kick"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

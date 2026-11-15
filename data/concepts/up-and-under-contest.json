@@ -1,26 +1,32 @@
 {
   "id": "rtk:up-and-under-contest",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "ハイキックで再獲得を争う",
-    "en": "Up-and-under contest"
+    "ja": "アップ・アンド・アンダー（ボム）",
+    "en": "Up-and-under"
   },
   "aliases": [
     {
-      "label": "Up-and-under",
+      "label": "ハイキックで再獲得を争う",
+      "language": "ja",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+    },
+    {
+      "label": "Up-and-under contest",
       "language": "en",
-      "kind": "contextual",
-      "note": "資料の技術名。ここでは追走と競りを含む使用。"
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
     },
     {
       "label": "Bomb",
       "language": "en",
-      "kind": "contextual",
-      "note": "NZR Foundation Rugby Coaches p.93の名称。文脈によって高いキック全般を指す。"
+      "kind": "synonym",
+      "note": "NZR教材がUp-and-under (Bomb)と併記。このラグビーの高い再獲得キックの意味に限定。"
     }
   ],
   "side": "attack",
-  "level": "move",
+  "level": "skill",
   "formats": [
     "XV"
   ],
@@ -180,6 +186,17 @@
     {
       "id": "term-bomb",
       "text": "NZRの教材はUp-and-underにBombという呼称を併記する。",
+      "evidence": [
+        {
+          "source": "nz-foundation-manual",
+          "locator": "Printed p.93, TACTICAL KICKING / Types of Kick",
+          "support": "direct"
+        }
+      ]
+    },
+    {
+      "id": "equivalence-nz-foundation-manual",
+      "text": "NZR教材がUp-and-under (Bomb)と併記。このラグビーの高い再獲得キックの意味に限定。",
       "evidence": [
         {
           "source": "nz-foundation-manual",

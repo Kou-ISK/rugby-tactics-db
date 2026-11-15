@@ -1,9 +1,9 @@
 {
   "id": "rtk:chip-and-chase",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "チップ・アンド・チェイス",
-    "en": "Chip and chase"
+    "ja": "チップキックと追走",
+    "en": "Chip kick and chase"
   },
   "aliases": [
     {
@@ -11,10 +11,22 @@
       "language": "en",
       "kind": "contextual",
       "note": "資料で確認できる技術名。チップ単体と追走を含む戦術の範囲は同一でない。"
+    },
+    {
+      "label": "チップ・アンド・チェイス",
+      "language": "ja",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+    },
+    {
+      "label": "Chip and chase",
+      "language": "en",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
     }
   ],
   "side": "attack",
-  "level": "move",
+  "level": "skill",
   "formats": [
     "XV"
   ],

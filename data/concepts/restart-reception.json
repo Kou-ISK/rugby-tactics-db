@@ -1,13 +1,26 @@
 {
   "id": "rtk:restart-reception",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "リスタート受球の連携",
-    "en": "Restart reception"
+    "ja": "リスタート受球の基本",
+    "en": "Restart reception fundamentals"
   },
-  "aliases": [],
+  "aliases": [
+    {
+      "label": "リスタート受球の連携",
+      "language": "ja",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+    },
+    {
+      "label": "Restart reception",
+      "language": "en",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+    }
+  ],
   "side": "both",
-  "level": "move",
+  "level": "skill",
   "formats": [
     "XV"
   ],

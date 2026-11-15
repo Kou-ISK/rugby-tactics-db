@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "updated": "2026-11-15",
   "license": "CC-BY-4.0",
   "sourceIds": [
@@ -42,7 +42,9 @@
     "wr-contact-functional-roles",
     "wr-kicking-guide",
     "wr-restart-receiving",
-    "wr-running-defence"
+    "wr-running-defence",
+    "nz-miss-pass-drill",
+    "rcw-second-touches"
   ],
   "conceptIds": [
     "rtk:drift-defence",

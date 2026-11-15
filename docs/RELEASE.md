@@ -1,11 +1,13 @@
 # Versions, releases and rollback
 
-Three versions serve different purposes:
+Separate versions serve different purposes:
 
 - `package.json`: site/tooling version. A tooling-only release need not change dataset bytes.
 - `data/catalog.json.version`: dataset content version. Any exported content change increases it.
 - Each concept's `version`: changed concept meaning, model, evidence or metadata increases it.
-- `schemaVersion`: public field semantics. Breaking changes need a major version and migration ADR.
+- `data/classification.json.version`: strict classification and identity metadata; any published
+  change, including dataset pairing metadata, increases it. The companion has its own schemaVersion.
+- Dataset `schemaVersion`: public field semantics. Breaking changes need a major version and migration ADR.
 
 Version strings are numeric `major.minor.patch`; prereleases are not supported by v1.
 Before 1.0, use a minor dataset bump for intentional breaking semantics and document
@@ -25,7 +27,7 @@ npm run audit:history
 git diff --check
 ```
 
-CI compares the dataset against the PR base, and against the previous main commit on
+CI compares dataset and classification changes against the PR base, and against the previous main commit on
 push. These checks catch missing version increases, not the correctness of a change or
 compatibility of all downstream users. Run relevant consumer regressions separately.
 Data changes also require an entry in `CHANGELOG.md` identifying IDs and limitations.

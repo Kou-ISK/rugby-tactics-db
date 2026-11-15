@@ -8,8 +8,8 @@ test('expanded corpus retains concrete tactical systems, moves and non-tactical 
   for (const id of ['one-three-three-one', 'two-four-two', 'backfield-pendulum']) assert.equal(byId(id).level, 'system');
   for (const id of ['quick-tap-attack', 'short-side-attack', 'loop-move', 'cross-field-kick']) assert.equal(byId(id).level, 'move');
   for (const id of ['cut-out-pass', 'offload-continuity', 'draw-and-pass']) assert.equal(byId(id).level, 'skill');
-  assert.equal(byId('maul-continuity').level, 'principle');
-  assert.equal(byId('restart-kick-chase').level, 'move');
+  assert.equal(byId('maul-continuity').level, 'skill');
+  assert.equal(byId('restart-kick-chase').level, 'principle');
   assert.equal(byId('counter-attack').level, 'phase');
   assert.equal(labels.level.skill, '技術');
 });

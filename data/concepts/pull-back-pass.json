@@ -1,13 +1,13 @@
 {
   "id": "rtk:pull-back-pass",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
     "ja": "プルバックパス",
     "en": "Pull-back pass"
   },
   "aliases": [],
   "side": "attack",
-  "level": "move",
+  "level": "skill",
   "formats": [
     "XV"
   ],

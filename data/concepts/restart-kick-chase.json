@@ -1,9 +1,9 @@
 {
   "id": "rtk:restart-kick-chase",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": {
-    "ja": "リスタートのキックチェイス",
-    "en": "Restart kick chase"
+    "ja": "リスタートのキックと追走の原則",
+    "en": "Restart kicking and chasing principles"
   },
   "aliases": [
     {
@@ -11,10 +11,16 @@
       "language": "ja",
       "kind": "translation",
       "note": "編集上の日本語訳。出典の公式訳ではない。"
+    },
+    {
+      "label": "Restart kick chase",
+      "language": "en",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
     }
   ],
   "side": "both",
-  "level": "move",
+  "level": "principle",
   "formats": [
     "XV",
     "sevens"

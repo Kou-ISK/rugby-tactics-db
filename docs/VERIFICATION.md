@@ -105,3 +105,25 @@ hashes are cache identifiers, not immutable URLs or client-side integrity checks
 Unit tests verify deterministic and transitive dependency changes, built-asset hashes,
 dataset digest wiring and failure on missing/duplicate references. Public UI re-verification
 and exact-commit hosted CI/deployment results are recorded in the associated PR.
+
+# Strict taxonomy / dataset 0.3.0 / site 0.4.0
+
+Date: 2026-11-15. All 41 records were re-reviewed against their cited meaning, distinguishing
+source-attested names, editorial headings and author-specific proposals. Technical and
+source-based editorial reviews are not qualified rugby expert certification.
+
+- Main view: 13 entries (6 systems, 2 combinations, 5 tactical options); supporting 25;
+  source-specific examples 3. No strategy record is manufactured.
+- True English alternate names converge on one existing ID. Japanese ミスパス remains ambiguous.
+  All 41 IDs/public paths and dataset schema 1.0.0 are retained; no cross-ID merge is asserted.
+- Unit tests cover exact ID coverage, strict/coarse crosswalk, source/scope evidence, rejected
+  non-evidenced redirects, stale version/hash pairs, synonym resolution and independent versioning.
+- The browser verifies actual fetched dataset bytes against the companion SHA, including a
+  same-version/different-bytes mismatch test. Query hashes alone are not integrity validation.
+- Independent review caught and corrected a Buffer/string build mismatch, missing runtime
+  digest verification, editorial-name status drift and Japanese miss-pass ambiguity.
+- Source review also corrected man-on-man's overly restrictive additional-attacker condition
+  and the misleading fixed-assignment/drift contrast.
+
+Final automated counts, exact-commit hosted CI/deployment and public browser checks are
+reported after they run. This record does not claim mobile/WCAG/expert or P2P execution passes.

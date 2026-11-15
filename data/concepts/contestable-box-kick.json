@@ -1,9 +1,9 @@
 {
   "id": "rtk:contestable-box-kick",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "再獲得を狙うボックスキック",
-    "en": "Contestable box kick"
+    "ja": "ボックスキック（再獲得を競う用法）",
+    "en": "Box kick (contestable use)"
   },
   "aliases": [
     {
@@ -11,6 +11,18 @@
       "language": "en",
       "kind": "contextual",
       "note": "出典で確認した名称だが、ここでは再獲得を競う使用を限定して扱う。"
+    },
+    {
+      "label": "再獲得を狙うボックスキック",
+      "language": "ja",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+    },
+    {
+      "label": "Contestable box kick",
+      "language": "en",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
     }
   ],
   "side": "attack",

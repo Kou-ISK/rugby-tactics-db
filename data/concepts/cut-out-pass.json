@@ -1,22 +1,22 @@
 {
   "id": "rtk:cut-out-pass",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": {
     "ja": "カットアウトパス",
     "en": "Cut-out pass"
   },
   "aliases": [
     {
-      "label": "カットアウトパス",
-      "language": "ja",
-      "kind": "translation",
-      "note": "編集上の日本語訳。出典の公式訳ではない。"
+      "label": "Miss pass",
+      "language": "en",
+      "kind": "synonym",
+      "note": "NZRのMiss Pass Drillは同じ技術をcut-outとも記述する。このパス技術の意味に限定した同義名。"
     },
     {
-      "label": "Miss pass",
+      "label": "ミスパス",
+      "language": "ja",
       "kind": "contextual",
-      "note": "関連する呼称。今回の本文は Cut-out を用いるため、検索補助として登録。",
-      "language": "en"
+      "note": "英語Miss passを飛ばしパスの意味で音写した候補。日本語では失敗したパスの意味にもなるため、文脈なしに同一視しない。"
     }
   ],
   "side": "attack",
@@ -157,6 +157,17 @@
           "source": "nz-cutout",
           "locator": "OBJECTIVE / KEY FACTORS",
           "support": "interpretation"
+        }
+      ]
+    },
+    {
+      "id": "equivalence-nz-miss-pass-drill",
+      "text": "NZRのMiss Pass Drillは同じ技術をcut-outとも記述する。このパス技術の意味に限定した同義名。",
+      "evidence": [
+        {
+          "source": "nz-miss-pass-drill",
+          "locator": "OBJECTIVE / DRILL EXPLANATION",
+          "support": "direct"
         }
       ]
     }
