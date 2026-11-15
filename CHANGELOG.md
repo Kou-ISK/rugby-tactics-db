@@ -36,3 +36,10 @@ by an entry here; use exact commits and the manifest hash until one is published
 - 14 source-backed concepts and 14 public primary references.
 - Japanese/English search, concept exports and SHA-256 manifest.
 - All records remain non-executable and not expert-reviewed.
+
+## Site/tooling 0.3.1 — 2026-11-15
+
+- Add deterministic content hashes to browser asset and dataset request URLs. Public-site
+  checking caught new HTML briefly using cached old JavaScript/data after a deployment.
+- Preserve every stable public path and dataset byte. No cache/security settings change.
+- Test dependency-hash propagation and fail closed if build-time asset references drift.

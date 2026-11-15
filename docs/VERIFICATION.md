@@ -87,3 +87,21 @@ These counts are not a claim of 41 distinct complete tactical systems.
 
 All execution flags remain false and all reviewer identities remain null. No live P2P/RPM
 adapter, new license, repository permission change or history rewrite is included.
+
+# Browser cache coherence: site/tooling 0.3.1
+
+Date: 2026-11-15. Post-deployment inspection found new HTML paired with stale JavaScript
+and the previous 14-record dataset in an already-open browser. The public JSON independently
+returned the correct 41 records. GitHub Pages served assets with `max-age=600`.
+
+The build now fingerprints HTML-to-asset and module-to-module/data URLs using SHA-256
+query parameters. Normal URL-keyed caches then avoid reusing stale dependencies with a fresh
+HTML document, without
+changing hosting/cache/security settings, stable API paths or dataset content. An old cached
+HTML document may still display its old version until refreshed; this is not a guarantee of
+atomic cross-deployment delivery or a replacement for a versioned release archive. These query
+hashes are cache identifiers, not immutable URLs or client-side integrity checks.
+
+Unit tests verify deterministic and transitive dependency changes, built-asset hashes,
+dataset digest wiring and failure on missing/duplicate references. Public UI re-verification
+and exact-commit hosted CI/deployment results are recorded in the associated PR.
