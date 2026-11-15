@@ -1,8 +1,8 @@
 {
   "id": "rtk:pick-and-go",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "ピック＆ゴー",
+    "ja": "ピック・アンド・ゴー",
     "en": "Pick and go"
   },
   "aliases": [
@@ -11,6 +11,12 @@
       "language": "ja",
       "kind": "translation",
       "note": "編集上のカナ表記。"
+    },
+    {
+      "label": "ピック＆ゴー",
+      "language": "ja",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
     }
   ],
   "side": "attack",

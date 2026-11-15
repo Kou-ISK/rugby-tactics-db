@@ -1,9 +1,9 @@
 {
   "id": "rtk:offload-continuity",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": {
-    "ja": "オフロードによる継続",
-    "en": "Offload continuity"
+    "ja": "タックル中のパス（オフロード）",
+    "en": "Passing out of the tackle"
   },
   "aliases": [
     {
@@ -13,10 +13,10 @@
       "note": "編集上の日本語訳。出典の公式訳ではない。"
     },
     {
-      "label": "Passing out of the tackle",
-      "kind": "synonym",
-      "note": "出典で扱う範囲に限定した対応名称。",
-      "language": "en"
+      "label": "Offload continuity",
+      "language": "en",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
     }
   ],
   "side": "attack",

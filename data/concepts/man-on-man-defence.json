@@ -1,11 +1,24 @@
 {
   "id": "rtk:man-on-man-defence",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "マン・オン・マン守備",
-    "en": "Man-on-man defence"
+    "ja": "マン・オン・マン守備（セットプレー）",
+    "en": "Man-on-man defence (set piece)"
   },
-  "aliases": [],
+  "aliases": [
+    {
+      "label": "マン・オン・マン守備",
+      "language": "ja",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+    },
+    {
+      "label": "Man-on-man defence",
+      "language": "en",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+    }
+  ],
   "side": "defence",
   "level": "system",
   "formats": [
@@ -26,10 +39,11 @@
   ],
   "applicability": {
     "conditions": [
-      "攻撃側が追加参加者を入れず、人数の対応を作れる状況。"
+      "資料はセットプレーから追加参加者が比較的少ない場面を例示する。守備者間で担当と移動の規則を共有する。"
     ],
     "limits": [
-      "資料の背番号対応を全チームへ固定適用しない。追加参加者で人数対応が崩れる。"
+      "追加参加者が入る場合も、資料は同じ担当ルールの継続を説明する。人数対応とカバーを確認する。",
+      "資料のman-on-manでもパス後に担当を移す。試合中ずっと同じ一人を追う固定マンマークとは解釈しない。"
     ]
   },
   "mechanics": {
@@ -135,9 +149,9 @@
   },
   "relationships": [
     {
-      "type": "contrastsWith",
+      "type": "similarTo",
       "target": "rtk:drift-defence",
-      "note": "編集上の比較。担当相手の対応を軸にする説明と、パスに合わせて責任を移す説明を区別する。"
+      "note": "両資料ともパス後の担当移動を含む。固定マンマーク対ドリフトという排他的分類にはしないが、完全同義も立証されていない。"
     }
   ],
   "variations": [],

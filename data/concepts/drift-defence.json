@@ -1,18 +1,11 @@
 {
   "id": "rtk:drift-defence",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
     "ja": "ドリフトディフェンス",
     "en": "Drift defence"
   },
-  "aliases": [
-    {
-      "label": "ドリフトディフェンス",
-      "language": "ja",
-      "kind": "translation",
-      "note": "編集上の日本語訳。出典の公式訳ではない。"
-    }
-  ],
+  "aliases": [],
   "side": "defence",
   "level": "system",
   "formats": [

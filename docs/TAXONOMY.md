@@ -1,58 +1,71 @@
-# What counts as a tactic? / 何を「戦術」として扱うか
+# 戦術・用語・同一性の分類 / Strict taxonomy
 
-**This corpus is not a list of interchangeable “tactics”.** It contains tactical systems,
-arrangements, coordinated moves, decision principles, techniques and situations. A pass
-technique can support a tactic without being a complete tactic itself. A source link is
-evidence, not the database's primary product: each record should explain meaning, purpose,
-roles, action and limits in original language.
+Dataset 0.3.0 keeps 41 knowledge records, but **does not call them 41 tactics**.
+The strict classification companion is the current authority; `level` in dataset v1 is a
+coarser compatibility field. See [ADR 0002](decisions/0002-strict-classification-and-identity.md)
+and the [full 41-record review](CLASSIFICATION-REVIEW.md).
 
-The `level` field is the editor's primary classification of **what this record explains**,
-not a universal rugby standard or a verbatim publisher taxonomy. A source can file a switch
-under handling skills while this DB models the coordinated crossing of two runners as a move.
+## What belongs in the main view?
 
-| Stable value | Display | Scope | Examples |
-| --- | --- | --- | --- |
-| `system` | 戦術体系 | Repeated team/unit organisation with choices | Drift defence; 1-3-3-1 |
-| `shape` | 配置 | Relative arrangement; not a complete sequence | Three-player pod; attacking width/depth |
-| `move` | 連係 | Coordinated action to exploit a situation | Loop; quick-tap attack; kick-and-chase |
-| `principle` | 原則 | Decision guidance across possible actions | Contest or reload; identifying mismatches |
-| `skill` | 技術 | An individual technique usable in many tactics | Cut-out pass; offload; draw-and-pass |
-| `phase` | 局面 | A game situation in which tactics are chosen | Counter-attack |
+- **13 core entries:** 6 systems, 2 basic combinations, 5 tactical options with source-attested names.
+- **25 supporting entries:** techniques, principles, roles, a formation, a situation/play family,
+  and an editorial topic about changing attacking direction.
+- **3 source-specific examples:** Snook's Ruck & Run model, Split scrum play and quick-tap application.
+- **0 strategies:** no current record establishes an overarching match/tournament resource plan.
 
-Do not report the total record count as a count of complete tactical systems. Some records
-are named, source-specific coaching models. Their names are not universal play calls.
-Pure vocabulary that has no action model should not receive invented mechanics merely to
-increase the record count. A separate glossary contract can be designed if needed.
+A name alone, a desirable outcome, or an editor-written sequence does not establish a tactic.
+A system specifies recurring collective organisation; a pattern coordinates a particular
+combination; a tactical option is an intentional means in a situation. Technique describes
+execution, principle guides choices, role describes responsibility, formation describes
+arrangement, and situation identifies the context in which choices are made.
 
-## Review of the initial 14 records
+`counter-attack` is a play family/situation here, not one uniquely specified tactical plan.
+Width/depth, recognising mismatches and defensive realignment are not newly discovered systems.
+Chip/grubber/up-and-under remain techniques with tactical uses. Restart basics are general
+principles or unit skills. The pendulum is a named role-rotation system, not merely lateral motion.
 
-The initial set was a useful seed but **thin in attacking systems and concrete attacking
-patterns**. Its categories also mixed techniques and coordinated moves. The 0.2.0 dataset
-keeps all original IDs while correcting four primary classifications:
+## Names are a separate axis
 
-| Record | Previous → current | Reason |
-| --- | --- | --- |
-| `rtk:cut-out-pass` | move → skill | The record explains a passing technique, not an entire attack. |
-| `rtk:offload-continuity` | move → skill | The source centres on the carrier's passing technique during/after a tackle. |
-| `rtk:maul-continuity` | shape → principle | The record concerns retention and continuation choices, not a fixed maul formation. |
-| `rtk:restart-kick-chase` | shape → move | A coordinated kick and pursuit, not just starting positions. |
+- `source-attested`: the source uses the name. It does not mean universal standard, official
+  Japanese terminology, independent validation or acceptance by every coach.
+- `source-specific`: an author's named proposal or a bounded example. Do not promote it to a
+  universal play call. Snook explicitly permits readers to make up their own play names.
+- `editorial`: a descriptive heading chosen to organise source content, not a source-coined tactic.
 
-Those four concept versions increase to 0.1.1. The other ten retain their IDs and primary classification; three of them also receive
-relation corrections/additions described below, with version increases. Within the original 14 the revised distribution is: 2 systems, 2 shapes,
-2 moves, 3 principles, 4 skills and 1 phase. `close-support` remains an arrangement-focused
-record, not an official formation name; `switch-pass` remains a movement-focused record.
+Japanese names are editorial translations. Name origin is not proof of semantic category.
+A source can organise a collective system under a skills menu; the actual meaning is reviewed.
 
-## Names, variants and evidence
+## Same concept, different names
 
-- Japanese names are editorial translations unless explicitly sourced otherwise.
-- `synonym` requires actual supported equivalence. A broader technique name used for a
-  narrower tactical application is `contextual`, not a synonym.
-- A numeric formation, short call or “pod” may need a rugby/format/team context. Unknown
-  and contextual-only exact matches remain unresolved/ambiguous as documented.
-- Do not silently equate contact screen passes with pre-contact pull-back passes, or a
-  phase-direction reversal with a switch pass.
-- Group counts describe an attacking framework, not compulsory jersey assignments or
-  a coordinate/timing recipe. All models remain non-executable.
+One canonical record now collects the supported names **Switch / Scissors**, **Cut-out / Miss pass**,
+**Loop / Run around**, and **Up-and-under / Bomb**. Counterattack is a spelling variant.
+Evidence and scope are stored in `classification.json` rather than implied by spelling similarity.
+
+Japanese **ミスパス** can mean an unsuccessful pass, so it remains contextual even though the English
+Miss pass is supported as an alternate name for cut-out in the cited drill. Screen, Blitz, tip-on
+and source-local Split are not automatically merged with other meanings. Contextual-only matches
+remain ambiguous. Translation is not evidence that every use of a word shares the same meaning.
+
+No pair of the existing 41 IDs was proven fully identical. None was deleted to manufacture a
+lower count. Components, applications, similar actions and prerequisites are not synonyms.
+Every old ID and its individual JSON remains available; true names converge on that record.
+
+## Source access and review limits
+
+The new Miss Pass Drill source describes general handling. XV/sevens applicability is editorial,
+not sevens-specific experimental validation. The loop/run-around explanation was inspected in
+search-provided full text; direct re-fetch timed out. No source images/videos or long passages
+are redistributed. The Japanese ambiguity example is an official match report, not a coaching
+endorsement of this database's terminology.
+
+This is source-grounded editorial review, not qualified coaching/safety certification. All
+execution flags remain false. Semantic decisions, including name equivalence, can be corrected
+by evidence-backed contributions; changes require versioning and review.
+
+## Earlier expansion access record
+
+The following limitations from the 0.2.0 expansion remain relevant. They are not a claim that
+every cited URL was freshly accessible during the current review.
 
 ## Current evidence limits
 

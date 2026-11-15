@@ -1,9 +1,9 @@
 {
   "id": "rtk:connected-backline-defence",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "バックライン守備の連結",
-    "en": "Connected back-line defence"
+    "ja": "守備ラインの連結・一体性",
+    "en": "Defensive-line integrity"
   },
   "aliases": [
     {
@@ -11,6 +11,12 @@
       "language": "ja",
       "kind": "translation",
       "note": "編集上の日本語訳。出典の公式訳ではない。"
+    },
+    {
+      "label": "Connected back-line defence",
+      "language": "en",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
     }
   ],
   "side": "defence",

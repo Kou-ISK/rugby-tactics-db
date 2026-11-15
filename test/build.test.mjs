@@ -30,6 +30,11 @@ test('build exports exactly the manifest bytes and valid relative assets',async(
   assert.ok(app.includes(`'./data/dataset.json?sha256=${manifest.sha256}'`));
   const search = await readFile(new URL('dist/search.mjs', root));
   assert.ok(app.includes(`'./search.mjs?sha256=${sha(search)}'`));
+  const classificationRaw = await readFile(new URL('dist/data/classification.json', root));
+  assert.ok(app.includes(`'./data/classification.json?sha256=${sha(classificationRaw)}'`));
+  const classificationModule = await readFile(new URL('dist/classification.mjs', root));
+  assert.ok(app.includes(`'./classification.mjs?sha256=${sha(classificationModule)}'`));
+  assert.ok(search.toString().includes(`'./classification.mjs?sha256=${sha(classificationModule)}'`));
   assert.ok(!/src="https?:/.test(html));
   assert.ok(html.includes('Content-Security-Policy'));
   assert.ok(html.includes('id="dataset-version"'));

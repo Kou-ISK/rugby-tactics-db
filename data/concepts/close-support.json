@@ -1,8 +1,8 @@
 {
   "id": "rtk:close-support",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": {
-    "ja": "近接サポート",
+    "ja": "保持者への近接サポート",
     "en": "Close support"
   },
   "aliases": [
@@ -14,7 +14,7 @@
     }
   ],
   "side": "attack",
-  "level": "shape",
+  "level": "skill",
   "formats": [
     "XV",
     "sevens"

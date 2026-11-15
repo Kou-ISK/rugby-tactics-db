@@ -26,7 +26,11 @@ continues to describe the aggregate export; the graph validator checks cross-ref
 6. Distinguish `direct` source support from `interpretation`. Mechanics remain an editorial
    model. `source-backed` is not expert validation; reviewer fields stay null by default.
 7. Keep `execution.ready: false`. This schema cannot authorize autonomous play execution.
-8. Bump versions as in [release policy](RELEASE.md), assemble and run checks, open a draft PR.
+8. Add exactly one classification companion record with canonicalId equal to the existing/new
+   conceptId, strict kind, name origin, reason and evidence. Supported synonyms require explicit
+   equivalence evidence; contextual names must not be promoted by textual similarity.
+9. Bump versions as in [release policy](RELEASE.md), assemble, update companion datasetVersion,
+   updated and SHA-256 of the exact aggregate bytes, run checks, then open a draft PR.
 
 ## Evidence and rights review
 
@@ -53,3 +57,21 @@ Document the reason, alternatives, migration and consumer impact in `docs/decisi
 Never alter field semantics, ID meaning, competition scope or alias equivalence as cosmetic
 cleanup. P2P adapters, saved documents and player cognition are separate contracts.
 [INTEGRATION.md](INTEGRATION.md) remains a proposal, not a live connection.
+
+## Classification companion
+
+`classification.json` is the authority for strict semantic kind, with its own schema/version.
+Do not treat strategy, system, named combination, technique, role and phenomenon as synonyms.
+Document why the source supports the category, whether the name is source-attested, local to
+an author, or editorial, and whether aliases really identify the same meaning. See
+[the complete review](CLASSIFICATION-REVIEW.md).
+
+After `npm run assemble`, compute the exact dataset digest with `sha256sum data/dataset.json`.
+Copy it to `datasetSha256` alongside the actual dataset version/date. Increment the companion
+version for subsequent published changes, including pairing metadata changes. Validation will
+reject missing IDs, incompatible coarse levels, unproven aliases and stale pairing.
+
+No current record is a duplicate of another proven by this review. Do not change canonicalId
+away from conceptId to force a merge: cross-ID identity needs a separate migration contract.
+Pure vocabulary without a source-backed action model must not be padded with invented steps
+to satisfy v1; propose an appropriate future contract instead.

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "updated": "2026-11-15",
   "license": "CC-BY-4.0",
   "sources": [
@@ -486,24 +486,42 @@
         "XV"
       ],
       "rights": "公開資料の説明を独自に要約した。原資料の本文・図・写真・動画の転載許諾は含まれず、それらの権利は原権利者に帰属する。"
+    },
+    {
+      "id": "nz-miss-pass-drill",
+      "title": "Miss Pass Drill",
+      "publisher": "New Zealand Rugby / Rugby Toolbox",
+      "url": "https://www.rugbytoolbox.co.nz/index.php/training/technique/miss-pass-drill-1",
+      "kind": "coaching",
+      "accessed": "2026-11-15",
+      "formats": [
+        "XV",
+        "sevens"
+      ],
+      "rights": "External source; all rights remain with the original rights holder. Only original summaries are included."
+    },
+    {
+      "id": "rcw-second-touches",
+      "title": "Second touches: a key essential of support",
+      "publisher": "Rugby Coach Weekly / Richard Whiffin",
+      "url": "https://www.rugbycoachweekly.net/small-sided-games/second-touches-a-key-essential-of-support",
+      "kind": "coaching",
+      "accessed": "2026-11-15",
+      "formats": [
+        "XV"
+      ],
+      "rights": "External source; all rights remain with the original rights holder. Only original summaries are included."
     }
   ],
   "concepts": [
     {
       "id": "rtk:drift-defence",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
         "ja": "ドリフトディフェンス",
         "en": "Drift defence"
       },
-      "aliases": [
-        {
-          "label": "ドリフトディフェンス",
-          "language": "ja",
-          "kind": "translation",
-          "note": "編集上の日本語訳。出典の公式訳ではない。"
-        }
-      ],
+      "aliases": [],
       "side": "defence",
       "level": "system",
       "formats": [
@@ -655,18 +673,12 @@
     },
     {
       "id": "rtk:rush-defence-sevens",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
         "ja": "ラッシュディフェンス（セブンズ）",
         "en": "Rush defence (sevens)"
       },
       "aliases": [
-        {
-          "label": "ラッシュディフェンス（セブンズ）",
-          "language": "ja",
-          "kind": "translation",
-          "note": "編集上の日本語訳。出典の公式訳ではない。"
-        },
         {
           "label": "Blitz defence",
           "kind": "contextual",
@@ -765,13 +777,7 @@
           }
         ]
       },
-      "relationships": [
-        {
-          "type": "enables",
-          "target": "rtk:sweeper-cover-sevens",
-          "note": "前線の圧力と後方カバーを分けて考える。"
-        }
-      ],
+      "relationships": [],
       "variations": [],
       "claims": [
         {
@@ -814,10 +820,10 @@
     },
     {
       "id": "rtk:sweeper-cover-sevens",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "スイーパーカバー（セブンズ）",
-        "en": "Sweeper cover (sevens)"
+        "ja": "スイーパー（セブンズの後方カバー役）",
+        "en": "Sweeper role (sevens)"
       },
       "aliases": [
         {
@@ -825,6 +831,12 @@
           "language": "ja",
           "kind": "translation",
           "note": "編集上の日本語訳。出典の公式訳ではない。"
+        },
+        {
+          "label": "Sweeper cover (sevens)",
+          "language": "en",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
         }
       ],
       "side": "defence",
@@ -918,7 +930,13 @@
           }
         ]
       },
-      "relationships": [],
+      "relationships": [
+        {
+          "type": "enables",
+          "target": "rtk:rush-defence-sevens",
+          "note": "出典のセブンズ例では後方のカバー役が前線の前進を支える。ラッシュだけに専属する役割ではない。"
+        }
+      ],
       "variations": [
         {
           "name": "交代型",
@@ -972,18 +990,12 @@
     },
     {
       "id": "rtk:counter-attack",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "name": {
         "ja": "カウンターアタック",
         "en": "Counter-attack"
       },
       "aliases": [
-        {
-          "label": "カウンターアタック",
-          "language": "ja",
-          "kind": "translation",
-          "note": "編集上の日本語訳。出典の公式訳ではない。"
-        },
         {
           "label": "Counterattack",
           "kind": "synonym",
@@ -1136,10 +1148,10 @@
     },
     {
       "id": "rtk:connected-backline-defence",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "バックライン守備の連結",
-        "en": "Connected back-line defence"
+        "ja": "守備ラインの連結・一体性",
+        "en": "Defensive-line integrity"
       },
       "aliases": [
         {
@@ -1147,6 +1159,12 @@
           "language": "ja",
           "kind": "translation",
           "note": "編集上の日本語訳。出典の公式訳ではない。"
+        },
+        {
+          "label": "Connected back-line defence",
+          "language": "en",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
         }
       ],
       "side": "defence",
@@ -1300,9 +1318,9 @@
     },
     {
       "id": "rtk:switch-pass",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "スイッチパス",
+        "ja": "スイッチ／シザース",
         "en": "Switch pass"
       },
       "aliases": [
@@ -1476,23 +1494,23 @@
     },
     {
       "id": "rtk:cut-out-pass",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "name": {
         "ja": "カットアウトパス",
         "en": "Cut-out pass"
       },
       "aliases": [
         {
-          "label": "カットアウトパス",
-          "language": "ja",
-          "kind": "translation",
-          "note": "編集上の日本語訳。出典の公式訳ではない。"
+          "label": "Miss pass",
+          "language": "en",
+          "kind": "synonym",
+          "note": "NZRのMiss Pass Drillは同じ技術をcut-outとも記述する。このパス技術の意味に限定した同義名。"
         },
         {
-          "label": "Miss pass",
+          "label": "ミスパス",
+          "language": "ja",
           "kind": "contextual",
-          "note": "関連する呼称。今回の本文は Cut-out を用いるため、検索補助として登録。",
-          "language": "en"
+          "note": "英語Miss passを飛ばしパスの意味で音写した候補。日本語では失敗したパスの意味にもなるため、文脈なしに同一視しない。"
         }
       ],
       "side": "attack",
@@ -1635,6 +1653,17 @@
               "support": "interpretation"
             }
           ]
+        },
+        {
+          "id": "equivalence-nz-miss-pass-drill",
+          "text": "NZRのMiss Pass Drillは同じ技術をcut-outとも記述する。このパス技術の意味に限定した同義名。",
+          "evidence": [
+            {
+              "source": "nz-miss-pass-drill",
+              "locator": "OBJECTIVE / DRILL EXPLANATION",
+              "support": "direct"
+            }
+          ]
         }
       ],
       "review": {
@@ -1654,19 +1683,12 @@
     },
     {
       "id": "rtk:dummy-pass",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "name": {
         "ja": "ダミーパス",
         "en": "Dummy pass"
       },
-      "aliases": [
-        {
-          "label": "ダミーパス",
-          "language": "ja",
-          "kind": "translation",
-          "note": "編集上の日本語訳。出典の公式訳ではない。"
-        }
-      ],
+      "aliases": [],
       "side": "attack",
       "level": "skill",
       "formats": [
@@ -1813,9 +1835,9 @@
     },
     {
       "id": "rtk:close-support",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "name": {
-        "ja": "近接サポート",
+        "ja": "保持者への近接サポート",
         "en": "Close support"
       },
       "aliases": [
@@ -1827,7 +1849,7 @@
         }
       ],
       "side": "attack",
-      "level": "shape",
+      "level": "skill",
       "formats": [
         "XV",
         "sevens"
@@ -1982,10 +2004,10 @@
     },
     {
       "id": "rtk:offload-continuity",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "name": {
-        "ja": "オフロードによる継続",
-        "en": "Offload continuity"
+        "ja": "タックル中のパス（オフロード）",
+        "en": "Passing out of the tackle"
       },
       "aliases": [
         {
@@ -1995,10 +2017,10 @@
           "note": "編集上の日本語訳。出典の公式訳ではない。"
         },
         {
-          "label": "Passing out of the tackle",
-          "kind": "synonym",
-          "note": "出典で扱う範囲に限定した対応名称。",
-          "language": "en"
+          "label": "Offload continuity",
+          "language": "en",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
         }
       ],
       "side": "attack",
@@ -2152,9 +2174,9 @@
     },
     {
       "id": "rtk:screen-pass-contact",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "接触後のスクリーンパス",
+        "ja": "スクリーンパス（接触中・World Rugby用法）",
         "en": "Screen pass in contact"
       },
       "aliases": [
@@ -2328,10 +2350,10 @@
     },
     {
       "id": "rtk:maul-continuity",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "name": {
-        "ja": "モールでの継続",
-        "en": "Maul continuity"
+        "ja": "モールの保持・継続技術",
+        "en": "Mauling: retention and continuation"
       },
       "aliases": [
         {
@@ -2339,10 +2361,16 @@
           "language": "ja",
           "kind": "translation",
           "note": "編集上の日本語訳。出典の公式訳ではない。"
+        },
+        {
+          "label": "Maul continuity",
+          "language": "en",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
         }
       ],
       "side": "attack",
-      "level": "principle",
+      "level": "skill",
       "formats": [
         "XV",
         "sevens"
@@ -2492,10 +2520,10 @@
     },
     {
       "id": "rtk:restart-kick-chase",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "name": {
-        "ja": "リスタートのキックチェイス",
-        "en": "Restart kick chase"
+        "ja": "リスタートのキックと追走の原則",
+        "en": "Restart kicking and chasing principles"
       },
       "aliases": [
         {
@@ -2503,10 +2531,16 @@
           "language": "ja",
           "kind": "translation",
           "note": "編集上の日本語訳。出典の公式訳ではない。"
+        },
+        {
+          "label": "Restart kick chase",
+          "language": "en",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
         }
       ],
       "side": "both",
-      "level": "move",
+      "level": "principle",
       "formats": [
         "XV",
         "sevens"
@@ -2667,10 +2701,10 @@
     },
     {
       "id": "rtk:breakdown-contest-or-reload",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "ブレイクダウンの争奪／再整列判断",
-        "en": "Breakdown contest or reload"
+        "ja": "ブレイクダウンの争奪／守備復帰判断",
+        "en": "Breakdown contest-or-reload decision"
       },
       "aliases": [
         {
@@ -2678,6 +2712,12 @@
           "language": "ja",
           "kind": "translation",
           "note": "編集上の日本語訳。出典の公式訳ではない。"
+        },
+        {
+          "label": "Breakdown contest or reload",
+          "language": "en",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
         }
       ],
       "side": "defence",
@@ -2848,9 +2888,9 @@
     },
     {
       "id": "rtk:attacking-mismatches",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "ミスマッチを見つけて攻める",
+        "ja": "ミスマッチの認知・利用",
         "en": "Attacking mismatches"
       },
       "aliases": [
@@ -2859,6 +2899,12 @@
           "language": "ja",
           "kind": "contextual",
           "note": "ここでは攻撃で利用する対応差。体格差だけを意味しない。"
+        },
+        {
+          "label": "ミスマッチを見つけて攻める",
+          "language": "ja",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
         }
       ],
       "side": "attack",
@@ -3018,14 +3064,27 @@
     },
     {
       "id": "rtk:attacking-width-and-depth",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "攻撃の幅と深さ",
-        "en": "Attacking width and depth"
+        "ja": "攻撃の幅・深さの調整",
+        "en": "Adjusting attacking width and depth"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "label": "攻撃の幅と深さ",
+          "language": "ja",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+        },
+        {
+          "label": "Attacking width and depth",
+          "language": "en",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+        }
+      ],
       "side": "attack",
-      "level": "shape",
+      "level": "principle",
       "formats": [
         "XV",
         "sevens"
@@ -3192,9 +3251,9 @@
     },
     {
       "id": "rtk:draw-and-pass",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "ドロー＆パス",
+        "ja": "ドロー・アンド・パス",
         "en": "Draw and pass"
       },
       "aliases": [
@@ -3209,6 +3268,12 @@
           "language": "ja",
           "kind": "translation",
           "note": "編集上のカナ表記。"
+        },
+        {
+          "label": "ドロー＆パス",
+          "language": "ja",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
         }
       ],
       "side": "attack",
@@ -3376,12 +3441,19 @@
     },
     {
       "id": "rtk:phase-direction-change",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "フェーズ後のリターン攻撃",
+        "ja": "フェーズ後の攻撃方向転換",
         "en": "Changing direction after a phase"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "label": "フェーズ後のリターン攻撃",
+          "language": "ja",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+        }
+      ],
       "side": "attack",
       "level": "move",
       "formats": [
@@ -3552,9 +3624,9 @@
     },
     {
       "id": "rtk:pick-and-go",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "ピック＆ゴー",
+        "ja": "ピック・アンド・ゴー",
         "en": "Pick and go"
       },
       "aliases": [
@@ -3563,6 +3635,12 @@
           "language": "ja",
           "kind": "translation",
           "note": "編集上のカナ表記。"
+        },
+        {
+          "label": "ピック＆ゴー",
+          "language": "ja",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
         }
       ],
       "side": "attack",
@@ -3738,17 +3816,29 @@
     },
     {
       "id": "rtk:quick-tap-attack",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "クイックタップ攻撃",
-        "en": "Quick tap attack"
+        "ja": "クイックタップからの攻撃（Snookの例）",
+        "en": "Quick-tap attack (Snook example)"
       },
       "aliases": [
         {
           "label": "クイックタップ",
           "language": "ja",
+          "kind": "contextual",
+          "note": "再開方法一般は、このSnook固有の攻撃運用例と同義ではない。短い技術名だけでこの例へ一意解決しない。"
+        },
+        {
+          "label": "クイックタップ攻撃",
+          "language": "ja",
           "kind": "translation",
-          "note": "Quick tap の編集訳。ここでは攻撃への利用を扱う。"
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+        },
+        {
+          "label": "Quick tap attack",
+          "language": "en",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。現レコードの役割モデルはSnookの運用例で、すべてのquick tapの同義ではない。"
         }
       ],
       "side": "attack",
@@ -4112,12 +4202,25 @@
     },
     {
       "id": "rtk:loop-move",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
         "ja": "ループ",
         "en": "Loop move"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "label": "Run around",
+          "language": "en",
+          "kind": "synonym",
+          "note": "Whiffinはパス後に外側へ回り込む同じ連係をloop / run aroundと併記する。"
+        },
+        {
+          "label": "ランアラウンド",
+          "language": "ja",
+          "kind": "translation",
+          "note": "同義英語名の編集上の日本語表記。"
+        }
+      ],
       "side": "attack",
       "level": "move",
       "formats": [
@@ -4275,11 +4378,22 @@
               "support": "interpretation"
             }
           ]
+        },
+        {
+          "id": "equivalence-rcw-second-touches",
+          "text": "Whiffinはパス後に外側へ回り込む同じ連係をloop / run aroundと併記する。",
+          "evidence": [
+            {
+              "source": "rcw-second-touches",
+              "locator": "opening definition paragraphs",
+              "support": "direct"
+            }
+          ]
         }
       ],
       "review": {
         "status": "source-backed",
-        "note": "公開の指導資料本文を確認。名称・分類・日本語は編集上の整理で、専門家による戦術・安全性審査は未実施。",
+        "note": "公開の指導資料本文を確認。名称・分類・日本語は編集上の整理で、専門家による戦術・安全性審査は未実施。 追加のloop/run around同義根拠は検索取得の本文で確認。直接URL再取得はタイムアウトし、現在の直接可読性は未確認。",
         "reviewedBy": null,
         "reviewedAt": null
       },
@@ -4656,14 +4770,14 @@
     },
     {
       "id": "rtk:pull-back-pass",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
         "ja": "プルバックパス",
         "en": "Pull-back pass"
       },
       "aliases": [],
       "side": "attack",
-      "level": "move",
+      "level": "skill",
       "formats": [
         "XV"
       ],
@@ -4828,9 +4942,9 @@
     },
     {
       "id": "rtk:ruck-and-run-snook",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "ラック＆ラン（Snookモデル）",
+        "ja": "Ruck & Run（Snookの提案モデル）",
         "en": "Ruck and run (Snook model)"
       },
       "aliases": [
@@ -4839,6 +4953,12 @@
           "kind": "contextual",
           "note": "この記事におけるモデルの略称。普遍的callではない。",
           "language": "en"
+        },
+        {
+          "label": "ラック＆ラン（Snookモデル）",
+          "language": "ja",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
         }
       ],
       "side": "attack",
@@ -5013,9 +5133,9 @@
     },
     {
       "id": "rtk:short-pass-before-contact",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "接点前のショートパス",
+        "ja": "接触前の短いパス",
         "en": "Short pass before contact"
       },
       "aliases": [
@@ -5024,10 +5144,16 @@
           "kind": "contextual",
           "note": "近い支援者へ短くつなぐ文脈。Cross論文はtipping onに言及するが、全short passを同義にしない。",
           "language": "en"
+        },
+        {
+          "label": "接点前のショートパス",
+          "language": "ja",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
         }
       ],
       "side": "attack",
-      "level": "move",
+      "level": "skill",
       "formats": [
         "XV"
       ],
@@ -5197,9 +5323,9 @@
     },
     {
       "id": "rtk:split-midfield-scrum",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "スクラム後のスプリット攻撃（Snook例）",
+        "ja": "Split（Snookのスクラム攻撃例）",
         "en": "Split midfield strike from scrum (Snook example)"
       },
       "aliases": [
@@ -5208,6 +5334,12 @@
           "kind": "contextual",
           "note": "この記事の例示play名。一般標準名でも全split formationの同義語でもない。",
           "language": "en"
+        },
+        {
+          "label": "スクラム後のスプリット攻撃（Snook例）",
+          "language": "ja",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
         }
       ],
       "side": "attack",
@@ -5396,9 +5528,9 @@
     },
     {
       "id": "rtk:three-player-pod",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "三人ポッド",
+        "ja": "三人FWポッド",
         "en": "Three-player forward pod"
       },
       "aliases": [
@@ -5413,6 +5545,12 @@
           "kind": "contextual",
           "note": "同論文における形の呼び名。",
           "language": "en"
+        },
+        {
+          "label": "三人ポッド",
+          "language": "ja",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
         }
       ],
       "side": "attack",
@@ -6130,10 +6268,10 @@
     },
     {
       "id": "rtk:chip-and-chase",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "チップ・アンド・チェイス",
-        "en": "Chip and chase"
+        "ja": "チップキックと追走",
+        "en": "Chip kick and chase"
       },
       "aliases": [
         {
@@ -6141,10 +6279,22 @@
           "language": "en",
           "kind": "contextual",
           "note": "資料で確認できる技術名。チップ単体と追走を含む戦術の範囲は同一でない。"
+        },
+        {
+          "label": "チップ・アンド・チェイス",
+          "language": "ja",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+        },
+        {
+          "label": "Chip and chase",
+          "language": "en",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
         }
       ],
       "side": "attack",
-      "level": "move",
+      "level": "skill",
       "formats": [
         "XV"
       ],
@@ -6302,10 +6452,10 @@
     },
     {
       "id": "rtk:contestable-box-kick",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "再獲得を狙うボックスキック",
-        "en": "Contestable box kick"
+        "ja": "ボックスキック（再獲得を競う用法）",
+        "en": "Box kick (contestable use)"
       },
       "aliases": [
         {
@@ -6313,6 +6463,18 @@
           "language": "en",
           "kind": "contextual",
           "note": "出典で確認した名称だが、ここでは再獲得を競う使用を限定して扱う。"
+        },
+        {
+          "label": "再獲得を狙うボックスキック",
+          "language": "ja",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+        },
+        {
+          "label": "Contestable box kick",
+          "language": "en",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
         }
       ],
       "side": "attack",
@@ -7031,10 +7193,10 @@
     },
     {
       "id": "rtk:grubber-behind-line",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "グラバーで守備の背後を狙う",
-        "en": "Grubber kick behind the defensive line"
+        "ja": "グラバーキック（守備背後への用法）",
+        "en": "Grubber kick (behind-line use)"
       },
       "aliases": [
         {
@@ -7042,10 +7204,22 @@
           "language": "en",
           "kind": "contextual",
           "note": "資料の技術名。ここでは背後を狙う戦術的使用だけを扱う。"
+        },
+        {
+          "label": "グラバーで守備の背後を狙う",
+          "language": "ja",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+        },
+        {
+          "label": "Grubber kick behind the defensive line",
+          "language": "en",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
         }
       ],
       "side": "attack",
-      "level": "move",
+      "level": "skill",
       "formats": [
         "XV"
       ],
@@ -7203,12 +7377,25 @@
     },
     {
       "id": "rtk:man-on-man-defence",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "マン・オン・マン守備",
-        "en": "Man-on-man defence"
+        "ja": "マン・オン・マン守備（セットプレー）",
+        "en": "Man-on-man defence (set piece)"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "label": "マン・オン・マン守備",
+          "language": "ja",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+        },
+        {
+          "label": "Man-on-man defence",
+          "language": "en",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+        }
+      ],
       "side": "defence",
       "level": "system",
       "formats": [
@@ -7229,10 +7416,11 @@
       ],
       "applicability": {
         "conditions": [
-          "攻撃側が追加参加者を入れず、人数の対応を作れる状況。"
+          "資料はセットプレーから追加参加者が比較的少ない場面を例示する。守備者間で担当と移動の規則を共有する。"
         ],
         "limits": [
-          "資料の背番号対応を全チームへ固定適用しない。追加参加者で人数対応が崩れる。"
+          "追加参加者が入る場合も、資料は同じ担当ルールの継続を説明する。人数対応とカバーを確認する。",
+          "資料のman-on-manでもパス後に担当を移す。試合中ずっと同じ一人を追う固定マンマークとは解釈しない。"
         ]
       },
       "mechanics": {
@@ -7338,9 +7526,9 @@
       },
       "relationships": [
         {
-          "type": "contrastsWith",
+          "type": "similarTo",
           "target": "rtk:drift-defence",
-          "note": "編集上の比較。担当相手の対応を軸にする説明と、パスに合わせて責任を移す説明を区別する。"
+          "note": "両資料ともパス後の担当移動を含む。固定マンマーク対ドリフトという排他的分類にはしないが、完全同義も立証されていない。"
         }
       ],
       "variations": [],
@@ -7385,14 +7573,27 @@
     },
     {
       "id": "rtk:restart-reception",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "リスタート受球の連携",
-        "en": "Restart reception"
+        "ja": "リスタート受球の基本",
+        "en": "Restart reception fundamentals"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "label": "リスタート受球の連携",
+          "language": "ja",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+        },
+        {
+          "label": "Restart reception",
+          "language": "en",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+        }
+      ],
       "side": "both",
-      "level": "move",
+      "level": "skill",
       "formats": [
         "XV"
       ],
@@ -7567,27 +7768,33 @@
     },
     {
       "id": "rtk:up-and-under-contest",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "name": {
-        "ja": "ハイキックで再獲得を争う",
-        "en": "Up-and-under contest"
+        "ja": "アップ・アンド・アンダー（ボム）",
+        "en": "Up-and-under"
       },
       "aliases": [
         {
-          "label": "Up-and-under",
+          "label": "ハイキックで再獲得を争う",
+          "language": "ja",
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
+        },
+        {
+          "label": "Up-and-under contest",
           "language": "en",
-          "kind": "contextual",
-          "note": "資料の技術名。ここでは追走と競りを含む使用。"
+          "kind": "translation",
+          "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
         },
         {
           "label": "Bomb",
           "language": "en",
-          "kind": "contextual",
-          "note": "NZR Foundation Rugby Coaches p.93の名称。文脈によって高いキック全般を指す。"
+          "kind": "synonym",
+          "note": "NZR教材がUp-and-under (Bomb)と併記。このラグビーの高い再獲得キックの意味に限定。"
         }
       ],
       "side": "attack",
-      "level": "move",
+      "level": "skill",
       "formats": [
         "XV"
       ],
@@ -7747,6 +7954,17 @@
         {
           "id": "term-bomb",
           "text": "NZRの教材はUp-and-underにBombという呼称を併記する。",
+          "evidence": [
+            {
+              "source": "nz-foundation-manual",
+              "locator": "Printed p.93, TACTICAL KICKING / Types of Kick",
+              "support": "direct"
+            }
+          ]
+        },
+        {
+          "id": "equivalence-nz-foundation-manual",
+          "text": "NZR教材がUp-and-under (Bomb)と併記。このラグビーの高い再獲得キックの意味に限定。",
           "evidence": [
             {
               "source": "nz-foundation-manual",

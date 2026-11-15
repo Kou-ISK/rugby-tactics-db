@@ -1,8 +1,8 @@
 {
   "id": "rtk:short-pass-before-contact",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "接点前のショートパス",
+    "ja": "接触前の短いパス",
     "en": "Short pass before contact"
   },
   "aliases": [
@@ -11,10 +11,16 @@
       "kind": "contextual",
       "note": "近い支援者へ短くつなぐ文脈。Cross論文はtipping onに言及するが、全short passを同義にしない。",
       "language": "en"
+    },
+    {
+      "label": "接点前のショートパス",
+      "language": "ja",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
     }
   ],
   "side": "attack",
-  "level": "move",
+  "level": "skill",
   "formats": [
     "XV"
   ],

@@ -1,17 +1,11 @@
 {
   "id": "rtk:rush-defence-sevens",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
     "ja": "ラッシュディフェンス（セブンズ）",
     "en": "Rush defence (sevens)"
   },
   "aliases": [
-    {
-      "label": "ラッシュディフェンス（セブンズ）",
-      "language": "ja",
-      "kind": "translation",
-      "note": "編集上の日本語訳。出典の公式訳ではない。"
-    },
     {
       "label": "Blitz defence",
       "kind": "contextual",
@@ -110,13 +104,7 @@
       }
     ]
   },
-  "relationships": [
-    {
-      "type": "enables",
-      "target": "rtk:sweeper-cover-sevens",
-      "note": "前線の圧力と後方カバーを分けて考える。"
-    }
-  ],
+  "relationships": [],
   "variations": [],
   "claims": [
     {

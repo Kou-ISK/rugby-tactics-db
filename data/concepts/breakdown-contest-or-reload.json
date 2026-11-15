@@ -1,9 +1,9 @@
 {
   "id": "rtk:breakdown-contest-or-reload",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "ブレイクダウンの争奪／再整列判断",
-    "en": "Breakdown contest or reload"
+    "ja": "ブレイクダウンの争奪／守備復帰判断",
+    "en": "Breakdown contest-or-reload decision"
   },
   "aliases": [
     {
@@ -11,6 +11,12 @@
       "language": "ja",
       "kind": "translation",
       "note": "編集上の日本語訳。出典の公式訳ではない。"
+    },
+    {
+      "label": "Breakdown contest or reload",
+      "language": "en",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
     }
   ],
   "side": "defence",

@@ -34,7 +34,7 @@ The published JSON Schema defines exact required fields and rejects undeclared f
 - `aliases`: `synonym` supported by the cited usage, `translation` editorial, `contextual`
   potentially ambiguous. Neither alias nor textual similarity establishes interchangeability.
 - `side`: attack / defence / both. Attack and defence filters include `both`.
-- `level`: system (team-wide organization), shape (relational arrangement), move (coordinated
+- `level`: legacy coarse compatibility classification, constrained by the strict companion. system (team-wide organization), shape (relational arrangement), move (coordinated
   action), principle (decision guidance), skill (technique), phase (game situation).
   Taxonomy is editorial and can evolve; concept names do not determine level by themselves.
 - `formats`: intended scope in this corpus, not certification under every competition's variations.
@@ -95,3 +95,15 @@ PR/main CI additionally checks version changes and reachable-history tripwires.
 
 [Taxonomy](TAXONOMY.md) distinguishes tactics from their component skills and game situations.
 Dataset 0.2.0 expands the corpus; it does not make all records executable or expert-reviewed.
+
+## Strict classification companion
+
+`data/classification.json` and `schemas/classification.schema.json` add strict semantic kind,
+name origin, canonical ID and evidenced equivalence without changing closed dataset schema 1.0.0.
+The companion must cover every ID once, use the allowed kind/level crosswalk, and match the exact
+dataset version and SHA-256. Both build and browser reject a mismatched pair. Browser response-byte
+digest verification is separate from cache-key fingerprints.
+
+Current canonical IDs equal existing IDs: the review did not establish any duplicate records.
+Proven alternate names share an existing record; cross-ID redirects require a future explicit
+migration contract. See ADR 0002 and CLASSIFICATION-REVIEW.md.

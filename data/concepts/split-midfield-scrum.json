@@ -1,8 +1,8 @@
 {
   "id": "rtk:split-midfield-scrum",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "スクラム後のスプリット攻撃（Snook例）",
+    "ja": "Split（Snookのスクラム攻撃例）",
     "en": "Split midfield strike from scrum (Snook example)"
   },
   "aliases": [
@@ -11,6 +11,12 @@
       "kind": "contextual",
       "note": "この記事の例示play名。一般標準名でも全split formationの同義語でもない。",
       "language": "en"
+    },
+    {
+      "label": "スクラム後のスプリット攻撃（Snook例）",
+      "language": "ja",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
     }
   ],
   "side": "attack",

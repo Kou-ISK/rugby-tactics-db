@@ -1,17 +1,11 @@
 {
   "id": "rtk:counter-attack",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": {
     "ja": "カウンターアタック",
     "en": "Counter-attack"
   },
   "aliases": [
-    {
-      "label": "カウンターアタック",
-      "language": "ja",
-      "kind": "translation",
-      "note": "編集上の日本語訳。出典の公式訳ではない。"
-    },
     {
       "label": "Counterattack",
       "kind": "synonym",

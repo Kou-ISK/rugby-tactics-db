@@ -1,8 +1,8 @@
 {
   "id": "rtk:draw-and-pass",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "ドロー＆パス",
+    "ja": "ドロー・アンド・パス",
     "en": "Draw and pass"
   },
   "aliases": [
@@ -17,6 +17,12 @@
       "language": "ja",
       "kind": "translation",
       "note": "編集上のカナ表記。"
+    },
+    {
+      "label": "ドロー＆パス",
+      "language": "ja",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
     }
   ],
   "side": "attack",

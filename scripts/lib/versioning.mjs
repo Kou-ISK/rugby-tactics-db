@@ -26,3 +26,11 @@ export function validateVersionChange(before, after) {
   }
   return errors;
 }
+
+export function validateClassificationVersionChange(before, after) {
+  if (!before || isDeepStrictEqual(before, after)) return [];
+  const errors = [];
+  if (!greater(after.version, before.version)) errors.push('Changed classification requires an increased classification version');
+  if (after.updated < before.updated) errors.push('Classification date must not move backwards');
+  return errors;
+}

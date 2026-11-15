@@ -1,9 +1,9 @@
 {
   "id": "rtk:sweeper-cover-sevens",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": {
-    "ja": "スイーパーカバー（セブンズ）",
-    "en": "Sweeper cover (sevens)"
+    "ja": "スイーパー（セブンズの後方カバー役）",
+    "en": "Sweeper role (sevens)"
   },
   "aliases": [
     {
@@ -11,6 +11,12 @@
       "language": "ja",
       "kind": "translation",
       "note": "編集上の日本語訳。出典の公式訳ではない。"
+    },
+    {
+      "label": "Sweeper cover (sevens)",
+      "language": "en",
+      "kind": "translation",
+      "note": "同一IDの旧編集見出し。出典が命名した別の戦術ではない。"
     }
   ],
   "side": "defence",
@@ -104,7 +110,13 @@
       }
     ]
   },
-  "relationships": [],
+  "relationships": [
+    {
+      "type": "enables",
+      "target": "rtk:rush-defence-sevens",
+      "note": "出典のセブンズ例では後方のカバー役が前線の前進を支える。ラッシュだけに専属する役割ではない。"
+    }
+  ],
   "variations": [
     {
       "name": "交代型",
