@@ -18,10 +18,18 @@ test('build exports exactly the manifest bytes and valid relative assets',async(
     assert.equal(item.executionReady,false);
   }
   const html=await readFile(new URL('dist/index.html',root),'utf8');
-  for(const [,path] of html.matchAll(/(?:href|src)="(\.\/[^"#?]+)"/g)){
+  for(const [,path] of html.matchAll(/(?:href|src)="(\.\/[^"#?]+)(?:\?[^"#]*)?"/g)){
     if(path==='./')continue;
     await readFile(new URL('dist/'+path,root));
   }
+  const app = await readFile(new URL('dist/app.mjs', root), 'utf8');
+  for (const [path, hash] of [...html.matchAll(/(?:href|src)="(\.\/[^"?]+)\?sha256=([a-f0-9]{64})"/g)].map(m => [m[1], m[2]])) {
+    assert.equal(sha(await readFile(new URL('dist/' + path, root))), hash);
+  }
+  assert.match(html, /app\.mjs\?sha256=[a-f0-9]{64}/);
+  assert.ok(app.includes(`'./data/dataset.json?sha256=${manifest.sha256}'`));
+  const search = await readFile(new URL('dist/search.mjs', root));
+  assert.ok(app.includes(`'./search.mjs?sha256=${sha(search)}'`));
   assert.ok(!/src="https?:/.test(html));
   assert.ok(html.includes('Content-Security-Policy'));
   assert.ok(html.includes('id="dataset-version"'));

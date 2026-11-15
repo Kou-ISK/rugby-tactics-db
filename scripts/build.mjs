@@ -1,12 +1,23 @@
 import { readFile, writeFile, mkdir, cp, rm } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { checkDataset } from './lib/dataset.mjs';
+import { prepareBrowserAssets } from './lib/browser-assets.mjs';
 const root=new URL('../',import.meta.url);
 const { data, raw } = await checkDataset();
 await rm(new URL('dist',root),{recursive:true,force:true});
 await mkdir(new URL('dist/data/concepts/',root),{recursive:true});
 await mkdir(new URL('dist/exports/',root),{recursive:true});
 for(const file of ['index.html','style.css','app.mjs','search.mjs','mark.svg']) await cp(new URL('src/'+file,root),new URL('dist/'+file,root));
+const browserAssets = await prepareBrowserAssets({
+  html: await readFile(new URL('src/index.html', root), 'utf8'),
+  app: await readFile(new URL('src/app.mjs', root), 'utf8'),
+  search: await readFile(new URL('src/search.mjs', root)),
+  style: await readFile(new URL('src/style.css', root)),
+  icon: await readFile(new URL('src/mark.svg', root)),
+  dataset: raw,
+});
+await writeFile(new URL('dist/index.html', root), browserAssets.html);
+await writeFile(new URL('dist/app.mjs', root), browserAssets.app);
 for (const file of ['LICENSE', 'DATA-LICENSE.md']) await cp(new URL(file,root),new URL('dist/'+file,root));
 await mkdir(new URL('dist/schemas/',root),{recursive:true});
 await cp(new URL('schemas/dataset.schema.json',root),new URL('dist/schemas/dataset.schema.json',root));
